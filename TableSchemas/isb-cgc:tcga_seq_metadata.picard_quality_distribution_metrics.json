@@ -1,0 +1,120 @@
+{
+  "creationTime": "1470342572044", 
+  "description": "Data was generated based on running Picard over ~67,000 TCGA bam files in Google Cloud Storage in August 2016.", 
+  "etag": "LOwKgoamg2ipBiXf1Xk6sg==", 
+  "id": "isb-cgc:tcga_seq_metadata.picard_quality_distribution_metrics", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1574204267056", 
+  "location": "US", 
+  "numBytes": "6589034", 
+  "numLongTermBytes": "6589034", 
+  "numRows": "67556", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original data repository (CGHub) identifier", 
+        "mode": "NULLABLE", 
+        "name": "CGHub_analysisID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf10", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf20", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf30", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf35", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf40", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf45", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf50", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf55", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf60", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf65", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf70", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The percentage of generated clusters that pass the Illumina chastity filter.", 
+        "mode": "NULLABLE", 
+        "name": "cf75", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Substrate type e.g. DNA,  RNA", 
+        "mode": "NULLABLE", 
+        "name": "analyte_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental strategy used to generate library e.g. WGS, WXS", 
+        "mode": "NULLABLE", 
+        "name": "library_type", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_seq_metadata/tables/picard_quality_distribution_metrics", 
+  "tableReference": {
+    "datasetId": "tcga_seq_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "picard_quality_distribution_metrics"
+  }, 
+  "type": "TABLE"
+}

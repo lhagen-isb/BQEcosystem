@@ -1,0 +1,72 @@
+{
+  "creationTime": "1472242989433", 
+  "description": "Data was generated to map CGHub IDs to FastqQC reports in Sept 2016.", 
+  "etag": "vXRGDpZMWVW8KHd4oc7GKg==", 
+  "id": "isb-cgc:tcga_seq_metadata.picard_bam_index_stats", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1574199900533", 
+  "location": "US", 
+  "numBytes": "429402627", 
+  "numLongTermBytes": "429402627", 
+  "numRows": "5104814", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original data repository (CGHub) identifier", 
+        "mode": "NULLABLE", 
+        "name": "CGHub_analysisID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome information denoted 1,2..X,Y etc ", 
+        "mode": "NULLABLE", 
+        "name": "RefName", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Length of bam file", 
+        "mode": "NULLABLE", 
+        "name": "Length", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of aligned reads", 
+        "mode": "NULLABLE", 
+        "name": "Aligned", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of unaligned reads", 
+        "mode": "NULLABLE", 
+        "name": "Unaligned", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Substrate type e.g. DNA,  RNA", 
+        "mode": "NULLABLE", 
+        "name": "analyte_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental strategy used to generate library e.g. WGS, WXS", 
+        "mode": "NULLABLE", 
+        "name": "library_type", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_seq_metadata/tables/picard_bam_index_stats", 
+  "tableReference": {
+    "datasetId": "tcga_seq_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "picard_bam_index_stats"
+  }, 
+  "type": "TABLE"
+}

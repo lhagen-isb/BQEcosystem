@@ -1,0 +1,1074 @@
+{
+  "creationTime": "1462148890613", 
+  "description": "Data was generated from metrics and metadata derived from URL reports generated from running FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) on the TCGA WXS bam files in June 2016.", 
+  "etag": "xz3jGeprkm1kEsg3h+wZnA==", 
+  "id": "isb-cgc:tcga_seq_metadata.WXS_FastQC", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767974972", 
+  "location": "US", 
+  "numBytes": "34926314", 
+  "numLongTermBytes": "34926314", 
+  "numRows": "22234", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original data repository (CGHub) identifier for the FastQ file (note that this file may be a tar file containing more than one FastQ file -- for paired-read data, there are typically two FastQ files contained in a single tar file)", 
+        "mode": "NULLABLE", 
+        "name": "CGHub_analysisID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "mode": "NULLABLE", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Name of the bam file ", 
+        "mode": "NULLABLE", 
+        "name": "bamFilename", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Deprecated GCS url paths for the FastQC html report", 
+        "mode": "NULLABLE", 
+        "name": "FastQC_html_url", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Deprecated GCS url paths for the FastQC html report", 
+        "mode": "NULLABLE", 
+        "name": "FastQC_zip_url", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Basic Statistics module of the FastQC program generates some simple composition statistics for the file analysed. Pass, Warn and Fail values. ", 
+        "mode": "NULLABLE", 
+        "name": "BasicStats", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Overall result from the Overrepresented sequences check (pass/warn/fail)", 
+        "mode": "NULLABLE", 
+        "name": "numTotalSeq", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of sequences flagged as poor quality.", 
+        "mode": "NULLABLE", 
+        "name": "numPoorSeq", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Minimum sequence length found.", 
+        "mode": "NULLABLE", 
+        "name": "minLength", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Maximum sequence length found.", 
+        "mode": "NULLABLE", 
+        "name": "maxLength", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "(maxLength - minLength) + 1", 
+        "mode": "NULLABLE", 
+        "name": "delLength", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Percent GC content ", 
+        "mode": "NULLABLE", 
+        "name": "pctGC", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Per Base Sequence Quality gives overview of the range of quality values across all bases at each position in the FastQ file.", 
+        "mode": "NULLABLE", 
+        "name": "PerBaseSeqQual", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_0", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_0", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ10_10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "These metrics are derived from the per base sequence quality curve which is a function of the position in the read.  The maximum read-length is divided into 10 equal segments.  The PBSQ10 value is the 10th percentile quality score, and the PBSQ50 value is the median quality score, for bases at that position in the average read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSQ50_10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Per Tile Sequence Quality allows you to look at the quality scores from each tile across all of your bases to see if there was a loss in quality associated with only one part of the flowcell. Warning flag is returned if any tile shows a mean Phred score more than 2 less than the mean for that base across all tiles. Fail flag is returned if any tile shows a mean Phred score more than 5 less than the mean for that base across all tiles.", 
+        "mode": "NULLABLE", 
+        "name": "PerTileSeqQual", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Per sequence quality score report allows you to see if a subset of your sequences have universally low quality values. It is often the case that a subset of sequences will have universally poor quality, often because they are poorly imaged (on the edge of the field of view etc), however these should represent only a small percentage of the total sequences.", 
+        "mode": "NULLABLE", 
+        "name": "PerSeqQualScore", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_0", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_1", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_2", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_3", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_4", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_5", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_6", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_7", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_8", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_9", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative quality score distribution curve.  PSQC_0 is the lowest quality score observed.  PSQC_1 is the 10th percentile score, PSQC_2 is the 20th percentile score, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSQC_10", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Per Base Sequence Content plots out the proportion of each base position in a file for which each of the four normal DNA bases has been called.", 
+        "mode": "NULLABLE", 
+        "name": "PerBaseSeqCont", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_0", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_0", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_0", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_0", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_G_10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_A_10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_T_10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBSC_C_10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Overall result from the Per sequence GC content check (pass/warn/fail)", 
+        "mode": "NULLABLE", 
+        "name": "PerSeqGCcont", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_0", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_1", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_2", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_3", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_4", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_5", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_6", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_7", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_8", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_9", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "These metrics derived from the cumulative GC distribution over all sequences versus mean GC content (%).  PSGCC_1 is the 10th percentile GC content (10% of reads have a GC content below this value), and PSGCC_9 is the 90th percentil GC content, etc.", 
+        "mode": "NULLABLE", 
+        "name": "PSGCC_10", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Per Base N Content. If a sequencer is unable to make a base call with sufficient confidence then it will normally substitute an N rather than a conventional base] call This module plots out the percentage of base calls at each position for which an N was called.", 
+        "mode": "NULLABLE", 
+        "name": "PerBaseNcont", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Describe the average base composition at each position in the average read. The total read-length is divided into 10 equal segments. The PBSC_n_0 fields give the average A/C/T/G percentages seen at the start of each read. The PBSC_n_1 fields give the average A/C/T/G percentages seen 10% into the length of each read, etc, until the PBSC_n_10 fields give the average A/C/T/G percentages seen at the end of each read.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "PBNC_10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Sequence Length Distribution. High throughput sequencers generate sequence fragments of uniform length, but others can contain reads of wildly varying lengths. Even within uniform length libraries some pipelines will trim sequences to remove poor quality base calls from the end. Warning flag is returned if all sequences are not the same length. Error flag is returned if any of the sequences have zero length.", 
+        "mode": "NULLABLE", 
+        "name": "SeqLenDist", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Sequence length distribution mode: the most frequently observed read length.", 
+        "mode": "NULLABLE", 
+        "name": "SLD_modeVal", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_neg1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This field gives the percentage of reads with this length.  If all reads have the same length, this field will have a value of 1.0 and the preceding 10 fields and the following 10 fields will all be null or 0.", 
+        "mode": "NULLABLE", 
+        "name": "SLD_mode", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This metric describes the distribution of sequence lengths, starting from the % of reads observed with a length of N-10 all the way up to N+1 (where N is the mode of the read-length distribution).", 
+        "mode": "NULLABLE", 
+        "name": "SLD_pos10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Duplicate Sequence Level. In a diverse library most sequences will occur only once in the final set. A low level of duplication may indicate a very high level of coverage of the target sequence, but a high level of duplication is more likely to indicate some kind of enrichment bias (eg PCR over amplification). Warning flag is returned if non-unique sequences make up more than 20% of the total. Fail flag is if non-unique sequences make up more than 50% of the total.", 
+        "mode": "NULLABLE", 
+        "name": "SeqDupLev", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Percentage of sequences remaining if deduplicated.", 
+        "mode": "NULLABLE", 
+        "name": "Total_Dedup_Pct", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level of 1.", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level of 2.", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level of 3.", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level of 4.", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_4", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level of 5.", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_5", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level of 6.", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_6", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level of 7.", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_7", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level of 8.", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level of 9.", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_9", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level >= 10 and < 50", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_ge10", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % of sequences with a duplication level >= 50 and < 100", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_ge50", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level duplication level >= 100 and < 500", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_ge100", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % of sequences with a duplication level >= 500 and < 1000", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_ge500", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence with a duplication level >= 1000 and < 5000", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_ge1k", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % of sequences with a duplication level >= 5000 and < 10000", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_ge5k", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Represents the percentage of the total sequences at various sequence duplication levels.  This first field gives the % with a sequence duplication level duplication level >= 10000", 
+        "mode": "NULLABLE", 
+        "name": "Dedup_relPct_ge10k", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Overall result from the Overrepresented sequences check (pass/warn/fail)", 
+        "mode": "NULLABLE", 
+        "name": "OverrepSeq", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Returns up to 3 most overrepresented sequences, with the associated percentages.  (If there are fewer than 3 overrepresented sequences, the fields will be null).", 
+        "mode": "NULLABLE", 
+        "name": "OverRepSeq_1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Returns up to 3 most overrepresented sequences, with the associated percentages.  (If there are fewer than 3 overrepresented sequences, the fields will be null).", 
+        "mode": "NULLABLE", 
+        "name": "OverRepSeq_1_Pct", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Returns up to 3 most overrepresented sequences, with the associated percentages.  (If there are fewer than 3 overrepresented sequences, the fields will be null).", 
+        "mode": "NULLABLE", 
+        "name": "OverRepSeq_2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Returns up to 3 most overrepresented sequences, with the associated percentages.  (If there are fewer than 3 overrepresented sequences, the fields will be null).", 
+        "mode": "NULLABLE", 
+        "name": "OverRepSeq_2_Pct", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Returns up to 3 most overrepresented sequences, with the associated percentages.  (If there are fewer than 3 overrepresented sequences, the fields will be null).", 
+        "mode": "NULLABLE", 
+        "name": "OverRepSeq_3", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The next 11 fields give the percentage of N values observed at each position along the average read, where the average read is divided into 10 equal segments.", 
+        "mode": "NULLABLE", 
+        "name": "OverRepSeq_3_Pct", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Presence of adapter content in sequence is denoted with Pass, Warn or Fail flags. Warn flag issued if any sequence is present in more than 5% of all reads. Fail flag is issued if any sequence is present in more than 10% of all reads.", 
+        "mode": "NULLABLE", 
+        "name": "AdaptCont", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Overall result from the Kmer Content check (pass/warn/fail)", 
+        "mode": "NULLABLE", 
+        "name": "KmerCont", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reports up to 3 kmers, with associated observed/expected ratios.", 
+        "mode": "NULLABLE", 
+        "name": "Kmer_Seq_1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reports up to 3 kmers, with associated observed/expected ratios.", 
+        "mode": "NULLABLE", 
+        "name": "Kmer_Ratio_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Reports up to 3 kmers, with associated observed/expected ratios.", 
+        "mode": "NULLABLE", 
+        "name": "Kmer_Seq_2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reports up to 3 kmers, with associated observed/expected ratios.", 
+        "mode": "NULLABLE", 
+        "name": "Kmer_Ratio_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Reports up to 3 kmers, with associated observed/expected ratios.", 
+        "mode": "NULLABLE", 
+        "name": "Kmer_Seq_3", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reports up to 3 kmers, with associated observed/expected ratios.", 
+        "mode": "NULLABLE", 
+        "name": "Kmer_Ratio_3", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This field gives the lowest reported observed/expected ratio associated with the final reported kmer.", 
+        "mode": "NULLABLE", 
+        "name": "Kmer_Ratio_Min", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "This field gives the total number of overrepresented kmers reported.", 
+        "mode": "NULLABLE", 
+        "name": "Kmer_Num_Seq", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_seq_metadata/tables/WXS_FastQC", 
+  "tableReference": {
+    "datasetId": "tcga_seq_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "WXS_FastQC"
+  }, 
+  "type": "TABLE"
+}

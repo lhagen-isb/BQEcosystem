@@ -1,0 +1,73 @@
+{
+  "creationTime": "1498523282009", 
+  "description": "Data was generated to map the CGHub ID to the Google Cloud Storage bucket locations in June 2017.", 
+  "etag": "ESECOXe9n8DDKiFezwZ/Vw==", 
+  "id": "isb-cgc:tcga_seq_metadata.CGHubID_to_GCSurl", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "reference_genome_0": "hg19", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767797240", 
+  "location": "US", 
+  "numBytes": "24984997", 
+  "numLongTermBytes": "24984997", 
+  "numRows": "90874", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA disease code e.g. OV, GBM", 
+        "mode": "NULLABLE", 
+        "name": "disease", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Aliquot barcode ", 
+        "mode": "NULLABLE", 
+        "name": "barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The reference assembly to which the nucleotide sequence of a case can be aligned. In this table, there are 17 reference assemblies represented (NCBI36_WUGSC_variant, HG18_Broad_variant, NCBI36_BCM_variant,HG19_Broad_variant, GRCh37-lite,NCBI36_BCCAGSC_variant, HG18, HG19, GRCh37, GRCh37_BI_Variant,GRCh37-lite-+-HPV_Redux-build, unaligned,HS37D5,GRCh37-lite_WUGSC_variant_1,GRCh37-lite_WUGSC_variant_2,NCBI-human-build36,hs37d5-buildplusVirus_plusHLAalternate_normalized. Null is input where no available for assembly. ", 
+        "mode": "NULLABLE", 
+        "name": "assembly", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google Cloud Storage (GCS) base_filename. Example: broad.mit.edu_CHOL.IlluminaGA_DNASeq_automated.Level_2.1.0.0.sdrf.txt", 
+        "mode": "NULLABLE", 
+        "name": "base_file_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The size of a file measured in bytes (B), kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB), and larger values.", 
+        "mode": "NULLABLE", 
+        "name": "file_size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Original data repository (CGHub) identifier", 
+        "mode": "NULLABLE", 
+        "name": "CGHub_analysis_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google Cloud Storage (GCS) location ID. Example: gs://gdc-TCGA-phs000178-open/9c4b1b5c-b5cf-48f6-bf41-047ceb8c883c/TCGA-CR-7365-01A-01-TS1.811bb2b7-66e3-4694-891b-10b436ec300d.svs", 
+        "mode": "NULLABLE", 
+        "name": "file_gcs_url", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_seq_metadata/tables/CGHubID_to_GCSurl", 
+  "tableReference": {
+    "datasetId": "tcga_seq_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "CGHubID_to_GCSurl"
+  }, 
+  "type": "TABLE"
+}

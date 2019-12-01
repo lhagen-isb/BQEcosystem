@@ -1,0 +1,114 @@
+{
+  "creationTime": "1470337230009", 
+  "description": "Data was generated based on running Picard over ~67,000 TCGA bam files in Google Cloud Storage in August 2016.", 
+  "etag": "K9/eNnZRHzrbPsFnogKmAQ==", 
+  "id": "isb-cgc:tcga_seq_metadata.picard_quality_yield_metrics", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767982770", 
+  "location": "US", 
+  "numBytes": "9375750", 
+  "numLongTermBytes": "9375750", 
+  "numRows": "67557", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original data repository (CGHub) identifier", 
+        "mode": "NULLABLE", 
+        "name": "CGHub_analysisID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The total number of reads in the input file", 
+        "mode": "NULLABLE", 
+        "name": "TotalReads", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of reads that are PF - pass filter", 
+        "mode": "NULLABLE", 
+        "name": "PFReads", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The average read length of all the reads (will be fixed for a lane)", 
+        "mode": "NULLABLE", 
+        "name": "ReadLength", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The total number of bases in all reads", 
+        "mode": "NULLABLE", 
+        "name": "TotalBases", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The total number of bases in all PF reads", 
+        "mode": "NULLABLE", 
+        "name": "PFBases", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of bases in all reads that achieve quality score 20 or higher", 
+        "mode": "NULLABLE", 
+        "name": "Q20_Bases", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of bases in PF reads that achieve quality score 20 or higher", 
+        "mode": "NULLABLE", 
+        "name": "PF_Q20_Bases", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of bases in all reads that achieve quality score 30 or higher", 
+        "mode": "NULLABLE", 
+        "name": "Q30_Bases", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of bases in PF reads that achieve quality score 30 or higher", 
+        "mode": "NULLABLE", 
+        "name": "PF_Q30_Bases", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The sum of quality scores of all bases in PF reads divided by 20", 
+        "mode": "NULLABLE", 
+        "name": "Q20_EquivalentYield", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The sum of quality scores of all bases in PF reads divided by 20", 
+        "mode": "NULLABLE", 
+        "name": "PF_Q20_EquivalentYield", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Substrate type e.g. DNA,  RNA", 
+        "mode": "NULLABLE", 
+        "name": "analyte_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental strategy used to generate library e.g. WGS, WXS", 
+        "mode": "NULLABLE", 
+        "name": "library_type", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_seq_metadata/tables/picard_quality_yield_metrics", 
+  "tableReference": {
+    "datasetId": "tcga_seq_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "picard_quality_yield_metrics"
+  }, 
+  "type": "TABLE"
+}

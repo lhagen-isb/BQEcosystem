@@ -1,0 +1,247 @@
+{
+  "creationTime": "1466802419595", 
+  "description": "Data was generated from the final CGHub Manifest prior to the transition of all data to the Genomic Data Commons in June 2016. More details: https://docs.gdc.cancer.gov/Encyclopedia/pages/Cancer_Genomics_Hub/", 
+  "etag": "L4B9WtFa/uH2cC28OsSleA==", 
+  "id": "isb-cgc:tcga_seq_metadata.CGHub_Manifest_24jun2016", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "reference_genome_0": "hg19", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1574198873164", 
+  "location": "US", 
+  "numBytes": "78617876", 
+  "numLongTermBytes": "78617876", 
+  "numRows": "128398", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Study for which the data was generated, e.g. TCGA, TARGET, etc", 
+        "mode": "NULLABLE", 
+        "name": "study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Aliquot barcode ", 
+        "mode": "NULLABLE", 
+        "name": "barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA disease code e.g. OV, GBM", 
+        "mode": "NULLABLE", 
+        "name": "disease", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Disease name e.g. GLIOBLASTOMA MULTIFORME", 
+        "mode": "NULLABLE", 
+        "name": "disease_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Two-digit sample_type code which forms part of the sample barcode e.g. 01,11,06, etc.", 
+        "mode": "NULLABLE", 
+        "name": "sample_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The longer name of the sample type; e.g. Primary Tumor, Recurrent Tumor, etc.", 
+        "mode": "NULLABLE", 
+        "name": "sample_type_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Substrate type e.g. DNA,  RNA", 
+        "mode": "NULLABLE", 
+        "name": "analyte_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental strategy used to generate library e.g. WGS, WXS", 
+        "mode": "NULLABLE", 
+        "name": "library_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Center name, eg BCM, BI, WUGSC ", 
+        "mode": "NULLABLE", 
+        "name": "center", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate data (null, Illumina)", 
+        "mode": "NULLABLE", 
+        "name": "platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Abbreviated name of the platform technology used to generate the data, e.g. Illumina ", 
+        "mode": "NULLABLE", 
+        "name": "platform_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The reference assembly to which the nucleotide sequence of a case can be aligned. In this table, there are 17 reference assemblies represented (NCBI36_WUGSC_variant, HG18_Broad_variant, NCBI36_BCM_variant,HG19_Broad_variant, GRCh37-lite,NCBI36_BCCAGSC_variant, HG18, HG19, GRCh37, GRCh37_BI_Variant,GRCh37-lite-+-HPV_Redux-build, unaligned,HS37D5,GRCh37-lite_WUGSC_variant_1,GRCh37-lite_WUGSC_variant_2,NCBI-human-build36,hs37d5-buildplusVirus_plusHLAalternate_normalized. Null is input where no available for assembly. ", 
+        "mode": "NULLABLE", 
+        "name": "assembly", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original file name for the underlying bam file", 
+        "mode": "NULLABLE", 
+        "name": "filename", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The size of a file measured in bytes (B), kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB), and larger values.", 
+        "mode": "NULLABLE", 
+        "name": "file_size", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Md5 checksume for file", 
+        "mode": "NULLABLE", 
+        "name": "checksum", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CGHub_analysis_id", 
+        "mode": "NULLABLE", 
+        "name": "analysis_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "NULL", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CGHub unique case identifier; maps to case in GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "participant_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CGHub unique sample identifier; maps to sample in GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "sample_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Tissue Source ID. Biospecimens consisting of Tumor and Normal tissue samples and clinical metadata are collected from patients donors at various Tissue Source Sites (TSS). Each TSS is identified by its unique TSS ID.", 
+        "mode": "NULLABLE", 
+        "name": "tss_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "SRA database sample assession number, e.g. SRS004142", 
+        "mode": "NULLABLE", 
+        "name": "sample_accession", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Date the file was published. e.g. 2010-10-21", 
+        "mode": "NULLABLE", 
+        "name": "published", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Date uploaded to CGHub", 
+        "mode": "NULLABLE", 
+        "name": "uploaded", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Date file modified e.g. 2015-02-20", 
+        "mode": "NULLABLE", 
+        "name": "modified", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "File state -- either submitted or released", 
+        "mode": "NULLABLE", 
+        "name": "state", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Sample type code. See link for the more details: https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes", 
+        "mode": "NULLABLE", 
+        "name": "sample_type_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Abbreviation of substrate type e.g D for DNA, R for RNA ", 
+        "mode": "NULLABLE", 
+        "name": "analyte_type_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Full name of the platform techonlogy used to generate the data e.g. Illumina Genome Analyzer II", 
+        "mode": "NULLABLE", 
+        "name": "platform_full_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "File Type  -- eg aligned_reads , simple_somatic_mutation , gene_expression , etc", 
+        "mode": "NULLABLE", 
+        "name": "file_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Issues with files are denoted here if available. E.g. internal error or null ", 
+        "mode": "NULLABLE", 
+        "name": "reason", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Name of vendor of the reagents used to generate data, e.g. Agilent", 
+        "mode": "NULLABLE", 
+        "name": "reagent_vendor", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Name of reagent used to generate data, e.g. TCGA_6K, Custom V2 Exome Bait, 48 RXN X 16 tubes|Custom V2 Exome Bait, 48 RXN X 16 tubes", 
+        "mode": "NULLABLE", 
+        "name": "reagent_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Vendor's reagent catalog number -- Exome Capture Kit Information", 
+        "mode": "NULLABLE", 
+        "name": "catalog_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Yes, No if file is custom. Null where no data available. ", 
+        "mode": "NULLABLE", 
+        "name": "is_custom", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Path of target file ", 
+        "mode": "NULLABLE", 
+        "name": "target_file_url", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Deprecated BitBucket paths to probe files e.g. https://bitbucket.org/cghub/cghub-capture-kit-info/raw/d8b126dd4f33eb7164535e00f0ec9a5985056f34/BI/vendor/Agilent/cancer_2000gene_shift170.baitIntervals.bed|https://bitbucket.org/cghub/cghub-capture-kit-info/raw/d8b126dd4f33eb7164535e00f0ec9a5985056f34/BI/vendor/Agilent/TCGA_6k_genes.baitIntervals.bed", 
+        "mode": "NULLABLE", 
+        "name": "probe_file_url", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_seq_metadata/tables/CGHub_Manifest_24jun2016", 
+  "tableReference": {
+    "datasetId": "tcga_seq_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "CGHub_Manifest_24jun2016"
+  }, 
+  "type": "TABLE"
+}
