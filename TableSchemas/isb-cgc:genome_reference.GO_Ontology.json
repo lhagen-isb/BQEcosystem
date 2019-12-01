@@ -1,0 +1,42 @@
+{
+  "creationTime": "1461965986501", 
+  "description": "Data was loaded from the Gene Ontology Resource in April 2016. It contains the GO accession id and the GO category nae for 1348 GO categories. More details: see www.geneontology.org", 
+  "etag": "ZouabavAUQJQHpMxtERJwQ==", 
+  "id": "isb-cgc:genome_reference.GO_Ontology", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "gene_ontology", 
+    "source_0": "gene_ontology_resource_go", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767943453", 
+  "location": "US", 
+  "numBytes": "70289", 
+  "numLongTermBytes": "70289", 
+  "numRows": "1348", 
+  "schema": {
+    "fields": [
+      {
+        "description": "GO Accession ID. Examples: GO:0000084, GO:0000048, GO:0003678", 
+        "mode": "NULLABLE", 
+        "name": "GO_Accession", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Name. Examples: lactase activity, urea cycle, sphingosine-1-phosphate signaling pathway", 
+        "mode": "NULLABLE", 
+        "name": "GO_Category_Name", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/GO_Ontology", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "GO_Ontology"
+  }, 
+  "type": "TABLE"
+}

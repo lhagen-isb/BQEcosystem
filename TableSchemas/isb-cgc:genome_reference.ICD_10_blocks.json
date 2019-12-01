@@ -1,0 +1,54 @@
+{
+  "creationTime": "1549656173186", 
+  "description": "Data was loaded from the International Statistical Classification of Diseases and Related Health Problems 10th Revision published by the World Health Organization (WHO) in February 2019. More details: https://icd.who.int/browse10", 
+  "etag": "vmOvKOoes4GL27z+xaovCw==", 
+  "id": "isb-cgc:genome_reference.ICD_10_blocks", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "disease_classifications", 
+    "source_0": "international_classficiation_of_disesase_icd", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574182341235", 
+  "location": "US", 
+  "numBytes": "15610", 
+  "numLongTermBytes": "15610", 
+  "numRows": "263", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Lowest 3-char code within this block.Examples: A15, A70, F90, G10", 
+        "mode": "NULLABLE", 
+        "name": "min_block_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Highest 3-char code within this block. Examples: G47, F98, A74, D09", 
+        "mode": "NULLABLE", 
+        "name": "max_block_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Two-digit chapter number. Examples: 01, 02, 03, 04", 
+        "mode": "NULLABLE", 
+        "name": "chapter_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Block title, Examples: Malignant neoplasms of digestive organs, Demyelinating diseases of the central nervous system, Tuberculosis", 
+        "mode": "NULLABLE", 
+        "name": "block_title", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/ICD_10_blocks", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "ICD_10_blocks"
+  }, 
+  "type": "TABLE"
+}

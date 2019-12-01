@@ -1,0 +1,245 @@
+{
+  "creationTime": "1523938426830", 
+  "description": "Data was loaded from the ClinVar release created on April 1, 2018. The ClinVar data was loaded from a VCF file downloaded from NCBI and uploaded into BigQuery using the Google Variant Transforms tool (v0.2.0).", 
+  "etag": "plApEuDcFwZdt8cDAfENkQ==", 
+  "id": "isb-cgc:genome_reference.ClinVar_20180401_GRCh37", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "somatic_mutations", 
+    "reference_genome_0": "hg19", 
+    "source_0": "clinvar", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573834856599", 
+  "location": "US", 
+  "numBytes": "124717788", 
+  "numLongTermBytes": "124717788", 
+  "numRows": "354471", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Reference bases (hg19)", 
+        "mode": "NULLABLE", 
+        "name": "reference_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Start position (0-based). Corresponds to the first base of the string of reference bases.", 
+        "mode": "NULLABLE", 
+        "name": "start_position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "End position (0-based). Corresponds to the first base after the last base in the reference allele.", 
+        "mode": "NULLABLE", 
+        "name": "end_position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Reference bases (hg19)", 
+        "mode": "NULLABLE", 
+        "name": "reference_bases", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One record for each alternate base (if any)", 
+        "fields": [
+          {
+            "description": "Alternate base.", 
+            "mode": "NULLABLE", 
+            "name": "alt", 
+            "type": "STRING"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "alternate_bases", 
+        "type": "RECORD"
+      }, 
+      {
+        "description": "Variant names (e.g., refSNP IDs)", 
+        "mode": "REPEATED", 
+        "name": "names", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Phred-scaled quality score = (-10log10)x probability of incorrect base call. Higher values imply better quality.", 
+        "mode": "NULLABLE", 
+        "name": "quality", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "List of failed filters (if any), or PASS indicating the variant has passed all filters.", 
+        "mode": "REPEATED", 
+        "name": "filter", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One record for each call", 
+        "fields": [
+          {
+            "description": "Name of the call.", 
+            "mode": "NULLABLE", 
+            "name": "name", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Genotype of the call. \"-1\" is used in cases where the genotype is not called.", 
+            "mode": "REPEATED", 
+            "name": "genotype", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Phaseset of the call (if any). \"*\" is used in cases where the genotype is phased, but no phase set (\"PS\" in FORMAT) was specified.", 
+            "mode": "NULLABLE", 
+            "name": "phaseset", 
+            "type": "STRING"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "call", 
+        "type": "RECORD"
+      }, 
+      {
+        "description": "For included Variant: Tag-value pairs of disease database name and identifier, e.g. OMIM:NNNNNN", 
+        "mode": "REPEATED", 
+        "name": "CLNDISDBINCL", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene(s) for the variant reported as gene symbol:gene id. The gene symbol and id are delimited by a colon (:) and each pair is delimited by a vertical bar (|)", 
+        "mode": "NULLABLE", 
+        "name": "GENEINFO", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Conflicting clinical significance for this single variant", 
+        "mode": "REPEATED", 
+        "name": "CLNSIGCONF", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ClinVar Allele ID", 
+        "mode": "NULLABLE", 
+        "name": "ALLELEID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Allele frequencies from TGP", 
+        "mode": "NULLABLE", 
+        "name": "AF_TGP", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "DbSNP ID (i.e., rs number)", 
+        "mode": "REPEATED", 
+        "name": "RS", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Clinical significance for this single variant", 
+        "mode": "REPEATED", 
+        "name": "CLNSIG", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Allele origin. One or more of the following values may be added: 0 - unknown; 1 - germline; 2 - somatic; 4 - inherited; 8 - paternal; 16 - maternal; 32 - de-novo; 64 - biparental; 128 - uniparental; 256 - not-tested; 512 - tested-inconclusive; 1073741824 - other", 
+        "mode": "REPEATED", 
+        "name": "ORIGIN", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Nsv accessions from dbVar for the variant. nsv and nssv are accession prefixes for variant regions and variant calls (or instances), respectively. Typically, one or more variant instances (nssv - variant calls based directly on experimental evidence) are merged into a variant region (nsv - a pair of start-stop coordinates reflecting the submitters' assertion of the region of the genome that is affected by the variant instances).  https://www.ncbi.nlm.nih.gov/dbvar/content/overview/", 
+        "mode": "REPEATED", 
+        "name": "DBVARID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Allele frequencies from ExAC", 
+        "mode": "NULLABLE", 
+        "name": "AF_EXAC", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Tag-value pairs of disease database name and identifier, e.g. OMIM:NNNNNN", 
+        "mode": "REPEATED", 
+        "name": "CLNDISDB", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Preferred disease name in ClinVar for the concept specified by disease identifiers in CLNDISDB", 
+        "mode": "REPEATED", 
+        "name": "CLNDN", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ClinVar review status for the Variation ID", 
+        "mode": "REPEATED", 
+        "name": "CLNREVSTAT", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Comma separated list of molecular consequences in the form of Sequence Ontology ID|molecular_consequence", 
+        "mode": "REPEATED", 
+        "name": "MC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Clinical significance for a haplotype or genotype that includes this variant. Reported as pairs of VariationID:clinical significance.", 
+        "mode": "REPEATED", 
+        "name": "CLNSIGINCL", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Variant Suspect Reason Codes. One or more of the following values may be added: 0 - unspecified, 1 - Paralog, 2 - byEST, 4 - oldAlign, 8 - Para_EST, 16 - 1kg_failed, 1024 - other", 
+        "mode": "NULLABLE", 
+        "name": "SSR", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Allele frequencies from GO-ESP", 
+        "mode": "NULLABLE", 
+        "name": "AF_ESP", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Clinical sourcesfor the variant, reported as tag-value pairs of database and variant identifier", 
+        "mode": "REPEATED", 
+        "name": "CLNVI", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "For included Variant : preferred disease name in ClinVarfor the concept specified by disease identifiers in CLNDISDB", 
+        "mode": "REPEATED", 
+        "name": "CLNDNINCL", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Top-level (primary assembly, alt, or patch) HGVS expression. See https://varnomen.hgvs.org/", 
+        "mode": "REPEATED", 
+        "name": "CLNHGVS", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Variant type", 
+        "mode": "NULLABLE", 
+        "name": "CLNVC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Sequence Ontology id for variant type", 
+        "mode": "NULLABLE", 
+        "name": "CLNVCSO", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/ClinVar_20180401_GRCh37", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "ClinVar_20180401_GRCh37"
+  }, 
+  "type": "TABLE"
+}

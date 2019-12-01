@@ -1,0 +1,194 @@
+{
+  "creationTime": "1541106287410", 
+  "description": "Data was loaded from Affymetrix Genome-Wide Human SNP Array 6.0 on November 2018. More details: https://www.thermofisher.com/order/catalog/product/901150", 
+  "etag": "STPS0ImedbTHXKXmCqCPDg==", 
+  "id": "isb-cgc:genome_reference.GenomeWideSNP6_na35_annot_hg19", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "gene_expression", 
+    "data_type_1": "microarray", 
+    "reference_genome_0": "hg19", 
+    "source_0": "affymetrix_genome_wide_human_snp_array", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574182087778", 
+  "location": "US", 
+  "numBytes": "1559299391", 
+  "numLongTermBytes": "1559299391", 
+  "numRows": "934968", 
+  "schema": {
+    "fields": [
+      {
+        "description": "E.g., SNP_A-2222679", 
+        "mode": "NULLABLE", 
+        "name": "Probe_Set_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Rs-IDs from the dbSNP database, novel if not found in any database used, or null if there is no dbSNP record, but it is found in other databases", 
+        "mode": "NULLABLE", 
+        "name": "dbSNP_RS_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: 1, X, etc (ie does not include chr prefix)", 
+        "mode": "NULLABLE", 
+        "name": "Chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Physical genomic coordinate of the SNP, e.g., 819857", 
+        "mode": "NULLABLE", 
+        "name": "Physical_Position", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "+ or -, for forward or reverse strand. DNA is double-stranded. By convention, for a reference chromosome, one whole strand is designated the forward strand and the other the reverse strand. This designation is arbitrary. Sometimes the terms plus", 
+        "mode": "NULLABLE", 
+        "name": "Strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., 0 or 1", 
+        "mode": "NULLABLE", 
+        "name": "ChrX_pseudo_autosomal_region_1", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "E.g.,p34.3", 
+        "mode": "NULLABLE", 
+        "name": "Cytoband", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g.,CTCCAAGCCTTTGGG[A/C]AACACCGCATTCTCCA", 
+        "mode": "NULLABLE", 
+        "name": "Flank", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., A, or C, or G", 
+        "mode": "NULLABLE", 
+        "name": "Allele_A", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., G, or C, or T", 
+        "mode": "NULLABLE", 
+        "name": "Allele_B", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g.,ENST00000429002 // intron // 0 // Hs.654922 // TXNRD1 // 7296 // thioredoxin reductase 1 /// ENST00000525566 // intron // 0 // Hs.654922 // TXNRD1 // 7296 // thioredoxin reductase 1 ///", 
+        "mode": "NULLABLE", 
+        "name": "Associated_Gene", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., 108.8301 // D17S617 // D17S1823 // --- // --- // deCODE /// 97.5913 // D17S515 // D17S1831 // UT9 // AFMB021YF9 // Marshfield /// 92.2529 // D17S1351 // D17S1831 // --- // --- // SLM1", 
+        "mode": "NULLABLE", 
+        "name": "Genetic_Map", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., D2S130 // downstream // 62725 /// D2S408 // upstream // 41007", 
+        "mode": "NULLABLE", 
+        "name": "Microsatellite", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., NspI // GCATGT_ACATGT // 6382 // 55183069 // 55189450 /// StyI // CCTAGG_CCTAGG // 535 // 55185369 // 55185903", 
+        "mode": "NULLABLE", 
+        "name": "Fragment_Enzyme_Type_Length_Start_Stop", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., 0.9167 // 0.0833 // CEU /// 0.7222 // 0.2778 // CHB ///", 
+        "mode": "NULLABLE", 
+        "name": "Allele_Frequencies", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., 0.5167 // CEU /// 0.3778 // CHB /// 0.3556 // JPT /// 0.4333 // YRI", 
+        "mode": "NULLABLE", 
+        "name": "Heterozygous_Allele_Frequencies", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g.,60 // CEU /// 45 // CHB /// 45 // JPT /// 60 // YRI", 
+        "mode": "NULLABLE", 
+        "name": "Number_of_individuals", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Yes or --", 
+        "mode": "NULLABLE", 
+        "name": "In_Hapmap", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Either same, reverse, or null (--)", 
+        "mode": "NULLABLE", 
+        "name": "Strand_Versus_dbSNP", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g.,nsv3783 // chr3:42926223-42970597 // FISH,Multiple complete digestion,Oligo aCGH,Sequencing // 18451855 // Kidd_et_al_2008 // CNV deletion", 
+        "mode": "NULLABLE", 
+        "name": "Copy_Number_Variation", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value, such as 8, 6,2, 12, 20, etc.", 
+        "mode": "NULLABLE", 
+        "name": "Probe_Count", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "E.g., 0 or 1", 
+        "mode": "NULLABLE", 
+        "name": "ChrX_pseudo_autosomal_region_2", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "YES or NO", 
+        "mode": "NULLABLE", 
+        "name": "In_Final_List", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., A // CEU /// A // CHB /// A // JPT /// A // YRI", 
+        "mode": "NULLABLE", 
+        "name": "Minor_Allele", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., 0.0508 // CEU /// 0.0889 // CHB /// 0.1977 // JPT /// 0.0000 // YRI", 
+        "mode": "NULLABLE", 
+        "name": "Minor_Allele_Frequency", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Percent GC content ", 
+        "mode": "NULLABLE", 
+        "name": "pct_GC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., <601900 // Multiple myeloma // 254500 // upstream>", 
+        "mode": "NULLABLE", 
+        "name": "OMIM", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/GenomeWideSNP6_na35_annot_hg19", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "GenomeWideSNP6_na35_annot_hg19"
+  }, 
+  "type": "TABLE"
+}

@@ -1,0 +1,109 @@
+{
+  "creationTime": "1459224878388", 
+  "description": "Data was extracted from an older CCLE dataset from Google Genomics on February 2016. File metadata information including deprecated full cloud-storage-paths for BAM and SNP CEL files are made available here.", 
+  "etag": "KmZveLsAGJ6pVdRrFLQZjw==", 
+  "id": "isb-cgc:ccle_201602_alpha.DataFile_info", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "file_metadata", 
+    "reference_genome_0": "hg19", 
+    "source_0": "ccle", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574201021564", 
+  "location": "US", 
+  "numBytes": "514439", 
+  "numLongTermBytes": "514439", 
+  "numRows": "1915", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Cell line primary name, appended with a short name for the location  of the cancer; e.g. TC71_BONE, HUPT4_PANCREAS, etc", 
+        "mode": "NULLABLE", 
+        "name": "CCLE_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Cell line primary name, e.g. TC-71, NIH:OVCAR-3, etc", 
+        "mode": "NULLABLE", 
+        "name": "Cell_line_primary_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CCLE cancer study, e.g. UCEC", 
+        "mode": "NULLABLE", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CCLE cell line, e.g. JHUEM-3", 
+        "mode": "NULLABLE", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Full CCLE cell line identifier, e.g. CCLE-JHUEM-3-DNA-08", 
+        "mode": "NULLABLE", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Short name of the contributing data center, e.g. bcgsc.ca", 
+        "mode": "NULLABLE", 
+        "name": "DataCenterName", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google Cloud Storage path to file", 
+        "mode": "NULLABLE", 
+        "name": "CloudStoragePath", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Specific genome build that was used as the basis for analysis, e.g. hg19 (GRCh37)", 
+        "mode": "NULLABLE", 
+        "name": "GenomeReference", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A combination of the center and the platform that can distinguish between two ways of performing the sequencing or assay for the same platform, e.g. bcgsc.ca__miRNASeq", 
+        "mode": "NULLABLE", 
+        "name": "Pipeline", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (Genome_Wide_SNP_6)", 
+        "mode": "NULLABLE", 
+        "name": "Platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original data repository (CGHub) identifier", 
+        "mode": "NULLABLE", 
+        "name": "CGHub_analysis_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google genomics dataset ID", 
+        "mode": "NULLABLE", 
+        "name": "GG_dataset_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google genomics readgroupset ID", 
+        "mode": "NULLABLE", 
+        "name": "GG_readgroupset_id", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/ccle_201602_alpha/tables/DataFile_info", 
+  "tableReference": {
+    "datasetId": "ccle_201602_alpha", 
+    "projectId": "isb-cgc", 
+    "tableId": "DataFile_info"
+  }, 
+  "type": "TABLE"
+}

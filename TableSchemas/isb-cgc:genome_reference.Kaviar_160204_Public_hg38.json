@@ -1,0 +1,91 @@
+{
+  "creationTime": "1471719473459", 
+  "description": "Data was loaded from the Kaviar database of known variants, released in February 2016. More details: see Glusman G, Caballero J, Mauldin DE, Hood L and Roach J (2011) KAVIAR: an accessible system for testing SNV novelty http://db.systemsbiology.net/kaviar/", 
+  "etag": "YsYLjp+HEInKIwypmX1XNQ==", 
+  "id": "isb-cgc:genome_reference.Kaviar_160204_Public_hg38", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "somatic_mutations", 
+    "reference_genome_0": "hg38", 
+    "source_0": "kaviar_genomic_variant_database", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574741987080", 
+  "location": "US", 
+  "numBytes": "42631838528", 
+  "numLongTermBytes": "42631838528", 
+  "numRows": "220817971", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Chromosome (1 ,2, 3,..., 22, X, Y, M)", 
+        "mode": "NULLABLE", 
+        "name": "reference_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Starting base position (zero-based)", 
+        "mode": "NULLABLE", 
+        "name": "start_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Ending base position (start_position + len(reference_bases))", 
+        "mode": "NULLABLE", 
+        "name": "end_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Reference bases (hg38)", 
+        "mode": "NULLABLE", 
+        "name": "reference_bases", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Alternate bases", 
+        "mode": "NULLABLE", 
+        "name": "alternate_bases", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Names / identifiers. e.g., rs3121393", 
+        "mode": "NULLABLE", 
+        "name": "names", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Observed Allele Count. Examples: 303, 119,3", 
+        "mode": "NULLABLE", 
+        "name": "AC", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Observed Allele Frequency. Examples: 3.79E-5, 6.4E-6", 
+        "mode": "NULLABLE", 
+        "name": "AF", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Total number of alleles in data sources. Examples: 26378, 155504", 
+        "mode": "NULLABLE", 
+        "name": "AN", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Data sources containing allele (data source names separated by |) Examples: Stephen Quake, Inova_Illumina_founders-Nge3, GS000015231|GS000015890|ISB_founders-Nge3", 
+        "mode": "NULLABLE", 
+        "name": "DataSources", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/Kaviar_160204_Public_hg38", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "Kaviar_160204_Public_hg38"
+  }, 
+  "type": "TABLE"
+}

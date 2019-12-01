@@ -1,0 +1,73 @@
+{
+  "creationTime": "1495077696162", 
+  "description": "Data was extracted from .tsv files now found at https://cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Breast_Cancer derived from the following publication in Nature in 2017: \"Proteogenomics connects somatic mutations to signalling in breast cancer\". Phosphopeptide quantifications was extracted using the CPTAC iTRAQ phosphopeptide quantifications for a set of breast cancer samples. The samples are identified using the same TCGA barcodes that are used in other available TCGA tables in BigQuery, allowing for convenient integrative analyses. \nMore details: https://www.ncbi.nlm.nih.gov/pubmed/27251275.", 
+  "etag": "sjFxEd/oiAoPd4BXxXn7JA==", 
+  "id": "isb-cgc:hg19_data_previews.TCGA_Breast_BI_CDAP_r3_phosphopeptide_itraq", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "protein_quantification", 
+    "reference_genome_0": "hg19", 
+    "source_0": "cptac", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574186115153", 
+  "location": "US", 
+  "numBytes": "205339241", 
+  "numLongTermBytes": "205339241", 
+  "numRows": "2511668", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original/submitter sample id", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "For a few samples that have replicate data values, in those cases this field is not null. For all other cases, this field is null. ", 
+        "mode": "NULLABLE", 
+        "name": "sample_tag", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Phosphorylated peptide sequences", 
+        "mode": "NULLABLE", 
+        "name": "Phosphopeptide", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The gene symbol. In this table, gene symbol is gene name e.g. ACADVL", 
+        "mode": "NULLABLE", 
+        "name": "Gene", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Organism (always Homo sapiens)", 
+        "mode": "NULLABLE", 
+        "name": "Organism", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "NCBI GenPept protein accession with version number (e.g. NP_000005.2)", 
+        "mode": "NULLABLE", 
+        "name": "Protein", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Log-ratio of protein expression, associated with this gene", 
+        "mode": "NULLABLE", 
+        "name": "LogRatio", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/hg19_data_previews/tables/TCGA_Breast_BI_CDAP_r3_phosphopeptide_itraq", 
+  "tableReference": {
+    "datasetId": "hg19_data_previews", 
+    "projectId": "isb-cgc", 
+    "tableId": "TCGA_Breast_BI_CDAP_r3_phosphopeptide_itraq"
+  }, 
+  "type": "TABLE"
+}

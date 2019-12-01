@@ -1,0 +1,79 @@
+{
+  "creationTime": "1456623659506", 
+  "description": "Data was extracted from an older CCLE dataset from Google Genomics on February 2016. Copy number segment data are made available here.", 
+  "etag": "J6uXPk7oBjCjtdMWCXjxLw==", 
+  "id": "isb-cgc:ccle_201602_alpha.Copy_Number_segments", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "copy_number_segment", 
+    "reference_genome_0": "hg19", 
+    "source_0": "ccle", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574200983718", 
+  "location": "US", 
+  "numBytes": "64447175", 
+  "numLongTermBytes": "64447175", 
+  "numRows": "760192", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Cell line primary name, appended with a short name for the location  of the cancer; e.g. TC71_BONE, HUPT4_PANCREAS, etc", 
+        "mode": "NULLABLE", 
+        "name": "CCLE_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The cell line primary name; e.g. TC-71, NIH:OVCAR-3, etc", 
+        "mode": "NULLABLE", 
+        "name": "Cell_line_primary_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (Genome_Wide_SNP_6)", 
+        "mode": "NULLABLE", 
+        "name": "Platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: chr1-22, and chrX", 
+        "mode": "NULLABLE", 
+        "name": "Chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Start position", 
+        "mode": "NULLABLE", 
+        "name": "Start", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "End position", 
+        "mode": "NULLABLE", 
+        "name": "End", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The num_probes field specifies the number of probes on the SNP chip that went into estimating the mean copy number for this segment", 
+        "mode": "NULLABLE", 
+        "name": "Num_Probes", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Provides the log2(CN/2) mean value estimate", 
+        "mode": "NULLABLE", 
+        "name": "Segment_Mean", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/ccle_201602_alpha/tables/Copy_Number_segments", 
+  "tableReference": {
+    "datasetId": "ccle_201602_alpha", 
+    "projectId": "isb-cgc", 
+    "tableId": "Copy_Number_segments"
+  }, 
+  "type": "TABLE"
+}

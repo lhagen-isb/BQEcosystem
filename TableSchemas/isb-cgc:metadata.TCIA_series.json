@@ -1,0 +1,120 @@
+{
+  "creationTime": "1496936358852", 
+  "description": "Data was generated from file metadata from all series information in the Cancer Imaging Archive (TCIA) from June 2017. http://www.cancerimagingarchive.net/#collections-list", 
+  "etag": "rBgjJVdOz6jx3iR0yJLH4Q==", 
+  "id": "isb-cgc:metadata.TCIA_series", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574186788421", 
+  "location": "US", 
+  "numBytes": "22854782", 
+  "numLongTermBytes": "22854782", 
+  "numRows": "89016", 
+  "schema": {
+    "fields": [
+      {
+        "description": "A unique series identifier. Example:1.3.6.1.4.1.22213.2.26570.3", 
+        "mode": "NULLABLE", 
+        "name": "SeriesInstanceUID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Each series is part of a study. This field contains the unique study identifier. Example: 1.3.6.1.4.1.22213.2.26555", 
+        "mode": "NULLABLE", 
+        "name": "StudyInstanceUID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Image/file modality.The most common values are MR and CT, but there are many other types,including SEG, RTSTRUCT, etc", 
+        "mode": "NULLABLE", 
+        "name": "Modality", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "This field is frequently blank, but otherwise is of the form YYYY-MM-DD.", 
+        "mode": "NULLABLE", 
+        "name": "SeriesDate", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "This field can be blank,but otherwise contains a free-text description. Examples:AXIAL T1 SI LOCALIZER, Maximum eigenvalue, Average DC", 
+        "mode": "NULLABLE", 
+        "name": "SeriesDescription", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "This field can be blank. The most common values are PROSTATE, BREAST, BRAIN, LUNG, etc", 
+        "mode": "NULLABLE", 
+        "name": "BodyPartExamined", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A relatively arbitrary series identifier, intended to be more human-readable than the series UID. Examples: 676.0, 2.0, 8.0, 401.0", 
+        "mode": "NULLABLE", 
+        "name": "SeriesNumber", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Unique collection name. Examples:TCGA-GBM, IvyGAP, QIN-HEADNECK, REMBRANDT, etc", 
+        "mode": "NULLABLE", 
+        "name": "Collection", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "This field may be blank. The most common values are SIEMANS and GE MEDICAL SYSTEMS. Other possible values include QIICR, Philips, TOSHIBA, etc", 
+        "mode": "NULLABLE", 
+        "name": "Manufacturer", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "This field may be blank. The most common values are Skyra and GENESIS_SIGNA.", 
+        "mode": "NULLABLE", 
+        "name": "ManufacturerModelName", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "This field may be blank. Examples: 02, 08, 11, A10, AWS, 3.33, 6.3.9", 
+        "mode": "NULLABLE", 
+        "name": "SoftwareVersions", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Always set to 1.", 
+        "mode": "NULLABLE", 
+        "name": "Visibility", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of images in this series. The most common values are 16 and 1, but the value can be over 1000.", 
+        "mode": "NULLABLE", 
+        "name": "ImageCount", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Frequently left blank, but otherwise a free form text description of the protocol. Examples: 6.8 TRI-PHASIC LIVER, 6.12 AORTA, Survey_SHC, Survey_SHC", 
+        "mode": "NULLABLE", 
+        "name": "ProtocolName", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "This field is usually blank, and otherwise set to 1. That is, the value is always either null or 1.", 
+        "mode": "NULLABLE", 
+        "name": "AnnotationsFlag", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/metadata/tables/TCIA_series", 
+  "tableReference": {
+    "datasetId": "metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "TCIA_series"
+  }, 
+  "type": "TABLE"
+}

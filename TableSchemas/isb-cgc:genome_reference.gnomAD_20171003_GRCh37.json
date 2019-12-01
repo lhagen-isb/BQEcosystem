@@ -1,0 +1,1507 @@
+{
+  "creationTime": "1525831180884", 
+  "description": "Data was loaded from the gnomAD database, release 2.0.2, October 2017). The data (containing SNVs and indels) was loaded from the VCF files copied from the GCS bucket (gs://gnomad-public/release/2.0.2/vcf/genomes/gnomad.genomes.r2.0.2.sites.chr*.vcf.bgz) and then uploaded using the Google Variant Transforms tool (v0.2.0).", 
+  "etag": "7koTofGfx5QGr7zwhvOwTA==", 
+  "id": "isb-cgc:genome_reference.gnomAD_20171003_GRCh37", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "somatic_mutations", 
+    "reference_genome_0": "hg19", 
+    "source_0": "gnomad_database", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574737139444", 
+  "location": "US", 
+  "numBytes": "577664982110", 
+  "numLongTermBytes": "577664982110", 
+  "numRows": "241056551", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Reference bases (hg19)", 
+        "mode": "NULLABLE", 
+        "name": "reference_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Start position (0-based). Corresponds to the first base of the string of reference bases.", 
+        "mode": "NULLABLE", 
+        "name": "start_position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "End position (0-based). Corresponds to the first base after the last base in the reference allele.", 
+        "mode": "NULLABLE", 
+        "name": "end_position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Reference bases (hg19)", 
+        "mode": "NULLABLE", 
+        "name": "reference_bases", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One record for each alternate base (if any)", 
+        "fields": [
+          {
+            "description": "Alternate base.", 
+            "mode": "NULLABLE", 
+            "name": "alt", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Allele count in Admixed American Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_AMR_Male", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Population with max AF", 
+            "mode": "NULLABLE", 
+            "name": "POPMAX", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Allele frequency before filtering low-confidence genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_raw", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Count of homozygous East Asian individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom_EAS", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of hemizygous East Asian individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hemi_EAS", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among East Asian genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_EAS", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele count in Admixed American genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_AMR", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in African/African American genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_AFR", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "AN in the population with the max AF", 
+            "mode": "NULLABLE", 
+            "name": "AN_POPMAX", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in East Asian Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_EAS_Male", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in Non-Finnish European Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_NFE_Female", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele counts before filtering low-confidence genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_raw", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Non-Finnish European genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_NFE", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Histogram for DP for each allele; Midpoints of histogram bins: 2.5|7.5|12.5|17.5|22.5|27.5|32.5|37.5|42.5|47.5|52.5|57.5|62.5|67.5|72.5|77.5|82.5|87.5|92.5|97.5", 
+            "mode": "NULLABLE", 
+            "name": "DP_HIST_ALT", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Count of homozygous Other (population not assigned) individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom_OTH", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_Female", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Finnish genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_FIN", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Histogram for GQ for each allele; Midpoints of histogram bins: 2.5|7.5|12.5|17.5|22.5|27.5|32.5|37.5|42.5|47.5|52.5|57.5|62.5|67.5|72.5|77.5|82.5|87.5|92.5|97.5", 
+            "mode": "NULLABLE", 
+            "name": "GQ_HIST_ALT", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Allele Frequency among Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_Male", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Count of hemizygous African/African American individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hemi_AFR", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of homozygous Male individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom_Male", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Median DP in carriers of each allele", 
+            "mode": "NULLABLE", 
+            "name": "DP_MEDIAN", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of homozygous Ashkenazi Jewish individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom_ASJ", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Non-Finnish European Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_NFE_Male", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele Frequency among Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_Female", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele count in Non-Finnish European Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_NFE_Male", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in Other (population not assigned) genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_OTH", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Other (population not assigned) Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_OTH_Male", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele Frequency among African/African American genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_AFR", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Count of hemizygous individuals in raw genotypes before filtering low-confidence genotypes", 
+            "mode": "NULLABLE", 
+            "name": "Hemi_raw", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in African/African American Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_AFR_Male", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among African/African American Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_AFR_Female", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Count of homozygous Non-Finnish European individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom_NFE", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of homozygous individuals in raw genotypes before filtering low-confidence genotypes", 
+            "mode": "NULLABLE", 
+            "name": "Hom_raw", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Finnish Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_FIN_Male", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Count of hemizygous Finnish individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hemi_FIN", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Admixed American Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_AMR_Male", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Random Forests filter status for each allele", 
+            "mode": "NULLABLE", 
+            "name": "AS_FilterStatus", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Allele Frequency among Other (population not assigned) genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_OTH", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Maximum Allele Frequency across populations (excluding OTH)", 
+            "mode": "NULLABLE", 
+            "name": "AF_POPMAX", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele count in Non-Finnish European genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_NFE", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in Finnish genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_FIN", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of homozygous Admixed American individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom_AMR", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of hemizygous Admixed American individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hemi_AMR", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Admixed American genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_AMR", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele Frequency among Finnish Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_FIN_Female", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele count in African/African American Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_AFR_Female", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among African/African American Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_AFR_Male", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Count of hemizygous Ashkenazi Jewish individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hemi_ASJ", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in East Asian Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_EAS_Female", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in Other (population not assigned) Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_OTH_Male", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Non-Finnish European Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_NFE_Female", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "AC in the population with the max AF", 
+            "mode": "NULLABLE", 
+            "name": "AC_POPMAX", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in East Asian genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_EAS", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in Other (population not assigned) Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_OTH_Female", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Random Forests probability for each allele", 
+            "mode": "NULLABLE", 
+            "name": "AS_RF", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Median allele balance in heterozygote carriers of each allele", 
+            "mode": "NULLABLE", 
+            "name": "AB_MEDIAN", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele count in Ashkenazi Jewish Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_ASJ_Male", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of homozygous Female individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom_Female", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Median GQ in carriers of each allele", 
+            "mode": "NULLABLE", 
+            "name": "GQ_MEDIAN", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Ashkenazi Jewish Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_ASJ_Female", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Count of homozygous individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of hemizygous Non-Finnish European individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hemi_NFE", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Other (population not assigned) Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_OTH_Female", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Count of homozygous Finnish individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom_FIN", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Histogram for Allele Balance in heterozygous individuals for each allele; 100*AD[i_alt]/sum(AD); Midpoints of histogram bins: 2.5|7.5|12.5|17.5|22.5|27.5|32.5|37.5|42.5|47.5|52.5|57.5|62.5|67.5|72.5|77.5|82.5|87.5|92.5|97.5", 
+            "mode": "NULLABLE", 
+            "name": "AB_HIST_ALT", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Allele count in Ashkenazi Jewish Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_ASJ_Female", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among East Asian Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_EAS_Male", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele Frequency among East Asian Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_EAS_Female", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Median dosage of homozygous reference in carriers of each allele", 
+            "mode": "NULLABLE", 
+            "name": "DREF_MEDIAN", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele count in Finnish Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_FIN_Male", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in Admixed American Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_AMR_Female", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele Frequency among Ashkenazi Jewish Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_ASJ_Male", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele Frequency among Ashkenazi Jewish genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_ASJ", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele count in Finnish Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_FIN_Female", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of hemizygous individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hemi", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele count in Ashkenazi Jewish genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_ASJ", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of hemizygous Other (population not assigned) individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hemi_OTH", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Count of homozygous African/African American individuals", 
+            "mode": "NULLABLE", 
+            "name": "Hom_AFR", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allele Frequency among Admixed American Female genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AF_AMR_Female", 
+            "type": "FLOAT"
+          }, 
+          {
+            "description": "Allele count in Male genotypes, for each ALT allele, in the same order as listed", 
+            "mode": "NULLABLE", 
+            "name": "AC_Male", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "List of CSQ annotations for this alternate.", 
+            "fields": [
+              {
+                "description": "The ALT part of the annotation field.", 
+                "mode": "NULLABLE", 
+                "name": "allele", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Consequence type of this variant", 
+                "mode": "NULLABLE", 
+                "name": "Consequence", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The impact modifier for the consequence type", 
+                "mode": "NULLABLE", 
+                "name": "IMPACT", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The HUGO gene symbol", 
+                "mode": "NULLABLE", 
+                "name": "SYMBOL", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Ensembl stable ID of the affected gene", 
+                "mode": "NULLABLE", 
+                "name": "Gene", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Type of feature. Currently one of Transcript, RegulatoryFeature, MotifFeature.", 
+                "mode": "NULLABLE", 
+                "name": "Feature_type", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Ensembl stable ID of the feature", 
+                "mode": "NULLABLE", 
+                "name": "Feature", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The type of transcript or regulatory feature (e.g. protein_coding)", 
+                "mode": "NULLABLE", 
+                "name": "BIOTYPE", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Exon number (out of total exons)", 
+                "mode": "NULLABLE", 
+                "name": "EXON", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Intron number (out of total introns)", 
+                "mode": "NULLABLE", 
+                "name": "INTRON", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The HGVS coding sequence name", 
+                "mode": "NULLABLE", 
+                "name": "HGVSc", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The HGVS protein sequence name", 
+                "mode": "NULLABLE", 
+                "name": "HGVSp", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Relative position of base pair in cDNA sequence", 
+                "mode": "NULLABLE", 
+                "name": "cDNA_position", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Relative position of base pair in coding sequence", 
+                "mode": "NULLABLE", 
+                "name": "CDS_position", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Relative position of the affected amino acid in protein", 
+                "mode": "NULLABLE", 
+                "name": "Protein_position", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Change in amino acids (only given if the variant affects the protein-coding sequence)", 
+                "mode": "NULLABLE", 
+                "name": "Amino_acids", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The affected codons with the variant base in upper case", 
+                "mode": "NULLABLE", 
+                "name": "Codons", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Known identifier of existing variant; usually a dbSNP rs number if applicable", 
+                "mode": "NULLABLE", 
+                "name": "Existing_variation", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Allele number from input; 0 is reference, 1 is first alternate, etc.", 
+                "mode": "NULLABLE", 
+                "name": "ALLELE_NUM", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Shortest distance from variant to transcript", 
+                "mode": "NULLABLE", 
+                "name": "DISTANCE", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The DNA strand (1 or -1) on which the transcript/feature lies", 
+                "mode": "NULLABLE", 
+                "name": "STRAND", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Transcript quality flags", 
+                "mode": "NULLABLE", 
+                "name": "FLAGS", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Sequence Ontology variant class", 
+                "mode": "NULLABLE", 
+                "name": "VARIANT_CLASS", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Alleles in this variant have been converted to minimal representation before consequence calculation", 
+                "mode": "NULLABLE", 
+                "name": "MINIMISED", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The source of the gene symbol", 
+                "mode": "NULLABLE", 
+                "name": "SYMBOL_SOURCE", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "HGNC gene ID", 
+                "mode": "NULLABLE", 
+                "name": "HGNC_ID", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "A flag indicating if the transcript is denoted as the canonical transcript for this gene", 
+                "mode": "NULLABLE", 
+                "name": "CANONICAL", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Transcript support level", 
+                "mode": "NULLABLE", 
+                "name": "TSL", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "APPRIS isoform annotation", 
+                "mode": "NULLABLE", 
+                "name": "APPRIS", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The CCDS identifer for this transcript, where applicable", 
+                "mode": "NULLABLE", 
+                "name": "CCDS", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The Ensembl protein identifier of the affected transcript", 
+                "mode": "NULLABLE", 
+                "name": "ENSP", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "UniProtKB/Swiss-Prot identifier of protein product", 
+                "mode": "NULLABLE", 
+                "name": "SWISSPROT", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "UniProtKB/TrEMBL identifier of protein product", 
+                "mode": "NULLABLE", 
+                "name": "TREMBL", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "UniParc identifier of protein product", 
+                "mode": "NULLABLE", 
+                "name": "UNIPARC", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Indicates if the gene is associated with a phenotype, disease or trait", 
+                "mode": "NULLABLE", 
+                "name": "GENE_PHENO", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The SIFT prediction and/or score, with both given as prediction (score)", 
+                "mode": "NULLABLE", 
+                "name": "SIFT", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The PolyPhen prediction and/or score", 
+                "mode": "NULLABLE", 
+                "name": "PolyPhen", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The source and identifier of any overlapping protein domains", 
+                "mode": "NULLABLE", 
+                "name": "DOMAINS", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Indicates by how many bases the HGVS notations for this variant have been shifted", 
+                "mode": "NULLABLE", 
+                "name": "HGVS_OFFSET", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Non-reference allele and frequency of existing variant in 1000 Genomes", 
+                "mode": "NULLABLE", 
+                "name": "GMAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Non-reference allele and frequency of existing variant in 1000 Genomes combined African population", 
+                "mode": "NULLABLE", 
+                "name": "AFR_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Non-reference allele and frequency of existing variant in 1000 Genomes combined American population", 
+                "mode": "NULLABLE", 
+                "name": "AMR_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Non-reference allele and frequency of existing variant in 1000 Genomes combined East Asian population", 
+                "mode": "NULLABLE", 
+                "name": "EAS_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Non-reference allele and frequency of existing variant in 1000 Genomes combined European population", 
+                "mode": "NULLABLE", 
+                "name": "EUR_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Non-reference allele and frequency of existing variant in 1000 Genomes combined South Asian population", 
+                "mode": "NULLABLE", 
+                "name": "SAS_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Non-reference allele and frequency of existing variant in NHLBI-ESP African American population", 
+                "mode": "NULLABLE", 
+                "name": "AA_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Non-reference allele and frequency of existing variant in NHLBI-ESP European American population", 
+                "mode": "NULLABLE", 
+                "name": "EA_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Frequency of existing variant in ExAC combined population", 
+                "mode": "NULLABLE", 
+                "name": "ExAC_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Adjusted frequency of existing variant in ExAC combined population", 
+                "mode": "NULLABLE", 
+                "name": "ExAC_Adj_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Frequency of existing variant in ExAC African/American population", 
+                "mode": "NULLABLE", 
+                "name": "ExAC_AFR_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Frequency of existing variant in ExAC American population", 
+                "mode": "NULLABLE", 
+                "name": "ExAC_AMR_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Frequency of existing variant in ExAC East Asian population", 
+                "mode": "NULLABLE", 
+                "name": "ExAC_EAS_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Frequency of existing variant in ExAC Finnish population", 
+                "mode": "NULLABLE", 
+                "name": "ExAC_FIN_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Frequency of existing variant in ExAC Non-Finnish European population", 
+                "mode": "NULLABLE", 
+                "name": "ExAC_NFE_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Frequency of existing variant in ExAC combined other combined populations", 
+                "mode": "NULLABLE", 
+                "name": "ExAC_OTH_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Frequency of existing variant in ExAC South Asian population", 
+                "mode": "NULLABLE", 
+                "name": "ExAC_SAS_MAF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Clinical significance of variant from dbSNP", 
+                "mode": "NULLABLE", 
+                "name": "CLIN_SIG", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Somatic status of existing variant(s)", 
+                "mode": "NULLABLE", 
+                "name": "SOMATIC", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Indicates if existing variant is associated with a phenotype, disease or trait", 
+                "mode": "NULLABLE", 
+                "name": "PHENO", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Pubmed ID(s) of publications that cite existing variant", 
+                "mode": "NULLABLE", 
+                "name": "PUBMED", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The source and identifier of a transcription factor binding profile aligned at this position", 
+                "mode": "NULLABLE", 
+                "name": "MOTIF_NAME", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The relative position of the variation in the aligned TFBP", 
+                "mode": "NULLABLE", 
+                "name": "MOTIF_POS", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "A flag indicating if the variant falls in a high information position of a transcription factor binding profile (TFBP)", 
+                "mode": "NULLABLE", 
+                "name": "HIGH_INF_POS", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "The difference in motif score of the reference and variant sequences for the TFBP", 
+                "mode": "NULLABLE", 
+                "name": "MOTIF_SCORE_CHANGE", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Loss-of-function annotation (HC = High Confidence; LC = Low Confidence)", 
+                "mode": "NULLABLE", 
+                "name": "LoF", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Reason for LoF not being HC", 
+                "mode": "NULLABLE", 
+                "name": "LoF_filter", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Possible warning flags for LoF", 
+                "mode": "NULLABLE", 
+                "name": "LoF_flags", 
+                "type": "STRING"
+              }, 
+              {
+                "description": "Info used for LoF annotation", 
+                "mode": "NULLABLE", 
+                "name": "LoF_info", 
+                "type": "STRING"
+              }
+            ], 
+            "mode": "REPEATED", 
+            "name": "CSQ", 
+            "type": "RECORD"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "alternate_bases", 
+        "type": "RECORD"
+      }, 
+      {
+        "description": "Variant names (e.g., refSNP IDs)", 
+        "mode": "REPEATED", 
+        "name": "names", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Phred-scaled quality score = (-10log10)x probability of incorrect base call. Higher values imply better quality.", 
+        "mode": "NULLABLE", 
+        "name": "quality", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "List of failed filters (if any), or PASS indicating the variant has passed all filters.", 
+        "mode": "REPEATED", 
+        "name": "filter", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One record for each call", 
+        "fields": [
+          {
+            "description": "Name of the call.", 
+            "mode": "NULLABLE", 
+            "name": "name", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Genotype of the call. \"-1\" is used in cases where the genotype is not called.", 
+            "mode": "REPEATED", 
+            "name": "genotype", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Phaseset of the call (if any). \"*\" is used in cases where the genotype is phased, but no phase set (\"PS\" in FORMAT) was specified.", 
+            "mode": "NULLABLE", 
+            "name": "phaseset", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Read Depth", 
+            "mode": "NULLABLE", 
+            "name": "DP", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Allelic depths for the ref and alt alleles in the order listed", 
+            "mode": "REPEATED", 
+            "name": "AD", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Genotype Quality", 
+            "mode": "NULLABLE", 
+            "name": "GQ", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification", 
+            "mode": "REPEATED", 
+            "name": "PL", 
+            "type": "INTEGER"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "call", 
+        "type": "RECORD"
+      }, 
+      {
+        "description": "AC of deletions spanning this position. Examples: 20, 109,3639", 
+        "mode": "NULLABLE", 
+        "name": "STAR_AC", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Finnish Male individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_FIN_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Raw count of individuals for each genotype before filtering low-confidence genotypes - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_raw", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Histogram for DP; Midpoints of histogram bins: 2.5|7.5|12.5|17.5|22.5|27.5|32.5|37.5|42.5|47.5|52.5|57.5|62.5|67.5|72.5|77.5|82.5|87.5|92.5|97.5. E.g., 0|5|90|450|1428|2468|3141|3142|1999|1374|696|373|174|84|35|20|8|3|2|2", 
+        "mode": "NULLABLE", 
+        "name": "DP_HIST_ALL", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Count of Other (population not assigned) Male individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_OTH_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The annotation which was the worst performing in the VQSR Gaussian mixture model (deprecated; see AS_RF). Examples: MQ, FS, null, SOR, DP, QD, ReadPosRankSum", 
+        "mode": "NULLABLE", 
+        "name": "VQSR_culprit", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Total number of alleles in Admixed American Female called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_AMR_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles before filtering low-confidence genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_raw", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Ashkenazi Jewish individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_ASJ", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Whether in a low complexity region or not. Either true or null.", 
+        "mode": "NULLABLE", 
+        "name": "lcr", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Histogram for GQ; Midpoints of histogram bins: 2.5|7.5|12.5|17.5|22.5|27.5|32.5|37.5|42.5|47.5|52.5|57.5|62.5|67.5|72.5|77.5|82.5|87.5|92.5|97.5. Example: 2|5|7|14|33|60|96|199|186|394|587|428|1433|483|1335|648|1794|323|1655|5814", 
+        "mode": "NULLABLE", 
+        "name": "GQ_HIST_ALL", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Count of Admixed American Male individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_AMR_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Non-Finnish European Male individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_NFE_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of individuals homozygous for a deletion spanning this position. Examples: 2796, 428, 72", 
+        "mode": "NULLABLE", 
+        "name": "STAR_Hom", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Contains the indices of all alleles used as positive examples during training of random forests - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "AS_RF_POSITIVE_TRAIN", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of East Asian individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_EAS", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Finnish Female called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_FIN_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Allele counts of deletions spanning this position before filtering low-confidence genotypes. Examples: 4048, 967, 20", 
+        "mode": "NULLABLE", 
+        "name": "STAR_AC_raw", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Other (population not assigned) individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_OTH", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Other (population not assigned) Female called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_OTH_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Other (population not assigned) Male called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_OTH_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Admixed American called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_AMR", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of individuals hemizygous for a deletion spanning this position. Examples: 29, 3749, 572", 
+        "mode": "NULLABLE", 
+        "name": "STAR_Hemi", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Z-score from Wilcoxon rank sum test of Alt vs. Ref number of hard clipped bases E.g., -0.156, 0.024, 0.1, etc.", 
+        "mode": "NULLABLE", 
+        "name": "ClippingRankSum", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Total number of alleles in Non-Finnish European Male called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_NFE_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Log odds ratio of being a true variant versus being false under the trained VQSR gaussian mixture model (deprecated; see AS_RF). Examples: -0.6132, 0.298, 1.34, -24.28", 
+        "mode": "NULLABLE", 
+        "name": "VQSLOD", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Count of Ashkenazi Jewish Male individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_ASJ_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Female individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Non-Finnish European called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_NFE", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Ashkenazi Jewish Female individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_ASJ_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in African/African American called genotypes E.g., 8004", 
+        "mode": "NULLABLE", 
+        "name": "AN_AFR", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Finnish individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_FIN", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of East Asian Male individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_EAS_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Male called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "RMS Mapping Quality. Examples:59.57,56.29", 
+        "mode": "NULLABLE", 
+        "name": "MQ", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Total number of alleles in Finnish Male called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_FIN_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Phred-scaled p-value using Fishers exact test to detect strand bias. E.g., 1.618, 5.085, etc.", 
+        "mode": "NULLABLE", 
+        "name": "FS", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Total number of alleles in African/African American Male called genotypes E.g., 2160", 
+        "mode": "NULLABLE", 
+        "name": "AN_AFR_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in East Asian Female called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_EAS_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in African/African American Female called genotypes. E.g.,3424", 
+        "mode": "NULLABLE", 
+        "name": "AN_AFR_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Admixed American Female individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_AMR_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Whether this variant was used to build the negative training set of bad variants for VQSR (deprecated; see AS_RF_NEGATIVE_TRAIN).Either true or null.", 
+        "mode": "NULLABLE", 
+        "name": "VQSR_NEGATIVE_TRAIN_SITE", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Z-score from Wilcoxon rank sum test of Alt vs. Ref read mapping qualities. Examples: 0.831, 0.211, -0.043", 
+        "mode": "NULLABLE", 
+        "name": "MQRankSum", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Total number of alleles in Female called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Admixed American Male called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_AMR_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of African/African American individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_AFR", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Ashkenazi Jewish Male called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_ASJ_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Non-Finnish European individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_NFE", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Finnish Female individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_FIN_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Ashkenazi Jewish called genotypes. E.g., 246", 
+        "mode": "NULLABLE", 
+        "name": "AN_ASJ", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities E.g., -0.54, 1.35, etc.", 
+        "mode": "NULLABLE", 
+        "name": "BaseQRankSum", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Histogram for Allele Balance in heterozygous individuals; 100*AD[i_alt]/sum(AD); Midpoints of histogram bins: 2.5|7.5|12.5|17.5|22.5|27.5|32.5|37.5|42.5|47.5|52.5|57.5|62.5|67.5|72.5|77.5|82.5|87.5|92.5|97.5E.g., 0|0|0|1|0|0|1|5|10|8|12|6|4|4|1|0|0|0|0|0", 
+        "mode": "NULLABLE", 
+        "name": "AB_HIST_ALL", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Count of Non-Finnish European Female individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_NFE_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "DnSNP Membership.Either true or null", 
+        "mode": "NULLABLE", 
+        "name": "DB", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Count of Other (population not assigned) Female individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_OTH_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Approximate read depth; some reads may have been filtered. E.g., 536622, 276776, etc.", 
+        "mode": "NULLABLE", 
+        "name": "DP", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Contains the indices of all alleles used as negative examples during training of random forests - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "AS_RF_NEGATIVE_TRAIN", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of East Asian Female individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_EAS_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of African/African American Male individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_AFR_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Finnish called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_FIN", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Other (population not assigned) called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_OTH", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in Non-Finnish European Female called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_NFE_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Symmetric Odds Ratio of 2x2 contingency table to detect strand bias. Examples: 0.744, 0.65, 1.463", 
+        "mode": "NULLABLE", 
+        "name": "SOR", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Whether this variant was used to build the positive training set of good variants for VQSR (deprecated; see AS_RF_POSITIVE_TRAIN). Either true or null.", 
+        "mode": "NULLABLE", 
+        "name": "VQSR_POSITIVE_TRAIN_SITE", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Count of Admixed American individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_AMR", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Count of Male individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in East Asian called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_EAS", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in called genotypes. E.g., 30900", 
+        "mode": "NULLABLE", 
+        "name": "AN", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in East Asian Male called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_EAS_Male", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias.Examples: -0.091, 0.168", 
+        "mode": "NULLABLE", 
+        "name": "ReadPosRankSum", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Whether in a segmental duplication region or not. Either true or null.", 
+        "mode": "NULLABLE", 
+        "name": "segdup", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation. Examples:-0.0025, 0.0095, -8.0E-4", 
+        "mode": "NULLABLE", 
+        "name": "InbreedingCoeff", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Count of African/African American Female individuals for each genotype - BigQuery REPEATED field type", 
+        "mode": "REPEATED", 
+        "name": "GC_AFR_Female", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Variant Confidence/Quality by Depth. Examples: 22.42, 16.91, 7.94", 
+        "mode": "NULLABLE", 
+        "name": "QD", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Total number of alleles in Ashkenazi Jewish Female called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN_ASJ_Female", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/gnomAD_20171003_GRCh37", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "gnomAD_20171003_GRCh37"
+  }, 
+  "type": "TABLE"
+}

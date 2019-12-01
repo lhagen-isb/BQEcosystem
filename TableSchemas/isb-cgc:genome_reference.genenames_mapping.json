@@ -1,0 +1,108 @@
+{
+  "creationTime": "1519364899562", 
+  "description": "Data was loaded from multiple sources including NCBI, HGNC, ENSEMBL in Feb 2018 to simplify mapping between HGNC IDs, HGNC symbols, Entrez Gene IDs, Ensembl Gene IDs, Pubmed IDs,and RefSeq IDs.", 
+  "etag": "O4/RYfrk0P3Zibmzp6XqvQ==", 
+  "id": "isb-cgc:genome_reference.genenames_mapping", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "genome_annotations", 
+    "source_0": "isb_cgc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574717481303", 
+  "location": "US", 
+  "numBytes": "6297718", 
+  "numLongTermBytes": "6297718", 
+  "numRows": "45740", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Unique HGNC human loci identifier. The HGNC is responsible for approving unique symbols and names for human loci, including protein coding genes, ncRNA genes and pseudogenes. (See https://www.genenames.org/about/and https://www.ebi.ac.uk/miriam/main/collections/MIR:00000362)", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique HGNC symbol (may have~withdrawn appended)", 
+        "mode": "NULLABLE", 
+        "name": "Approved_Symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One of 43996 possible strings, some of which are repeated, such as<entry withdrawn>or< symbol withdrawn, see ARX >", 
+        "mode": "NULLABLE", 
+        "name": "Approved_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "<Approved>(n=41305),<Symbol Withdrawn>(n=3268), or< Entry Withdrawn>(n=1167)", 
+        "mode": "NULLABLE", 
+        "name": "Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One of 27 different values. E.g., < gene with protein product> ,<pseudogene> ,<RNA, micro> , etc (also can be<withdrawn)", 
+        "mode": "NULLABLE", 
+        "name": "Locus_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "If applicable, a comma-separated list of previous symbols (blank for 34214 rows)", 
+        "mode": "NULLABLE", 
+        "name": "Previous_Symbols", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "If applicable, comma-separated list of strings (blank for 24850 rows)", 
+        "mode": "NULLABLE", 
+        "name": "Synonyms", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., 19p.13.2 or 10.p11.23-q21.1(See https://ghr.nlm.nih.gov/primer/howgeneswork/genelocation)", 
+        "mode": "NULLABLE", 
+        "name": "Chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., L36092. Occasionally, instead of a single value we can have a comma-separated list likeX89892, GL949751, GL949747, GL949749(blank for 25313 rows)", 
+        "mode": "NULLABLE", 
+        "name": "Accession_Numbers", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Entrez gene ID is an integer, not to be mistaken for gene official symbol, which for human genes are given by the HGNC. Entrez Gene generates unique integers (GeneID) as stable identifiers for genes and other loci for a subset of model organisms. It tracks those identifiers and uses them to integrate multiple types of information. (blank for 7109 rows)", 
+        "mode": "NULLABLE", 
+        "name": "Entrez_Gene_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl gene ID. Stable IDs are created in the form ENS[species prefix][feature type prefix][a unique eleven digit number]. For example, a mouse gene might be ENSMUSG###########. For human, there is no species code, so IDs are in the form ENS(object type)(identifier).(version). E.g., ENSG00000183091. See https://useast.ensembl.org/Help/Faq?id=488.(blank for 10514 rows)", 
+        "mode": "NULLABLE", 
+        "name": "Ensembl_Gene_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Comma-separated list of PubMed IDs (blank for 23794 rows)", 
+        "mode": "NULLABLE", 
+        "name": "Pubmed_IDs", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., NG_001336 (blank for 19760 rows) Accession numbers that begin with the prefix NG_ represent genomic sequence records that are provided for some organisms to represent non-transcribed pseudogenes or genomic regions. Other categories: NC, NM, NR, NP, XM, XR, XP, WP. See https://en.wikipedia.org/wiki/RefSeq", 
+        "mode": "NULLABLE", 
+        "name": "RefSeq_IDs", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/genenames_mapping", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "genenames_mapping"
+  }, 
+  "type": "TABLE"
+}

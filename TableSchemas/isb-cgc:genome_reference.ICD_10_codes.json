@@ -1,0 +1,72 @@
+{
+  "creationTime": "1549656440409", 
+  "description": "Data was loaded from the International Statistical Classification of Diseases and Related Health Problems 10th Revision published by the World Health Organization (WHO) in February 2019. More details: https://icd.who.int/browse10", 
+  "etag": "8fiSru6PB1Uz4w2mzWq+CQ==", 
+  "id": "isb-cgc:genome_reference.ICD_10_codes", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "disease_classifications", 
+    "source_0": "international_classficiation_of_disesase_icd", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574182394214", 
+  "location": "US", 
+  "numBytes": "855110", 
+  "numLongTermBytes": "855110", 
+  "numRows": "10546", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Level in the hierarchy. Usually 4, but sometimes 3", 
+        "mode": "NULLABLE", 
+        "name": "hierarchy_level", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Leaf node type: X (explicitly listed in the classification) or S (derived from a subclassification)", 
+        "mode": "NULLABLE", 
+        "name": "node_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Two-digit chapter number. Examples: 01, 02, 03, 04", 
+        "mode": "NULLABLE", 
+        "name": "chapter_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Lowest 3-char code within this block.Examples: A15, A70, F90, G10", 
+        "mode": "NULLABLE", 
+        "name": "min_block_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ICD-10 code. Example: C22.1 (If level is 3, code will have only two digits, e.g., C23)", 
+        "mode": "NULLABLE", 
+        "name": "code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ICD-10 code without the dot. Example: C221 (If level is 3, code will have only two digits, e.g., C23)", 
+        "mode": "NULLABLE", 
+        "name": "code_nodot", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ICD-10 code title. Example: Malignant neoplasm: Intrahepatic bile duct carcinoma", 
+        "mode": "NULLABLE", 
+        "name": "code_title", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/ICD_10_codes", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "ICD_10_codes"
+  }, 
+  "type": "TABLE"
+}

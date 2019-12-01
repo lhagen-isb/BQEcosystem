@@ -1,0 +1,93 @@
+{
+  "creationTime": "1480442504703", 
+  "description": "Data was loaded from the output of the GDC DNA methylation liftover workflow in November 2016. HG38 methylation data was loaded using the Methylation Liftover Pipeline. More details: see https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Methylation_LO_Pipeline", 
+  "etag": "pl2B1OKxrrLQf4tpkznGlQ==", 
+  "id": "isb-cgc:platform_reference.GDC_hg38_methylation_annotation", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "dna_methylation", 
+    "reference_genome_0": "hg38", 
+    "source_0": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574187030246", 
+  "location": "US", 
+  "numBytes": "141192805", 
+  "numLongTermBytes": "141192805", 
+  "numRows": "481573", 
+  "schema": {
+    "fields": [
+      {
+        "description": "CpG probe id.Example: cg21870274", 
+        "mode": "NULLABLE", 
+        "name": "CpG_probe_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: chr1-22, and chrX", 
+        "mode": "NULLABLE", 
+        "name": "chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Position. Example: 29435", 
+        "mode": "NULLABLE", 
+        "name": "position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Genes is a field of type RECORD, mode REPEATED. Each of the possibly multiple records in this field has four components: genes.symbol, genes.type, genes, transcript_id, and genes.pos_to_TSS. Example of the contents of one record: genes.symbol = MIR1302-0, genes.type = miRNA, genes.transcript_id = ENST00000607096.1, genes.pos_to_TSS = -932", 
+        "fields": [
+          {
+            "description": "The symbol for genes associated with the CpG site. Genes that fall within 1,500 bp upstream of the transcription start site (TSS) to the end of the gene body are used.", 
+            "mode": "NULLABLE", 
+            "name": "symbol", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "A general classification for each gene (e.g. protein coding, miRNA, pseudogene)", 
+            "mode": "NULLABLE", 
+            "name": "type", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Ensembl transcript IDs for each transcript associated with the genes detailed above", 
+            "mode": "NULLABLE", 
+            "name": "transcript_id", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Distance in base pairs from the CpG site to each associated transcript's start site", 
+            "mode": "NULLABLE", 
+            "name": "pos_to_TSS", 
+            "type": "INTEGER"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "genes", 
+        "type": "RECORD"
+      }, 
+      {
+        "description": "CpG Island coordinates (base span) Example: chr1:28735-29737", 
+        "mode": "NULLABLE", 
+        "name": "CpG_island_coord", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CpG islands / clusters (CGI) feature type. Examples: Island, null, S_Shelf, S_Shore", 
+        "mode": "NULLABLE", 
+        "name": "CGI_feature_type", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/platform_reference/tables/GDC_hg38_methylation_annotation", 
+  "tableReference": {
+    "datasetId": "platform_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "GDC_hg38_methylation_annotation"
+  }, 
+  "type": "TABLE"
+}

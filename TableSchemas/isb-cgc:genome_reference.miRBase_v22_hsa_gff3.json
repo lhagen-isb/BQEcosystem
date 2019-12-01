@@ -1,0 +1,85 @@
+{
+  "creationTime": "1546926396841", 
+  "description": "Data was loaded from the miRBase database, release 22, dated March 2018. This microRNA data is based on the hsa.gff3 file downloaded from www.mirbase.org on 07-Jan-2019. It contains chromosomal coordinates of Homo sapiens microRNAs, GRCh38, genome-build-accession: NCBI_Assembly:GCA_000001405.15. More details: Hairpin precursor sequences have type \"miRNA_primary_transcript\". Note, these sequences do not represent the full primary transcript, rather a predicted stem-loop portion that includes the precursor miRNA. Mature sequences have type \"miRNA\".", 
+  "etag": "IgqkOjXZv+q1KdrexBWoCw==", 
+  "id": "isb-cgc:genome_reference.miRBase_v22_hsa_gff3", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "mirna_annotations", 
+    "reference_genome_0": "hg38", 
+    "source_0": "mirbase_the_microrna_database", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574715337315", 
+  "location": "US", 
+  "numBytes": "420650", 
+  "numLongTermBytes": "420650", 
+  "numRows": "4801", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Examples: chr1, chr19, chrX, etc", 
+        "mode": "NULLABLE", 
+        "name": "seq_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Either miRNA or miRNA_primary_transcript", 
+        "mode": "NULLABLE", 
+        "name": "type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Start position, in 1-based integer coordinates", 
+        "mode": "NULLABLE", 
+        "name": "start_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "End position, in 1-based integer coordinates", 
+        "mode": "NULLABLE", 
+        "name": "end_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "+ or -, for forward or reverse strand. DNA is double-stranded. By convention, for a reference chromosome, one whole strand is designated the forward strand and the other the reverse strand. This designation is arbitrary. Sometimes the terms plus strand and minus strand are used instead.", 
+        "mode": "NULLABLE", 
+        "name": "strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: MI0017343 or MIMAT0031181 (unique in this table, may include a suffix to make it unique, eg MIMAT0005890_8)", 
+        "mode": "NULLABLE", 
+        "name": "id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: MIMAT0005890 (may not be unique -- strips off any suffix in the id column)", 
+        "mode": "NULLABLE", 
+        "name": "alias", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: hsa-miR-1302 (may not be unique)", 
+        "mode": "NULLABLE", 
+        "name": "name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: MI0003127, or blank,if type is miRNA_primary_transcript", 
+        "mode": "NULLABLE", 
+        "name": "derived_from", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/miRBase_v22_hsa_gff3", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRBase_v22_hsa_gff3"
+  }, 
+  "type": "TABLE"
+}

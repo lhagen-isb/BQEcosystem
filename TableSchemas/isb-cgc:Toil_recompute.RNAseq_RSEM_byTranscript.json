@@ -1,0 +1,110 @@
+{
+  "creationTime": "1470333155165", 
+  "description": "Data was loaded from data made available by the Toil Recompute project from UCSC Xenahub (from https://toil.xenahubs.net) in Aug of 2016. This table contains RNAseq data computed by RSEM goal of the Toil recompute was to process ~20,000 RNA-seq samples to create a consistent meta-analysis of four datasets free of computational batch effects. This is best used to compare TCGA cohorts to TARGET or GTEx cohorts. This table contains RNAseq data loaded by the RSEM pipeline organized by transcript. More Details: https://xenabrowser.net/datapages/?cohort=TCGA%20TARGET%20GTEx&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443", 
+  "etag": "kNM6KHQAJkSh6HmSgUbgng==", 
+  "id": "isb-cgc:Toil_recompute.RNAseq_RSEM_byTranscript", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "gene_expression", 
+    "data_type_1": "rnaseq", 
+    "reference_genome_0": "hg19", 
+    "source_0": "ucsc_xena", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574191745119", 
+  "location": "US", 
+  "numBytes": "416389557834", 
+  "numLongTermBytes": "416389557834", 
+  "numRows": "2117675778", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original data repository (CGHub) identifier", 
+        "mode": "NULLABLE", 
+        "name": "CGHubAnalysisID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "mode": "NULLABLE", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Ensembl gene ID from the underlying file, but stripped of the version suffix -- eg ENSG00000185028", 
+        "mode": "NULLABLE", 
+        "name": "transcript_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Ensembl gene ID from the underlying file, including the version suffix  --  eg ENSG00000235943.1", 
+        "mode": "NULLABLE", 
+        "name": "transcript_id_v", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The gene symbol. In this table, gene symbol is gene name, e.g. ENSG00000251562", 
+        "mode": "NULLABLE", 
+        "name": "gene_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Ensembl gene ID from the underlying file, including the version suffix  --  eg ENSG00000235943.1", 
+        "mode": "NULLABLE", 
+        "name": "gene_id_v", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Estimate of the number of fragments aligned to a genomic feature, more specifically the expectation of the number of alignable and unfiltered fragments that are derived from a isoform or gene given the ML abundances", 
+        "mode": "NULLABLE", 
+        "name": "raw_count", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Raw counts normalized by some metric", 
+        "mode": "NULLABLE", 
+        "name": "norm_count", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Average of the genetic feature's transcript lengths weighted by isoform percentage", 
+        "mode": "NULLABLE", 
+        "name": "length", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Effective length of the genomic feature, computed as feature length minus the mean of the fragment length distribution + 1", 
+        "mode": "NULLABLE", 
+        "name": "eff_length", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Transcripts per million, normalized measurement of the proportion of transcripts in your pool of RNA.", 
+        "mode": "NULLABLE", 
+        "name": "TPM", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Fragments per kilobase of exon per million reads mapped. Measurement of expression normalized by length of the genomic feature and total size of the read library.", 
+        "mode": "NULLABLE", 
+        "name": "FPKM", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Isoform percentage. It is the percentage of this transcript's abundance over its parent gene's abundance. If its parent gene has only one isoform or the gene information is not provided, this field will be set to 100", 
+        "mode": "NULLABLE", 
+        "name": "IsoPct", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/Toil_recompute/tables/RNAseq_RSEM_byTranscript", 
+  "tableReference": {
+    "datasetId": "Toil_recompute", 
+    "projectId": "isb-cgc", 
+    "tableId": "RNAseq_RSEM_byTranscript"
+  }, 
+  "type": "TABLE"
+}

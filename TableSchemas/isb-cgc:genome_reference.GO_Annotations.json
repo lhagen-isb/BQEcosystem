@@ -1,0 +1,126 @@
+{
+  "creationTime": "1461889163248", 
+  "description": "Data was loaded from GO Consortium on April 2016. GO Annotations for Homo sapiens was loaded from GO Consortium's downloader. More details: http: current.geneontology.org/products/pages/downloads.html", 
+  "etag": "XHbcgGFPHrDGfMHnBr9aNA==", 
+  "id": "isb-cgc:genome_reference.GO_Annotations", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "gene_ontology", 
+    "source_0": "gene_ontology_resource_go", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574182308891", 
+  "location": "US", 
+  "numBytes": "69438527", 
+  "numLongTermBytes": "69438527", 
+  "numRows": "391458", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Refers to the database from which the identifier in DB object ID is drawn. Example: UniProtKB", 
+        "mode": "NULLABLE", 
+        "name": "DB", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A unique identifier from the database in DB (column 1) for the item being annotated. Examples: P09622, Q16760", 
+        "mode": "NULLABLE", 
+        "name": "DB_Object_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A (unique and valid) symbol to which DB object ID is matched. Examples: TAAR5, ID1, AIRE, MYB", 
+        "mode": "NULLABLE", 
+        "name": "DB_Object_Symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Flags that modify the interpretation of an annotation. Examples:contributes_to, NOT, colocalizes_with,NOT|contributes_to, NOT|colocalizes,null", 
+        "mode": "NULLABLE", 
+        "name": "Qualifier", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The GO identifier for the term attributed to the DB object ID.Examples: GO:0009967,GO:0046339", 
+        "mode": "NULLABLE", 
+        "name": "GO_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One or more unique identifiers for a single source cited as an authority for the attribution of the GO ID to the DB object ID. This may be a literature reference or a database record. Examples: PMID:15718104, GO_REF:0000036", 
+        "mode": "NULLABLE", 
+        "name": "DB_Reference", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "See the GO evidence code guide for the list of valid evidence codes for GO annotationsat http://geneontology.org/page/guide-go-evidence-codesExamples: IC, ND, EXP, IBA, IDA, IEA, IEP, IGI, IKR, IMP, IPI, ISS, NAS, TAS", 
+        "mode": "NULLABLE", 
+        "name": "Evidence_Code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Also referred to as with, from or the with/from column. Examples: GO:0004930, GO:0000977|GO:0045944", 
+        "mode": "NULLABLE", 
+        "name": "With_or_From", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Refers to the namespace or ontology to which the GO IDbelongs; one of P (biological process), F (molecular function) or C (cellular component). That is, either P, F, or C.", 
+        "mode": "NULLABLE", 
+        "name": "Aspect", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Name of gene or gene product. Examples: Dihydrolipoyl dehydrogenase, mitochondrial, DNA-binding protein inhibitor ID-1, Transcriptional activator GLI3", 
+        "mode": "NULLABLE", 
+        "name": "DB_Object_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene symbol [or other text] Note that we strongly recommend that gene synonyms are included in the gene association file, as this aids the searching of GO.Examples: TAAR5_HUMAN|TAAR5|PNR,D3_HUMAN|ID3|1R21|BHLHB25|HEIR1,MYB_HUMAN|MYB", 
+        "mode": "NULLABLE", 
+        "name": "DB_Object_Synonym", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A description of the type of gene product being annotated. Example: protein", 
+        "mode": "NULLABLE", 
+        "name": "DB_Object_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Taxonomic identifier(s). Examples: taxon:9606, taxon:9606|taxon:387139", 
+        "mode": "NULLABLE", 
+        "name": "Taxon", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Date on which the annotation was made; format is YYYYMMDD", 
+        "mode": "NULLABLE", 
+        "name": "Date", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The database which made the annotation. Examples: GDB, GOC, MGI, HCNC, AgBase, UniProt, NTNU_SB, BHF-UCL, Reactome, SGD, CACAO, GO_Central, WormBase, FlyBase, Ensembl, InterPro, InAct", 
+        "mode": "NULLABLE", 
+        "name": "Assigned_By", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Examples: part_of(GO:0000722),occurs_in(CL:0002547), part_of(CL:0002322),has_input(ENSEMBL:ENSG00000243709)", 
+        "mode": "NULLABLE", 
+        "name": "Annotation_Extension", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/GO_Annotations", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "GO_Annotations"
+  }, 
+  "type": "TABLE"
+}

@@ -1,0 +1,109 @@
+{
+  "creationTime": "1537244545967", 
+  "description": "Data was loaded from the extensive characterization of probes on the Infinium HumanMethylation450 microarray, in September 2018. The data is based on the file http://zwdzwd.io/InfiniumAnnotation/20180909/hm450/hm450.hg38.manifest.gencode.v22.tsv.gz. Note that column \"gene_HGNC\", which in the original table contains a semi-colon delimited string, has been denormalized in this table, so that each row includes a reference to only one gene, and methylation probes that are in/near multiple genes will have some information repeated on multiple rows. More details: see Zhou W, Laird PW and Shen H, Comprehensive characterization, annotation and innovative use of Infinium DNA Methylation BeadChip probes, Nucleic Acids Research 2017 https://academic.oup.com/nar/article/45/4/e22/2290930. This table is hosted with the permission of the authors.", 
+  "etag": "GtoOSDqKP5JfmKOcBQBDhw==", 
+  "id": "isb-cgc:genome_reference.Infinium_hm450_hg38_manifest_gencode_v22", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "dna_methylation", 
+    "reference_genome_0": "hg38", 
+    "source_0": "infinium_humanmethylation_450", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767875344", 
+  "location": "US", 
+  "numBytes": "317421514", 
+  "numLongTermBytes": "317421514", 
+  "numRows": "2315760", 
+  "schema": {
+    "fields": [
+      {
+        "description": "CpG genomic coordinate: chromosome, e.g., chr1, chrX, etc (can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "CpG_chrm", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CpG genomic coordinate: start position (can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "CpG_beg", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "CpG genomic coordinate: end position (can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "CpG_end", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "CpG genomic coordinate: + or -for forward or reverse strand (can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "probe_strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CpG probe identifier, e.g.,cg04382991", 
+        "mode": "NULLABLE", 
+        "name": "probeID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene name, e.g., TTN, DDR1, etc. (can be blank)See https://m.ensembl.org/info/genome/genebuild/gene_names.html", 
+        "mode": "NULLABLE", 
+        "name": "gene_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript type, e.g., protein_coding, antisense, lincRNA, etc (can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "transcript_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl transcript ID. Stable IDs are created in the form ENS[species prefix][feature type prefix][a unique eleven digit number]. For example, a mouse transcript might be ENSMUST###########. For human, there is no species code, so IDs are in the form ENS(object type)(identifier).(version). E.g., ENST00000409483.4 (can be blank).See https://useast.ensembl.org/Help/Faq?id=488", 
+        "mode": "NULLABLE", 
+        "name": "transcriptID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Distance from CpG to TSS (range is between -1501 and >1MB)", 
+        "mode": "NULLABLE", 
+        "name": "dist_to_TSS", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "CpG Island regions were defined based on UCSC criteria : CG content >50%, Obs/Exp, CpG ratio >0.60 and length >200 bps.Shores were defined as the 2 kb up- and down-stream of a CpG island and shelves as the 2 kb outside of a shore (including N shelf, N shore, CpG Island, S shelf and S shore of CpG region)", 
+        "mode": "NULLABLE", 
+        "name": "CGI_region", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CpG Island name/location. Example: CGI:chr18:55587822-55588464 (can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "CGI", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CpG Island start position (parsed from CGI field, can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "CGI_beg", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "CpG Island end position (parsed from CGI field, can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "CGI_end", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/Infinium_hm450_hg38_manifest_gencode_v22", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "Infinium_hm450_hg38_manifest_gencode_v22"
+  }, 
+  "type": "TABLE"
+}

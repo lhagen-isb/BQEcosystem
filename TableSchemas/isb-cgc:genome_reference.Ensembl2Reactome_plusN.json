@@ -1,0 +1,72 @@
+{
+  "creationTime": "1462838662056", 
+  "description": "Data was loaded from the isb-cgc:genome_reference.Ensembl2Reactometable in May 2016. It contains a single additional field in each row which is the pathway_size. More details: see the Ensembl2Reactome table description.", 
+  "etag": "ornJsCBDqbE79U4OrnRBnw==", 
+  "id": "isb-cgc:genome_reference.Ensembl2Reactome_plusN", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "pathway_annotations", 
+    "source_0": "reactome", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767752711", 
+  "location": "US", 
+  "numBytes": "306368", 
+  "numLongTermBytes": "306368", 
+  "numRows": "2048", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Ensembl gene or transcript identifier (eg ENSG00000136997 or ENST00000371953)", 
+        "mode": "NULLABLE", 
+        "name": "gene_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reactome pathway name. E.g., Transcriptional activation of p53 responsive genes", 
+        "mode": "NULLABLE", 
+        "name": "pathway_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Number of Ensemble genes in *this* table associated with this pathway", 
+        "mode": "NULLABLE", 
+        "name": "pathway_size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Reactome pathway identifier. E.g., R-HSA-427413", 
+        "mode": "NULLABLE", 
+        "name": "pathway_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reactome pathway browser URL. E.g., http://www.reactome.org/PathwayBrowser/#/R-HSA-427413", 
+        "mode": "NULLABLE", 
+        "name": "pathway_url", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Evidence code (TAS stands for traceable author statement and implies manual curation, while IEA stands for inferred from electronic annotation)", 
+        "mode": "NULLABLE", 
+        "name": "evidence_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Homo sapiens -- this table has been filtered from the larger Reactome database to include only human pathways and genes.", 
+        "mode": "NULLABLE", 
+        "name": "species", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/Ensembl2Reactome_plusN", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "Ensembl2Reactome_plusN"
+  }, 
+  "type": "TABLE"
+}
