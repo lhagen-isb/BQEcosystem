@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469825400609", 
+  "description": "Data was generated from a curated cohort table for TCGA KIRP study in June 2016. This study consists of 286 unique patients and 586 unique samples.", 
+  "etag": "WXgPFpLClKn72PsKsyeI3w==", 
+  "id": "isb-cgc:tcga_cohorts.KIRP", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767893651", 
+  "location": "US", 
+  "numBytes": "18752", 
+  "numLongTermBytes": "18752", 
+  "numRows": "586", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0014", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/KIRP", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "KIRP"
+  }, 
+  "type": "TABLE"
+}

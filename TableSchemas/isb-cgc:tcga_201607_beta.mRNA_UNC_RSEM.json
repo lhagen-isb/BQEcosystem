@@ -1,0 +1,93 @@
+{
+  "creationTime": "1469734498346", 
+  "description": "Data was extracted from UNC-LCCC (Lineberger Comprehensive Cancer Center) on July 2016. mRNA expression data was generated using the Illumina GA and HiSeq platforms and process through their RNSseqV2/RSEM pipeline.", 
+  "etag": "HVVr3H9GC033rjwUhATpww==", 
+  "id": "isb-cgc:tcga_201607_beta.mRNA_UNC_RSEM", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "mrna_expression", 
+    "data_type_1": "rnaseq", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767913448", 
+  "location": "US", 
+  "numBytes": "26877747876", 
+  "numLongTermBytes": "26877747876", 
+  "numRows": "228078879", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "mode": "NULLABLE", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "mode": "NULLABLE", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "mode": "NULLABLE", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "mode": "NULLABLE", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes ", 
+        "mode": "NULLABLE", 
+        "name": "SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (IlluminaGA)", 
+        "mode": "NULLABLE", 
+        "name": "Platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene symbol from the original data file, differs if the approved gene symbol has since changed, eg C11orf17 became AKIP1", 
+        "mode": "NULLABLE", 
+        "name": "original_gene_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HUGO Gene Nomenclature Committee gene symbol, based on gene_id in original data file, eg AMY1A. Null if no gene symbol could be found (see documentation for additional details regarding ETL) http://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/data2/ETL_mRNAexpression.html", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_gene_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The gene symbol. In this table, gene_id is NCBI numeric gene identifier e.g. 280", 
+        "mode": "NULLABLE", 
+        "name": "gene_id", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Normalized gene expression from original rsem.genes.normalized_results file.Examples:8.305981, 632.638907, 12.843302.References:https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Expression_mRNA_Pipeline/and https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/miRNA_Pipeline/", 
+        "mode": "NULLABLE", 
+        "name": "normalized_count", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/mRNA_UNC_RSEM", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "mRNA_UNC_RSEM"
+  }, 
+  "type": "TABLE"
+}

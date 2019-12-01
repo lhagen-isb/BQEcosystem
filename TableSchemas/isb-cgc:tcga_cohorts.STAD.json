@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469828168849", 
+  "description": "Data was generated from a curated cohort table for TCGA STAD study in June 2016. This study consists of 440 unique patients and 904 unique samples.", 
+  "etag": "htJ2Xuhx7AB4VbQecSvGbA==", 
+  "id": "isb-cgc:tcga_cohorts.STAD", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767826575", 
+  "location": "US", 
+  "numBytes": "28928", 
+  "numLongTermBytes": "28928", 
+  "numRows": "904", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0028", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/STAD", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "STAD"
+  }, 
+  "type": "TABLE"
+}

@@ -1,0 +1,381 @@
+{
+  "creationTime": "1469734228101", 
+  "description": "Data was extracted from the TCGA program in June 2016. Each row contains a TCGA patient record. More details: see https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga", 
+  "etag": "ZEIvvyuxA8l97xrF9n1cCA==", 
+  "id": "isb-cgc:tcga_201607_beta.Clinical_data", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "clinical", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1574198638106", 
+  "location": "US", 
+  "numBytes": "4201379", 
+  "numLongTermBytes": "4201379", 
+  "numRows": "11160", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The project value is always set to TCGA.", 
+        "name": "Project", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A UUID (Universal Unique Identifier) is a 128-bit number used to uniquely identify an object or entity in the TCGA system. Example: 31ac4afd-8195-479a-97da-92edaa89a85e. See https://docs.gdc.cancer.gov/Encyclopedia/pages/UUID/", 
+        "name": "ParticipantUUID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Tissue Source Site Code. Examples: CN, DQ, F7. See https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/tissue-source-site-codes for explanation of codes", 
+        "name": "TSSCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Age, in years, at which a condition or disease was first diagnosed", 
+        "name": "age_at_initial_pathologic_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The spatial location, subdivisions and/or atomic site name of a tumor; e.g. Rectum, Larynx, Tonsil, etc.", 
+        "name": "anatomic_neoplasm_subdivision", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The BCR Batch Code; see https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/bcr-batch-codes for explanation of the codes", 
+        "name": "batch_number", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Biospecimen Core Resource; e.g. Nationwide Children's Hospital, Washington University", 
+        "name": "bcr", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The clinical M score is a rating of metastasis, that is, how much cancer has spread to distant sites. It is based on results of tests done before surgery, such as physical exams and imaging scans; e.g. MX, M0, M1", 
+        "name": "clinical_M", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The clinical N score is a rating of the extent of cancer within nearby lymph nodes, based on results of tests done before surgery, such as physical exams and imaging scans; e.g. N1, N2, N3", 
+        "name": "clinical_N", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The clinical T score is a rating of the extent of the primary tumor, based on results of tests done before surgery, such as physical exams and imaging scans; e.g. T1, T2, T3, T4", 
+        "name": "clinical_T", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The stage of the cancer, based on results of tests done before surgery, such as physical exams and imaging scans; e.g. Stage IA, Stage 1B, Stage II, Stage III, Stage IIIC2, Stage IVA , State IVB", 
+        "name": "clinical_stage", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether the participant has colorectal cancer; e.g. YES, NO", 
+        "name": "colorectal_cancer", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Country of the participant; 38 countries named,e.g. Germany, United States, Canada,France, Poland, etc.", 
+        "name": "country", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Survival state of the participant; e.g. dead, alive", 
+        "name": "vital_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Days since birth (a negative value, relative to the date of diagnosis which is considered to be t=0)", 
+        "name": "days_to_birth", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "If vital_status indicates 'dead', then this is the number of days to death (a positive value) relative to the date of diagnosis.", 
+        "name": "days_to_death", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of days from the date of diagnosis to the last day on which a person was known to be alive. This field is a combination of the days_to_last_followup and days_to death fields. Therefore, this field can be used whether the vital_status is 'alive' or 'dead'.", 
+        "name": "days_to_last_known_alive", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "If vital_status indicates 'alive', then this is the number of days from the date of diagnosis to the last followup (communication contact).", 
+        "name": "days_to_last_followup", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of days to initial pathologic diagnosis", 
+        "name": "days_to_initial_pathologic_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Numeric value to represent the day of the diagnosis for the submitted sample. Examples: 0, 4, 536, 3774", 
+        "name": "days_to_submitted_specimen_dx", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The ethnic origination of a participant, independent from race; e.g. Not Hispanic or Latino, Hispanic or Latino", 
+        "name": "ethnicity", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Participant gender; e.g. Male, Female", 
+        "name": "gender", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Gleason Score (ranging from 1 -5) is the grade of the aggressiveness of prostate cancer. The combined Gleason Score is the primary Gleason score(for the largest area of the tumor) added to the secondary Gleason Score (for the next largest section of the tumor).Five values used: 6.0, 7.0, 8.0, 9.0, 10.0", 
+        "name": "gleason_score_combined", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The histological type of cancer; e.g. Adenosquamous, Astrocytoma, etc.", 
+        "name": "histological_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator if the participant had a previous history of colon polyps as noted in the history/physical or previous endoscopic report(s); e.g. YES, NO", 
+        "name": "history_of_colon_polyps", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "History_of_neoadjuvant_treatment. Possible values: Yes, No,Yes - Pharmaceutical Treatmet Prior to Resection, Yes - Radiation Prior to Resection(also can be blank)", 
+        "name": "history_of_neoadjuvant_treatment", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HPV strains; e.g. HPV18, HPV45, etc.", 
+        "name": "hpv_calls", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether the participant has a record of a positive finding for human papillomavirus; e.g. Positive, Negative, Indeterminate", 
+        "name": "hpv_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Alphanumeric value used to describe the disease code from the tenth version of the International Classification of Disease (ICD-10). Examples: C01, C55, C40.3", 
+        "name": "icd_10", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Code that represents the histology of the disease using the third edition of the International Classification of Diseases for Oncology, published in 2000, used principally in tumor and cancer registries for coding the site (topography) and the histology (morphology) of neoplasms", 
+        "name": "icd_o_3_histology", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Code that represents the site of the disease using the third edition of the International Classification of Diseases for Oncology, published in 2000, used principally in tumor and cancer registries for coding the site (topography) and the histology (morphology) of neoplasms. Examples:C01.9, C20.9, C32.1", 
+        "name": "icd_o_3_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator if small or thin-walled vessel invasion is present, indicating lymphatic involvement; e.g. YES, NO", 
+        "name": "lymphatic_invasion", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator whether the lymph nodes were examined; e.g. YES, NO", 
+        "name": "lymphnodes_examined", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator whether a lymphovascular invasion was present; e.g. YES, NO", 
+        "name": "lymphovascular_invasion_present", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A female participant's menopausal status; e.g. Post, Pre, Indeterminate, Peri", 
+        "name": "menopause_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Status of the mononucleotide and dinucleotide marker panel analysis; microsatellite-stable (MSS), low level MSI (MSI-L) if less than 40% of markers were altered and high level MSI (MSI-H) if greater than 40% of markers were altered", 
+        "name": "mononucleotide_and_dinucleotide_marker_panel_analysis_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Rating which expresses the degree of abnormality of cancer cells, a measure of differentiation and aggressiveness; e.g. G1, G2, G3, G4, GX, High Grage, GB, Low Grade", 
+        "name": "neoplasm_histologic_grade", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether a patient has had a new tumor event after initial treatment; Yes, No", 
+        "name": "new_tumor_event_after_initial_treatment", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The number of lymph nodes examined. Examples: 90.0, 33.0, 2.0, 62.0, 109.0", 
+        "name": "number_of_lymphnodes_examined", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The number of lymph nodes involved with disease as determined by histological examination. Examples: 34.0, 97.0, 1.0, 2.0, 12.0, 44.0", 
+        "name": "number_of_lymphnodes_positive_by_he", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The number of packs smoked per day times the number of years smoked by the participant. Examples: 5.1, 1.5, 180.0, 30.0, 15.0", 
+        "name": "number_pack_years_smoked", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Four digit year of the initial pathologic diagnosis", 
+        "name": "year_of_initial_pathologic_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The pathologic M score is a rating of metastasis, that is, how much cancer has spread to distant sites. It is based on surgery or biopsy; e.g. MX, M0, M1, M1a, M1b, M1c, cM0(i+)", 
+        "name": "pathologic_M", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The pathologic N score is a rating of the extent of cancer within nearby lymph nodes, based on surgery or biopsy; e.g. N0, N1, N2, N2b, N2c, N1b, NX", 
+        "name": "pathologic_N", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The pathologic T score is a rating of the extent of the primary tumor, based on surgery or biopsy; e.g. T1, T2, T3, T4, T4a, T4b, TX", 
+        "name": "pathologic_T", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The stage of the cancer, based on surgery or biopsy; e.g. Stage II, Stage III, Stage IV, Stage IVA, Stage IIIB, Stage IIIS, Stage IIIC", 
+        "name": "pathologic_stage", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The participant's cancer status; Either WITH TUMOR or TUMOR FREE", 
+        "name": "person_neoplasm_cancer_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The number of times (including currently if it applies) that a female participant has been pregnant, regardless of outcome. Possible values: 0, 1, 2, 3, 4+", 
+        "name": "pregnancies", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether a person had a primary diagnosis of melanoma; e.g. Yes, No", 
+        "name": "primary_neoplasm_melanoma_dx", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Kind of outcome achieved after the completion of the initial course of treatment; e.g. Complete Remission/Response, Progressive Disease, Stable Disease, Partial Remission/Response, Persistent Diseaase, etc.", 
+        "name": "primary_therapy_outcome_success", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A male participant's Prostrate-Specific Antigen (PSA) value. Examples: 0.1, 3.5, 37.36", 
+        "name": "psa_value", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The race of a participant, independent from ethnicity; e.g. White, Black or African American, Asian, Native Hawaiian or other Pacific Islander, American Indian or Alaska Native", 
+        "name": "race", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Status of the tissue margin following surgical resection. There are 4 possible values: R0, R1, R2, RX", 
+        "name": "residual_tumor", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Category describing current smoking status and smoking history as self-reported by a participant.; Possible values: 1, 2, 3, 4, 5", 
+        "name": "tobacco_smoking_history", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Category describing current smoking status and smoking history as self-reported by a participant.; e.g. 1, 2, etc.", 
+        "name": "tumor_tissue_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Tumor Type. There are 3 allowed values:Primary, Type 1, Type 2", 
+        "name": "tumor_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Weight of participant in kilograms", 
+        "name": "weight", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Height of participant in centimeters. Examples:172.0, 180.0", 
+        "name": "height", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Body Mass Index (BMI) of participant", 
+        "name": "BMI", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Age, in years, that the participant began smoking", 
+        "name": "age_began_smoking_in_years", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator of previous or current diagnosis of Helicobactor pylori infection; e.g. Yes, No, Never, Current", 
+        "name": "h_pylori_infection", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator and type of other diagnosis; e.g. No; Yes, History of Prior Malignancy; Yes, History of Synchronous/Bilateral Malignancy; Both History of Synchronous/Bilateral and Prior Malignancy", 
+        "name": "other_dx", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The site on the body where the other malignancy occurred; e.g. Bladder, Uterus, etc.", 
+        "name": "other_malignancy_anatomic_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histological type of cancer of the other malignancy; e.g. Adenosquamous, Astrocytoma, etc.", 
+        "name": "other_malignancy_histological_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether another malignancy occurred before or at the same time; e.g. Prior Malignancy, Synchronous Malignancy, etc.", 
+        "name": "other_malignancy_malignancy_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Four-digit year that the participant stopped smoking; e.g. 2010", 
+        "name": "stopped_smoking_year", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator as to whether a large vessel or venous invasion was detected by surgery or presence in a tumor specimen; e.g. Yes, No", 
+        "name": "venous_invasion", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Four-digit year that the participant started smoking; e.g. 2010", 
+        "name": "year_of_tobacco_smoking_onset", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/Clinical_data", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "Clinical_data"
+  }, 
+  "type": "TABLE"
+}

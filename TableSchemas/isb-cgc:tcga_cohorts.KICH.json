@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469825258772", 
+  "description": "Data was generated from a curated cohort table for TCGA KICH study in June 2016. This study consists of 65 unique patients and 130 unique samples", 
+  "etag": "3/dEOQWQDlOXHlEjpzkL6Q==", 
+  "id": "isb-cgc:tcga_cohorts.KICH", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767992999", 
+  "location": "US", 
+  "numBytes": "4160", 
+  "numLongTermBytes": "4160", 
+  "numRows": "130", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0012", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/KICH", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "KICH"
+  }, 
+  "type": "TABLE"
+}

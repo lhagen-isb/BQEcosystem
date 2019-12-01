@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469827721168", 
+  "description": "Data was generated from a curated cohort table for TCGA SARC study in June 2016. This study consists of 257 unique patients and 503 unique samples.", 
+  "etag": "stZdUaB1ddEXmfrN0iAVjA==", 
+  "id": "isb-cgc:tcga_cohorts.SARC", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767728257", 
+  "location": "US", 
+  "numBytes": "16096", 
+  "numLongTermBytes": "16096", 
+  "numRows": "503", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0026", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/SARC", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "SARC"
+  }, 
+  "type": "TABLE"
+}

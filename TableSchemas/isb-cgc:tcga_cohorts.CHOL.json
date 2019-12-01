@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469823430329", 
+  "description": "Data was generated from a curated cohort table for TCGA CHOL study in June 2016. This study consists of 36 unique patients and 85 unique samples", 
+  "etag": "DcLCUklBMwIhgl51KkTX6Q==", 
+  "id": "isb-cgc:tcga_cohorts.CHOL", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767713129", 
+  "location": "US", 
+  "numBytes": "2720", 
+  "numLongTermBytes": "2720", 
+  "numRows": "85", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0006", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/CHOL", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "CHOL"
+  }, 
+  "type": "TABLE"
+}

@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469827194764", 
+  "description": "Data was generated from a curated cohort table for TCGA PAAD study in June 2016. This study consists of 184 unique patients and 364 unique samples.", 
+  "etag": "LjUOM8HqiAe5IswnWKhHzg==", 
+  "id": "isb-cgc:tcga_cohorts.PAAD", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767828059", 
+  "location": "US", 
+  "numBytes": "11648", 
+  "numLongTermBytes": "11648", 
+  "numRows": "364", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0022", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/PAAD", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "PAAD"
+  }, 
+  "type": "TABLE"
+}

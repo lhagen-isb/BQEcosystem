@@ -1,0 +1,377 @@
+{
+  "creationTime": "1469734243196", 
+  "description": "Data was loaded from TCGA DCC on July 2016 for Somatic Mutations MAF data.", 
+  "etag": "LNKZCpSDz5AxooAluIAH1A==", 
+  "id": "isb-cgc:tcga_201607_beta.Somatic_Mutation_calls", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "somatic_mutations", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1574790447446", 
+  "location": "US", 
+  "numBytes": "5715538107", 
+  "numLongTermBytes": "5715538107", 
+  "numRows": "5356089", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TCGA tumor sample barcode. TCGA-WC-A885-01A, TCGA-HQ-A2OF-01A.", 
+        "name": "Tumor_SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TCGA tumor aliquote barcode. Examples: TCGA-WC-A885-01A,TCGA-XF-AAN3-01A", 
+        "name": "Tumor_AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Tumor Sample Type Code. The current subset of 5 values used are:TB, TM, TAP, TP, TR.See https://Gdc.Cancer.Gov/Resources-TCGA-Users/TCGA-Code-Tables/Sample-Type-Codes", 
+        "name": "Tumor_SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Sample Barcode For The Normal Tissue. Examples: TCGA-V4-A9EI-10A, TCGA-V4-A9EI-10A", 
+        "name": "Normal_SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Aliquot Barcode For The Normal Tissue. Examples: TCGA-CR-7385-10A-01D-2013-08, TCGA-DX-A3M1-10A-01D-A22A-09", 
+        "name": "Normal_AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Sample Type Letter Code. The subset of 4 values currently used are: NBC, NB, NT, NBM. See https://Gdc.Cancer.Gov/Resources-TCGA-Users/TCGA-Code-Tables/Sample-Type-Codes", 
+        "name": "Normal_SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl Annotation Transcript ID. Example: ENST00000542285.1", 
+        "name": "Annotation_Transcript", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value giving the total mutations in the gene. Examples: 1, 2, 57, 12, 61, 1189, 5", 
+        "name": "CCLE_ONCOMAP_Total_Mutations_In_Gene", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Integer value giving the total alterations in the gene. Examples: 93, 196, 121, 8, 6, 45, 15", 
+        "name": "COSMIC_Total_Alterations_In_Gene", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "One or more genome sequencing center reporting the variant", 
+        "name": "Center", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: chr1-22, and chrX", 
+        "name": "Chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DNA Repair Genes Role. Examples (from the 24 types used): Mismatch excision repair (MMR), Direct reversal of damage, Rad6 pathway, Chromatin Structure, Other BER factors, Repair of DNA-protein crosslinks", 
+        "name": "DNARepairGenes_Role", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DbSNP reference SNP number, eg rs121913500 -- may be a list, or may be null. Examples: rs199875324, rs190442239|rs373000930,rs34463219|rs200326823|rs386737232|rs398046742", 
+        "name": "DbSNP_RS", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DbSNP validation status. Either byFrequency or null.", 
+        "name": "DbSNP_Val_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Associated Drug Bank Names and IDs. Examples: Succinic acid(DB00139), Danazol(DB01406)|Gonadorelin(DB00644)|Nafarelin(DB00666). Note: this field is usually blank.", 
+        "name": "DrugBank", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Highest numeric genomic position of the reported variant on the genomic reference sequence. Mutation end coordinate", 
+        "name": "End_Position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Entrez gene ID (an integer). 0 is used for regions that do not correspond to a gene region or Ensembl ID", 
+        "name": "Entrez_Gene_Id", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Percent GC content. Examples:0.353, 0.527, 0.617", 
+        "name": "GC_Content", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Transcript name from GENCODE Examples: ADC-002, HCP5-001", 
+        "name": "GENCODE_Transcript_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript status from GENCODE. Either KNOWN, PUTATIVE, NOVEL (also can be blank)", 
+        "name": "GENCODE_Transcript_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript type From GENCODE. Examples (from 23 types used):miRNA, rRNA, snRNA, TR_D_gene, protein_coding, misc_RNA. For more info: https://www.gencodegenes.org/pages/biotypes.html", 
+        "name": "GENCODE_Transcript_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Biological Process. Example: morphogenesis of an epithelial sheet (GO:0002011)|regulation of small GTPase mediated signal transduction (GO:0051056)|small GTPase mediated signal transduction (GO:0007264). For More Information: http://geneontology.org/docs/ontology-documentation/", 
+        "name": "GO_Biological_Process", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Cellular Component. Examples: extracellular space (GO:0005615), basement membrane (GO:0005604)For More Information: http://geneontology.org/docs/ontology-documentation/", 
+        "name": "GO_Cellular_Component", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Molecular Function.Example: carbohydrate binding (GO:0030246)|identical protein binding (GO:0042802).For More Information: http://geneontology.org/docs/ontology-documentation/", 
+        "name": "GO_Molecular_Function", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene Type. Examples (from 22 types used): linkRNA, miRNA, rRNA, protein_coding, pseudogene, antisense.", 
+        "name": "Gene_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Genome location and base change. Examples: g.chr17:27530935G>A,g.chr21:26020893_26020896delTTCC", 
+        "name": "Genome_Change", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC accession numbers.Examples:AF134415, M12272. See https://www.genenames.org/help/search/", 
+        "name": "HGNC_Accession_Numbers", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC CCDS IDs. Examples: CCDS19.2, CCDS50.1.See https://www.genenames.org/help/search/,https://www.ncbi.nlm.nih.gov/projects/CCDS/CcdsBrowse.cgi", 
+        "name": "HGNC_CCDS_IDs", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl ID. Example: ENSG00000159403.See https://useast.ensembl.org/info/genome/stable_ids/index.html", 
+        "name": "HGNC_Ensembl_ID_Supplied_By_Ensembl", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC ID. A unique ID provided by the HGNC for each gene with an approved symbol. HGNC IDs remain stable even if a name or symbol changes. Examples: 37190, 18046, 79, 212", 
+        "name": "HGNC_HGNC_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "HGNC locus group. The word <locus> is not a synonym for gene but refers to a map position. Four locus group types are used here: protein-coding gene, non-coding RNA, other, pseudogene.", 
+        "name": "HGNC_Locus_Group", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC locus type. The word <locus> is not a synonym for gene but refers to a map position. 19 locustypes are used here. Examples: RNA, Y; T cell receptor gene;gene with protein product; pseudogene", 
+        "name": "HGNC_Locus_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "OMIM ID. Examples: 608580, 611916.Online Mendelian Inheritance in Man (OMIM) is a continuously updated catalog of human genes and genetic disorders and traits, with a particular focus on the gene-phenotype relationship.", 
+        "name": "HGNC_OMIM_ID_Supplied_By_NCBI", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "RefSeq protein-coding or non-coding transcript ID.Examples:NM_001733, NR_040662, XM_006724392.https://en.wikipedia.org/wiki/RefSeq, https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_numbers_and_mole/?report=objectonly", 
+        "name": "HGNC_RefSeq_Supplied_By_NCBI", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UCSC gene ID. Examples:uc011aic,uc002xul.4", 
+        "name": "HGNC_UCSC_ID_Supplied_By_UCSC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UniProt ID. Examples: A2VEC9, Q7RTT6. See https://www.uniprot.org/help/accession_numbers", 
+        "name": "HGNC_UniProt_ID_Supplied_By_UniProt", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HUGO symbol for the gene (HUGO symbols are always in all caps). Unknown is used for regions that do not correspond to a gene", 
+        "name": "Hugo_Symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "An assessment of the mutation as somatic, germline, LOH, post transcriptional modification, unknown, or none. The values allowed in this field are constrained by the value in the Validation_Status field", 
+        "name": "Mutation_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The reference genome used for the alignment (GRCh37)", 
+        "name": "NCBI_Build", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Primary Data Genotype. Matched Normal Sequencing Allele 1. A - Symbol For A Deletion Represents A Variant. A - Symbol For An Insertion Represents Wild-Type Allele. Novel Inserted Sequence For Insertion Does Not Include Flanking Reference Bases (Cleared In Somatic Maf).Examples:C,GAA, TTTC, GCCGGAGAGGAG, TATGA", 
+        "name": "Normal_Seq_Allele1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Matched Normal Sequencing Allele 2. Examples:GCGGAGAGGAG, C, ACC, TCT, TTTC", 
+        "name": "Normal_Seq_Allele2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary Data From Orthogonal Technology. Matched Normal Genotyping (Validation) For Allele 1. A - Symbol For A Deletion Represents A Variant. A - Symbol For An Insertion Represents Wild-Type Allele. Novel Inserted Sequence For Insertion Does Not Include Flanking Reference Bases (Cleared In Somatic Maf). Examples:GGG, AAA, TGCCGGCCT, GG", 
+        "name": "Normal_Validation_Allele1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary Data From Orthogonal Technology. Matched Normal Genotyping (Validation) For Allele 2 (Cleared In Somatic Maf). Examples: GCCGGAGAGGAG, AAG, GT, GTAA", 
+        "name": "Normal_Validation_Allele2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Open Regulatory Annotation Database Id. Example: OREG0026204, OREG0023259", 
+        "name": "OREGANNO_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Changes An Amino Acid To Another Amino Acid. Examples: p.G464V, p.N3185S,p.K1061fs", 
+        "name": "Protein_Change", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reference allele Per VCF Specs, And Its Five Flanking Base Pairs. Examples: GTAGGAAGCAGCCAGCAAAAG, TGGTTCTACCTTCACAATCCA", 
+        "name": "Ref_Context", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The plus strand reference allele at this position. Includes the deleted sequence for a deletion or - for an insertion", 
+        "name": "Reference_Allele", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "RefSeq protein ID. Examples:NP_078970.3, NP_057064.1. Seehttps://en.wikipedia.org/wiki/RefSeq, https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_numbers_and_mole/?report=objectonly", 
+        "name": "Refseq_Prot_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary variant classification. Example (from the 9 descriptions currently used): In_Frame_Del,Intron, Nonsense_Mutation, Silent, Frame_Shift_Del, Frame_Shift_Ins, Missense_Mutation", 
+        "name": "Secondary_Variant_Classification", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Molecular assay type used to produce the analytes used for sequencing. Allowed values are a subset of the SRA 1.5 library_strategy field values. This subset matches those used at CGHub. Allowed values: RNA-Seq, WXS, Other, Capture", 
+        "name": "Sequence_Source", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Instrument used to produce primary sequence data", 
+        "name": "Sequencer", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Lowest numeric position of the reported variant on the genomic reference sequence. Mutation start coordinate", 
+        "name": "Start_Position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "SwissProtaccession ID. Examples: Q15835, P59797.See https://www.uniprot.org/help/accession_numbers", 
+        "name": "SwissProt_Acc_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Swissprot entry ID. Examples: AZIN2_HUMAN, NIM1_HUMAN", 
+        "name": "SwissProt_Entry_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript exon. An integer value. Examples: 2, 22, 1, 7, 16, 54", 
+        "name": "Transcript_Exon", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Transcript position.An integer value: Examples: 110, 1047, 401, 6568.", 
+        "name": "Transcript_Position", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript strand. Either + or - (or blank)", 
+        "name": "Transcript_Strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Primary data genotype for tumor sequencing (discovery) allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases", 
+        "name": "Tumor_Seq_Allele1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Primary data genotype for tumor sequencing (discovery) allele 2. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases", 
+        "name": "Tumor_Seq_Allele2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases", 
+        "name": "Tumor_Validation_Allele1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 2", 
+        "name": "Tumor_Validation_Allele2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UniProt AA position. An integer value. Examples: 384, 3881, 312, 694", 
+        "name": "UniProt_AApos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "UnitProt Region. Examples: Cadherin 5. {ECO:0000255|PROSITE- ProRule:PRU00043},EGF-like 1. {ECO:0000255|PROSITE- ProRule:PRU00076}", 
+        "name": "UniProt_Region", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The assay platforms used for the validation call", 
+        "name": "Validation_Method", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Translational effect of variant allele", 
+        "name": "Variant_Classification", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Type of mutation. TNP (tri-nucleotide polymorphism) is analogous to DNP (di-nucleotide polymorphism) but for three consecutive nucleotides. ONP (oligo-nucleotide polymorphism) is analogous to TNP but for consecutive runs of four or more (SNP, DNP, TNP, ONP, INS, DEL, or Consolidated)", 
+        "name": "Variant_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CDNA change. Examples: c.3236G>A,c.143_147delCTGCC, c.4417_4418insCAA", 
+        "name": "cDNA_Change", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/Somatic_Mutation_calls", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "Somatic_Mutation_calls"
+  }, 
+  "type": "TABLE"
+}

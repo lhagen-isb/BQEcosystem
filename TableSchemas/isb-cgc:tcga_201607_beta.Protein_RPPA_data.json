@@ -1,0 +1,93 @@
+{
+  "creationTime": "1469734504619", 
+  "description": "Data was extracted from MDAnderson Functional Proteomics RPPA Core Facility on July 2016. Protein expression data was generated using all the data produced by MDAnderson Functional Proteomics RPPA Core Facility.", 
+  "etag": "km5PuJryyeomJEduhVBh1A==", 
+  "id": "isb-cgc:tcga_201607_beta.Protein_RPPA_data", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "protein_quantification", 
+    "data_type_1": "proteomics", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1574789788369", 
+  "location": "US", 
+  "numBytes": "207365611", 
+  "numLongTermBytes": "207365611", 
+  "numRows": "1867233", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes ", 
+        "name": "SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Gene name is the gene symbol.Examples:SHC1, JUN, MAPK8, BAD, GYS1", 
+        "name": "Gene_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Protein_Expression.Expression level of protein as measured by reverse-phase protein arrays (RPPAs).Examples: 0.204238725,-0.01826295", 
+        "name": "Protein_Expression", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Protein symbol with phosphorylation status, eg ACC_pS79. Other examples: p38_pT180_Y182 , 4E-BP1_pS65", 
+        "name": "Protein_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Protein_Basename. Examples: ATM, Axl, Bid, TAZ, p53, etc.", 
+        "name": "Protein_Basename", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Phosphorylated residue/s of protein.Examples: pS536, pT37_T46, pS1943. If the antibody targets a phosphorylated protein, this field will contain that information, eg pS473--otherwise this field will be null", 
+        "name": "Phospho", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "There are three possible values: R, M, and G. That is, the animal of origin for the antibody can be M (Mouse), R (Rabbit), G (Goat)", 
+        "name": "antibodySource", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Validation status of antibody by correlation of RPPA data with Western blot: V, E, C. For more information: https://bioinformatics.mdanderson.org/public-software/mclp/", 
+        "name": "validationStatus", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/Protein_RPPA_data", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "Protein_RPPA_data"
+  }, 
+  "type": "TABLE"
+}

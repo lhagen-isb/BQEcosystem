@@ -1,0 +1,86 @@
+{
+  "creationTime": "1483749033070", 
+  "description": "Data was extracted from BCGSC (BC Genome Sciences Centre) on July 2016. miRNA expression data was generated using the Illumina HiSeq platform and processed through their microRNA pipeline. More details: https://storage.cloud.google.com/isb-cgc-open/tcga/pipeline-details/bcgsc.ca__illuminaga_mirnaseq__DESCRIPTION.txt", 
+  "etag": "FpLG2u03VLPgBWbQDtW7Nw==", 
+  "id": "isb-cgc:tcga_201607_beta.miRNA_BCGSC_HiSeq_mirna3", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "mirna_expression", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767787652", 
+  "location": "US", 
+  "numBytes": "721224250", 
+  "numLongTermBytes": "721224250", 
+  "numRows": "6180663", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "mode": "NULLABLE", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "mode": "NULLABLE", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "mode": "NULLABLE", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "mode": "NULLABLE", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes ", 
+        "mode": "NULLABLE", 
+        "name": "SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (IlluminaGA)", 
+        "mode": "NULLABLE", 
+        "name": "Platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The miRNA identifier (aka symbols) eg, hsa-mir-21 .  relevant reference information can be found in the isb-cgc:genome_reference dataset in the tables miRBase_v21 and miRBase_v21_hsa_gff3", 
+        "mode": "NULLABLE", 
+        "name": "miRNA_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Sum_read_count. Examples:15994, 248, 82, 1232. Reference:https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Expression_mRNA_Pipeline/ and https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/miRNA_Pipeline/", 
+        "mode": "NULLABLE", 
+        "name": "sum_read_count", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "SumRPMM = SUM(reads_per_million_miRNA_mapped). Examples: 1440.37, 8.655, 57567. 989", 
+        "mode": "NULLABLE", 
+        "name": "sumRPMM", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/miRNA_BCGSC_HiSeq_mirna3", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRNA_BCGSC_HiSeq_mirna3"
+  }, 
+  "type": "TABLE"
+}

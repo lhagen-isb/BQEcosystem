@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469828375222", 
+  "description": "Data was generated from a curated cohort table for TCGA THCA study in June 2016. This study consists of 503 unique patients and 1021 unique samples", 
+  "etag": "lL/f08BNr1g6eaNRBF+OyQ==", 
+  "id": "isb-cgc:tcga_cohorts.THCA", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767711655", 
+  "location": "US", 
+  "numBytes": "32672", 
+  "numLongTermBytes": "32672", 
+  "numRows": "1021", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0030", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/THCA", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "THCA"
+  }, 
+  "type": "TABLE"
+}

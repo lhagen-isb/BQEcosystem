@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469827641158", 
+  "description": "Data was generated from a curated cohort table for TCGA READ study in June 2016. This study consists of 157 unique patients and 300 unique samples.", 
+  "etag": "oOgrTQFPEny0o9Lp4LGzFA==", 
+  "id": "isb-cgc:tcga_cohorts.READ", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767999245", 
+  "location": "US", 
+  "numBytes": "9600", 
+  "numLongTermBytes": "9600", 
+  "numRows": "300", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0025", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/READ", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "READ"
+  }, 
+  "type": "TABLE"
+}

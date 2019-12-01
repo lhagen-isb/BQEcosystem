@@ -1,0 +1,80 @@
+{
+  "creationTime": "1469734388330", 
+  "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 6.", 
+  "etag": "gacJcDhhajqCGPs2bA22sw==", 
+  "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr6", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "dna_methylation", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767662825", 
+  "location": "US", 
+  "numBytes": "32772371379", 
+  "numLongTermBytes": "32772371379", 
+  "numRows": "290275524", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "mode": "NULLABLE", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "mode": "NULLABLE", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes ", 
+        "mode": "NULLABLE", 
+        "name": "SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "mode": "NULLABLE", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (HumanMethylation450, HumanMethylation27)", 
+        "mode": "NULLABLE", 
+        "name": "Platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "mode": "NULLABLE", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique ID for the array probe associated with a CpG site", 
+        "mode": "NULLABLE", 
+        "name": "Probe_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Represents the ratio between the methylated array intensity and total array intensity, falls between 0 (lower levels of methylation) and 1 (higher levels of methylation)", 
+        "mode": "NULLABLE", 
+        "name": "Beta_Value", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/DNA_Methylation_chr6", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "DNA_Methylation_chr6"
+  }, 
+  "type": "TABLE"
+}
