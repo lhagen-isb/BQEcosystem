@@ -1,0 +1,84 @@
+{
+  "creationTime": "1496936315642", 
+  "description": "Data was generated from file metadata from all studies information in the Cancer Imaging Archive (TCIA) from June 2017. http://www.cancerimagingarchive.net/#collections-list", 
+  "etag": "umF7Rvh3lky27uuy/lO8eQ==", 
+  "id": "isb-cgc:metadata.TCIA_studies", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574186915318", 
+  "location": "US", 
+  "numBytes": "2326518", 
+  "numLongTermBytes": "2326518", 
+  "numRows": "15315", 
+  "schema": {
+    "fields": [
+      {
+        "description": "A unique collection name. Examples:TCGA-GBM, IvyGAP, QIN-HEADNECK, REMBRANDT, etc", 
+        "mode": "NULLABLE", 
+        "name": "Collection", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Patient identifier- never blank. Examples:LIDC-IDRI-0908, LIDC-IDRI-0908", 
+        "mode": "NULLABLE", 
+        "name": "PatientID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Patient name for this study -- frequently the same as the PatientID, and sometimes left blank. Examples: 1.3.6.1.4.1.9328.50.4.076, 281949, QIBA_CT_1C", 
+        "mode": "NULLABLE", 
+        "name": "PatientName", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A unique study identifier. Example: 1.3.6.1.4.1.14519.5.2.1.6279.6001.101324598070011890446155612648", 
+        "mode": "NULLABLE", 
+        "name": "StudyInstanceUID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The study date, of the form YYYY-MM-DD. Example: 1991-11-07", 
+        "mode": "NULLABLE", 
+        "name": "StudyDate", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The number of series in this study. This is commonly between 1 and 5, but can be over 200.", 
+        "mode": "NULLABLE", 
+        "name": "SeriesCount", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "PatientSex is given as either M or F (may be left blank)", 
+        "mode": "NULLABLE", 
+        "name": "PatientSex", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "PatientAge is given in the format NNNY. Examples: 034Y, 111Y, 086Y(may be left blank)", 
+        "mode": "NULLABLE", 
+        "name": "PatientAge", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Study Description. Examples: CT CHEST ABD PELVIS W/ CONTR, PET,HEAD & NECK CA RES", 
+        "mode": "NULLABLE", 
+        "name": "StudyDescription", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/metadata/tables/TCIA_studies", 
+  "tableReference": {
+    "datasetId": "metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "TCIA_studies"
+  }, 
+  "type": "TABLE"
+}

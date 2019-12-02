@@ -1,0 +1,80 @@
+{
+  "creationTime": "1537935206338", 
+  "description": "Data was loaded from UCSC in August 2018. Cytoband information for hg19 and hg38 references including start, stop, cytoband name (both long and short) as well as Geisma stain intensity. \nMore Details: https://software.broadinstitute.org/software/igv/Cytoband;http://hgdownload.cse.ucsc.edu/goldenpath/hg19/database/;http://hgdownload.cse.ucsc.edu/goldenpath/hg38/database/", 
+  "etag": "3SNlUnS6w7nhT+mIdHEXQA==", 
+  "id": "isb-cgc:genome_reference.cytoBands", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "cytoband_coordinate_conversion", 
+    "reference_genome_0": "hg19", 
+    "reference_genome_1": "hg38", 
+    "source_0": "ucsc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574734894010", 
+  "location": "US", 
+  "numBytes": "52424", 
+  "numLongTermBytes": "52424", 
+  "numRows": "862", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Chromosome, possible values: chr1-22, and chrX", 
+        "mode": "NULLABLE", 
+        "name": "chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Cytoband start position in reference genomehg19. See https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.13/", 
+        "mode": "NULLABLE", 
+        "name": "hg19_start", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Cytoband stop position in reference genomehg 19. See https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.13/", 
+        "mode": "NULLABLE", 
+        "name": "hg19_stop", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Cytoband start position in reference genomehg38. See https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39", 
+        "mode": "NULLABLE", 
+        "name": "hg38_start", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Cytoband stopposition in reference genomehg38. See https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39", 
+        "mode": "NULLABLE", 
+        "name": "hg38_stop", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Cytoband name without the chromosome identifier", 
+        "mode": "NULLABLE", 
+        "name": "cytoband_short", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Giemsastain intensity. e.g., gpos50, or gneg, acen, gvar, or stalk", 
+        "mode": "NULLABLE", 
+        "name": "gstain_intensity", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Full cytoband name, including chromosome. e.g., 17p13.2See https://www.ncbi.nlm.nih.gov/Class/MLACourse/Original8Hour/Genetics/chrombanding.html", 
+        "mode": "NULLABLE", 
+        "name": "cytoband_name", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/cytoBands", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "cytoBands"
+  }, 
+  "type": "TABLE"
+}

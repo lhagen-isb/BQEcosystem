@@ -1,0 +1,87 @@
+{
+  "creationTime": "1469903973748", 
+  "description": "Data was extracted from TCGA DCC on July 2016 for copy-number segment identification data.", 
+  "etag": "XPcF5q4EjjqU2t4FcLS43g==", 
+  "id": "isb-cgc:tcga_201607_beta.Copy_Number_segments", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "copy_number_segment", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1574199512561", 
+  "location": "US", 
+  "numBytes": "333774244", 
+  "numLongTermBytes": "333774244", 
+  "numRows": "2646095", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes ", 
+        "name": "SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (Genome_Wide_SNP_6)", 
+        "name": "Platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: 1, X, etc (ie does not include chr prefix)", 
+        "name": "Chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The start position for this particular segment. Example: 3218610", 
+        "name": "Start", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The end position for this particular segment. Example: 50613772", 
+        "name": "End", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of probes from the Genome Wide SNP6 array that went into estimating this segment. (Segments based on a small number of probes are likely to be noisier than estimates based on a large number of probes)Examples: 16922, 2, 5, 59949", 
+        "name": "Num_Probes", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The mean copy-number value estimated for this segment -- the value is log2(copy-number/2), centered at 0 (corresponding to a normal copy-number value of 2).Examples:0.0049, -0.0011, 0.0032", 
+        "name": "Segment_Mean", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/Copy_Number_segments", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "Copy_Number_segments"
+  }, 
+  "type": "TABLE"
+}

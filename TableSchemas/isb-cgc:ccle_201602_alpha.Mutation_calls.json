@@ -1,0 +1,349 @@
+{
+  "creationTime": "1456501727325", 
+  "description": "Data was extracted from an older CCLE dataset from Google Genomics on February 2016. Mutation calls was extracted using the file CCLE_hybrid_capture1650_hg19_NoCommonSNPs_NoNeutralVariants_CDS_2012.05.07.maf.gz.", 
+  "etag": "+d2sEajESeDh+vmnN0UXmg==", 
+  "id": "isb-cgc:ccle_201602_alpha.Mutation_calls", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "somatic_mutations", 
+    "reference_genome_0": "hg19", 
+    "source_0": "ccle", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574194645086", 
+  "location": "US", 
+  "numBytes": "190399218", 
+  "numLongTermBytes": "190399218", 
+  "numRows": "116708", 
+  "schema": {
+    "fields": [
+      {
+        "description": "The cell line primary name, appended with a short name for the location  of the cancer; e.g. TC71_BONE, HUPT4_PANCREAS, etc.", 
+        "mode": "NULLABLE", 
+        "name": "CCLE_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The cell line primary name; e.g. TC-71, NIH:OVCAR-3, etc.", 
+        "mode": "NULLABLE", 
+        "name": "Cell_line_primary_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl Annotation Transcript ID (e.g. ENST00000366560.3)", 
+        "mode": "NULLABLE", 
+        "name": "Annotation_Transcript", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Total number of mutations in genes in CCLE Oncomap data", 
+        "mode": "NULLABLE", 
+        "name": "CCLE_ONCOMAP_Total_Mutations_In_Gene", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total alteration in gene", 
+        "mode": "NULLABLE", 
+        "name": "COSMIC_Total_Alterations_In_Gene", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "One or more genome sequencing center reporting the variant", 
+        "mode": "NULLABLE", 
+        "name": "Center", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: chr1-22, and chrX", 
+        "mode": "NULLABLE", 
+        "name": "Chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DNA Repair genes role", 
+        "mode": "NULLABLE", 
+        "name": "DNARepairGenes_Role", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Rs-IDs from the dbSNP database, novel if not found in any database used, or null if there is no dbSNP record, but it is found in other databases", 
+        "mode": "NULLABLE", 
+        "name": "DbSNP_RS", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DbSNP validation status is reported as a semicolon-separated list of statuses. The union of all rs-IDs is taken when there are multiple", 
+        "mode": "NULLABLE", 
+        "name": "DbSNP_Val_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Associated Drug Bank Names and IDs", 
+        "mode": "NULLABLE", 
+        "name": "DrugBank", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "End position, in 1-based integer coordinates", 
+        "mode": "NULLABLE", 
+        "name": "End_Position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Entrez gene ID (an integer). 0 is used for regions that do not correspond to a gene region or Ensembl ID", 
+        "mode": "NULLABLE", 
+        "name": "Entrez_Gene_Id", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Percent GC content", 
+        "mode": "NULLABLE", 
+        "name": "GC_Content", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Transcript Name from GENCODE", 
+        "mode": "NULLABLE", 
+        "name": "GENCODE_Transcript_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript Status from GENCODE", 
+        "mode": "NULLABLE", 
+        "name": "GENCODE_Transcript_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript Type from GENCODE, for more information: https://www.gencodegenes.org/pages/biotypes.html", 
+        "mode": "NULLABLE", 
+        "name": "GENCODE_Transcript_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Biological Process, for more information: http://geneontology.org/docs/ontology-documentation/", 
+        "mode": "NULLABLE", 
+        "name": "GO_Biological_Process", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Cellular Component. For more information: http://geneontology.org/docs/ontology-documentation/", 
+        "mode": "NULLABLE", 
+        "name": "GO_Cellular_Component", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Molecular Function, for more information: http://geneontology.org/docs/ontology-documentation/", 
+        "mode": "NULLABLE", 
+        "name": "GO_Molecular_Function", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene type. eg protein_coding, lincRNA, etc", 
+        "mode": "NULLABLE", 
+        "name": "Gene_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Location and Base Genome Change", 
+        "mode": "NULLABLE", 
+        "name": "Genome_Change", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC Accession Numbers", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_Accession_Numbers", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC CCDS IDs", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_CCDS_IDs", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_Ensembl_ID_Supplied_By_Ensembl", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_HGNC_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "HGNC Locus Group", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_Locus_Group", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC Locus Type", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_Locus_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "OMIM ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_OMIM_ID_Supplied_By_NCBI", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "RefSeq ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_RefSeq_Supplied_By_NCBI", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UCSC ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_UCSC_ID_Supplied_By_UCSC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UniProt ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_UniProt_ID_Supplied_By_UniProt", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HUGO symbol for the gene (HUGO symbols are always in all caps). Unknown is used for regions that do not correspond to a gene", 
+        "mode": "NULLABLE", 
+        "name": "Hugo_Symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The reference genome used for the alignment (GRCh37)", 
+        "mode": "NULLABLE", 
+        "name": "NCBI_Build", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Open Regulatory Annotation Database Id. Example: OREG0026204, OREG0023259", 
+        "mode": "NULLABLE", 
+        "name": "OREGANNO_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Changes an amino acid to another amino acid e.g. p.G464V", 
+        "mode": "NULLABLE", 
+        "name": "Protein_Change", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reference allele per VCF specs, and its five flanking base pairs", 
+        "mode": "NULLABLE", 
+        "name": "Ref_Context", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The plus strand reference allele at this position. Includes the deleted sequence for a deletion or - for an insertion", 
+        "mode": "NULLABLE", 
+        "name": "Reference_Allele", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "RefSeq Protein ID e.g. NP_000134.2", 
+        "mode": "NULLABLE", 
+        "name": "Refseq_Prot_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary Variant Classification", 
+        "mode": "NULLABLE", 
+        "name": "Secondary_Variant_Classification", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Molecular assay type used to produce the analytes used for sequencing. Allowed values are a subset of the SRA 1.5 library_strategy field values. Unspecified in this table. ", 
+        "mode": "NULLABLE", 
+        "name": "Sequencing_Source", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Instrument used to produce primary sequence data", 
+        "mode": "NULLABLE", 
+        "name": "Sequencer", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Lowest numeric position of the reported variant on the genomic reference sequence. Mutation start coordinate", 
+        "mode": "NULLABLE", 
+        "name": "Start_Position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "SwissProt Accesssion ID", 
+        "mode": "NULLABLE", 
+        "name": "SwissProt_Acc_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "SwissProt Entry ID", 
+        "mode": "NULLABLE", 
+        "name": "SwissProt_Entry_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript Exon", 
+        "mode": "NULLABLE", 
+        "name": "Transcript_Exon", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Transcript Position", 
+        "mode": "NULLABLE", 
+        "name": "Transcript_Position", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DNA strand (1 or -1) on which the transcript/feature lies", 
+        "mode": "NULLABLE", 
+        "name": "Transcript_Strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UniProt AA position", 
+        "mode": "NULLABLE", 
+        "name": "UniProt_AApos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "UniProt Region", 
+        "mode": "NULLABLE", 
+        "name": "UniProt_Region", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Translational effect of variant allele", 
+        "mode": "NULLABLE", 
+        "name": "Variant_Classification", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Translational effect of variant allele", 
+        "mode": "NULLABLE", 
+        "name": "Variant_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CDNA change. Examples: c.3236G>A,c.143_147delCTGCC, c.4417_4418insCAA", 
+        "mode": "NULLABLE", 
+        "name": "cDNA_Change", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/ccle_201602_alpha/tables/Mutation_calls", 
+  "tableReference": {
+    "datasetId": "ccle_201602_alpha", 
+    "projectId": "isb-cgc", 
+    "tableId": "Mutation_calls"
+  }, 
+  "type": "TABLE"
+}

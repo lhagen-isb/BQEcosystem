@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469828518211", 
+  "description": "Data was generated from a curated cohort table for TCGA THYM study in June 2016. This study consists of 124 unique patients and 249 unique samples.", 
+  "etag": "7/AjEyLOr9lPW1rjqxPD3w==", 
+  "id": "isb-cgc:tcga_cohorts.THYM", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573768076812", 
+  "location": "US", 
+  "numBytes": "7968", 
+  "numLongTermBytes": "7968", 
+  "numRows": "249", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0031", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/THYM", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "THYM"
+  }, 
+  "type": "TABLE"
+}

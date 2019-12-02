@@ -1,0 +1,175 @@
+{
+  "creationTime": "1490140941840", 
+  "description": "Data was extracted from the supplementary table 1 (NIHMS778057-supplement-supp_table1.xlsx) from the publication in 2017: \"Proteogenomics connects somatic mutations to signalling in breast cancer\". https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5102256/", 
+  "etag": "u4an7v6SNq7fFJcYlWIt0A==", 
+  "id": "isb-cgc:hg19_data_previews.TCGA_Breast_SuppTable01", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "protein_quantification", 
+    "reference_genome_0": "hg19", 
+    "source_0": "cptac", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573768052393", 
+  "location": "US", 
+  "numBytes": "22923", 
+  "numLongTermBytes": "22923", 
+  "numRows": "105", 
+  "schema": {
+    "fields": [
+      {
+        "description": "CPTAC shorter case identifer, eg A2-A0CM", 
+        "mode": "NULLABLE", 
+        "name": "Sample_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Standard 12-char TCGA case id, eg TCGA-A2-A0CM", 
+        "mode": "NULLABLE", 
+        "name": "TCGA_case_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "27-char TCGA identifier, eg TCGA-A2-A0CM-01A-11-A21V-30", 
+        "mode": "NULLABLE", 
+        "name": "Biospecimen_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Eg 330F7598-824C-4CD6-9303-A27FE74A6695", 
+        "mode": "NULLABLE", 
+        "name": "UUID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "PAM50 subtype (29 LumA, 33 LumB, 25 Basal, 18 Her2)", 
+        "mode": "NULLABLE", 
+        "name": "PAM50", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ER status (68 Positive, 36 Negative, 1 Indeterminate)", 
+        "mode": "NULLABLE", 
+        "name": "ER_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "PR status (54 Positive, 51 Negative)", 
+        "mode": "NULLABLE", 
+        "name": "PR_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HER2 status (77 Negative, 27 Positive)", 
+        "mode": "NULLABLE", 
+        "name": "HER2_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "QC pass/fail status (77 pass, 28 fail)", 
+        "mode": "NULLABLE", 
+        "name": "QC_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Proteome cluster assignment (19=1, 31=2, 27=3, 28=NA)", 
+        "mode": "NULLABLE", 
+        "name": "Proteome_Cluster_Fig3b", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Phosphoproteome cluster assignment (25=1, 25=2, 27=3, 28=NA)", 
+        "mode": "NULLABLE", 
+        "name": "Phosphoproteome_Cluster_Fig3b", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Phosphoproteome pathways cluster assignment (22=1, 17=2, 14=3, 24=4, 28=NA)", 
+        "mode": "NULLABLE", 
+        "name": "Phosphoproteome_pathways_cluster_Fig3d", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Generally an integer, eg 107, but sometimes a string, eg 1,13 (if the sample was run twice)", 
+        "mode": "NULLABLE", 
+        "name": "runOrder", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Generally an integer, eg 22, but sometimes a string, eg 01,32", 
+        "mode": "NULLABLE", 
+        "name": "experiment", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One of 114, 115, or 116 (35 samples each)", 
+        "mode": "NULLABLE", 
+        "name": "iTRAQReporterIon", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "40=YES, 65=NO", 
+        "mode": "NULLABLE", 
+        "name": "CommonControl", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Specific GATA3 mutation (eg Frame_Shift_Ins|Somatic|p.P409fs) or NA (94)", 
+        "mode": "NULLABLE", 
+        "name": "GATA3_Mutation", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Specific PIK3CA mutation (eg Missense_Mutation|Somatic|p.H1047R) or NA (75)", 
+        "mode": "NULLABLE", 
+        "name": "PIK3CA_Mutation", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Specific TP53 mutation (eg Missense_Mutation|Somatic|p.R175H) or NA (51)", 
+        "mode": "NULLABLE", 
+        "name": "TP53_Mutation", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "1 for 8 samples, 0 for 75, NA for 22", 
+        "mode": "NULLABLE", 
+        "name": "PIK3CA_missense_mutation_in_helical_domain_all_tumors", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "1 for 13 samples, 0 for 75, NA for 17", 
+        "mode": "NULLABLE", 
+        "name": "PIK3CA_missense_mutation_in_kinase_domain_all_tumors", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "1 for 20 samples, 0 for 52, NA for 33", 
+        "mode": "NULLABLE", 
+        "name": "TP53_Nonsense_vs_Frameshift_all_tumors", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "1 for 29 samples, 0 for 51, NA for 25", 
+        "mode": "NULLABLE", 
+        "name": "TP53_Missense_mutation_all_tumors", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "1 for 28 samples, 0 for 51, NA for 26", 
+        "mode": "NULLABLE", 
+        "name": "TP53_missense_mutations_in_DNA_binding_domain_all_tumors", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/hg19_data_previews/tables/TCGA_Breast_SuppTable01", 
+  "tableReference": {
+    "datasetId": "hg19_data_previews", 
+    "projectId": "isb-cgc", 
+    "tableId": "TCGA_Breast_SuppTable01"
+  }, 
+  "type": "TABLE"
+}

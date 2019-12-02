@@ -1,0 +1,66 @@
+{
+  "creationTime": "1462731556145", 
+  "description": "Data was loaded from the \"miRBase to All pathways mapping file\" (http://www.reactome.org/download/current/miRBase2Reactome_All_Levels.txt) downloaded from the Reactome site on May 8th, 2016. More details about the Reactome project: see Fabregat et al. 2016 http://www.ncbi.nlm.nih.gov/pubmed/26656494 Milacic et al. 2012 and http://www.ncbi.nlm.nih.gov/pubmed/24243840", 
+  "etag": "jfof+YloXzs040yIuWk4KQ==", 
+  "id": "isb-cgc:genome_reference.miRBase2Reactome", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "pathway_annotations", 
+    "source_0": "mirbase2reactome", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767923940", 
+  "location": "US", 
+  "numBytes": "17896", 
+  "numLongTermBytes": "17896", 
+  "numRows": "136", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Unique MIMAT accession ID(please see miRBase_v20 table in this dataset). Example: MIMAT0000083", 
+        "mode": "REQUIRED", 
+        "name": "accession_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reactome pathway identifier. Example: R-HSA-74160", 
+        "mode": "REQUIRED", 
+        "name": "pathway_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reactome pathway browser URL. Example: http://www.reactome.org/PathwayBrowser/#/R-HSA-74160", 
+        "mode": "REQUIRED", 
+        "name": "pathway_url", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reactomepathway name. Examples: Gene Expression, Signaling by NOTCH, Signal Transduction, Signaling by NGF, PI3K/AKT activation, Generic Transcription Pathway, Cellular Senescence", 
+        "mode": "REQUIRED", 
+        "name": "pathway_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Evidence code (TAS stands for traceable author statement and implies manual curation, while IEA stands for inferred from electronic annotation)", 
+        "mode": "REQUIRED", 
+        "name": "evidence_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Species is always Homo sapiens -- this table has been filtered from the larger Reactome database to include only human pathways and genes.", 
+        "mode": "REQUIRED", 
+        "name": "species", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/miRBase2Reactome", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRBase2Reactome"
+  }, 
+  "type": "TABLE"
+}

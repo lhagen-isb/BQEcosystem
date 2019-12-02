@@ -1,0 +1,90 @@
+{
+  "creationTime": "1518482011098", 
+  "description": "Data was loaded from multiple sources including NCBI, ENSEMBL, UniProtKB, UCSC and Reactome in Feb 2018 to simplify mapping between Entrez, RefSeq, ENSEMBL, Unigene, Uniprot, UCSC, OMIM Accession identifiers and Reactome pathway IDs.", 
+  "etag": "1muK+XG+CrkLERDLxsm1VQ==", 
+  "id": "isb-cgc:QotM.org_Hs_eg_db_v1", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "genome_annotations", 
+    "source_0": "isb_cgc-qotm", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1574709757944", 
+  "location": "US", 
+  "numBytes": "5571472773", 
+  "numLongTermBytes": "5571472773", 
+  "numRows": "56818478", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Reactome pathway ID (https://reactome.org/)", 
+        "mode": "NULLABLE", 
+        "name": "ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "HUGO Alias", 
+        "mode": "NULLABLE", 
+        "name": "Alias", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl ID", 
+        "mode": "NULLABLE", 
+        "name": "Ensembl", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Eg TP53, LRP1B, etc (same as Hugo_Symbol field except blank instead of Unknown)", 
+        "mode": "NULLABLE", 
+        "name": "Symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Entrez ID from the NCBI", 
+        "mode": "NULLABLE", 
+        "name": "Entrez", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Phenotype MIM number from the OMIM", 
+        "mode": "NULLABLE", 
+        "name": "OMIM", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "NCBI Reference Sequence", 
+        "mode": "NULLABLE", 
+        "name": "Accession", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UCSC ID", 
+        "mode": "NULLABLE", 
+        "name": "UCSC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UniGene", 
+        "mode": "NULLABLE", 
+        "name": "Unigene", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Uniprot IDentifier from the UniProtKB", 
+        "mode": "NULLABLE", 
+        "name": "Uniprot", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/QotM/tables/org_Hs_eg_db_v1", 
+  "tableReference": {
+    "datasetId": "QotM", 
+    "projectId": "isb-cgc", 
+    "tableId": "org_Hs_eg_db_v1"
+  }, 
+  "type": "TABLE"
+}

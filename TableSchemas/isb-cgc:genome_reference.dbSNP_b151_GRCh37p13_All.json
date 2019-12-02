@@ -1,0 +1,401 @@
+{
+  "creationTime": "1525122651344", 
+  "description": "Data was loaded from dbSNP, build 151, released on April 24, 2018. These human single nucleotide variations, microsatellites, and small-scale insertions and deletions were downloaded via a VCF file from the NCBI and uploaded into BigQuery using the Google Variant Transforms tool (v0.2.0). More details: see https://github.com/ncbi/dbsnp/tree/master/Build%20Announcements/151, ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606_b151_GRCh37p13/VCF/All_20180423.vcf.gz and https://github.com/googlegenomics/gcp-variant-transforms", 
+  "etag": "KXNc9iDnFLzEM1rtHX1Ivg==", 
+  "id": "isb-cgc:genome_reference.dbSNP_b151_GRCh37p13_All", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "somatic_mutations", 
+    "reference_genome_0": "hg19", 
+    "source_0": "dbsnp_database", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574734501183", 
+  "location": "US", 
+  "numBytes": "105965428831", 
+  "numLongTermBytes": "105965428831", 
+  "numRows": "638388005", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Reference bases (hg19)", 
+        "mode": "NULLABLE", 
+        "name": "reference_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Start position (0-based). Corresponds to the first base of the string of reference bases.", 
+        "mode": "NULLABLE", 
+        "name": "start_position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "End position (0-based). Corresponds to the first base after the last base in the reference allele.", 
+        "mode": "NULLABLE", 
+        "name": "end_position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Reference bases (hg19)", 
+        "mode": "NULLABLE", 
+        "name": "reference_bases", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One record for each alternate base (if any)", 
+        "fields": [
+          {
+            "description": "Alternate base.", 
+            "mode": "NULLABLE", 
+            "name": "alt", 
+            "type": "STRING"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "alternate_bases", 
+        "type": "RECORD"
+      }, 
+      {
+        "description": "Variant names (e.g., refSNP IDs)", 
+        "mode": "REPEATED", 
+        "name": "names", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Phred-scaled quality score = (-10log10)x probability of incorrect base call. Higher values imply better quality.", 
+        "mode": "NULLABLE", 
+        "name": "quality", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "List of failed filters (if any), or PASS indicating the variant has passed all filters.", 
+        "mode": "REPEATED", 
+        "name": "filter", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One record for each call", 
+        "fields": [
+          {
+            "description": "Name of the call.", 
+            "mode": "NULLABLE", 
+            "name": "name", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Genotype of the call. \"-1\" is used in cases where the genotype is not called.", 
+            "mode": "REPEATED", 
+            "name": "genotype", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Phaseset of the call (if any). \"*\" is used in cases where the genotype is phased, but no phase set (\"PS\" in FORMAT) was specified.", 
+            "mode": "NULLABLE", 
+            "name": "phaseset", 
+            "type": "STRING"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "call", 
+        "type": "RECORD"
+      }, 
+      {
+        "description": "Integer value. Chr position reported in dbSNP", 
+        "mode": "NULLABLE", 
+        "name": "RSPOS", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "True/false. Is mutation (journal citation, explicit fact): a low frequency variation that is cited in journal and other reputable sources", 
+        "mode": "NULLABLE", 
+        "name": "MUT", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. From 1000 Genome phase 3", 
+        "mode": "NULLABLE", 
+        "name": "KGPhase3", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. UTR location at 5 end is in an untranslated region (UTR). FxnCode = 55", 
+        "mode": "NULLABLE", 
+        "name": "U5", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "An ordered, comma delimited list of allele frequencies based on TOPMed, starting with the reference allele followed by alternate alleles as ordered in the ALT column. The TOPMed minor allele is the second largest value in the list.", 
+        "mode": "REPEATED", 
+        "name": "TOPMED", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value. First dbSNP Build for RS", 
+        "mode": "NULLABLE", 
+        "name": "dbSNPBuildID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "True/false. Whether has Assembly conflict. This is for weight 1 and 2 variant that maps to different chromosomes on different assemblies.", 
+        "mode": "NULLABLE", 
+        "name": "CFL", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Pairs, each of gene symbol:gene id. The gene symbol and id are delimited by a colon (:) and each pair is delimited by a vertical bar (|)", 
+        "mode": "NULLABLE", 
+        "name": "GENEINFO", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Variant Suspect Reason Codes (may be more than one value added together) 0 - unspecified, 1 - Paralog, 2 - byEST, 4 - oldAlign, 8 - Para_EST, 16 - 1kg_failed, 1024 - other", 
+        "mode": "NULLABLE", 
+        "name": "SSR", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "True/false. Has reference. A coding region variation where one allele in the set is identical to the reference sequence. FxnCode = 8", 
+        "mode": "NULLABLE", 
+        "name": "REF", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Whether genotypes available. The variant has individual genotype (in SubInd table).", 
+        "mode": "NULLABLE", 
+        "name": "GNO", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Whether marker is on high density genotyping kit (50K density or greater).The variant may have phenotype associations present in dbGaP.", 
+        "mode": "NULLABLE", 
+        "name": "HD", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Whether in acceptor splice site FxnCode = 73", 
+        "mode": "NULLABLE", 
+        "name": "ASS", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Submitted from a locus-specific database", 
+        "mode": "NULLABLE", 
+        "name": "LSD", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Whether the variant is assembly specific. This is set if the variant only maps to one assembly", 
+        "mode": "NULLABLE", 
+        "name": "ASP", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Integer value. Variant Allele Origin: 0 - unspecified, 1 - Germline, 2 - Somatic, 3 - Both", 
+        "mode": "NULLABLE", 
+        "name": "SAO", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "True/false. Has non-synonymous missense A coding region variation where one allele in the set changes protein peptide. FxnClass = 42", 
+        "mode": "NULLABLE", 
+        "name": "NSM", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Has non-synonymous nonsense A coding region variation where one allele in the set changes to STOP codon (TER). FxnClass = 41", 
+        "mode": "NULLABLE", 
+        "name": "NSN", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "DbSNP ID (e.g., rs number) A reference SNP ID number, or rs ID, is an identification tag assigned by NCBI to a group (or cluster) of SNPs that map to an identical location. The rs ID number, or rs tag, is assigned after submission. The refSNP (rs) number is a unique identifier for SNP and does not infer position. An rs number may have one or more positions on a sequence (ie. SNP located in repeated region). See https://www.ncbi.nlm.nih.gov/books/NBK44417/#Content.what_is_a_reference_snp_or__rs_i", 
+        "mode": "NULLABLE", 
+        "name": "RS", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "True/false. Whether >5% minor allele frequency in each and all populations", 
+        "mode": "NULLABLE", 
+        "name": "G5A", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Is Validated.This bit is set if the variant has 2+ minor allele count based on frequency or genotype data.", 
+        "mode": "NULLABLE", 
+        "name": "VLD", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Has non-synonymous frameshift A coding region variation where one allele in the set changes all downstream amino acids. FxnClass = 44", 
+        "mode": "NULLABLE", 
+        "name": "NSF", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "An ordered, comma delimited list of allele frequencies based on 1000Genomes, starting with the reference allele followed by alternate alleles as ordered in the ALT column. Where a 1000Genomes alternate allele is not in the dbSNPs alternate allele set, the allele is added to the ALT column. The minor allele is the second largest value in the list, and was previuosly reported in VCF as the GMAF. This is the GMAF reported on the RefSNP and EntrezSNP pages and VariationReporter.", 
+        "mode": "REPEATED", 
+        "name": "CAF", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "True/false. From 1000 Genome phase 1 (incl. June Interim phase 1)", 
+        "mode": "NULLABLE", 
+        "name": "KGPhase1", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Integer value. Is Withdrawn by submitter.If one member ss is withdrawn by submitter, then this bit is set.If all member ss are withdrawn, then the rs is deleted to SNPHistory", 
+        "mode": "NULLABLE", 
+        "name": "WTD", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "0 or 1. Whether RS is a common SNP. A common SNP is one that has at least one 1000Genomes population with a minor allele of frequency >= 1% and for which 2 or more founders contribute to that minor allele frequency.", 
+        "mode": "NULLABLE", 
+        "name": "COMMON", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "True/false. Links exist to PubMed Central article", 
+        "mode": "NULLABLE", 
+        "name": "PMC", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Variant is Precious (Clinical, Pubmed Cited)", 
+        "mode": "NULLABLE", 
+        "name": "PM", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. In gene region for 5 end FxnCode = 15", 
+        "mode": "NULLABLE", 
+        "name": "R5", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Variation Class (possible values include SNV, DIV, MNV, 0)", 
+        "mode": "NULLABLE", 
+        "name": "VC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "True/false. Provisional Third Party Annotation(TPA) (currently rs from PHARMGKB who will give phenotype data)", 
+        "mode": "NULLABLE", 
+        "name": "TPA", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True /false. In gene region for 3 end FxnCode = 13", 
+        "mode": "NULLABLE", 
+        "name": "R3", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Microattribution/third-party annotation (TPA:GWAS,PAGE)", 
+        "mode": "NULLABLE", 
+        "name": "MTP", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Whether >5% minor allele frequency in 1+ populations", 
+        "mode": "NULLABLE", 
+        "name": "G5", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Whether in donor splice-site FxnCode=75", 
+        "mode": "NULLABLE", 
+        "name": "DSS", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Variation Property. Documentation is at ftp://ftp.ncbi.nlm.nih.gov/snp/specs/dbSNP_BitField_latest.pdf", 
+        "mode": "NULLABLE", 
+        "name": "VP", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value. Weight, 00 - unmapped, 1 - weight 1, 2 - weight 2, 3 - weight 3 or more", 
+        "mode": "NULLABLE", 
+        "name": "WGT", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "True/false. RS (refSNP) orientation is reversed", 
+        "mode": "NULLABLE", 
+        "name": "RV", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. UTR location at 3 end is in an untranslated region (UTR). FxnCode = 53", 
+        "mode": "NULLABLE", 
+        "name": "U3", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Has 3D structure - SNP3D table", 
+        "mode": "NULLABLE", 
+        "name": "S3D", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Has other variant with exactly the same set of mapped positions on NCBI reference assembly.", 
+        "mode": "NULLABLE", 
+        "name": "OTH", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Has OMIM/OMIA", 
+        "mode": "NULLABLE", 
+        "name": "OM", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Whether is variation is interrogated in a clinical diagnostic assay", 
+        "mode": "NULLABLE", 
+        "name": "CDA", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false Whether in Intron FxnCode = 6", 
+        "mode": "NULLABLE", 
+        "name": "INT", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Has synonymous A coding region variation where one allele in the set does not change the encoded amino acid. FxnCode = 3", 
+        "mode": "NULLABLE", 
+        "name": "SYN", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Contig allele not present in variant allele list. The reference sequence allele at the mapped position is not present in the variant allele list, adjusted for orientation.", 
+        "mode": "NULLABLE", 
+        "name": "NOC", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Has SubmitterLinkOut - From SNP->SubSNP->Batch.link_out", 
+        "mode": "NULLABLE", 
+        "name": "SLO", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "True/false. Rs cluster has non-overlapping allele sets. True when rs set has more than 2 alleles from different submissions and these sets share no alleles in common.", 
+        "mode": "NULLABLE", 
+        "name": "NOV", 
+        "type": "BOOLEAN"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/dbSNP_b151_GRCh37p13_All", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "dbSNP_b151_GRCh37p13_All"
+  }, 
+  "type": "TABLE"
+}

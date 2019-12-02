@@ -1,0 +1,114 @@
+{
+  "creationTime": "1539985310308", 
+  "description": "Data was generated from file metadata information from the GDC release 13, October 2018. More details:Aliquot are mapped to case information. https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-130 .", 
+  "etag": "CQnPY8HSkzh4fe3UxaYnhA==", 
+  "id": "isb-cgc:GDC_metadata.rel13_aliquot2caseIDmap", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "archived"
+  }, 
+  "lastModifiedTime": "1574706981168", 
+  "location": "US", 
+  "numBytes": "57270027", 
+  "numLongTermBytes": "57270027", 
+  "numRows": "180338", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Program name, eg TCGA or TARGET", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ID of the Project -- e.g. TCGA-BRCA, TARGET-AML, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifier", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Submitter identifier, eg HCC1954, TCGA-ZX-AA5X, etc", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "sample_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original/submitter sample ID", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Accompanying sample type id for the sample type", 
+        "mode": "NULLABLE", 
+        "name": "sample_type_id", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Two-digit sample_type code which forms part of the sample barcode eg 01,11,06, etc.", 
+        "mode": "NULLABLE", 
+        "name": "sample_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original/submitter portion ID", 
+        "mode": "NULLABLE", 
+        "name": "portion_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original/submitter portion ID", 
+        "mode": "NULLABLE", 
+        "name": "portion_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original/submitter analyte ID", 
+        "mode": "NULLABLE", 
+        "name": "analyte_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original/submitter analyte ID", 
+        "mode": "NULLABLE", 
+        "name": "analyte_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_barcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/rel13_aliquot2caseIDmap", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "rel13_aliquot2caseIDmap"
+  }, 
+  "type": "TABLE"
+}

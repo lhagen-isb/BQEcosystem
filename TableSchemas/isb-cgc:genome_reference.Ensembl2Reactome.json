@@ -1,0 +1,66 @@
+{
+  "creationTime": "1462730492961", 
+  "description": "Data was loaded from\u00a0the \"ENSEMBL to All pathways mapping file\" downloaded from the Reactome.org site on May 8th, 2016. More details: see http://www.reactome.org/download/current/Ensembl2Reactome_All_Levels.txt. For more information about the Reactome project, please see these recent publications: Fabregat et al. 2016 http://www.ncbi.nlm.nih.gov/pubmed/26656494; Milacic et al. 2012 http://www.ncbi.nlm.nih.gov/pubmed/24243840", 
+  "etag": "mDP4sEaqKZasNx7dOo9chA==", 
+  "id": "isb-cgc:genome_reference.Ensembl2Reactome", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "pathway_annotations", 
+    "source_0": "ensembl2reactome", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573768075443", 
+  "location": "US", 
+  "numBytes": "289984", 
+  "numLongTermBytes": "289984", 
+  "numRows": "2048", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Ensembl gene or transcript identifier (eg ENSG00000136997 or ENST00000371953)", 
+        "mode": "REQUIRED", 
+        "name": "gene_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reactome pathway identifier. E.g., R-HSA-427413", 
+        "mode": "REQUIRED", 
+        "name": "pathway_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reactome pathway browser URL. E.g., http://www.reactome.org/PathwayBrowser/#/R-HSA-427413", 
+        "mode": "REQUIRED", 
+        "name": "pathway_url", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reactome pathway name. E.g., Transcriptional activation of p53 responsive genes", 
+        "mode": "REQUIRED", 
+        "name": "pathway_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Evidence code (TAS stands for traceable author statement and implies manual curation, while IEA stands for inferred from electronic annotation)", 
+        "mode": "REQUIRED", 
+        "name": "evidence_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Homo sapiens -- this table has been filtered from the larger Reactome database to include only human pathways and genes.", 
+        "mode": "REQUIRED", 
+        "name": "species", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/Ensembl2Reactome", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "Ensembl2Reactome"
+  }, 
+  "type": "TABLE"
+}

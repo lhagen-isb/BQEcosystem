@@ -1,0 +1,48 @@
+{
+  "creationTime": "1518478064366", 
+  "description": "Data was loaded from Badar Lab on February 2018 for QotM February 2018. Reactome Gene Set Pathway data was loaded using Badar Lab's EnrichmentMap. More details: http://baderlab.org/GeneSets", 
+  "etag": "7AL7G89BARgxp3fi2txWLg==", 
+  "id": "isb-cgc:QotM.Reactome_a1", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "pathway_annotations", 
+    "source_0": "isb_cgc-qotm", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574709897315", 
+  "location": "US", 
+  "numBytes": "5383200", 
+  "numLongTermBytes": "5383200", 
+  "numRows": "104112", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Uniprot Identifier from the UniProtKB", 
+        "mode": "NULLABLE", 
+        "name": "entrez", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Pathway ID", 
+        "mode": "NULLABLE", 
+        "name": "pathwayID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Pathway Name", 
+        "mode": "NULLABLE", 
+        "name": "pathwayName", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/QotM/tables/Reactome_a1", 
+  "tableReference": {
+    "datasetId": "QotM", 
+    "projectId": "isb-cgc", 
+    "tableId": "Reactome_a1"
+  }, 
+  "type": "TABLE"
+}

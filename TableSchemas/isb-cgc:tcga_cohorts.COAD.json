@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469824482209", 
+  "description": "Data was generated from a curated cohort table for TCGA COAD study in June 2016. This study consists of 445 unique patients and 911 unique samples.", 
+  "etag": "PXuUuasmheUVilvxpYqYfA==", 
+  "id": "isb-cgc:tcga_cohorts.COAD", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767747862", 
+  "location": "US", 
+  "numBytes": "29152", 
+  "numLongTermBytes": "29152", 
+  "numRows": "911", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0007", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/COAD", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "COAD"
+  }, 
+  "type": "TABLE"
+}

@@ -1,0 +1,79 @@
+{
+  "creationTime": "1493165069880", 
+  "description": "Data was extracted from the TARGET program in April 2017. This biospecimen information (sample types) for patient cases was generated from a set of XLSX files downloaded from \nhttps://target-data.nci.nih.gov/Public/.../clinical/harmonized. More details: see https://ocg.cancer.gov/programs/target.", 
+  "etag": "5m9Md6wbBuRXM0KSOPLeTw==", 
+  "id": "isb-cgc:TARGET_bioclin_v0.Biospecimen", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "biospecimen", 
+    "source_0": "target", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574194778597", 
+  "location": "US", 
+  "numBytes": "1225084", 
+  "numLongTermBytes": "1225084", 
+  "numRows": "7276", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TARGET sample barcode, e.g. TARGET-20-PASWAT-09A", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "sample_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The barcode of the TARGET case (participant) for this sample.", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifier for this case (corresponds to the case_barcode)  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba9", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Two-digit sample_type code which forms part of the sample barcode eg. 01,11,06, etc.", 
+        "mode": "NULLABLE", 
+        "name": "sample_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The longer name of the sample type; e.g. Primary Tumor, Recurrent Tumor, etc.", 
+        "mode": "NULLABLE", 
+        "name": "sample_type_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program Name, always TARGET (Therapeutically Applicable Research To Generate Effective Treatments) in this table.", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation; the TARGET program is composed of multiple projects, with abbreviations such as TARGET-ALL-P2, TARGET-AML, TARGET-WT, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TARGET_bioclin_v0/tables/Biospecimen", 
+  "tableReference": {
+    "datasetId": "TARGET_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "Biospecimen"
+  }, 
+  "type": "TABLE"
+}

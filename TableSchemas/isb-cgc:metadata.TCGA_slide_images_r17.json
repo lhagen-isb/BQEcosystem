@@ -1,0 +1,426 @@
+{
+  "creationTime": "1565111336745", 
+  "description": "Data was generated from file metadata information from GDC release 17 on Aug 2019. Image slides are mapped to case barcodes and google cloud storage paths.", 
+  "etag": "H6TZiuEoOTXXV1NrewdEvw==", 
+  "id": "isb-cgc:metadata.TCGA_slide_images_r17", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574737433127", 
+  "location": "US", 
+  "numBytes": "23926556", 
+  "numLongTermBytes": "23926556", 
+  "numRows": "30267", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA case barcode. Example:TCGA-CR-7365. See https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode. Example:TCGA-CR-7365-01A. See https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Portion_id. Examples: 00, 01, 02, ..., 10.", 
+        "mode": "NULLABLE", 
+        "name": "portion_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Slide_id. Examples: TS1, DX1, DX2, BS1,DXD, TSA, BSA, BS4", 
+        "mode": "NULLABLE", 
+        "name": "slide_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA slide barcode. Example: TCGA-CR-7365-01A-01-TS1. See https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/", 
+        "mode": "NULLABLE", 
+        "name": "slide_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "SvsFilename. Example: TCGA-CR-7365-01A-01-TS1.811bb2b7-66e3-4694-891b-10b436ec300d.svs", 
+        "mode": "NULLABLE", 
+        "name": "svsFilename", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "NCI Genomic Data Commons (GDC) file ID. Example:9c4b1b5c-b5cf-48f6-bf41-047ceb8c883c", 
+        "mode": "NULLABLE", 
+        "name": "file_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "AppMag. Examples: 20.0, 40.0, 5.0 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "AppMag", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "BigTiff. Either true or null", 
+        "mode": "NULLABLE", 
+        "name": "BigTIFF", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "DSR_ID. Examples: resc3-dsr2, ss1641, hsc--htraperio", 
+        "mode": "NULLABLE", 
+        "name": "DSR_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Date. Examples: 10/12/2012, 2014-06-13T15:18:35.92Z (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "Date", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DisplayColor. Either 0 or null.", 
+        "mode": "NULLABLE", 
+        "name": "DisplayColor", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Exposure_Scale. Either 1.0E-6 or null", 
+        "mode": "NULLABLE", 
+        "name": "Exposure_Scale", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Exposure_Time. Examples: 45, 109 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "Exposure_Time", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Filename. Examples: ImageCollection_0000000557, T7_FFPE_2, collection_0000000353 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "Filename", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Filtered. Either 3, 5, or null", 
+        "mode": "NULLABLE", 
+        "name": "Filtered", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Focus_Offset. Examples: -5.0E-4, 0.0, 5.0E-4, -0.002 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "Focus_Offset", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "ICC_Profile. Examples: IEC 61966-2.1 Default RGB colour space - sRGB, sRGB built-in - (lcms internal), ScanScope v1, AT2, ATTurboLVF (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "ICC_Profile", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ImageID. Examples: 23116, 137444, 41058 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "ImageID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "F0_.Always set to Left", 
+        "mode": "NULLABLE", 
+        "name": "f0_", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "LineAreaXOffset. Examples: 0.017044, -0.014041, 0.0 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "LineAreaXOffset", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "LineAreaYOffset. Examples: 0.017044, -0.014041, 0.0 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "LineAreaYOffset", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "LineCameraSkew. Examples: 8.33E-4, 0.001149, -1.25E-4 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "LineCameraSkew", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "MPP. Examples: -1.25E-4, 0.25, 0.4939 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "MPP", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "OriginalHeight. Examples:95488, 137472, 22371 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "OriginalHeight", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "OriginalWidth. Examples:126000, 99000, 72000, 18000 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "OriginalWidth", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Parmset. Examples: GOG136 on RESBPCLACIE02, CHTN FocusRad22 on RESBPCLACIE01, EPC, Double Slide, None, TMA, FAINT NO LABEL, Gain Adjust Low, GOG136, John +Points WITH Label (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "Parmset", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ScanScope_ID. Examples: SS1436CNTLR, R0251491 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "ScanScope_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "StripeWidth. Examples 1000, 2032, 1840 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "StripeWidth", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Time. Example: 04:55:13 PM(can be null)", 
+        "mode": "NULLABLE", 
+        "name": "Time", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TItle. Example: TCGA-AN-A0G0-01A-01-BS1(can be null)", 
+        "mode": "NULLABLE", 
+        "name": "Title", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Top. Examples:18,10043,23.493359 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "Top", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "User. Example:a2c4146-b810-4738-94f1-c720a7c1dfdc (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "User", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Level_count. Either 1,2,3,4, or 5", 
+        "mode": "NULLABLE", 
+        "name": "level_count", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_0__downsample. Always set to 1.", 
+        "mode": "NULLABLE", 
+        "name": "level_0__downsample", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_0__height. Examples: 6311, 26499, 38406, 108417", 
+        "mode": "NULLABLE", 
+        "name": "level_0__height", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_0__tile_height. Either 256 or 240.", 
+        "mode": "NULLABLE", 
+        "name": "level_0__tile_height", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_0__tile_width. Either 256 or 240.", 
+        "mode": "NULLABLE", 
+        "name": "level_0__tile_width", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_0__width.Examples: 9734, 60169, 7427", 
+        "mode": "NULLABLE", 
+        "name": "level_0__width", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_1__downsample.Example: 4.000411015207563 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_1__downsample", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Level_1__height. Examples: 1577, 2500, 11517 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_1__height", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_1__tile_height. Either 256 or 240 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_1__tile_height", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_1__tile_width.Either 256 or 240 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_1__tile_width", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_1__width.Examples: 9734, 60169, 7427 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_1__width", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_2__downsample.Examples: 8.002762808205022, 16.002450502327406 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_2__downsample", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Level_2__height. Examples: 1577, 2500, 11517 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_2__height", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_2__tile_height. Either 256 or 240 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_2__tile_height", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_2__tile_width.Either 256 or 240 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_2__tile_width", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_2__width.Examples: 9734, 42444, 7427 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_2__width", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_3__downsample.Examples: 32.005307846406815,64.02999135068697 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_3__downsample", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Level_3__height. Examples: 1577, 2500, 1014 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_3__height", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_3__tile_height. Either 256 or 240 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_3__tile_height", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_3__tile_width.Either 256 or 240 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_3__tile_width", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_3__width.Examples: 3008, 2603, 2148 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_3__width", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Level_4__downsample.Examples: 128, 256, 32.007485244507386 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_4__downsample", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Level_4__height. Examples: 1730, 1562, 2388 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_4__height", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Level_4_tile_height. Either 256 or null", 
+        "mode": "NULLABLE", 
+        "name": "level_4__tile_height", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Level_4__tile_width.Either 256 or 240 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_4__tile_width", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Level_4__width.Examples: 762, 932, 1018 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "level_4__width", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Mpp_x. Examples: 0.2517, 0.25, 0.5025 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "mpp_x", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Mpp_y. Examples: 0.2517, 0.25, 0.5025 (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "mpp_y", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Objective_power. Either 5, 20, 40, or null", 
+        "mode": "NULLABLE", 
+        "name": "objective_power", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Quickhash_1. example: 02c468af582de56d21af7aac1bc36f0debbbf6867afa1dc1931b7e81dfc1b88f (can be null)", 
+        "mode": "NULLABLE", 
+        "name": "quickhash_1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Vendor. Either aperio or generic-tiff", 
+        "mode": "NULLABLE", 
+        "name": "vendor", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ResolutionUnit. Always set to inch", 
+        "mode": "NULLABLE", 
+        "name": "ResolutionUnit", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google Cloud Storage (GCS) location ID. Example: gs://gdc-TCGA-phs000178-open/9c4b1b5c-b5cf-48f6-bf41-047ceb8c883c/TCGA-CR-7365-01A-01-TS1.811bb2b7-66e3-4694-891b-10b436ec300d.svs", 
+        "mode": "NULLABLE", 
+        "name": "file_gcs_url", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/metadata/tables/TCGA_slide_images_r17", 
+  "tableReference": {
+    "datasetId": "metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "TCGA_slide_images_r17"
+  }, 
+  "type": "TABLE"
+}

@@ -1,0 +1,85 @@
+{
+  "creationTime": "1456501751879", 
+  "description": "Data was extracted from an older CCLE dataset from Google Genomics on February 2016. Cell line annotations was extracted using the file: CCLE_sample_info_file_2012-10-18.txt.", 
+  "etag": "vLQkk0b2qeX2uBrwH1AcLA==", 
+  "id": "isb-cgc:ccle_201602_alpha.Sample_information", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "cell_line_annotations", 
+    "reference_genome_0": "hg19", 
+    "source_0": "ccle", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574200872944", 
+  "location": "US", 
+  "numBytes": "140641", 
+  "numLongTermBytes": "140641", 
+  "numRows": "929", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Cell line primary name, appended with a short name for the location  of the cancer; e.g. TC71_BONE, HUPT4_PANCREAS, etc.", 
+        "mode": "NULLABLE", 
+        "name": "CCLE_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Cell line primary name; e.g. TC-71, NIH:OVCAR-3, etc.", 
+        "mode": "NULLABLE", 
+        "name": "Cell_line_primary_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Participant gender; e.g. Male, Female", 
+        "mode": "NULLABLE", 
+        "name": "Gender", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The primary site on the body where the cancer was found; e.g. bone, breast, pancreas, etc.", 
+        "mode": "NULLABLE", 
+        "name": "Site_Primary", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histological type of cancer; e.g.  sarcoma, neuroblastoma, etc.", 
+        "mode": "NULLABLE", 
+        "name": "Histology", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histology subtype; eg. squamous_cell_carcinoma, undifferentiated_carcinoma, etc.", 
+        "mode": "NULLABLE", 
+        "name": "Hist_Subtype1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Notes about the sample information ", 
+        "mode": "NULLABLE", 
+        "name": "Notes", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Cell line source, e.g. ATCC, DSMZ", 
+        "mode": "NULLABLE", 
+        "name": "Source", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Name of the SNP array used e.g. LIMPS_p_NCLE_DNA2N_GenomeWideSNP_6_C09_246674", 
+        "mode": "NULLABLE", 
+        "name": "SNP_array", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/ccle_201602_alpha/tables/Sample_information", 
+  "tableReference": {
+    "datasetId": "ccle_201602_alpha", 
+    "projectId": "isb-cgc", 
+    "tableId": "Sample_information"
+  }, 
+  "type": "TABLE"
+}

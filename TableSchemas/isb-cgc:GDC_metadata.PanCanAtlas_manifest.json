@@ -1,0 +1,48 @@
+{
+  "creationTime": "1554328362164", 
+  "description": "Data was generated from file metadata information for the PanCanAtlas publications. https://gdc.cancer.gov/about-data/publications/pancanatlas", 
+  "etag": "PFoCcq3Htg1VOFD8vCC/wg==", 
+  "id": "isb-cgc:GDC_metadata.PanCanAtlas_manifest", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767907281", 
+  "location": "US", 
+  "numBytes": "18033", 
+  "numLongTermBytes": "18033", 
+  "numRows": "231", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Name of file at the GDC", 
+        "mode": "NULLABLE", 
+        "name": "file_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC file identifier", 
+        "mode": "NULLABLE", 
+        "name": "gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One of 16 PanCancer Atlas projects, eg PANCAN-SQUAMOUS, MC3, PANCAN-DRIVER, etc", 
+        "mode": "NULLABLE", 
+        "name": "PCA_project_id", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/PanCanAtlas_manifest", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "PanCanAtlas_manifest"
+  }, 
+  "type": "TABLE"
+}

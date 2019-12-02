@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469824547265", 
+  "description": "Data was generated from a curated cohort table for TCGA CESC study in June 2016. This study consists of 306 unique patients and 597 unique samples.", 
+  "etag": "wag36/JbNPdNU7X6AF2SRQ==", 
+  "id": "isb-cgc:tcga_cohorts.CESC", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767817424", 
+  "location": "US", 
+  "numBytes": "19104", 
+  "numLongTermBytes": "19104", 
+  "numRows": "597", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0005", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/CESC", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "CESC"
+  }, 
+  "type": "TABLE"
+}

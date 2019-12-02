@@ -1,0 +1,158 @@
+{
+  "creationTime": "1551994198162", 
+  "description": "Data was generated from file metadata for TCGA data in the GDC active archive for release 14 from December 2018. More details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-140", 
+  "etag": "3btB2lUSTq+ptjGHUoOAdQ==", 
+  "id": "isb-cgc:TCGA_hg38_data_v0.tcga_metadata_data_hg38_r14", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "reference_genome_0": "hg38", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574879926998", 
+  "location": "US", 
+  "numBytes": "76106894", 
+  "numLongTermBytes": "76106894", 
+  "numRows": "163972", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba44", 
+        "mode": "NULLABLE", 
+        "name": "file_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba37", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TCGA case barcode, eg TCGA-DX-A8BN", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "sample_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A code representing the type of cancer. Values can be found at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations; eg. OV, GBM, LUAD", 
+        "mode": "NULLABLE", 
+        "name": "disease_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program name, eg TCGA or TARGET", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental source of the data type, eg Tissue slide image, RNA-Seq", 
+        "mode": "NULLABLE", 
+        "name": "data_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Category description of the underlying data, eg Clinical, Raw Sequencing Data, Simple Nucleotide Variation, Transcriptome Profiling  , etc", 
+        "mode": "NULLABLE", 
+        "name": "data_category", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental strategy used to generate data (where applicable) e.g. WXS, RNA-Seq", 
+        "mode": "NULLABLE", 
+        "name": "experimental_strategy", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Description of the data, eg. clinical_supplement, aligned_reads", 
+        "mode": "NULLABLE", 
+        "name": "type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The size of a file measured in bytes (B), kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB), and larger values.", 
+        "mode": "NULLABLE", 
+        "name": "file_size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "File format of the underlying data, eg BCR XML, BAM", 
+        "mode": "NULLABLE", 
+        "name": "data_format", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate data (null, Illumina)", 
+        "mode": "NULLABLE", 
+        "name": "platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC path to original bam or vcf file", 
+        "mode": "NULLABLE", 
+        "name": "file_name_key", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "BAM  or VCF index file GDC file UUID", 
+        "mode": "NULLABLE", 
+        "name": "index_file_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC path to original vcf or bam index file ", 
+        "mode": "NULLABLE", 
+        "name": "index_file_name_key", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The size of a file measured in bytes (B), kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB), and larger values.", 
+        "mode": "NULLABLE", 
+        "name": "index_file_size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Data accessibility policy (open or controlled)", 
+        "mode": "NULLABLE", 
+        "name": "access", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Access Control List -- if access is controlled, this field contains the dbGaP accession, eg phs000179", 
+        "mode": "NULLABLE", 
+        "name": "acl", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TCGA_hg38_data_v0/tables/tcga_metadata_data_hg38_r14", 
+  "tableReference": {
+    "datasetId": "TCGA_hg38_data_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "tcga_metadata_data_hg38_r14"
+  }, 
+  "type": "TABLE"
+}

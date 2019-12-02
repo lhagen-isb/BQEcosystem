@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469823646650", 
+  "description": "Data was generated from a curated cohort table for TCGA ACC study in June 2016. This study consists of 91 unique patients and 180 unique samples.", 
+  "etag": "9wKZWqYAkgZBLzKpuRF3JA==", 
+  "id": "isb-cgc:tcga_cohorts.ACC", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573768081239", 
+  "location": "US", 
+  "numBytes": "5760", 
+  "numLongTermBytes": "5760", 
+  "numRows": "180", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0002", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/ACC", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "ACC"
+  }, 
+  "type": "TABLE"
+}

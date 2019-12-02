@@ -1,0 +1,174 @@
+{
+  "creationTime": "1470342278190", 
+  "description": "Data was generated based on running Picard over ~67,000 TCGA bam files in Google Cloud Storage in August 2016.", 
+  "etag": "rhjSNE5b2P0ZVExlAb85fw==", 
+  "id": "isb-cgc:tcga_seq_metadata.picard_insert_size_metrics", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767768286", 
+  "location": "US", 
+  "numBytes": "10374673", 
+  "numLongTermBytes": "10374673", 
+  "numRows": "54595", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original data repository (CGHub) identifier", 
+        "mode": "NULLABLE", 
+        "name": "CGHub_analysisID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The MEDIAN insert size of all paired end reads where both ends mapped to the same chromosome.", 
+        "mode": "NULLABLE", 
+        "name": "MedianInsertSize", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum measured insert size.  This is usually 1 and not very useful as it is likely artifactual.", 
+        "mode": "NULLABLE", 
+        "name": "MedianAbsoluteDeviation", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum measured insert size. This is usually 1 and not very useful as it is likely artifactual.", 
+        "mode": "NULLABLE", 
+        "name": "MinInsertSize", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The maximum measure insert size by alignment. This is usually very high representing either an artifact or possibly the presence of a structural re-arrangement.", 
+        "mode": "NULLABLE", 
+        "name": "MaxInsertSize", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The mean insert size of the core of the distribution. Artefactual outliers in the distribution often cause calculation of nonsensical mean and stdev values.  To avoid this the distribution is first trimmed to a core distribution of +/- N median absolute deviations around the median insert size. By default N=10, but this is configurable.", 
+        "mode": "NULLABLE", 
+        "name": "MeanInsertSize", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Standard deviation of insert sizes over the core of the distribution.", 
+        "mode": "NULLABLE", 
+        "name": "StandardDeviation", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The total number of read pairs that were examined in the entire distribution. ", 
+        "mode": "NULLABLE", 
+        "name": "ReadPairs", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The pair orientation of the reads in this data category.", 
+        "mode": "NULLABLE", 
+        "name": "PairOrientation", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 10% of all read pairs", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf10Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 20% of all read pairs.", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf20Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 30% of all read pairs.", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf30Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 50% of all read pairs.", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf40Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 60% of all read pairs.", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf50Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 70% of all read pairs. This metric divided by 2 should approximate the standard deviation when the insert size distribution is a normal distribution.", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf60Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 80% of all read pairs.", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf70Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 90% of all read pairs.", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf80Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 95% of all read pairs.", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf90Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The width of the bins, centered around the median, that encompass 100% of all read pairs.", 
+        "mode": "NULLABLE", 
+        "name": "WidthOf99Percent", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Always null ", 
+        "mode": "NULLABLE", 
+        "name": "sample", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental strategy used to generate library e.g. WGS, WXS", 
+        "mode": "NULLABLE", 
+        "name": "library", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The total number of read groups that were examined in the entire distribution.", 
+        "mode": "NULLABLE", 
+        "name": "ReadGroup", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Substrate type e.g. DNA,  RNA", 
+        "mode": "NULLABLE", 
+        "name": "analyte_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental strategy used to generate library e.g. WGS, WXS", 
+        "mode": "NULLABLE", 
+        "name": "library_type", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_seq_metadata/tables/picard_insert_size_metrics", 
+  "tableReference": {
+    "datasetId": "tcga_seq_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "picard_insert_size_metrics"
+  }, 
+  "type": "TABLE"
+}

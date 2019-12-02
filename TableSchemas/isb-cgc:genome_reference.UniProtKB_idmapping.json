@@ -1,0 +1,48 @@
+{
+  "creationTime": "1494031929626", 
+  "description": "Data was loaded from the UniProtKB idmapping database in May 2017 . This file has three columns, delimited by tab: UniProtKB-AC, ID_type, ID where ID_type is the database name as appearing in UniProtKB cross-references, and as supported by the ID mapping tool on the UniProt web site, http://www.uniprot.org/mapping and whereID is the identifier in that cross-referenced database. More Details: See the Readme for ID_mapping on https://www.uniprot.org/downloads", 
+  "etag": "4qOO6gmmm98g2NMt8GBnRw==", 
+  "id": "isb-cgc:genome_reference.UniProtKB_idmapping", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "protein_annotations", 
+    "source_0": "uniprot", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574741497419", 
+  "location": "US", 
+  "numBytes": "153268906", 
+  "numLongTermBytes": "153268906", 
+  "numRows": "5304571", 
+  "schema": {
+    "fields": [
+      {
+        "description": "UniProt Knowledgebase Accession. Examples: P31946, Q4AC99", 
+        "mode": "NULLABLE", 
+        "name": "UniProtKB_AC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Examples: neXtProt, OrthoDB, MiM, TreeFam, DrugBank, BioMuta, OMA, Gene_Synonym, KO, GeneCards, KEGG. Cross-reference database name", 
+        "mode": "NULLABLE", 
+        "name": "ID_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Examples: NX_P30462, 142830, TF336617. Identifier in cross-referenced database.", 
+        "mode": "NULLABLE", 
+        "name": "ID", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/UniProtKB_idmapping", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "UniProtKB_idmapping"
+  }, 
+  "type": "TABLE"
+}

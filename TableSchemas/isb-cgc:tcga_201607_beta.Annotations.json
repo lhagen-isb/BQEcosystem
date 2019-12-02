@@ -1,0 +1,101 @@
+{
+  "creationTime": "1469734510952", 
+  "description": "This data was generated from the TCGA Annotations table, obtained from the TCGA DCC in July 2016. More details: The TCGA annotations table is no longer available but documentation describing the annotations is available on the NCI wiki: https://wiki.nci.nih.gov/display/TCGA/Introduction+to+Annotations. The contents of this table were downloaded shortly before the TCGA DCC went off-line. Please refer to the Genomic Data Commons Data Portal (https://gdc-portal.nci.nih.gov/) as the new data source for TCGA data (including annotations).", 
+  "etag": "HLpbU+Ye+Xqh87Gl+SpzPg==", 
+  "id": "isb-cgc:tcga_201607_beta.Annotations", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "clinical", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573768050896", 
+  "location": "US", 
+  "numBytes": "1729204", 
+  "numLongTermBytes": "1729204", 
+  "numRows": "6322", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Each annotation was assigned a unique (integer) identifier. Examples: 711, 2908, 15110", 
+        "name": "annotationId", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "An integer value - 38 possibilities in the rangefrom 1 to 465. There are 38 different annotation categories, each of which has a unique (integer) identifier.", 
+        "name": "annotationCategoryId", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Each of the 38 annotation categories also has a name associated with it. Examples: Tumor type incorrect, Normal class but appears diseased,Duplicate case,Prior malignancy, etc", 
+        "name": "annotationCategoryName", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Each annotation gets one of four possible classifications:Notification, CenterNotification, Observation, and Redaction", 
+        "name": "annotationClassification", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "An arbitrary note associated with each annotation. (This is required for each annotation. ) Examples: Tumor tissue submitted was a benign myometrium/endometrium sample, [intgen.org]: Case was of non-ovarian origin.", 
+        "name": "annotationNoteText", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Each annotation is for a specific TCGA item, and this field specifies what the *type* of item it is -- ie, a Shipped Portion, Aliquot, Patient, Analyte, Slide, Sample, or Portion. For more details, refer to the TCGA Encyclopedia at https://wiki.nci.nih.gov/display/TCGA/TCGA+Encyclopedia", 
+        "name": "itemTypeName", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Each annotation is for a specific TCGA item, and this field specifies the barcode of that item. Examples:TCGA-01-0629,TCGA-EM-A2CS-01A-11D-A17V--08", 
+        "name": "itemBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Date that this annotation was added to the annotation database. Example: 2011-06-17T16:27:55-04:00", 
+        "name": "dateAdded", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Date that this annotation was first created. Example:2013-01-21T15:21:06-05:00", 
+        "name": "dateCreated", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Date that this annotation was last edited. Example:2013-01-21T15:21:06-05:00", 
+        "name": "dateEdited", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/Annotations", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "Annotations"
+  }, 
+  "type": "TABLE"
+}

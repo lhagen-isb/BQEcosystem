@@ -1,0 +1,54 @@
+{
+  "creationTime": "1509744410279", 
+  "description": "Data was generated to list all ISB-CGC hosted data in Google Cloud Storage (GCS) available as of November 2017.", 
+  "etag": "ybIpsG2dos3X6qktyWpqqA==", 
+  "id": "isb-cgc:metadata.gcs_listing_20171101", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767916611", 
+  "location": "US", 
+  "numBytes": "182578899", 
+  "numLongTermBytes": "182578899", 
+  "numRows": "733386", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Google Cloud Storage (GCS) object_size. Example: 167359", 
+        "mode": "NULLABLE", 
+        "name": "object_size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Google Cloud Storage (GCS) timestamp. Example: 2016-03-28T20:16:26Z", 
+        "mode": "NULLABLE", 
+        "name": "time_stamp", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google Cloud Storage (GCS) base_filename. Example: broad.mit.edu_CHOL.IlluminaGA_DNASeq_automated.Level_2.1.0.0.sdrf.txt", 
+        "mode": "NULLABLE", 
+        "name": "base_filename", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google Cloud Storage (GCS) URL. Example: ://isb-cgc-open/TCGA/chol/IlluminaGA_DNASeq_Cont_automated/broad.mit.edu__DNASeq_Cont_automated/broad.mit.edu_CHOL.IlluminaGA_DNASeq_automated.Level_2.1.0.0.sdrf.txt", 
+        "mode": "NULLABLE", 
+        "name": "object_gcs_url", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/metadata/tables/gcs_listing_20171101", 
+  "tableReference": {
+    "datasetId": "metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "gcs_listing_20171101"
+  }, 
+  "type": "TABLE"
+}

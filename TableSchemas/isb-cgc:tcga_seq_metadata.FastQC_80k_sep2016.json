@@ -1,0 +1,54 @@
+{
+  "creationTime": "1475030559158", 
+  "description": "Data was generated to map CGHub IDs to FastqQC reports in Sept 2016.", 
+  "etag": "GZpxBvTkEjw1TaVX9W4R8g==", 
+  "id": "isb-cgc:tcga_seq_metadata.FastQC_80k_sep2016", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767700073", 
+  "location": "US", 
+  "numBytes": "42833020", 
+  "numLongTermBytes": "42833020", 
+  "numRows": "80312", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original data repository (CGHub) identifier for the FastQ file (note that this file may be a tar file containing more than one FastQ file -- for paired-read data, there are typically two FastQ files contained in a single tar file)", 
+        "mode": "NULLABLE", 
+        "name": "CGHub_analysisID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Deprecated GCS url paths for the FastQC html report", 
+        "mode": "NULLABLE", 
+        "name": "FastQC_html_report_url", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Deprecated GCS url paths for the FastQC html report", 
+        "mode": "NULLABLE", 
+        "name": "FastQC_zip_url", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Deprecated GCS url paths for the FastQC html report", 
+        "mode": "NULLABLE", 
+        "name": "FastQC_zip_gsPath", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_seq_metadata/tables/FastQC_80k_sep2016", 
+  "tableReference": {
+    "datasetId": "tcga_seq_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "FastQC_80k_sep2016"
+  }, 
+  "type": "TABLE"
+}

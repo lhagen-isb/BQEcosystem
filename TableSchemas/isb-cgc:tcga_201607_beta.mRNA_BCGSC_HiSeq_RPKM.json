@@ -1,0 +1,88 @@
+{
+  "creationTime": "1469734474181", 
+  "description": "Data was extracted from BCGSC (BC Genome Sciences Centre) on July 2016. mRNA expression was generated using the Illumina HiSeq platform and processed through their RPKM pipeline.", 
+  "etag": "dus9T8F/iYScWeI5cT11Og==", 
+  "id": "isb-cgc:tcga_201607_beta.mRNA_BCGSC_HiSeq_RPKM", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "mrna_expression", 
+    "data_type_1": "rnaseq", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767847206", 
+  "location": "US", 
+  "numBytes": "4459086535", 
+  "numLongTermBytes": "4459086535", 
+  "numRows": "38299138", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes ", 
+        "name": "SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (IlluminaGA)", 
+        "name": "Platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The gene symbol. In this table, gene_id is NCBI numeric gene identifier e.g. 277", 
+        "name": "gene_id", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Gene symbol from the original data file, differs if the approved gene symbol has since changed, eg C11orf17 became AKIP1", 
+        "name": "original_gene_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HUGO Gene Nomenclature Committee gene symbol, based on gene_id in original data file, eg AMY1A. Null if no gene symbol could be found (see documentation for additional details regarding ETL) http://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/data2/ETL_mRNAexpression.html", 
+        "name": "HGNC_gene_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reads Per Kilobase of transcript, per Million mapped reads (RPKM) is a normalized unit of transcript expression. It scales by transcript length to compensate for the fact that most RNA-seq protocols will generate more sequencing reads from longer RNA molecules.Examples: 0.0617, 14.9241, 2.2411", 
+        "name": "RPKM", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Gene_addenda.Examples:4of8, 10f5, 40f6, 30f 6.", 
+        "name": "gene_addenda", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/mRNA_BCGSC_HiSeq_RPKM", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "mRNA_BCGSC_HiSeq_RPKM"
+  }, 
+  "type": "TABLE"
+}

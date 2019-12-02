@@ -1,0 +1,167 @@
+{
+  "creationTime": "1543533673485", 
+  "description": "Data was loaded from 1000 Genome Project on November 2018 for QotM. DNA Variants for the human chromosome 21 data was loaded using Google Genomics API pipeline. More details: https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/QueryOfTheMonthClub.html#november-2018", 
+  "etag": "tH0uZL2c57koXa2lTWZ2dA==", 
+  "id": "isb-cgc:QotM.1000genomes", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "somatic_mutations", 
+    "reference_genome_0": "hg38", 
+    "source_0": "isb_cgc-qotm", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574710095137", 
+  "location": "US", 
+  "numBytes": "76569062196", 
+  "numLongTermBytes": "76569062196", 
+  "numRows": "1077647", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Reference name.", 
+        "mode": "NULLABLE", 
+        "name": "reference_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Start position (0-based). Corresponds to the first base of the string of reference bases.", 
+        "mode": "NULLABLE", 
+        "name": "start_position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "End position, in 1-based integer coordinates", 
+        "mode": "NULLABLE", 
+        "name": "end_position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Reference bases.", 
+        "mode": "NULLABLE", 
+        "name": "reference_bases", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One record for each alternate base (if any).", 
+        "fields": [
+          {
+            "description": "Alternate base.", 
+            "mode": "NULLABLE", 
+            "name": "alt", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Total number of alternate alleles in called genotypes", 
+            "mode": "NULLABLE", 
+            "name": "AC", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Estimated allele frequency in the range (0,1)", 
+            "mode": "NULLABLE", 
+            "name": "AF", 
+            "type": "FLOAT"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "alternate_bases", 
+        "type": "RECORD"
+      }, 
+      {
+        "description": "Variant names (e.g. RefSNP ID).", 
+        "mode": "REPEATED", 
+        "name": "names", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Phred-scaled quality score (-10log10 prob(call is wrong)). Higher values imply better quality.", 
+        "mode": "NULLABLE", 
+        "name": "quality", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "List of failed filters (if any) or PASS indicating the variant has passed all filters.", 
+        "mode": "REPEATED", 
+        "name": "filter", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "One record for each call.", 
+        "fields": [
+          {
+            "description": "Name of the call.", 
+            "mode": "NULLABLE", 
+            "name": "name", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Genotype of the call \"-1\" is used in cases where the genotype is not called.", 
+            "mode": "REPEATED", 
+            "name": "genotype", 
+            "type": "INTEGER"
+          }, 
+          {
+            "description": "Phaseset of the call (if any). \"*\" is used in cases where the genotype is phased, but no phase set (\"PS\" in FORMAT) was specified.", 
+            "mode": "NULLABLE", 
+            "name": "phaseset", 
+            "type": "STRING"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "call", 
+        "type": "RECORD"
+      }, 
+      {
+        "description": "Confidence interval around END for imprecise variants", 
+        "mode": "REPEATED", 
+        "name": "CIEND", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Confidence interval around POS for imprecise variants", 
+        "mode": "REPEATED", 
+        "name": "CIPOS", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Imprecise structural variation", 
+        "mode": "NULLABLE", 
+        "name": "IMPRECISE", 
+        "type": "BOOLEAN"
+      }, 
+      {
+        "description": "Difference in length between REF and ALT alleles", 
+        "mode": "REPEATED", 
+        "name": "SVLEN", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Type of structural variant", 
+        "mode": "NULLABLE", 
+        "name": "SVTYPE", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Number of samples with data", 
+        "mode": "NULLABLE", 
+        "name": "NS", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of alleles in called genotypes", 
+        "mode": "NULLABLE", 
+        "name": "AN", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/QotM/tables/1000genomes", 
+  "tableReference": {
+    "datasetId": "QotM", 
+    "projectId": "isb-cgc", 
+    "tableId": "1000genomes"
+  }, 
+  "type": "TABLE"
+}

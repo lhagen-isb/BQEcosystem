@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469827348173", 
+  "description": "Data was generated from a curated cohort table for TCGA PRAD study in June 2016. This study consists of 497 unique patients and 1027 unique samples.", 
+  "etag": "D/xdTaayWkuEDDjd/yJvEg==", 
+  "id": "isb-cgc:tcga_cohorts.PRAD", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767832879", 
+  "location": "US", 
+  "numBytes": "32864", 
+  "numLongTermBytes": "32864", 
+  "numRows": "1027", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0024", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/PRAD", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "PRAD"
+  }, 
+  "type": "TABLE"
+}

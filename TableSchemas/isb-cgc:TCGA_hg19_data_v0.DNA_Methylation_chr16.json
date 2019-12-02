@@ -1,0 +1,74 @@
+{
+  "creationTime": "1485812463916", 
+  "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 16 is made available here.", 
+  "etag": "fRkMXb4DvKarrliZReVcBw==", 
+  "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr16", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "dna_methylation", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767717746", 
+  "location": "US", 
+  "numBytes": "20475684191", 
+  "numLongTermBytes": "20475684191", 
+  "numRows": "179772812", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TCGA sample barcode, eg TCGA-12-1089-01A", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-01", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique probe identifier (eg cg04676771) from the Illumina Human Methylation array -- please refer to the annotation table (isb-cgc:platform_reference.methylation_annotation) for more details about any particular probe", 
+        "mode": "NULLABLE", 
+        "name": "probe_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Normalized DNA methylation beta value (between 0 and 1, where 0 indicates completely un-methylated and 1 indicates fully methylated)", 
+        "mode": "NULLABLE", 
+        "name": "beta_value", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Platform name used to generate this data -- either HumanMethylation450 or HumanMethylation27", 
+        "mode": "NULLABLE", 
+        "name": "platform", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TCGA_hg19_data_v0/tables/DNA_Methylation_chr16", 
+  "tableReference": {
+    "datasetId": "TCGA_hg19_data_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "DNA_Methylation_chr16"
+  }, 
+  "type": "TABLE"
+}

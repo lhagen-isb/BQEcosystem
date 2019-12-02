@@ -1,0 +1,85 @@
+{
+  "creationTime": "1451194919640", 
+  "description": "Data was loaded from the miRTarBase database, release 6.1, dated September 2015. It contains miRNA-target interactions (MTI) downloaded from http://mirtarbase.mbc.nctu.edu.tw/ with permission for the authors. More details: see miRTarBase 2016: updates to the experimentally validated miRNA-target interactions database. Chou CH, Chang NW, Shrestha S, Hsu SD, Lin YL, Lee WH, Yang CD, Hong HC, Wei TY, Tu SJ, Tsai TR, Ho SY, Jian TY, Wu HY, Chen PR, Lin NC, Huang HT, Yang TL, Pai CY, Tai CS, Chen WL, Huang CY, Liu CC, Weng SL, Liao KW, Hsu WL, Huang HD. http://www.ncbi.nlm.nih.gov/pubmed/26590260 http://nar.oxfordjournals.org/content/early/2015/11/19/nar.gkv1258.long", 
+  "etag": "xpUBkdTE+gyX+U3EeXdHZQ==", 
+  "id": "isb-cgc:genome_reference.miRTarBase", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "mirna_target_interactions", 
+    "reference_genome_0": "hg19", 
+    "source_0": "mirtarbase_database", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574715361761", 
+  "location": "US", 
+  "numBytes": "53308390", 
+  "numLongTermBytes": "53308390", 
+  "numRows": "463483", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Example: MIRT001190. This is a unique identifier assigned by the creators of the miRTarBase database; note that a single miRTarBase ID may appear on multiple rows of this table if it is associated with multiple target genes, for example.", 
+        "mode": "REQUIRED", 
+        "name": "miRTarBase_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: bta-miR-130b", 
+        "mode": "REQUIRED", 
+        "name": "miRNA", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: Homo sapiens, Bos taurus, Mus musculus.This is the species associated with the miRNA.", 
+        "mode": "REQUIRED", 
+        "name": "Species_miRNA", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Examples: ZNF460, SNAPIN, MET. This is the symbol of the gene targeted by the miRNA described in this row of the table.", 
+        "mode": "REQUIRED", 
+        "name": "Target_gene_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: 511816. This is the Entrez Gene ID for the target gene and can be used to find additional information. E.g., at http://www.ncbi.nlm.nih.gov/gene/511816", 
+        "mode": "NULLABLE", 
+        "name": "Target_gene_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: Homo sapiens, Bos taurus, Mus musculus, Rattus norvegicus.This is the species associated with the target gene. (Note that the miRNA species and the target gene species are almost always the same but may differ)", 
+        "mode": "REQUIRED", 
+        "name": "Species_gene", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A semi-colon delimited list of experiment names(note that the contents of this field are somewhat different from contents in the original database file). Example: qRT-PCR", 
+        "mode": "REQUIRED", 
+        "name": "Experiments", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "There are four possible values in this field: first, the support is either from Functional MTI or Non-Functional MTI, and, second ,the support type may or may not be considered Weak. Examples: Functional MTI, Non-Functional MTI (Weak), Non-Functional MTI, Functional MTI (Weak)", 
+        "mode": "REQUIRED", 
+        "name": "Support_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: 19170227. This is the PMID of the reference publication from which this miRNA-target association was obtained--this PMID reference number can be used to find the underlying reference, eg at http://www.ncbi.nlm.nih.gov/pubmed/<PMID>", 
+        "mode": "REQUIRED", 
+        "name": "Reference_PMID", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/miRTarBase", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRTarBase"
+  }, 
+  "type": "TABLE"
+}

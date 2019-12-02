@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469824875129", 
+  "description": "Data was generated from a curated cohort table for TCGA GBM study in June 2016. This study consists of 539 unique patients and 1064 unique samples.", 
+  "etag": "eAMOQpEMNoXZ+iPN1ew25g==", 
+  "id": "isb-cgc:tcga_cohorts.GBM", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767682691", 
+  "location": "US", 
+  "numBytes": "34048", 
+  "numLongTermBytes": "34048", 
+  "numRows": "1064", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0010", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/GBM", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "GBM"
+  }, 
+  "type": "TABLE"
+}

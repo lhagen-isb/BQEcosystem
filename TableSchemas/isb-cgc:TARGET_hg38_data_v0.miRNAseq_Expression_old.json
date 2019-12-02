@@ -1,0 +1,104 @@
+{
+  "creationTime": "1545355796512", 
+  "description": "Data was extracted from active archive of the GDC on December 2018 for older microRNA expression data for TARGET samples.", 
+  "etag": "ylYQBKvi71Rw96VudnF+Nw==", 
+  "id": "isb-cgc:TARGET_hg38_data_v0.miRNAseq_Expression_old", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "mirna_expression", 
+    "reference_genome_0": "hg38", 
+    "source_0": "target", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767951002", 
+  "location": "US", 
+  "numBytes": "241702728", 
+  "numLongTermBytes": "241702728", 
+  "numRows": "919809", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Project name abbreviation, eg TARGET-AML", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TARGET case barcode, eg TARGET-20-PASCGR", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TARGET sample barcode, eg TARGET-20-PASWAT-09A", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TARGET aliquot barcode, eg TARGET-20-PAJLIP-01A-01R", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique miRNA id (aka symbol), eg hsa-mir-21  --  relevant reference information can be found in the isb-cgc:genome_reference dataset in the tables miRBase_v21 and miRBase_v21_hsa_gff3", 
+        "mode": "NULLABLE", 
+        "name": "mirna_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Number of reads that were mapped to this mirna_id", 
+        "mode": "NULLABLE", 
+        "name": "read_count", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Read count normalized by total reads mapped divided by 1 million", 
+        "mode": "NULLABLE", 
+        "name": "reads_per_million_miRNA_mapped", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "A short isomiR read may map exactly to mature strands whose sequences are similar but not identical, when the read sequence does not capture the bases that distinguish these miRNAs (e.g. hsa-mir-30a at 6q13 and hsa-mir-30e at 1p34.2, which differ at position 18). We report such a <line_feed> read as cross-mapped, and we increment the read count for each MIMAT that it mapped to. Either Y or N -- fewer than 2% are Y", 
+        "mode": "NULLABLE", 
+        "name": "cross_mapped", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba11", 
+        "mode": "NULLABLE", 
+        "name": "file_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifier for this case (corresponds to the case_barcode)  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba11", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "sample_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_gdc_id", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TARGET_hg38_data_v0/tables/miRNAseq_Expression_old", 
+  "tableReference": {
+    "datasetId": "TARGET_hg38_data_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRNAseq_Expression_old"
+  }, 
+  "type": "TABLE"
+}

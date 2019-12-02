@@ -1,0 +1,96 @@
+{
+  "creationTime": "1561170691952", 
+  "description": "Data was extracted from the CCLE program in June 2019. This table contains clinical information about CCLE primary cell lines. More details: see https://portals.broadinstitute.org/ccle/about", 
+  "etag": "+TdHooHHaMCDD14e9ZlcVg==", 
+  "id": "isb-cgc:CCLE_bioclin_v0.clinical_v1", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "clinical", 
+    "source_0": "ccle", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574194444313", 
+  "location": "US", 
+  "numBytes": "130031", 
+  "numLongTermBytes": "130031", 
+  "numRows": "950", 
+  "schema": {
+    "fields": [
+      {
+        "description": "GDC unique identifier for this CCLE project and cell line", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A case barcode assigned to the project/cell line record; same as the cell line primary name.", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program Name, always CCLE (Cancer Cell Line Encyclopedia) in this table.", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; e.g. CCLE-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A code representing the type of cancer. Values can be found at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations; e.g. OV, GBM, LUAD", 
+        "mode": "NULLABLE", 
+        "name": "disease_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The number of files associated with the sample", 
+        "mode": "NULLABLE", 
+        "name": "summary_file_count", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Participant gender; e.g. Male, Female", 
+        "mode": "NULLABLE", 
+        "name": "gender", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histological type of cancer; e.g.  sarcoma, neuroblastoma, etc.", 
+        "mode": "NULLABLE", 
+        "name": "histology", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histology subtype; e.g. squamous_cell_carcinoma, undifferentiated_carcinoma, etc.", 
+        "mode": "NULLABLE", 
+        "name": "hist_subtype", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The primary site on the body where the cancer was found; e.g. bone, breast, pancreas, etc.", 
+        "mode": "NULLABLE", 
+        "name": "site_primary", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The source provider of the cell line; e.g. ATCC, DSMZ, etc.", 
+        "mode": "NULLABLE", 
+        "name": "source", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/CCLE_bioclin_v0/tables/clinical_v1", 
+  "tableReference": {
+    "datasetId": "CCLE_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "clinical_v1"
+  }, 
+  "type": "TABLE"
+}

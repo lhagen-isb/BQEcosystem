@@ -1,0 +1,469 @@
+{
+  "creationTime": "1530129546867", 
+  "description": "Data was extracted from the TCGA program in June 2018. This clinical information about patient cases also includes TCGA project information. More details: see https://docs.gdc.cancer.gov/Encyclopedia/pages/Clinical_Data/", 
+  "etag": "s5+LC5NrYFBW0YNUNoLjcw==", 
+  "id": "isb-cgc:TCGA_bioclin_v0.Clinical", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "clinical", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "archived"
+  }, 
+  "lastModifiedTime": "1574197197091", 
+  "location": "US", 
+  "numBytes": "4801321", 
+  "numLongTermBytes": "4801321", 
+  "numRows": "11315", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Program Name, always TCGA (The Cancer Genome Atlas) in this table.", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA patient/case barcode; e.g. TCGA-06-0119", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifer for this case; e.g. 7b4ce492-ff40-4bf1-b3e8-75ff83e8746d. This identifier can be used to find more information at the GDC Data Portal ( https://portal.gdc.cancer.gov/cases/7b4ce492-ff40-4bf1-b3e8-75ff83e8746d )", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program dbGaP accession number, eg phs000178", 
+        "mode": "NULLABLE", 
+        "name": "program_dbgap_accession_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; e.g. TCGA-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project Name; frequently the same as or similar to the project disease type eg   Acute Lymphoblastic Leukemia - Phase II   or   Breast Invasive Carcinoma   etc", 
+        "mode": "NULLABLE", 
+        "name": "project_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A code representing the type of cancer. Values can be found at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations; e.g. OV, GBM, LUAD", 
+        "mode": "NULLABLE", 
+        "name": "disease_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Participant gender; e.g. Male, Female", 
+        "mode": "NULLABLE", 
+        "name": "gender", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Survival state of the participant; e.g. dead, alive", 
+        "mode": "NULLABLE", 
+        "name": "vital_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The race of a participant, independent from ethnicity; e.g. White, Black or African American, Asian, Native Hawaiian or other Pacific Islander, American Indian or Alaska Native", 
+        "mode": "NULLABLE", 
+        "name": "race", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The ethnic origination of a participant, independent from race; e.g. Not Hispanic or Latino, Hispanic or Latino", 
+        "mode": "NULLABLE", 
+        "name": "ethnicity", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Age, in years, at which a condition or disease was first diagnosed", 
+        "mode": "NULLABLE", 
+        "name": "age_at_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Days since birth (a negative value, relative to the date of diagnosis which is considered to be t=0)", 
+        "mode": "NULLABLE", 
+        "name": "days_to_birth", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "If vital_status indicates 'dead', then this is the number of days to death (a positive value) relative to the date of diagnosis.", 
+        "mode": "NULLABLE", 
+        "name": "days_to_death", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of days to initial pathologic diagnosis", 
+        "mode": "NULLABLE", 
+        "name": "days_to_initial_pathologic_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "If vital_status indicates 'alive', then this is the number of days from the date of diagnosis to the last followup (communication contact).", 
+        "mode": "NULLABLE", 
+        "name": "days_to_last_followup", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of days from the date of diagnosis to the last day on which a person was known to be alive. This field is a combination of the days_to_last_followup and days_to death fields. Therefore, this field can be used whether the vital_status is 'alive' or 'dead'.", 
+        "mode": "NULLABLE", 
+        "name": "days_to_last_known_alive", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Numeric value to represent the day of the diagnosis for the submitted sample.", 
+        "mode": "NULLABLE", 
+        "name": "days_to_submitted_specimen_dx", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The stage of the cancer, based on results of tests done before surgery, such as physical exams and imaging scans; e.g. Stage I, Stage II, Stage III, Stage IV", 
+        "mode": "NULLABLE", 
+        "name": "clinical_stage", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The clinical T score is a rating of the extent of the primary tumor, based on results of tests done before surgery, such as physical exams and imaging scans; e.g. T1, T2, T3, T4", 
+        "mode": "NULLABLE", 
+        "name": "clinical_T", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The clinical N score is a rating of the extent of cancer within nearby lymph nodes, based on results of tests done before surgery, such as physical exams and imaging scans; e.g. N1, N2, N3", 
+        "mode": "NULLABLE", 
+        "name": "clinical_N", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The clinical M score is a rating of metastasis, that is, how much cancer has spread to distant sites. It is based on results of tests done before surgery, such as physical exams and imaging scans; e.g. MX, M0, M1", 
+        "mode": "NULLABLE", 
+        "name": "clinical_M", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The stage of the cancer, based on surgery or biopsy; e.g. Stage I, Stage II, Stage III, Stage IV", 
+        "mode": "NULLABLE", 
+        "name": "pathologic_stage", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The pathologic T score is a rating of the extent of the primary tumor, based on surgery or biopsy; e.g. T1, T2, T3, T4", 
+        "mode": "NULLABLE", 
+        "name": "pathologic_T", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The pathologic N score is a rating of the extent of cancer within nearby lymph nodes, based on surgery or biopsy; e.g. N1, N2, N3", 
+        "mode": "NULLABLE", 
+        "name": "pathologic_N", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The pathologic M score is a rating of metastasis, that is, how much cancer has spread to distant sites. It is based on surgery or biopsy; e.g. MX, M0, M1", 
+        "mode": "NULLABLE", 
+        "name": "pathologic_M", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Four digit year of the initial pathologic diagnosis", 
+        "mode": "NULLABLE", 
+        "name": "year_of_initial_pathologic_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The location on the body where the tumor exists; e.g. Brain, Ovary, Lung, etc.", 
+        "mode": "NULLABLE", 
+        "name": "tumor_tissue_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether a person had a primary diagnosis of melanoma; e.g. Yes, No", 
+        "mode": "NULLABLE", 
+        "name": "primary_neoplasm_melanoma_dx", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The spatial location, subdivisions and/or atomic site name of a tumor; e.g. Rectum, Larynx, Tonsil, etc.", 
+        "mode": "NULLABLE", 
+        "name": "anatomic_neoplasm_subdivision", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Country of the participant; e.g. Germany, United States, Canada, etc.", 
+        "mode": "NULLABLE", 
+        "name": "country", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator and type of other diagnosis; e.g. No; Yes, History of Prior Malignancy; Yes, History of Synchronous/Bilateral Malignancy; Both History of Synchronous/Bilateral and Prior Malignancy", 
+        "mode": "NULLABLE", 
+        "name": "other_dx", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The site on the body where the other malignancy occurred; e.g. Bladder, Uterus, etc.", 
+        "mode": "NULLABLE", 
+        "name": "other_malignancy_anatomic_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether another malignancy occurred before or at the same time; e.g. Prior Malignancy, Synchronous Malignancy", 
+        "mode": "NULLABLE", 
+        "name": "other_malignancy_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histological type of cancer of the other malignancy; e.g. Adenosquamous, Astrocytoma, etc.", 
+        "mode": "NULLABLE", 
+        "name": "other_malignancy_histological_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Describes the patient's history of neoadjuvant treatment and the kind of treament given prior to resection of the tumor; e.g. Yes, Pharmaceutical Treatment Prior to Resection, etc.", 
+        "mode": "NULLABLE", 
+        "name": "history_of_neoadjuvant_treatment", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Kind of outcome achieved after the completion of the initial course of treatment; e.g. Complete Remission/Response, Progressive Disease, etc.", 
+        "mode": "NULLABLE", 
+        "name": "primary_therapy_outcome_success", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histological type of cancer; e.g. Adenosquamous, Astrocytoma, etc.", 
+        "mode": "NULLABLE", 
+        "name": "histological_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Rating which expresses the degree of abnormality of cancer cells, a measure of differentiation and aggressiveness; e.g. G1, G2, G3, G4", 
+        "mode": "NULLABLE", 
+        "name": "neoplasm_histologic_grade", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Alphanumeric value used to describe the disease code from the tenth version of the International Classification of Disease (ICD-10)", 
+        "mode": "NULLABLE", 
+        "name": "icd_10", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Code that represents the site of the disease using the third edition of the International Classification of Diseases for Oncology, published in 2000, used principally in tumor and cancer registries for coding the site (topography) and the histology (morphology) of neoplasms", 
+        "mode": "NULLABLE", 
+        "name": "icd_o_3_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Code that represents the histology of the disease using the third edition of the International Classification of Diseases for Oncology, published in 2000, used principally in tumor and cancer registries for coding the site (topography) and the histology (morphology) of neoplasms", 
+        "mode": "NULLABLE", 
+        "name": "icd_o_3_histology", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The participant's cancer status; e.g. With Tumor, Tumor Free", 
+        "mode": "NULLABLE", 
+        "name": "person_neoplasm_cancer_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Status of the tissue margin following surgical resection; e.g. R0, R1, R2, RX", 
+        "mode": "NULLABLE", 
+        "name": "residual_tumor", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Tumor Type; e.g. Primary, Type 1, Type 2", 
+        "mode": "NULLABLE", 
+        "name": "tumor_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether a patient has had a new tumor event after initial treatment; Yes, No", 
+        "mode": "NULLABLE", 
+        "name": "new_tumor_event_after_initial_treatment", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator whether the lymph nodes were examined; e.g. Yes, No", 
+        "mode": "NULLABLE", 
+        "name": "lymphnodes_examined", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The number of lymph nodes examined", 
+        "mode": "NULLABLE", 
+        "name": "number_of_lymphnodes_examined", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of lymph nodes involved with disease as determined by histological examination", 
+        "mode": "NULLABLE", 
+        "name": "number_of_lymphnodes_positive_by_he", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Indicator if small or thin-walled vessel invasion is present, indicating lymphatic involvement; e.g. Yes, No", 
+        "mode": "NULLABLE", 
+        "name": "lymphatic_invasion", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator if large vessel or venous invasion was detected by surgery or presence in a tumor specimen; e.g. Yes, No", 
+        "mode": "NULLABLE", 
+        "name": "venous_invasion", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator if  invasion of a cancer to the blood vessels and/or lymphatics invasion is present; e.g. Yes, No", 
+        "mode": "NULLABLE", 
+        "name": "lymphovascular_invasion_present", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Biospecimen Core Resource; e.g. Nationwide Children's Hospital, Washington University", 
+        "mode": "NULLABLE", 
+        "name": "bcr", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The BCR Batch Code; see https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/bcr-batch-codes for explanation of the codes", 
+        "mode": "NULLABLE", 
+        "name": "batch_number", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Tissue Source Site Code; see https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/tissue-source-site-codes for explanation of codes", 
+        "mode": "NULLABLE", 
+        "name": "tss_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Age, in years, that the participant began smoking", 
+        "mode": "NULLABLE", 
+        "name": "age_began_smoking_in_years", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Four-digit year that the participant started smoking; e.g. 2010", 
+        "mode": "NULLABLE", 
+        "name": "year_of_tobacco_smoking_onset", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Four-digit year that the participant stopped smoking; e.g. 2010", 
+        "mode": "NULLABLE", 
+        "name": "stopped_smoking_year", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Category describing current smoking status and smoking history as self-reported by a participant.; e.g. 1, 2, etc.", 
+        "mode": "NULLABLE", 
+        "name": "tobacco_smoking_history", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The number of packs smoked per day times the number of years smoked by the participant", 
+        "mode": "NULLABLE", 
+        "name": "number_pack_years_smoked", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Height of participant in centimeters", 
+        "mode": "NULLABLE", 
+        "name": "height", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Weight of participant in kilograms", 
+        "mode": "NULLABLE", 
+        "name": "weight", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Body Mass Index of participant", 
+        "mode": "NULLABLE", 
+        "name": "bmi", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Status of the mononucleotide and dinucleotide marker panel analysis; microsatellite-stable (MSS), low level MSI (MSI-L) if less than 40% of markers were altered and high level MSI (MSI-H) if greater than 40% of markers were altered", 
+        "mode": "NULLABLE", 
+        "name": "mononucleotide_and_dinucleotide_marker_panel_analysis_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A female participant's menopausal status; e.g. Post, Pre, Indeterminate, Peri", 
+        "mode": "NULLABLE", 
+        "name": "menopause_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The number of times (including currently if it applies) that a female participant has been pregnant, regardless of outcome.", 
+        "mode": "NULLABLE", 
+        "name": "pregnancies", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether the participant has a record of a positive finding for human papillomavirus; e.g. Positive, Negative, Indeterminate", 
+        "mode": "NULLABLE", 
+        "name": "hpv_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HPV strains; e.g. HPV18, HPV45, etc.", 
+        "mode": "NULLABLE", 
+        "name": "hpv_calls", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator of previous or current diagnosis of Helicobactor pylori infection; e.g. Yes, No, Never, Current", 
+        "mode": "NULLABLE", 
+        "name": "h_pylori_infection", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The Gleason Score (ranging from 1 -5) is the grade of the aggressiveness of prostate cancer. The combined Gleason Score is the primary Gleason score  (for the largest area of the tumor) added to the secondary Gleason Score (for the next largest section of the tumor).", 
+        "mode": "NULLABLE", 
+        "name": "gleason_score_combined", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "A male participant's Prostrate-Specific Antigen (PSA) value", 
+        "mode": "NULLABLE", 
+        "name": "psa_value", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Indicates whether the participant has colorectal cancer; e.g. Yes, No", 
+        "mode": "NULLABLE", 
+        "name": "colorectal_cancer", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator if the participant had a previous history of colon polyps as noted in the history/physical or previous endoscopic report(s); e.g. Yes, No", 
+        "mode": "NULLABLE", 
+        "name": "history_of_colon_polyps", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TCGA_bioclin_v0/tables/Clinical", 
+  "tableReference": {
+    "datasetId": "TCGA_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "Clinical"
+  }, 
+  "type": "TABLE"
+}

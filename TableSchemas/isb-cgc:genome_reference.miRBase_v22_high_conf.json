@@ -1,0 +1,163 @@
+{
+  "creationTime": "1546975341996", 
+  "description": "Data was loaded from the miRBase database, release 22, dated March 2018. This high confidence microRNA data (mapped to GRCh38) was created by parsing the information from the miRNA.dat EMBL-format file downloaded from the miRBase website. ( ftp://mirbase.org/pub/mirbase/22/miRNA.dat.gz ). More details: see ftp://mirbase.org/pub/mirbase/CURRENT/LICENSE for public domain and licensing details, and http://www.mirbase.org/ for information on how to cite miRBase in publications.", 
+  "etag": "zmAyIVTK6g2BjOcbKf2Vww==", 
+  "id": "isb-cgc:genome_reference.miRBase_v22_high_conf", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "mirna_annotations", 
+    "reference_genome_0": "hg38", 
+    "source_0": "mirbase_the_microrna_database", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574715321873", 
+  "location": "US", 
+  "numBytes": "1926300", 
+  "numLongTermBytes": "1926300", 
+  "numRows": "6170", 
+  "schema": {
+    "fields": [
+      {
+        "description": "MiRNA symbol. Examples: hsa-mir-24-2, sof-MIR159b", 
+        "mode": "REQUIRED", 
+        "name": "miRBase_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Taxonomic abbreviation. Examples: HAS,OAR, SOF", 
+        "mode": "REQUIRED", 
+        "name": "taxonomic_abbrev", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Stemloop sequence length. Example: 110", 
+        "mode": "REQUIRED", 
+        "name": "sequence_length", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "MiRBase accession number. Example: MI0000077", 
+        "mode": "REQUIRED", 
+        "name": "miRBase_accession", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "MiRNA description", 
+        "mode": "NULLABLE", 
+        "name": "description", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC primary identifier. Example: 32586 (can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC secondary identifier. Example: MIR21 (can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "EntrezGene primary identifier. Example: 406991", 
+        "mode": "NULLABLE", 
+        "name": "EntrezGene_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "EntrezGene secondary identifier. Example: MIR21", 
+        "mode": "NULLABLE", 
+        "name": "EntrezGene_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Number of As in sequence. Example: 16", 
+        "mode": "REQUIRED", 
+        "name": "numA", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of Cs in sequence. Example: 15", 
+        "mode": "REQUIRED", 
+        "name": "numC", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of Gs in sequence. Example: 20", 
+        "mode": "REQUIRED", 
+        "name": "numG", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of Ts in sequence. Will always be 0.", 
+        "mode": "REQUIRED", 
+        "name": "numT", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of non-ACGT letters in base sequence. Example: 21", 
+        "mode": "REQUIRED", 
+        "name": "numOther", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "MiRNA (stemloop) sequence. Example: gcuuugaucacugucuccagccugcugaagcucagagggcucugauucagaaagaucaucggauccgucugagcuuggcuggucggaagucuccucaucugcuuccuucggguu", 
+        "mode": "NULLABLE", 
+        "name": "miRNA_sequence", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Feature start position. Examples: 21, 58, 226", 
+        "mode": "REQUIRED", 
+        "name": "feature_start_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Feature stop position. Examples: 40, 80, 246", 
+        "mode": "REQUIRED", 
+        "name": "feature_stop_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Feature product symbol.Example: hsa-miR-21-5p", 
+        "mode": "REQUIRED", 
+        "name": "product_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Feature product accession. Example: MIMAT0000076", 
+        "mode": "REQUIRED", 
+        "name": "product_accession", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Feature product evidence. Either experimental or not_experimental", 
+        "mode": "REQUIRED", 
+        "name": "product_evidence", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Feature product sequence. Example: ugacagaagagagugagcac", 
+        "mode": "NULLABLE", 
+        "name": "product_sequence", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Feature product sequence length. Usually 21 or 22 bases, but can be longer ( 23, 24, ..., 34)or shorter (15, ..., 20)", 
+        "mode": "NULLABLE", 
+        "name": "product_seq_len", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/miRBase_v22_high_conf", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRBase_v22_high_conf"
+  }, 
+  "type": "TABLE"
+}

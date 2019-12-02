@@ -1,0 +1,74 @@
+{
+  "creationTime": "1456501507311", 
+  "description": "Data was generated from an older CCLE dataset from Google Genomics on February 2016. Expression data was generated using Raw Affymetrix U133+2 CEL files that was converted to a single value for each probe set using Robust Multi-array Average (RMA) and quantile normalization.", 
+  "etag": "50foE8mO202QGxRQBBkCig==", 
+  "id": "isb-cgc:ccle_201602_alpha.AffyU133_RMA_expression", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "gene_expression", 
+    "data_type_1": "microarray", 
+    "reference_genome_0": "hg19", 
+    "source_0": "ccle", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574200966155", 
+  "location": "US", 
+  "numBytes": "1523451884", 
+  "numLongTermBytes": "1523451884", 
+  "numRows": "17525476", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Cell line primary name, appended with a short name for the location  of the cancer; e.g. TC71_BONE, HUPT4_PANCREAS, etc", 
+        "mode": "NULLABLE", 
+        "name": "CCLE_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The cell line primary name; e.g. TC-71, NIH:OVCAR-3, etc", 
+        "mode": "NULLABLE", 
+        "name": "Cell_line_primary_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The gene symbol. In this table, gene symbol is the NCBI gene ID e.g. 100506168", 
+        "mode": "NULLABLE", 
+        "name": "gene_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HUGO Gene Nomenclature Committee gene symbol, based on gene_id in original data file, eg AMY1A. Null if no gene symbol could be found", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_gene_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene symbol from the original data file, differs if the approved gene symbol has since changed, eg C11orf17 became AKIP1", 
+        "mode": "NULLABLE", 
+        "name": "original_gene_symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (Genome_Wide_SNP_6)", 
+        "mode": "NULLABLE", 
+        "name": "Platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "RMA (Robust Multi-array Average) is an algorithm used to create an expression matrix from Affymetrix data. The raw intensity values are background corrected, log2 transformed and then quantile normalized. Next a linear model is fit to the normalized data to obtain an expression measure for each probe set on each array. More information can be found here: Irizarry, RA et al. Exploration, Normalization, and Summaries of High Density Oligonucleotide Array Probe Level Data. Biostatistics 2003", 
+        "mode": "NULLABLE", 
+        "name": "RMA_normalized_expression", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/ccle_201602_alpha/tables/AffyU133_RMA_expression", 
+  "tableReference": {
+    "datasetId": "ccle_201602_alpha", 
+    "projectId": "isb-cgc", 
+    "tableId": "AffyU133_RMA_expression"
+  }, 
+  "type": "TABLE"
+}

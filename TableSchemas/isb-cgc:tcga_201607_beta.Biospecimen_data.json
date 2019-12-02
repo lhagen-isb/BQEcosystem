@@ -1,0 +1,226 @@
+{
+  "creationTime": "1469734205500", 
+  "description": "Data was extracted from the TCGA program in July 2016. It contains sample data for TCGA patient cases.", 
+  "etag": "JjW6XVZo6Fj4tdFomw8H5w==", 
+  "id": "isb-cgc:tcga_201607_beta.Biospecimen_data", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "biospecimen", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1574199315584", 
+  "location": "US", 
+  "numBytes": "6382147", 
+  "numLongTermBytes": "6382147", 
+  "numRows": "23797", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes ", 
+        "name": "SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "There are 10 sample types: Blood Derived Normal, Primary solid Tumor, Solid Tissue Normal, Recurrent Solid Tumor, Metastatic, Additional - New Primary, Primary Blood Derived Cancer - Peripheral Blood, Buccal Cell Normal, Additioanal Metastatic, Bone Marrrow Normal", 
+        "name": "SampleType", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The project value is always set to TCGA.", 
+        "name": "Project", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "There are 9 integer sample type codes, ranging from 01 through 11.", 
+        "name": "SampleTypeCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The average percentage of infiltration by lymphocytes in a sample or specimen", 
+        "name": "avg_percent_lymphocyte_infiltration", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The average percentage of infiltration by monocytesin a sample or specimen", 
+        "name": "avg_percent_monocyte_infiltration", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The average percentage of necrosis in a sample or specimen", 
+        "name": "avg_percent_necrosis", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The average percentage of neutrophil infiltration in a sample or specimen", 
+        "name": "avg_percent_neutrophil_infiltration", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The average percentage of normal cells in a sample or specimen", 
+        "name": "avg_percent_normal_cells", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The average percentage of stromal cells in a sample or specimen", 
+        "name": "avg_percent_stromal_cells", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The average percentage of tumor cells in a sample or specim", 
+        "name": "avg_percent_tumor_cells", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The average percentage of tumor nuclei in a sample or specimen", 
+        "name": "avg_percent_tumor_nuclei", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The BCR Batch Code; see https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/bcr-batch-codes for explanation of the codes", 
+        "name": "batch_number", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Biospecimen Core Resource; e.g. Nationwide Children's Hospital, Washington University", 
+        "name": "bcr", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Time interval from the date of biospecimen collection to the date of initial pathologic diagnosis, represented as a calculated number of days.", 
+        "name": "days_to_collection", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The number of days from the date the patient was diagnosed to the date of the procedure that produced the sample.", 
+        "name": "days_to_sample_procurement", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Indicator to signify whether or not the tissue sample was fixed in formalin and embedded in paraffin (FFPE); almost always NO -- only a few (99) FFPE samples were included in the TCGA project", 
+        "name": "is_ffpe", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The maximum percentage of infiltration by lymphocytes in a sample or specimen", 
+        "name": "max_percent_lymphocyte_infiltration", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The maximum percentage of infiltration by monocytes in a sample or specimen", 
+        "name": "max_percent_monocyte_infiltration", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "He maximum percentage of necrosis in a sample or specimen", 
+        "name": "max_percent_necrosis", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The maximum percentage of neutrophil infiltration in a sample or specimen", 
+        "name": "max_percent_neutrophil_infiltration", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The maximum percentage of normal cellsin a sample or specimen", 
+        "name": "max_percent_normal_cells", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The maximum percentage of stromal cells in a sample or specimen", 
+        "name": "max_percent_stromal_cells", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The maximum percentage of tumor cells in a sample or specimen", 
+        "name": "max_percent_tumor_cells", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The maximum percentage of tumor nucleiin a sample or specimen", 
+        "name": "max_percent_tumor_nuclei", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum percentage of infiltration by lymphocytes in a sample or specimen", 
+        "name": "min_percent_lymphocyte_infiltration", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum percentage of infiltration by monocytesin a sample or specimen", 
+        "name": "min_percent_monocyte_infiltration", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum percentage of necrosisin a sample or specimen", 
+        "name": "min_percent_necrosis", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum percentage of neutophil infiltration in a sample or specimen", 
+        "name": "min_percent_neutrophil_infiltration", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum percentage of normal cellsin a sample or specimen", 
+        "name": "min_percent_normal_cells", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum percentage of stromal cellsin a sample or specimen", 
+        "name": "min_percent_stromal_cells", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum percentage of tumor cellsin a sample or specimen", 
+        "name": "min_percent_tumor_cells", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The minimum percentage of tumor nucleiin a sample or specimen", 
+        "name": "min_percent_tumor_nuclei", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "In some cases, a sample was divided into multiple portions -- up to 6 portions - so range for this integer value is 0 through 6. But for the great majority of samples (> 23,600 of a total of 23,797 samples) the number is 1.", 
+        "name": "num_portions", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "In some cases, portions of a sample were placed onto multiple slides -- generally not more than 2, but occasionally more.", 
+        "name": "num_slides", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "SampleUUID.Example: EC08F8EE-DA6A-4CFA-AEE9-07754224FC58", 
+        "name": "SampleUUID", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/Biospecimen_data", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "Biospecimen_data"
+  }, 
+  "type": "TABLE"
+}

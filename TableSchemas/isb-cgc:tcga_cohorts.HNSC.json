@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469825108646", 
+  "description": "Data was generated from a curated cohort table for TCGA HNSC study in June 2016. This study consists of 523 unique patients and 1093 unique samples.", 
+  "etag": "KmkzGYl8tb1Auf63iFrqTA==", 
+  "id": "isb-cgc:tcga_cohorts.HNSC", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767733919", 
+  "location": "US", 
+  "numBytes": "34976", 
+  "numLongTermBytes": "34976", 
+  "numRows": "1093", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0011", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/HNSC", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "HNSC"
+  }, 
+  "type": "TABLE"
+}

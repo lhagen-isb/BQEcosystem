@@ -1,0 +1,40 @@
+{
+  "creationTime": "1469825879862", 
+  "description": "Data was generated from a curated cohort table for TCGA LUAD study in June 2016. This study consists of 575 unique patients and 1164 unique samples.", 
+  "etag": "22EDlA3WP8m7p4pvBahw6g==", 
+  "id": "isb-cgc:tcga_cohorts.LUAD", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "tcga", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767774393", 
+  "location": "US", 
+  "numBytes": "37248", 
+  "numLongTermBytes": "37248", 
+  "numRows": "1164", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0018", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the biospecimen sample", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_cohorts/tables/LUAD", 
+  "tableReference": {
+    "datasetId": "tcga_cohorts", 
+    "projectId": "isb-cgc", 
+    "tableId": "LUAD"
+  }, 
+  "type": "TABLE"
+}

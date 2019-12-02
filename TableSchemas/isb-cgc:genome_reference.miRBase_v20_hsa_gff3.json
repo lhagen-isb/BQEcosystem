@@ -1,0 +1,85 @@
+{
+  "creationTime": "1486344823093", 
+  "description": "Data was loaded from miRBase database, release 20 on February 2017. More details: www.mirbase.org. This microRNA data is based on the hsa.gff3 file downloaded from www.mirbase.org.", 
+  "etag": "PQjSgPnVkV0cnpxbssHo0w==", 
+  "id": "isb-cgc:genome_reference.miRBase_v20_hsa_gff3", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "mirna_annotations", 
+    "reference_genome_0": "hg19", 
+    "source_0": "mirbase_the_microrna_database", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574715214073", 
+  "location": "US", 
+  "numBytes": "408467", 
+  "numLongTermBytes": "408467", 
+  "numRows": "4665", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Examples: chr1, chr19, chrX, etc", 
+        "mode": "NULLABLE", 
+        "name": "seq_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Either miRNA (n=2794) or miRNA_primary_transcript (n=1871)", 
+        "mode": "NULLABLE", 
+        "name": "type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Start position, in 1-based integer coordinates", 
+        "mode": "NULLABLE", 
+        "name": "start_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "End position, in 1-based integer coordinates", 
+        "mode": "NULLABLE", 
+        "name": "end_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "+ or -, for forward or reverse strand. DNA is double-stranded. By convention, for a reference chromosome, one whole strand is designated the forward strand and the other the reverse strand. This designation is arbitrary. Sometimes the terms plus strand and minus strand are used instead.", 
+        "mode": "NULLABLE", 
+        "name": "strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: MI0017343 or MIMAT0031181 (unique in this table, may include a suffix to make it unique, eg MIMAT0005890_8)", 
+        "mode": "NULLABLE", 
+        "name": "id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: MIMAT0005890 (may not be unique -- strips off any suffix in the id column)", 
+        "mode": "NULLABLE", 
+        "name": "alias", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: hsa-miR-1302 (may not be unique)", 
+        "mode": "NULLABLE", 
+        "name": "name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: MI0003127, or blank, if type is miRNA_primary_transcript", 
+        "mode": "NULLABLE", 
+        "name": "derived_from", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/miRBase_v20_hsa_gff3", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRBase_v20_hsa_gff3"
+  }, 
+  "type": "TABLE"
+}

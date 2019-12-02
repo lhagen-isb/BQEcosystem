@@ -1,0 +1,49 @@
+{
+  "creationTime": "1518569976550", 
+  "description": "Data was generated from file metadata of genomic data from the publication (Genetics and Pathogenesis of Diffuse Large B Cell Lymphoma; New England Journal of Medicine. Volume 378 p1396-1407, 12 April 2018 10.1056/NEJMoa1801445) processed through the GDC harmonization pipeline and will be made available through the GDC. https://docs.gdc.cancer.gov/Data/Release_Notes/DLBC_Affected_Files.txt", 
+  "etag": "NX8qARH1xXqTmcSMRbGOTg==", 
+  "id": "isb-cgc:GDC_metadata.DLBC_affected_files", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "reference_genome_0": "hg19", 
+    "source_0": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767661108", 
+  "location": "US", 
+  "numBytes": "11547", 
+  "numLongTermBytes": "11547", 
+  "numRows": "110", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Name of file at the GDC", 
+        "mode": "NULLABLE", 
+        "name": "file_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Associated TCGA case barcode", 
+        "mode": "NULLABLE", 
+        "name": "case_submitter_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC file identifier. This is a duplicate of file_gdc_id field found in some tables. ", 
+        "mode": "NULLABLE", 
+        "name": "file_id", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/DLBC_affected_files", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "DLBC_affected_files"
+  }, 
+  "type": "TABLE"
+}

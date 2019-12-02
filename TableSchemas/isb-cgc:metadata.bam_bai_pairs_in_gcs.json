@@ -1,0 +1,42 @@
+{
+  "creationTime": "1516836320177", 
+  "description": "Data was generated to map bam files and their corresponding index (bai) files stored in Google Cloud Storage from GDC release 10 from January 2018.", 
+  "etag": "EcS0Ld72/1kmfsJOMtISOw==", 
+  "id": "isb-cgc:metadata.bam_bai_pairs_in_gcs", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767848609", 
+  "location": "US", 
+  "numBytes": "41909466", 
+  "numLongTermBytes": "41909466", 
+  "numRows": "139665", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Google Cloud Storage (GCS) URL. Example:gs://5aa919de-0aa0-43ec-9ec3-288481102b6d/TCGA/ACC/DNA/VALIDATION/BCM/ILLUMINA/TCGA-OR-A5JD-10B-01D-A29L-10_Illumina_validation.bam", 
+        "mode": "NULLABLE", 
+        "name": "bam_gcs_url", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google Cloud Storage (GCS) URL. Example: gs://5aa919de-0aa0-43ec-9ec3-288481102b6d/TCGA/ACC/DNA/VALIDATION/BCM/ILLUMINA/TCGA-OR-A5JD-10B-01D-A29L-10_Illumina_validation.bam.bai", 
+        "mode": "NULLABLE", 
+        "name": "bai_gcs_url", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/metadata/tables/bam_bai_pairs_in_gcs", 
+  "tableReference": {
+    "datasetId": "metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "bam_bai_pairs_in_gcs"
+  }, 
+  "type": "TABLE"
+}

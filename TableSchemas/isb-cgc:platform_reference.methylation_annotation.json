@@ -1,0 +1,204 @@
+{
+  "creationTime": "1434639033189", 
+  "description": "Data was loaded from the Illumina file HumanMethylation450_15017482_v.1.2.csv in June 2015, and updated in April 2017. DNA methylation platform annotation information was made available to the public with permission from Illumina.", 
+  "etag": "1N7McrmGzC5vLGKu/wwvBw==", 
+  "id": "isb-cgc:platform_reference.methylation_annotation", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "dna_methylation", 
+    "reference_genome_0": "hg19", 
+    "source_0": "infinium_humanmethylation_450", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574187210706", 
+  "location": "US", 
+  "numBytes": "212927489", 
+  "numLongTermBytes": "212927489", 
+  "numRows": "485577", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Example:14622465", 
+        "name": "AddressA_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Example:41635319", 
+        "name": "AddressB_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Example: TAACTAAAAAACAACAATACTAACTCTACACTAAATACCCACTAACCCTC", 
+        "name": "AlleleA_ProbeSeq", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Example: TAACTAAAAAACAACAATACTAACTCTACACTAAATACCCACTAACCCTT", 
+        "name": "AlleleB_ProbeSeq", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome - genome build 37. Examples: 1, 2, ..., 22, X, Y (or null)", 
+        "name": "CHR", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome - genome build 36. Examples: 1, 2, ..., 22, X, Y, MULTI (or null)", 
+        "name": "Chromosome_36", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Color of the incorporated base (Red or Green) - Infinium I assays only. Either Red or Grn (or null)", 
+        "name": "Color_Channel", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Coordinates(chromosome) - genome build 36. Examples: 1, 2, MULTI, 22 (or null)", 
+        "name": "Coordinate_36", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DNAse hypersensitive site (experimentally determined). Either FALSE orTRUE", 
+        "name": "DHS", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Differentially methylated region (experimentally determined). Examples:DMR,CDMR,or RDMR", 
+        "name": "DMR", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Enhancer element (informatically-determined). Either FALSE or TRUE", 
+        "name": "Enhancer", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Base sequence (in 5 prime -3 prime orientation) flanking query site.", 
+        "name": "Forward_Sequence", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Genome build on which forward sequence is based. Examples: 36, 37, or null", 
+        "name": "Genome_Build", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Hidden Markov Model Island.Example: Y:21327301-21327921", 
+        "name": "HMM_Island", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique CpG locus identifier from the Illumina CG database.Example: rs10796216", 
+        "name": "IlmnID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Defines Assay type - Infinium I or Infinium II. Either I or II.", 
+        "name": "Infinium_Design_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Coordinates - genome build 37.Example: 26627454", 
+        "name": "MAPINFO", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Present or absent on HumanMethylation27 array. Either TRUE or FALSE", 
+        "name": "Methyl27_Loci", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique CpG locus identifier from the Illumina CG database.Example: rs10796216", 
+        "name": "Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Base added at SBE step - Infinium I assays only.Either A, C, T, or null", 
+        "name": "Next_Base", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "FANTOM-derived promoter. Example: high-CpG:287077-288261", 
+        "name": "Phantom", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Assays with SNPs present within probe >10bp from query site. Example: rs2562205", 
+        "name": "Probe_SNPs", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Assays with SNPs present within probe ?10bp from query site (HM27 carryover or recently discovered). Example: rs74703363", 
+        "name": "Probe_SNPs_10", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Whether loci were chosen randomly in the design process. Either TRUE or FALSE", 
+        "name": "Random_Loci", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Regulatory feature category. Examples: Promoter_Associated, Gene_Associated, Gene_Associated_Cell_type_specific, Unclassified_Cell_type_specific, NonGene_Associated, Unclassified, Promoter_Associated_Cell_type_specific", 
+        "name": "Regulatory_Feature_Group", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Regulatory feature (informatically determined). Example: 7:148904-150565", 
+        "name": "Regulatory_Feature_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Relationship to Canonical CpG Island: Shores - 0-2 kb from CpG island; Shelves - 2-4 kb from CpG island. Examples: Island, S_Shore, N_Shelf, N_Shore, S_Shelf (or null)", 
+        "name": "Relation_to_UCSC_CpG_Island", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unconverted design sequence. Example: AGGGATGACGGCGCCTCTTGCGTAGGTCCTGAGGAGACGGCTCGGCTCCG", 
+        "name": "SourceSeq", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Design Strand. Either R, F, or null", 
+        "name": "Strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CpG island name (UCSC). Example: chr7:31003-31442", 
+        "name": "UCSC_CpG_Islands_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UCSCis a field of type RECORD, mode REPEATED. Each of the possibly multiple records in this field hasthree components: UCSC.RefGene_Group, UCSC.RefGene_Accession, UCSC.RefGene_Name. Example of the contents of one record: UCSC.RefGene_Group = Body, UCSC.RefGene_Accession = NM_033023, UCSC.RefGene_Name = PDGFA", 
+        "fields": [
+          {
+            "description": "Gene region feature category (UCSC)", 
+            "name": "RefGene_Group", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Accession number (UCSC)", 
+            "name": "RefGene_Accession", 
+            "type": "STRING"
+          }, 
+          {
+            "description": "Gene name (UCSC)", 
+            "name": "RefGene_Name", 
+            "type": "STRING"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "UCSC", 
+        "type": "RECORD"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/platform_reference/tables/methylation_annotation", 
+  "tableReference": {
+    "datasetId": "platform_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "methylation_annotation"
+  }, 
+  "type": "TABLE"
+}

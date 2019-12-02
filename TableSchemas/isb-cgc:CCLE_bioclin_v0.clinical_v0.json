@@ -1,0 +1,114 @@
+{
+  "creationTime": "1484702826826", 
+  "description": "Data was extracted from the CCLE program in January 2017. The table contains clinical information for CCLE primary cell lines. \nMore details: see https://portals.broadinstitute.org/ccle/about", 
+  "etag": "l1JoFksSs1bYFMh6aLmblQ==", 
+  "id": "isb-cgc:CCLE_bioclin_v0.clinical_v0", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "clinical", 
+    "source_0": "ccle", 
+    "status": "archived"
+  }, 
+  "lastModifiedTime": "1574194396269", 
+  "location": "US", 
+  "numBytes": "200661", 
+  "numLongTermBytes": "200661", 
+  "numRows": "950", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Program Name, always CCLE (Cancer Cell Line Encyclopedia) in this table.", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project Name; frequently the same as or similar to the project disease type eg   Acute Lymphoblastic Leukemia - Phase II   or   Breast Invasive Carcinoma   etc", 
+        "mode": "NULLABLE", 
+        "name": "project_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; e.g. CCLE-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The type of disease studied by the project; e.g. Sarcoma,  Breast Invasive Carcinoma,Acute Lymphoblastic Leukemia, etc", 
+        "mode": "NULLABLE", 
+        "name": "project_disease_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifier for this CCLE project and cell line", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A case barcode assigned to the project/cell line record; same as the cell line primary name.", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The cell line primary name, appended with a short name for the location  of the cancer; e.g. TC71_BONE, HUPT4_PANCREAS, etc.", 
+        "mode": "NULLABLE", 
+        "name": "CCLE_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The cell line primary name; e.g. TC-71, NIH:OVCAR-3, etc.", 
+        "mode": "NULLABLE", 
+        "name": "cell_line_primary_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Aliases for the cell line primary name", 
+        "mode": "NULLABLE", 
+        "name": "cell_line_aliases", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Participant gender; eg. Male, Female", 
+        "mode": "NULLABLE", 
+        "name": "gender", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histological type of cancer; e.g.  sarcoma, neuroblastoma, etc.", 
+        "mode": "NULLABLE", 
+        "name": "histology", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histology subtype; e.g. squamous_cell_carcinoma, undifferentiated_carcinoma, etc.", 
+        "mode": "NULLABLE", 
+        "name": "hist_subtype", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The primary site on the body where the cancer was found; e.g. bone, breast, pancreas, etc.", 
+        "mode": "NULLABLE", 
+        "name": "site_primary", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The source provider of the cell line; e.g. ATCC, DSMZ, etc.", 
+        "mode": "NULLABLE", 
+        "name": "source", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/CCLE_bioclin_v0/tables/clinical_v0", 
+  "tableReference": {
+    "datasetId": "CCLE_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "clinical_v0"
+  }, 
+  "type": "TABLE"
+}

@@ -1,0 +1,97 @@
+{
+  "creationTime": "1477408766106", 
+  "description": "Data was extracted from BCGSC (BC Genome Sciences Centre) on July 2016. miRNA isoform expression data was generated using the Illumina HiSeq platform and processed through their microRNA pipeline. More details: https://storage.cloud.google.com/isb-cgc-open/tcga/pipeline-details/bcgsc.ca__illuminaga_mirnaseq__DESCRIPTION.txt", 
+  "etag": "j5ryghxmiDrJY9sNi0tSiA==", 
+  "id": "isb-cgc:tcga_201607_beta.miRNA_BCGSC_HiSeq_isoform", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "mirna_isoform_expression", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "deprecated"
+  }, 
+  "lastModifiedTime": "1573767921063", 
+  "location": "US", 
+  "numBytes": "7901172305", 
+  "numLongTermBytes": "7901172305", 
+  "numRows": "46543230", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TCGA barcode identifier for the study participant, eg TCGA-02-0001", 
+        "name": "ParticipantBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "name": "SampleBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-28", 
+        "name": "AliquotBarcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA study abbreviation, eg LAML. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations", 
+        "name": "Study", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Letter code of the sample type using the TCGA standards, eg TPN, EBV. Full list available at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes ", 
+        "name": "SampleTypeLetterCode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (IlluminaGA)", 
+        "name": "Platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A short isomiR read may map exactly to mature strands whose sequences are similar but not identical, when the read sequence does not capture the bases that distinguish these miRNAs (e.g. hsa-mir-30a at 6q13 and hsa-mir-30e at 1p34.2, which differ at position 18). We report such a <line_feed> read as cross-mapped, and we increment the read count for each MIMAT that it mapped to. Either Y or N -- fewer than 2% are Y", 
+        "name": "cross_mapped", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Isoform_coords. Examples:hg19:11:122022985-122023005:-, hg19:17:29887035-29887057:+", 
+        "name": "isoform_coords", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The miRNA identifier (aka symbols) eg, hsa-mir-21 .  relevant reference information can be found in the isb-cgc:genome_reference dataset in the tables miRBase_v21 and miRBase_v21_hsa_gff3", 
+        "name": "miRNA_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The mature miRNA accession id (eg MIMAT0000062) -- note that this can also be null, in the event that this read does not map to a mature portion of the miRNA", 
+        "name": "mirna_accession", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The type of transcript -- either mature, precursor, unannotated, or stemloop  (if this value is not mature, then the mirna_accession field will be null)", 
+        "name": "mirna_transcript", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Number of reads that were mapped to this mirna_id", 
+        "name": "read_count", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Read count normalized by total reads mapped divided by 1 million", 
+        "name": "reads_per_million_miRNA_mapped", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/tcga_201607_beta/tables/miRNA_BCGSC_HiSeq_isoform", 
+  "tableReference": {
+    "datasetId": "tcga_201607_beta", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRNA_BCGSC_HiSeq_isoform"
+  }, 
+  "type": "TABLE"
+}

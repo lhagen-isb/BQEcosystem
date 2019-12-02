@@ -1,0 +1,121 @@
+{
+  "creationTime": "1495165699031", 
+  "description": "Data was extracted .tsv files now found at https://cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Ovarian_Cancer/ derived from the following publication in Nature in 2017: \"Proteogenomics connects somatic mutations to signalling in breast cancer\". Proteome quantifications was generated using the CPTAC iTRAQ protein quantifications for a set of ovarian cancer samples. The samples are identified using the same TCGA barcodes that are used in other available TCGA tables in BigQuery, allowing for convenient integrative analyses. \nMore details: https://www.ncbi.nlm.nih.gov/pubmed/27251275", 
+  "etag": "TdCFx3itEZC5ME6MkbOjCA==", 
+  "id": "isb-cgc:hg19_data_previews.TCGA_Ovarian_PNNL_Proteome_CDAP_r2_itraq", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "protein_quantification", 
+    "reference_genome_0": "hg19", 
+    "source_0": "cptac", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767701495", 
+  "location": "US", 
+  "numBytes": "76769888", 
+  "numLongTermBytes": "76769888", 
+  "numRows": "500239", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original/submitter sample id", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A few samples have replicate data values, in those cases this field is non-null", 
+        "mode": "NULLABLE", 
+        "name": "sample_tag", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Sample-wide mean log-ratio value", 
+        "mode": "NULLABLE", 
+        "name": "mean_logRatio", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Sample-wide mean unshared log-ratio", 
+        "mode": "NULLABLE", 
+        "name": "mean_unshared_logRatio", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Sample-wide median log-ratio", 
+        "mode": "NULLABLE", 
+        "name": "median_logRatio", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Sample-wide median unshared log-ratio", 
+        "mode": "NULLABLE", 
+        "name": "median_unshared_logRatio", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Sample-wide standard deviation of log-ratio", 
+        "mode": "NULLABLE", 
+        "name": "stdDev_logRatio", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Sample-wide standard deviation of unshared log-ratio", 
+        "mode": "NULLABLE", 
+        "name": "stdDev_unshared_logRatio", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The gene symbol. In this table, gene symbol is gene name e.g. ACADVL", 
+        "mode": "NULLABLE", 
+        "name": "gene", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: chr1-22, and chrX", 
+        "mode": "NULLABLE", 
+        "name": "chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene description", 
+        "mode": "NULLABLE", 
+        "name": "description", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene locus", 
+        "mode": "NULLABLE", 
+        "name": "locus", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Organism", 
+        "mode": "NULLABLE", 
+        "name": "organism", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Log-ratio of protein expression, associated with this gene", 
+        "mode": "NULLABLE", 
+        "name": "logRatio", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Unshared log-ratio of protein expression, associated with this gene", 
+        "mode": "NULLABLE", 
+        "name": "unshared_logRatio", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/hg19_data_previews/tables/TCGA_Ovarian_PNNL_Proteome_CDAP_r2_itraq", 
+  "tableReference": {
+    "datasetId": "hg19_data_previews", 
+    "projectId": "isb-cgc", 
+    "tableId": "TCGA_Ovarian_PNNL_Proteome_CDAP_r2_itraq"
+  }, 
+  "type": "TABLE"
+}

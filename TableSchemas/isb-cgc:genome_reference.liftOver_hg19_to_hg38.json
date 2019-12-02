@@ -1,0 +1,56 @@
+{
+  "creationTime": "1472698247578", 
+  "description": "Data was loaded from hg19 data in September 2016. Hg38 positions were mapped to the hg19 positions using the UCSC liftOver tool. More details: see http://genome.ucsc.edu/cgi-bin/hgLiftOver", 
+  "etag": "AEwaefkPYKDBYn16f08pVA==", 
+  "id": "isb-cgc:genome_reference.liftOver_hg19_to_hg38", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "coordinate_conversion", 
+    "reference_genome_0": "hg19", 
+    "reference_genome_1": "hg38", 
+    "source_0": "ucsc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574715902866", 
+  "location": "US", 
+  "numBytes": "84120114613", 
+  "numLongTermBytes": "84120114613", 
+  "numRows": "2896953877", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Hg19 chromosome name (or name of contig), Examples: chr1,chrX, etc", 
+        "mode": "NULLABLE", 
+        "name": "hg19_ref", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "1-based coordinate in hg19. Example: 212599500", 
+        "mode": "NULLABLE", 
+        "name": "hg19_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Hg38 chromosome (or contig) name. Examples: chr1,chrX, etc", 
+        "mode": "NULLABLE", 
+        "name": "hg38_ref", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "1-based coordinate in hg38. Example: 212426158", 
+        "mode": "NULLABLE", 
+        "name": "hg38_pos", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/liftOver_hg19_to_hg38", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "liftOver_hg19_to_hg38"
+  }, 
+  "type": "TABLE"
+}

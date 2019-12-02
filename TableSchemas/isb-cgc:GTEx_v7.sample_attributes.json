@@ -1,0 +1,415 @@
+{
+  "creationTime": "1511833102558", 
+  "description": "Data was loaded from Genotype-Tissue Expression (GTEx) Project on November 2017. Sample Attributes data was loaded using GTEx Data Portal. More details: gtexportal.org", 
+  "etag": "xpP6PhgO6TISmggcaDd7Iw==", 
+  "id": "isb-cgc:GTEx_v7.sample_attributes", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "biospecimen", 
+    "reference_genome_0": "hg19", 
+    "source_0": "genotype_tissue_expression_gtex_project", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767864616", 
+  "location": "US", 
+  "numBytes": "7893976", 
+  "numLongTermBytes": "7893976", 
+  "numRows": "15598", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Subject ID, GTEx Public Donor ID", 
+        "mode": "NULLABLE", 
+        "name": "SUBJID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Sample ID, GTEx Public Sample ID", 
+        "mode": "NULLABLE", 
+        "name": "SAMPID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Autolysis Score, assigned by a pathologist during a visual inspection of the histology image. 0 to 3 (None, Mild, Moderate, and Severe)", 
+        "mode": "NULLABLE", 
+        "name": "SMATSSCR", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Code for BSS collection site", 
+        "mode": "NULLABLE", 
+        "name": "SMCENTER", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Pathology Notes, notes from PRC Report", 
+        "mode": "NULLABLE", 
+        "name": "SMPTHNTS", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "RIN Number: RNA Integrity Number, as measured by Agilent Bioanalyzer", 
+        "mode": "NULLABLE", 
+        "name": "SMRIN", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Tissue Type, area from which the tissue sample was taken. This is a parent value to SMTSD", 
+        "mode": "NULLABLE", 
+        "name": "SMTS", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Tissue Type, more specific detail of tissue type", 
+        "mode": "NULLABLE", 
+        "name": "SMTSD", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Uberon ID, anatomical location as described by the Uber Anatomy Ontology (UBERON)", 
+        "mode": "NULLABLE", 
+        "name": "SMUBRID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Total Ischemic time for a sample", 
+        "mode": "NULLABLE", 
+        "name": "SMTSISCH", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Time a sample spent in the PAXgene fixative", 
+        "mode": "NULLABLE", 
+        "name": "SMTSPAX", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Nucleic Acid Isolation Batch ID", 
+        "mode": "NULLABLE", 
+        "name": "SMNABTCH", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Type of nucleic acid isolation batch", 
+        "mode": "NULLABLE", 
+        "name": "SMNABTCHT", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Date of nucleic acid isolation batch", 
+        "mode": "NULLABLE", 
+        "name": "SMNABTCHD", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Genotype or Expression Batch ID", 
+        "mode": "NULLABLE", 
+        "name": "SMGEBTCH", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Date of genotype or expression batch", 
+        "mode": "NULLABLE", 
+        "name": "SMGEBTCHD", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Type of genotype or expression batch", 
+        "mode": "NULLABLE", 
+        "name": "SMGEBTCHT", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Samples included in the GTEx Analysis Freeze", 
+        "mode": "NULLABLE", 
+        "name": "SMAFRZE", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Name of the genotype gtc file", 
+        "mode": "NULLABLE", 
+        "name": "SMGTC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "End 2 Mapping Rate: Number of End 2 mapped reads divided by the total number of End 1 reads", 
+        "mode": "NULLABLE", 
+        "name": "SME2MPRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Chimeric Pairs: Number of reads whose mates map to different genes", 
+        "mode": "NULLABLE", 
+        "name": "SMCHMPRS", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Intragenic Rate: The fraction of reads that map within genes (within introns or exons)", 
+        "mode": "NULLABLE", 
+        "name": "SMNTRART", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Number of Gaps: Number of regions with \ufffd5 bases with zero coverage", 
+        "mode": "NULLABLE", 
+        "name": "SMNUMGPS", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Mapping Rate: Ratio of total mapped reads to total reads", 
+        "mode": "NULLABLE", 
+        "name": "SMMAPRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Exonic Rate: Fraction of reads that map within exons", 
+        "mode": "NULLABLE", 
+        "name": "SMEXNCRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "5' 50-based normalization:  50 (this number is the value for the transcript end length parameter) refers to the definition of how many bases are considered at the end; this value is the ratio between the coverage at the 5' end and the average coverage of the full transcript, averaged over all transcripts", 
+        "mode": "NULLABLE", 
+        "name": "SM550NRM", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Genes Detected: Total number of genes with at least 5 exon mapping reads", 
+        "mode": "NULLABLE", 
+        "name": "SMGNSDTC", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Unique Rate of Mapped: Unique reads divided by all mapped reads", 
+        "mode": "NULLABLE", 
+        "name": "SMUNMPRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "3' 50-base normalization: the ratio between the coverage at the 3' end and the average coverage of the full transcript, averaged over all transcripts", 
+        "mode": "NULLABLE", 
+        "name": "SM350NRM", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Read Length: Maximum detected read length found", 
+        "mode": "NULLABLE", 
+        "name": "SMRDLGTH", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Mean Coverage Per Base: Coverage is averaged per base across each transcript, and averaged again across all transcripts", 
+        "mode": "NULLABLE", 
+        "name": "SMMNCPB", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "End 1 Mismatch Rate: Number of End 1 bases not matching the reference divided by the total number of End 1 bases", 
+        "mode": "NULLABLE", 
+        "name": "SME1MMRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Fragment Length StdDev: Distance between the start of an upstream read and the end of the downstream pair mate", 
+        "mode": "NULLABLE", 
+        "name": "SMSFLGTH", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Estimated library size: Number of expected fragments based on the total reads and duplication rate assuming a Poisson distribution", 
+        "mode": "NULLABLE", 
+        "name": "SMESTLBS", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Mapped: Total number of reads aligned/mapped", 
+        "mode": "NULLABLE", 
+        "name": "SMMPPD", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Intergenic Rate: The fraction of reads that map to the genomic space between genes", 
+        "mode": "NULLABLE", 
+        "name": "SMNTERRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "RRNA: Number of all reads (duplicate and non-duplicate) aligning to ribosomal RNA regions", 
+        "mode": "NULLABLE", 
+        "name": "SMRRNANM", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Total: Total reads (filtered to exclude reads with vendor fail or alternative alignment flags)", 
+        "mode": "NULLABLE", 
+        "name": "SMRDTTL", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Failed Vendor QC Check: Reads having been designated as failed by the sequencer", 
+        "mode": "NULLABLE", 
+        "name": "SMVQCFL", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Mean coefficient of variation: standard deviation in base coverage divided by mean coverage", 
+        "mode": "NULLABLE", 
+        "name": "SMMNCV", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcripts Detected: Total number of transcripts with at least 5 exon mapping reads", 
+        "mode": "NULLABLE", 
+        "name": "SMTRSCPT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Mapped Pairs: Total number of pairs for which both ends map", 
+        "mode": "NULLABLE", 
+        "name": "SMMPPDPR", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Cumulative Gap Length: Cumulative length of gap regions of transcript alignments", 
+        "mode": "NULLABLE", 
+        "name": "SMCGLGTH", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gap Percentage: Total cumulative gap length divided by the total cumulative transcript lengths", 
+        "mode": "NULLABLE", 
+        "name": "SMGAPPCT", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unpaired Reads: Number of reads lacking a pair mate", 
+        "mode": "NULLABLE", 
+        "name": "SMUNPDRD", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Intronic Rate: The fraction of reads that map within introns", 
+        "mode": "NULLABLE", 
+        "name": "SMNTRNRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Mapped Unique Rate of Total: Ratio of mapping of reads that were aligned and were not duplicates to total reads", 
+        "mode": "NULLABLE", 
+        "name": "SMMPUNRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Expression Profiling Efficiency: Ratio of exon reads to total reads", 
+        "mode": "NULLABLE", 
+        "name": "SMEXPEFF", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Mapped Unique: Number of reads that were aligned and did not have duplicate flags", 
+        "mode": "NULLABLE", 
+        "name": "SMMPPDUN", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "End 2 Mismatch Rate: Number of End 2 bases not matching the reference divided by the total number of End 2 bases", 
+        "mode": "NULLABLE", 
+        "name": "SME2MMRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "End 2 Antisense: Number of reads that were sequenced in the antisense direction", 
+        "mode": "NULLABLE", 
+        "name": "SME2ANTI", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Alternative Aligments: duplicate read entries providing alternative coordinates", 
+        "mode": "NULLABLE", 
+        "name": "SMALTALG", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "End 2 Sense: Number of End 2 reads that were sequenced in the sense direction", 
+        "mode": "NULLABLE", 
+        "name": "SME2SNSE", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Fragment Length Mean: The fragment length is the distance between the start of an upstream read and the end of the downstream pair mate", 
+        "mode": "NULLABLE", 
+        "name": "SMMFLGTH", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "End 1 Antisense: Number of End 1 reads that were sequenced in the antisense direction", 
+        "mode": "NULLABLE", 
+        "name": "SME1ANTI", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Split Reads: Number of reads that span an exon-exon boundary", 
+        "mode": "NULLABLE", 
+        "name": "SMSPLTRD", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Base Mismatch Rate: Number of bases not matching the reference divided by the total number of bases aligned", 
+        "mode": "NULLABLE", 
+        "name": "SMBSMMRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "End 1 Sense: Number of End 1 reads that were sequenced in the sense direction", 
+        "mode": "NULLABLE", 
+        "name": "SME1SNSE", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "End 1 % Sense: Percentage of intragenic End 1 reads that were sequenced in the sense directio", 
+        "mode": "NULLABLE", 
+        "name": "SME1PCTS", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "RRNA Rate: Ratio of all reads aligned to rRNA regions to total reads", 
+        "mode": "NULLABLE", 
+        "name": "SMRRNART", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "End 1 Mapping Rate: Number of End 1 mapped reads divided by the total number of End 1 reads", 
+        "mode": "NULLABLE", 
+        "name": "SME1MPRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Number Covered 5' : The number of transcripts that have at least one read in their 5   end", 
+        "mode": "NULLABLE", 
+        "name": "SMNUM5CD", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Duplication Rate of Mapped reads: Number of duplicate reads divided by total mapped reads", 
+        "mode": "NULLABLE", 
+        "name": "SMDPMPRT", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "End 2 % Sense: Percentage of intragenic End 2 reads that were sequenced in the sense direction", 
+        "mode": "NULLABLE", 
+        "name": "SME2PCTS", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GTEx_v7/tables/sample_attributes", 
+  "tableReference": {
+    "datasetId": "GTEx_v7", 
+    "projectId": "isb-cgc", 
+    "tableId": "sample_attributes"
+  }, 
+  "type": "TABLE"
+}

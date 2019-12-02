@@ -1,0 +1,42 @@
+{
+  "creationTime": "1549657190454", 
+  "description": "Data was loaded from the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3) published by the World Health Organization (WHO) in February 2019. More details: https://www.who.int/classifications/icd/adaptations/oncology/en/", 
+  "etag": "i3Su7CCI4K4ahAmvhpVo0Q==", 
+  "id": "isb-cgc:genome_reference.ICD_O_3_morphology", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "disease_classifications", 
+    "source_0": "international_classficiation_of_disesase_icd", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574182488172", 
+  "location": "US", 
+  "numBytes": "38298", 
+  "numLongTermBytes": "38298", 
+  "numRows": "1032", 
+  "schema": {
+    "fields": [
+      {
+        "description": "ICD-O-3 morphology code, 1032 unique strings from 8000/0 to 9989/3", 
+        "mode": "NULLABLE", 
+        "name": "morphology_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ICD-O-3 morphology label, 1032 unique strings from Neoplasm, benign to Myelodysplastic syndrome, NOS", 
+        "mode": "NULLABLE", 
+        "name": "morphology_label", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/ICD_O_3_morphology", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "ICD_O_3_morphology"
+  }, 
+  "type": "TABLE"
+}

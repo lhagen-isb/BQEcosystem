@@ -1,0 +1,163 @@
+{
+  "creationTime": "1529370828416", 
+  "description": "This data was generated from the TARGET program data in June 2018. It contains clinical and biospecimen sample data for patient cases.", 
+  "etag": "6nQ2MqjsP3f2aSbnqZsapQ==", 
+  "id": "isb-cgc:TARGET_bioclin_v0.TARGET_metadata_samples", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "biospecimen", 
+    "source_0": "target", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574195177850", 
+  "location": "US", 
+  "numBytes": "1929334", 
+  "numLongTermBytes": "1929334", 
+  "numRows": "7276", 
+  "schema": {
+    "fields": [
+      {
+        "description": "The barcode of the TARGET case (participant) for this sample.", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TARGET sample barcode, e.g. TARGET-20-PASWAT-09A", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifier for this case (corresponds to the case_barcode)  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba9", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "sample_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation; the TARGET program is composed of multiple projects, with abbreviations such as TARGET-ALL-P2, TARGET-AML, TARGET-WT, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project Name; frequently the same as or similar to the project disease type eg   Acute Lymphoblastic Leukemia - Phase II   or   Breast Invasive Carcinoma   etc", 
+        "mode": "NULLABLE", 
+        "name": "project_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program Name, always TARGET (Therapeutically Applicable Research To Generate Effective Treatments) in this table.", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A code representing the type of cancer. Values can be found at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations; eg. OV, GBM, LUAD", 
+        "mode": "NULLABLE", 
+        "name": "disease_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Participant gender; e.g. Male, Female", 
+        "mode": "NULLABLE", 
+        "name": "gender", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Two-digit sample_type code which forms part of the sample barcode eg. 01,11,06, etc.", 
+        "mode": "NULLABLE", 
+        "name": "sample_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The race of a participant, independent from ethnicity; e.g. White, Black or African American, Asian, Native Hawaiian or other Pacific Islander, American Indian or Alaska Native", 
+        "mode": "NULLABLE", 
+        "name": "race", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Survival state of the participant; e.g. dead, alive", 
+        "mode": "NULLABLE", 
+        "name": "vital_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The ethnic origination of a participant, independent from race; e.g. Not Hispanic or Latino, Hispanic or Latino", 
+        "mode": "NULLABLE", 
+        "name": "ethnicity", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Age, in years, at which a condition or disease was first diagnosed", 
+        "mode": "NULLABLE", 
+        "name": "age_at_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "If vital_status indicates 'alive', then this is the number of days from the date of diagnosis to the last followup (communication contact).", 
+        "mode": "NULLABLE", 
+        "name": "days_to_last_followup", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The location on the body where the primary tumor exists; e.g. Arm/Hand, Pelvis, etc.", 
+        "mode": "NULLABLE", 
+        "name": "primary_tumor_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Four digit year of the diagnosis", 
+        "mode": "NULLABLE", 
+        "name": "year_of_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Days since birth (a negative value, relative to the date of diagnosis which is considered to be t=0)", 
+        "mode": "NULLABLE", 
+        "name": "days_to_birth", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "White Blood Cell count at diagnosis", 
+        "mode": "NULLABLE", 
+        "name": "wbc_at_diagnosis", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Number of days of event free survival", 
+        "mode": "NULLABLE", 
+        "name": "event_free_survival", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of days from the date of diagnosis to the last day on which a person was known to be alive. This field is a combination of the days_to_last_followup and days_to death fields. Therefore, this field can be used whether the vital_status is 'alive' or 'dead'.", 
+        "mode": "NULLABLE", 
+        "name": "days_to_last_known_alive", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "If vital_status indicates 'dead', then this is the number of days to death (a positive value) relative to the date of diagnosis.", 
+        "mode": "NULLABLE", 
+        "name": "days_to_death", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TARGET_bioclin_v0/tables/TARGET_metadata_samples", 
+  "tableReference": {
+    "datasetId": "TARGET_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "TARGET_metadata_samples"
+  }, 
+  "type": "TABLE"
+}

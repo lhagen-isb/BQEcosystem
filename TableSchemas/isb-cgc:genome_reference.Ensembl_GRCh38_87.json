@@ -1,0 +1,205 @@
+{
+  "creationTime": "1483586874919", 
+  "description": "Data was loaded from the Ensembl gene-set, Release 87, dated December 2016. This Homo sapiens, GRCh38 data was downloaded using the Ensemble GTF (ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.gtf.gz). More details: see README at ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/README. The Ensembl license is at http://uswest.ensembl.org/info/about/legal/code_licence.html", 
+  "etag": "uTMLjA8wGwq9PErlkn1Jyw==", 
+  "id": "isb-cgc:genome_reference.Ensembl_GRCh38_87", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "genome_annotations", 
+    "reference_genome_0": "hg38", 
+    "source_0": "ensembl", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573835807947", 
+  "location": "US", 
+  "numBytes": "695094966", 
+  "numLongTermBytes": "695094966", 
+  "numRows": "2575494", 
+  "schema": {
+    "fields": [
+      {
+        "description": "E.g., 1, 2,..., 22, X, Y", 
+        "mode": "NULLABLE", 
+        "name": "seq_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., havana, ensembl_havana, ensembl, mirbase, or insdc", 
+        "mode": "NULLABLE", 
+        "name": "source", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., an exon, CDS, five_prime_UTR, transcript, etc.", 
+        "mode": "NULLABLE", 
+        "name": "feature", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Starting base position", 
+        "mode": "NULLABLE", 
+        "name": "start", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Endng base postion", 
+        "mode": "NULLABLE", 
+        "name": "end", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "(left blank)", 
+        "mode": "NULLABLE", 
+        "name": "frame", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "+ or -, for forward or reverse strand. DNA is double-stranded. By convention, for a reference chromosome, one whole strand is designated the forward strand and the other the reverse strand. This designation is arbitrary. Sometimes the terms plus strand and minus strand are used instead.", 
+        "mode": "NULLABLE", 
+        "name": "strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene name, e.g., TTN, DDR1, etc. See https://m.ensembl.org/info/genome/genebuild/gene_names.html", 
+        "mode": "NULLABLE", 
+        "name": "gene_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl gene ID. Stable IDs are created in the form ENS[species prefix][feature type prefix][a unique eleven digit number]. For example, a mouse gene might be ENSMUSG###########. For human, there is no species code, so IDs are in the form ENS(object type)(identifier).(version). E.g., ENSG00000183091. See https://useast.ensembl.org/Help/Faq?id=488", 
+        "mode": "NULLABLE", 
+        "name": "gene_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value. E.g., 12", 
+        "mode": "NULLABLE", 
+        "name": "gene_version", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Possible sources: either ensembl_havana, havana, ensembl, or insdc", 
+        "mode": "NULLABLE", 
+        "name": "gene_source", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., protein_coding, pseudogene, lincRNA, etc", 
+        "mode": "NULLABLE", 
+        "name": "gene_biotype", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., TTN-002 (can be blank)", 
+        "mode": "NULLABLE", 
+        "name": "transcript_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl transcript ID. Stable IDs are created in the form ENS[species prefix][feature type prefix][a unique eleven digit number].For human, there is no species code, so IDs are in the form ENS(object type)(identifier).(version)E.g, ENT00000589042.", 
+        "mode": "NULLABLE", 
+        "name": "transcript_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value. E.g., 7", 
+        "mode": "NULLABLE", 
+        "name": "transcript_version", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Possible sources: either ensembl_havana, havana, ensembl, or insdc", 
+        "mode": "NULLABLE", 
+        "name": "transcript_source", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E.g., protein_coding, pseudogene, lincRNA, etc", 
+        "mode": "NULLABLE", 
+        "name": "transcript_biotype", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer between 1 and 5 (or blank)", 
+        "mode": "NULLABLE", 
+        "name": "transcript_support_level", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Position number in set of of exons for parent gene. See https://useast.ensembl.org/info/genome/genebuild/genome_annotation.html", 
+        "mode": "NULLABLE", 
+        "name": "exon_number", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Ensembl exon ID. Stable IDs are created in the form ENS[species prefix][feature type prefix][a unique eleven digit number].For human, there is no species code, so IDs are in the form ENS(object type)(identifier).(version).E.g, ENSE00003674202", 
+        "mode": "NULLABLE", 
+        "name": "exon_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value (or blank). E.g., 4", 
+        "mode": "NULLABLE", 
+        "name": "exon_version", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "E.g., CCDS54424 (or blank)The CCDS project is a collaborative effort to identify a core set ofprotein coding regions that are consistently annotated and of high quality. The CCDS set is built by consensus among Ensembl, the National Center for Biotechnology Information (NCBI), and the HUGO Gene Nomenclature Committee (HGNC) for human or Mouse Genome Informatics (MGI) for mouse. Annotated genes that are included in the CCDS set are associated with a unique identifier number and version number (e.g., CCDS1.1, CCDS234.1). The version number will update if the CDS structure changes, or if the underlying genome sequence changes at that location. See https://useast.ensembl.org/info/genome/genebuild/ccds.html", 
+        "mode": "NULLABLE", 
+        "name": "ccds_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "E. g., ENSP00000467141 or blank. The primary ID for the proteins defined in Ensembl and each (protein coding) Ensembl transcript has one protein ID assigned to it. See https://useast.ensembl.org/Help/Faq?id=488", 
+        "mode": "NULLABLE", 
+        "name": "protein_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value (or blank). E.g., 4", 
+        "mode": "NULLABLE", 
+        "name": "protein_version", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "E.g., OTTHUMG00000150243See https://useast.ensembl.org/info/genome/genebuild/manual_havana.html", 
+        "mode": "NULLABLE", 
+        "name": "havana_gene", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value. E.g., 5", 
+        "mode": "NULLABLE", 
+        "name": "havana_gene_version", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "E.g., OTTHUMT00000335575", 
+        "mode": "NULLABLE", 
+        "name": "havana_transcript", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Integer value. E.g., 4", 
+        "mode": "NULLABLE", 
+        "name": "havana_transcript_version", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Semi-colon delimited list of tags. E.g.,CCDS;basic", 
+        "mode": "NULLABLE", 
+        "name": "tag", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/genome_reference/tables/Ensembl_GRCh38_87", 
+  "tableReference": {
+    "datasetId": "genome_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "Ensembl_GRCh38_87"
+  }, 
+  "type": "TABLE"
+}
