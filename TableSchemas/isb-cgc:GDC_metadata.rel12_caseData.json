@@ -1,0 +1,91 @@
+{
+  "creationTime": "1530576778039", 
+  "description": "Data was generated from case metadata information from the GDC active archive release 12 in July 2018. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-120", 
+  "etag": "2qnLkAnZ4+p2YWvqEYuNvQ==", 
+  "id": "isb-cgc:GDC_metadata.rel12_caseData", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "reference_genome_0": "hg38", 
+    "source_0": "gdc", 
+    "status": "archived"
+  }, 
+  "lastModifiedTime": "1573767861227", 
+  "location": "US", 
+  "numBytes": "5421378", 
+  "numLongTermBytes": "5421378", 
+  "numRows": "35395", 
+  "schema": {
+    "fields": [
+      {
+        "description": "GDC file identifier. This is a duplicate of file_gdc_id field found in some tables. ", 
+        "mode": "NULLABLE", 
+        "name": "file_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project dbGaP accession number", 
+        "mode": "NULLABLE", 
+        "name": "project__dbgap_accession_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project Disease Type", 
+        "mode": "NULLABLE", 
+        "name": "project__disease_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Study name of the project", 
+        "mode": "NULLABLE", 
+        "name": "project__name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DbGaP accession number for the program", 
+        "mode": "NULLABLE", 
+        "name": "project__program__dbgap_accession_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program Name", 
+        "mode": "NULLABLE", 
+        "name": "project__program__name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program Short Name with Project Short Name", 
+        "mode": "NULLABLE", 
+        "name": "project__project_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "This can be used to identify a corresponding entry in the submitter's records. The GDC requires that submitter_id be unique for each entity within a project: the tuple (combination) of [ project_id, submitter_id ] is a unique key.", 
+        "mode": "NULLABLE", 
+        "name": "submitter_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Total number of files for this case in the GDC legacy archive", 
+        "mode": "NULLABLE", 
+        "name": "legacy_file_count", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Active File Count for this case", 
+        "mode": "NULLABLE", 
+        "name": "active_file_count", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/rel12_caseData", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "rel12_caseData"
+  }, 
+  "type": "TABLE"
+}

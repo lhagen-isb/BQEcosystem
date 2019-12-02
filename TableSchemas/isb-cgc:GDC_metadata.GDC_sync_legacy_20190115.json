@@ -1,0 +1,109 @@
+{
+  "creationTime": "1547608303638", 
+  "description": "Data was generated from file metadata information from a sync to the GDC legacy archive on January 2019.", 
+  "etag": "pWFl9mOaNXjuM0d6b0qybw==", 
+  "id": "isb-cgc:GDC_metadata.GDC_sync_legacy_20190115", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "reference_genome_0": "hg19", 
+    "source_0": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574192750896", 
+  "location": "US", 
+  "numBytes": "377180128", 
+  "numLongTermBytes": "377180128", 
+  "numRows": "1212178", 
+  "schema": {
+    "fields": [
+      {
+        "description": "File UUID", 
+        "mode": "NULLABLE", 
+        "name": "id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Name of file at the GDC", 
+        "mode": "NULLABLE", 
+        "name": "file_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "128-bit hash value expressed as a 32 digit hexadecimal number (in lower case) used as a file's digital fingerprint", 
+        "mode": "NULLABLE", 
+        "name": "md5", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "File size", 
+        "mode": "NULLABLE", 
+        "name": "size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "File state -- either submitted or released", 
+        "mode": "NULLABLE", 
+        "name": "state", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "ID of the Project -- e.g. TCGA-BRCA, TARGET-AML, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UUID that all versions of the data (in other words, all GUIDs) point to", 
+        "mode": "NULLABLE", 
+        "name": "baseid", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Data version", 
+        "mode": "NULLABLE", 
+        "name": "version", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Associated GDC Release Number", 
+        "mode": "NULLABLE", 
+        "name": "release", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Access Control List -- if access is controlled, this field contains the dbGaP accession, eg phs000179", 
+        "mode": "NULLABLE", 
+        "name": "acl", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Description of the data, e.g. clinical_supplement, aligned_reads", 
+        "mode": "NULLABLE", 
+        "name": "type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reason for removal from the GDC", 
+        "mode": "NULLABLE", 
+        "name": "deletereason", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "AWS file location", 
+        "mode": "NULLABLE", 
+        "name": "url", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/GDC_sync_legacy_20190115", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "GDC_sync_legacy_20190115"
+  }, 
+  "type": "TABLE"
+}

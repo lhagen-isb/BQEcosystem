@@ -1,0 +1,55 @@
+{
+  "creationTime": "1511833088981", 
+  "description": "Data was loaded from Genotype-Tissue Expression (GTEx) Project on November 2017. Subject Phenotype data was loaded using GTEx Data Portal. More details: gtexportal.org", 
+  "etag": "vO4rqN6/TsjAE5P5K0PEqg==", 
+  "id": "isb-cgc:GTEx_v7.subject_phenotypes", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "clinical", 
+    "reference_genome_0": "hg19", 
+    "source_0": "genotype_tissue_expression_gtex_project", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767762043", 
+  "location": "US", 
+  "numBytes": "25857", 
+  "numLongTermBytes": "25857", 
+  "numRows": "752", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Subject ID, GTEx Public Donor ID", 
+        "mode": "NULLABLE", 
+        "name": "SUBJID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gender, integer encode value: 1=Male, 2=Female", 
+        "mode": "NULLABLE", 
+        "name": "SEX", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Age in years", 
+        "mode": "NULLABLE", 
+        "name": "AGE", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Death classification on 4-point Hardy scale: 1) Violent and fast death Deaths due to accident, blunt force trauma or suicide, terminal phase estimated at < 10 min; 2) Fast death of natural causes Sudden unexpected deaths of people who had been reasonably healthy, after a terminal phase estimated at < 1 hr (with sudden death from a myocardial infarction as a model cause of death for this category); 3) Intermediate death Death after a terminal phase of 1 to 24 hrs (not classifiable as 2 or 4), patients who were ill but death was unexpected; 4) Slow death Death after a long illness, with a terminal phase longer than 1 day (commonly cancer or chronic pulmonary disease); deaths that are not unexpected; 0) Ventilator Case All cases on a ventilator immediately before death.", 
+        "mode": "NULLABLE", 
+        "name": "DTHHRDY", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GTEx_v7/tables/subject_phenotypes", 
+  "tableReference": {
+    "datasetId": "GTEx_v7", 
+    "projectId": "isb-cgc", 
+    "tableId": "subject_phenotypes"
+  }, 
+  "type": "TABLE"
+}

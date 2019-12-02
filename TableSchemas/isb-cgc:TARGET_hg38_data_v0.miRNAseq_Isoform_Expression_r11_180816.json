@@ -1,0 +1,132 @@
+{
+  "creationTime": "1535573226868", 
+  "description": "Data was extracted from GDC active archive release on December 2018. microRNA isoform expression data was generated using Illumina GA or HiSeq sequencing platforms. More details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-110", 
+  "etag": "tJJFICoZjpmOLoe7BnPzDg==", 
+  "id": "isb-cgc:TARGET_hg38_data_v0.miRNAseq_Isoform_Expression_r11_180816", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "mirna_isoform_expression", 
+    "reference_genome_0": "hg38", 
+    "source_0": "target", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573768091637", 
+  "location": "US", 
+  "numBytes": "754879300", 
+  "numLongTermBytes": "754879300", 
+  "numRows": "2475648", 
+  "schema": {
+    "fields": [
+      {
+        "description": "TARGET sample barcode, eg TARGET-20-PASWAT-09A", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The miRNA identifier (aka symbols) eg, hsa-mir-21 .  relevant reference information can be found in the isb-cgc:genome_reference dataset in the tables miRBase_v21 and miRBase_v21_hsa_gff3", 
+        "name": "miRNA_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Number of reads that were mapped to this mirna_id", 
+        "name": "read_count", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Read count normalized by total reads mapped divided by 1 million", 
+        "name": "reads_per_million_miRNA_mapped", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "A short isomiR read may map exactly to mature strands whose sequences are similar but not identical, when the read sequence does not capture the bases that distinguish these miRNAs (e.g. hsa-mir-30a at 6q13 and hsa-mir-30e at 1p34.2, which differ at position 18). We report such a <line_feed> read as cross-mapped, and we increment the read count for each MIMAT that it mapped to. Either Y or N -- fewer than 2% are Y", 
+        "name": "cross_mapped", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: chr1-22, and chrX", 
+        "name": "chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "1-based start chromosome position of isoform", 
+        "name": "start_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "1-based end chromosome position of isoform", 
+        "name": "end_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Either + or - to denote whether read mapped to the sense (+) or anti-sense (-) strand", 
+        "name": "strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The mature miRNA accession id (eg MIMAT0000062) -- note that this can also be null, in the event that this read does not map to a mature portion of the miRNA", 
+        "name": "mirna_accession", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The type of transcript -- either mature, precursor, unannotated, or stemloop  (if this value is not mature, then the mirna_accession field will be null)", 
+        "name": "mirna_transcript", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation, eg TARGET-AML", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program Name, always TARGET (Therapeutically Applicable Research To Generate Effective Treatments) in this table.", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA codes for sample origin, e.g. 50 (cell lines). https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/sample-type-codes", 
+        "name": "sample_type_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba14", 
+        "name": "file_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TARGET aliquot barcode, eg TARGET-20-PAJLIP-01A-01R", 
+        "name": "aliquot_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TARGET case barcode, eg TARGET-20-PASCGR", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifier for this case (corresponds to the case_barcode)  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba14", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal", 
+        "name": "sample_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal", 
+        "name": "aliquot_gdc_id", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TARGET_hg38_data_v0/tables/miRNAseq_Isoform_Expression_r11_180816", 
+  "tableReference": {
+    "datasetId": "TARGET_hg38_data_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRNAseq_Isoform_Expression_r11_180816"
+  }, 
+  "type": "TABLE"
+}

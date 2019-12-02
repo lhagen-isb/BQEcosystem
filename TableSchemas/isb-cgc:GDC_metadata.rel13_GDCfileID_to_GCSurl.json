@@ -1,0 +1,42 @@
+{
+  "creationTime": "1544119262298", 
+  "description": "Data was generated from file metadata information from the GDC legacy archive release 13, October 2018. More details:https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-120", 
+  "etag": "d4HQPRZ+S38CLNt+a/XqPA==", 
+  "id": "isb-cgc:GDC_metadata.rel13_GDCfileID_to_GCSurl", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
+    "status": "archived"
+  }, 
+  "lastModifiedTime": "1573767984279", 
+  "location": "US", 
+  "numBytes": "138499394", 
+  "numLongTermBytes": "138499394", 
+  "numRows": "799947", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba5", 
+        "mode": "NULLABLE", 
+        "name": "file_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Google Cloud Storage (GCS) location ID. Example: gs://gdc-TCGA-phs000178-open/9c4b1b5c-b5cf-48f6-bf41-047ceb8c883c/TCGA-CR-7365-01A-01-TS1.811bb2b7-66e3-4694-891b-10b436ec300d.svs", 
+        "mode": "NULLABLE", 
+        "name": "file_gcs_url", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/rel13_GDCfileID_to_GCSurl", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "rel13_GDCfileID_to_GCSurl"
+  }, 
+  "type": "TABLE"
+}

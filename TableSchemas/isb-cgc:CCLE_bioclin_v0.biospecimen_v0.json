@@ -1,0 +1,66 @@
+{
+  "creationTime": "1554407407818", 
+  "description": "Data was extracted from the CCLE program in April 2019. This table contains sample data for CCLE primary cell lines. More details: see https://portals.broadinstitute.org/ccle/about", 
+  "etag": "VElvmCgK6EL4iwJnABNMGw==", 
+  "id": "isb-cgc:CCLE_bioclin_v0.biospecimen_v0", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "biospecimen", 
+    "source_0": "ccle", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574194320231", 
+  "location": "US", 
+  "numBytes": "107999", 
+  "numLongTermBytes": "107999", 
+  "numRows": "954", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "sample_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Sample bar code; CCLE appended with the case barcode", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifier for this CCLE project and cell line", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A case barcode assigned to the project/cell line record; same as the cell line primary name.", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Two-digit sample type code; 50 = Cell Lines, 13 = EBV Immortalized Normal", 
+        "mode": "NULLABLE", 
+        "name": "sample_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; e.g. CCLE-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/CCLE_bioclin_v0/tables/biospecimen_v0", 
+  "tableReference": {
+    "datasetId": "CCLE_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "biospecimen_v0"
+  }, 
+  "type": "TABLE"
+}

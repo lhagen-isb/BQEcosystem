@@ -1,0 +1,48 @@
+{
+  "creationTime": "1529370039742", 
+  "description": "This data was generated in June 2018. It is a mapping of TARGET samples to Data Types. More details: see table TARGET_metadata_data_type_availability for the Data Types.", 
+  "etag": "mtWoxFVlYxk+N4q8q2eaiQ==", 
+  "id": "isb-cgc:TARGET_bioclin_v0.TARGET_metadata_sample_data_availability", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "file_metadata", 
+    "source_0": "target", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574195127823", 
+  "location": "US", 
+  "numBytes": "348860", 
+  "numLongTermBytes": "348860", 
+  "numRows": "9180", 
+  "schema": {
+    "fields": [
+      {
+        "description": "A unique ID, representing the combination of the data type (isb_label) and genomic build. It is a key to the reference table TARGET_metadata_data_type_availability.", 
+        "mode": "NULLABLE", 
+        "name": "metadata_data_type_availability_id", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "TARGET sample barcode, e.g. TARGET-20-PASWAT-09A", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Count of sample barcode ", 
+        "mode": "NULLABLE", 
+        "name": "count", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TARGET_bioclin_v0/tables/TARGET_metadata_sample_data_availability", 
+  "tableReference": {
+    "datasetId": "TARGET_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "TARGET_metadata_sample_data_availability"
+  }, 
+  "type": "TABLE"
+}

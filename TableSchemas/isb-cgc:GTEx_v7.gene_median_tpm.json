@@ -1,0 +1,56 @@
+{
+  "creationTime": "1511833163401", 
+  "description": "Data was loaded from Genotype-Tissue Expression (GTEx) Project on November 2017. Gene expression data was loaded using GTEx Data Portal. More details: gtexportal.org", 
+  "etag": "db4QmiNuwt+xgoy5v20s+g==", 
+  "id": "isb-cgc:GTEx_v7.gene_median_tpm", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "gene_expression", 
+    "data_type_1": "rnaseq", 
+    "reference_genome_0": "hg19", 
+    "source_0": "genotype_tissue_expression_gtex_project", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573768114007", 
+  "location": "US", 
+  "numBytes": "174566833", 
+  "numLongTermBytes": "174566833", 
+  "numRows": "2978706", 
+  "schema": {
+    "fields": [
+      {
+        "description": "The Ensembl gene ID from the underlying file, including the version suffix  --  eg ENSG00000235943.1", 
+        "mode": "NULLABLE", 
+        "name": "gene_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene symbol, eg A1BG", 
+        "mode": "NULLABLE", 
+        "name": "gene_description", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "SMTSD: source tissue type, eg  'Whole Blood', 'Stomach',  'Brain - Amygdala', etc", 
+        "mode": "NULLABLE", 
+        "name": "SMTSD", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Median gene expression (TPM)", 
+        "mode": "NULLABLE", 
+        "name": "gene_exp", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GTEx_v7/tables/gene_median_tpm", 
+  "tableReference": {
+    "datasetId": "GTEx_v7", 
+    "projectId": "isb-cgc", 
+    "tableId": "gene_median_tpm"
+  }, 
+  "type": "TABLE"
+}

@@ -1,0 +1,48 @@
+{
+  "creationTime": "1529370097978", 
+  "description": "This data was generated in June 2018. It is a reference list of Data Type labels and IDs. More details: These IDs are used in the table TARGET_metadata_sample_data_availability to map samples to Data Types.", 
+  "etag": "L5C4qRcjoPR8NVPMzYwx4w==", 
+  "id": "isb-cgc:TARGET_bioclin_v0.TARGET_metadata_data_type_availability", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "file_metadata", 
+    "source_0": "target", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574195115868", 
+  "location": "US", 
+  "numBytes": "868", 
+  "numLongTermBytes": "868", 
+  "numRows": "24", 
+  "schema": {
+    "fields": [
+      {
+        "description": "A unique ID, representing the combination of the data type (isb_label) and genomic build. These IDs are used in the table TARGET_metadata_sample_data_availability to map samples to Data Types.", 
+        "mode": "NULLABLE", 
+        "name": "metadata_data_type_availability_id", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Genomic build; e.g. HG19, HG38", 
+        "mode": "NULLABLE", 
+        "name": "genomic_build", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "An ISB defined Data Type, which is used in the ISB-CGC Web App to allow users to filter data by Data Type; e.g. Somatic_Mutation, Protein_Quantification, Pathology_Image, etc.", 
+        "mode": "NULLABLE", 
+        "name": "isb_label", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TARGET_bioclin_v0/tables/TARGET_metadata_data_type_availability", 
+  "tableReference": {
+    "datasetId": "TARGET_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "TARGET_metadata_data_type_availability"
+  }, 
+  "type": "TABLE"
+}

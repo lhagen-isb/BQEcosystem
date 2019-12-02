@@ -1,0 +1,103 @@
+{
+  "creationTime": "1491850069101", 
+  "description": "This data was generated from Annotations obtained from the TCGA DCC in June 2016. This annotation data for TCGA patient cases includes the GDC case identifier. It may have slight differences from the annotations available at the GDC.", 
+  "etag": "/VxVBcIAXiBOrwlSV0mPLg==", 
+  "id": "isb-cgc:TCGA_bioclin_v0.Annotations", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "clinical", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574195334861", 
+  "location": "US", 
+  "numBytes": "1725830", 
+  "numLongTermBytes": "1725830", 
+  "numRows": "6322", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; e.g. TCGA-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Barcode of the entity that this annotation applies to; often the same as the case barcode", 
+        "mode": "NULLABLE", 
+        "name": "entity_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Type of the entity that this annotation applies to; e.g. Shipped Portion, Aliquot, Patient (which has the same meaning as Case), Analyte, etc.", 
+        "mode": "NULLABLE", 
+        "name": "entity_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Annotation category; one of a relatively short list of phrases from a controlled-vocabulary; e.g. Item is noncanonical, Item flagged DNU, Prior malignancy, etc.", 
+        "mode": "NULLABLE", 
+        "name": "category", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Annotation classification; e.g. Notification, CenterNotification, Observation, or Redaction", 
+        "mode": "NULLABLE", 
+        "name": "classification", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Longer descriptive text about this annotation", 
+        "mode": "NULLABLE", 
+        "name": "notes", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Date on which this annotation was originally created; includes time-stamp and time-zone, eg 2011-03-14T18:00:42-04:00  --  dates range between March 2009 and June 2016", 
+        "mode": "NULLABLE", 
+        "name": "date_created", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Annotations were rarely edited, but if thery were (fewer than 10 out of over 6000 total annotations), this field indicates the date on which it was edited", 
+        "mode": "NULLABLE", 
+        "name": "date_edited", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC case identifier for the patient/case associated with this specific annotation", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA patient/case barcode; e.g. TCGA-06-0119", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode; e.g. TCGA-06-0119-01A (note that this field will be null if the annotation applies at a higher level than sample)", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode; e.g. TCGA-06-0119-01A-08D-0216-06 (note that this field will be null if the annotation applies at a higher level than aliquot)", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_barcode", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TCGA_bioclin_v0/tables/Annotations", 
+  "tableReference": {
+    "datasetId": "TCGA_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "Annotations"
+  }, 
+  "type": "TABLE"
+}

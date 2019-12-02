@@ -1,0 +1,811 @@
+{
+  "creationTime": "1493253979957", 
+  "description": "Data was extracted from the TARGET program in April 2017. This clinical information about patient cases was generated from a set of XLSX files downloaded from https://target-data.nci.nih.gov/Public/.../clinical/harmonized. More details: see https://ocg.cancer.gov/programs/target. \n\nNOTE: While this table contains information about over 5000 TARGET cases, this does not necessarily mean that molecular data exists for all of them, nor that the NCI GDC data repository currently contains all available data. Cases are grouped into projects. In general, each project is associated with a single disease, although ALL (Acute Lymphoblastic Leukemia) has two projects: Phase1 and Phase2 (P1 and P2). Some fields in this table may be relevant to only one of the sub-projects and will therefore be null for many of the cases. The fields are (approximately) ordered from left to right where the fields towards the left are rarely null, while the fields toward the right are almost always null.", 
+  "etag": "5Py/XxyHfjhYJL7AeSyQ/A==", 
+  "id": "isb-cgc:TARGET_bioclin_v0.Clinical", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "clinical_biospecimen_data", 
+    "data_type_0": "clinical", 
+    "source_0": "target", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574195019403", 
+  "location": "US", 
+  "numBytes": "2017542", 
+  "numLongTermBytes": "2017542", 
+  "numRows": "5011", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Each row of this table describes a unique TARGET  case (participant), identified by a barcode such as TARGET-52-PAWFWK", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifier for this case (corresponds to the case_barcode)  --  this can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba9", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program Name, always TARGET (Therapeutically Applicable Research To Generate Effective Treatments) in this table.", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program dbGaP accession number, eg phs000178", 
+        "mode": "NULLABLE", 
+        "name": "program_dbgap_accession_number", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation; the TARGET program is composed of multiple projects, with abbreviations such as TARGET-ALL-P2, TARGET-AML, TARGET-WT, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project Name; frequently the same as or similar to the project disease type eg   Acute Lymphoblastic Leukemia - Phase II   or   Breast Invasive Carcinoma   etc", 
+        "mode": "NULLABLE", 
+        "name": "project_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A code representing the type of cancer. Values can be found at https://gdc.cancer.gov/resources-TCGA-users/TCGA-code-tables/TCGA-study-abbreviations; eg. OV, GBM, LUAD", 
+        "mode": "NULLABLE", 
+        "name": "disease_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Participant gender; e.g. Male, Female", 
+        "mode": "NULLABLE", 
+        "name": "gender", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Survival state of the participant; e.g. dead, alive", 
+        "mode": "NULLABLE", 
+        "name": "vital_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The race of a participant, independent from ethnicity; e.g. White, Black or African American, Asian, Native Hawaiian or other Pacific Islander, American Indian or Alaska Native", 
+        "mode": "NULLABLE", 
+        "name": "race", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The ethnic origination of a participant, independent from race; e.g. Not Hispanic or Latino, Hispanic or Latino", 
+        "mode": "NULLABLE", 
+        "name": "ethnicity", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Age, in years, at which a condition or disease was first diagnosed", 
+        "mode": "NULLABLE", 
+        "name": "age_at_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Days since birth (a negative value, relative to the date of diagnosis which is considered to be t=0)", 
+        "mode": "NULLABLE", 
+        "name": "days_to_birth", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "If vital_status indicates 'alive', then this is the number of days from the date of diagnosis to the last followup (communication contact).", 
+        "mode": "NULLABLE", 
+        "name": "days_to_last_followup", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of days from the date of diagnosis to the last day on which a person was known to be alive. This field is a combination of the days_to_last_followup and days_to death fields. Therefore, this field can be used whether the vital_status is 'alive' or 'dead'.", 
+        "mode": "NULLABLE", 
+        "name": "days_to_last_known_alive", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "If vital_status indicates 'dead', then this is the number of days to death (a positive value) relative to the date of diagnosis.", 
+        "mode": "NULLABLE", 
+        "name": "days_to_death", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Alphanumeric code of the protocol(s); can be a comma-delimited string, but generally just a single protocol is specified; eg. AALL0232, etc.", 
+        "mode": "NULLABLE", 
+        "name": "protocol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Four digit year of the diagnosis", 
+        "mode": "NULLABLE", 
+        "name": "year_of_diagnosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The year of the last followup (communication contact); eg. 2014.", 
+        "mode": "NULLABLE", 
+        "name": "year_of_last_follow_up", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Number of days between the end of primary treatment for a cancer and the first event (complication, recurrence, etc)", 
+        "mode": "NULLABLE", 
+        "name": "event_free_survival_time_in_days", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Type of the first disease event; eg. Death, Relapse, Progresssion, Induction failure, etc.", 
+        "mode": "NULLABLE", 
+        "name": "first_event", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "White Blood Cell count at diagnosis", 
+        "mode": "NULLABLE", 
+        "name": "WBC_at_diagnosis", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Presence or absence of abnormalities in the Mixed Lineage Leukemia (MLL) gene; eg. positive, negative", 
+        "mode": "NULLABLE", 
+        "name": "MLL_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator of Central Nervous System site of relapse or induction failure; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "CNS_site_of_relapse_or_induction_failure", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates classification of presence of Central Nervous System (CNS) disease at diagnosis ( https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990693/ ); eg. CNS 1, CNS 2, or CNS 3 (or null)", 
+        "mode": "NULLABLE", 
+        "name": "CNS_status_at_diagnosis", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Bone marrow site of relapse or induction failure", 
+        "mode": "NULLABLE", 
+        "name": "bone_marrow_site_of_relapse_or_induction_failure", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator of other site of relapse or induction failure; eg. yes, no, null", 
+        "mode": "NULLABLE", 
+        "name": "other_site_of_relapse_or_induction_failure", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Histology information; eg. Unfavorable, FHWT, DAWT, etc.", 
+        "mode": "NULLABLE", 
+        "name": "histology", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Presence or absence of BCR-ABL1 fusion (aka Philadelphia Chromosome); eg. positive, negative, or null", 
+        "mode": "NULLABLE", 
+        "name": "BCR_ABL1_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Bone Marrow Aspiration (BMA) blast count on day 8", 
+        "mode": "NULLABLE", 
+        "name": "BMA_blasts_day_8", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Bone Marrow Aspiration (BMA) blast count on day 15", 
+        "mode": "NULLABLE", 
+        "name": "BMA_blasts_day_15", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Bone Marrow Aspiration (BMA) blast count on day 29", 
+        "mode": "NULLABLE", 
+        "name": "BMA_blasts_day_29", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Bone Marrow Aspiration (BMA) blast count on day 43", 
+        "mode": "NULLABLE", 
+        "name": "BMA_blasts_day_43", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "The DNA index (DI, or ratio of the DNA content of leukemic v normal G0/G1 cells); a prognostic factor in childhood acute lymphoblastic leukemia (ALL)", 
+        "mode": "NULLABLE", 
+        "name": "DNA_index", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Indicates whether the participant has Down syndrome; eg. Yes, No", 
+        "mode": "NULLABLE", 
+        "name": "Down_syndrome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Minimal Residual Disease (MRD) at end of course 1; a percentage value", 
+        "mode": "NULLABLE", 
+        "name": "MRD_at_end_of_course_1", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "MRD at end of course 1; eg. yes or no (anything above 0.10 % is called yes)", 
+        "mode": "NULLABLE", 
+        "name": "MRD_at_end_of_course_1_YN", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Minimal Residual Disease (MRD) at end of course 2; a percentage value", 
+        "mode": "NULLABLE", 
+        "name": "MRD_at_end_of_course_2", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "MRD at end of course 2; eg. yes or no (anything above 0.10 % is called yes)", 
+        "mode": "NULLABLE", 
+        "name": "MRD_at_end_of_course_2_YN", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Minimal Residual Disease (MRD) at day 8 (percentage)", 
+        "mode": "NULLABLE", 
+        "name": "MRD_day_8", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Minimal Residual Disease (MRD) at day 29 (percentage)", 
+        "mode": "NULLABLE", 
+        "name": "MRD_day_29", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Minimal Residual Disease (MRD) at day 43 (percentage)", 
+        "mode": "NULLABLE", 
+        "name": "MRD_day_43", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Minimal Residual Disease (MRD) at end of consolidation (ie at end of treatment)", 
+        "mode": "NULLABLE", 
+        "name": "MRD_end_consolidation", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Cell type of origin; eg. B precursor, T-Cell, Indeterminate", 
+        "mode": "NULLABLE", 
+        "name": "cell_of_origin", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Testes site of relapse; eg. yes, no or null", 
+        "mode": "NULLABLE", 
+        "name": "testes_site_of_relapse", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether cancer has spread from a tumor to the testis; eg. yes, no or null", 
+        "mode": "NULLABLE", 
+        "name": "testicular_involvement", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Generally null, but may contain some useful information about a particular case", 
+        "mode": "NULLABLE", 
+        "name": "comment", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Presence or absence of simultatenous trisomy of chromosomes 4 and 10.; eg. positive, negative or null", 
+        "mode": "NULLABLE", 
+        "name": "trisomies_4_10_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Status of ETV6-RUNX1 fusion; the most common genetic aberration in childhood ALL; eg.  positive, negative", 
+        "mode": "NULLABLE", 
+        "name": "ETV6_RUNX1_fusion_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Eg. 46,XY[20]; for more details on what this means, see https://chromodisorder.org/introduction-to-chromosomes/", 
+        "mode": "NULLABLE", 
+        "name": "karyotype", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCF3-PBX1 fusion status; eg. negative, positive; see http://atlasgeneticsoncology.org/Anomalies/t0119ID1048.html", 
+        "mode": "NULLABLE", 
+        "name": "TCF3_PBX1_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Children' s Oncology Group (COG) risk group; eg. High Risk, Low Risk and Intermediate Risk, see https://www.cancer.org/cancer/neuroblastoma/detection-diagnosis-staging/risk-groups.html", 
+        "mode": "NULLABLE", 
+        "name": "COG_risk_group", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "International Classification of Disease for Oncology (ICDO description); eg. Posterior mediastinum; see  https://en.wikipedia.org/wiki/International_Classification_of_Diseases_for_Oncology", 
+        "mode": "NULLABLE", 
+        "name": "ICDO_description", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "International Neuroblastoma Staging System (INSS) stage; values are Stage 1, Stage 2a, Stage 2b, Stage 3, Stage 4, and stage 4s", 
+        "mode": "NULLABLE", 
+        "name": "INSS_stage", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "MYCN Gene Amplification Status; eg. Amplified, Not Amplified, null", 
+        "mode": "NULLABLE", 
+        "name": "MYCN_status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "International Classification of Disease of Oncology (ICDO) code; eg. C74.9  ", 
+        "mode": "NULLABLE", 
+        "name": "ICDO", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The diagnostic category; eg. Neuroblastoma, Ganglioneuroblastoma, nodular, etc. (null for 80% of cases)", 
+        "mode": "NULLABLE", 
+        "name": "diagnostic_category", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Value based on the DNA content of the tumor cell population compared to normal diploid cells based on flow cytometry; value between 1 and 5", 
+        "mode": "NULLABLE", 
+        "name": "ploidy", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CCAAT Enhancer Binding Protein Alpha (CEBPA) mutation status; CEBPA is a transcription factor involved in the differentiation of certain blood cells; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "CEBPA_mutation", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates if Central Nervous System disease exists; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "CNS_disease", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Complete Response status at end of treatment course 1; eg. CR, or Not in CR, (or more rarely Death or Unevaluable)", 
+        "mode": "NULLABLE", 
+        "name": "CR_status_at_end_of_course_1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Complete Response status at end of treatment course 2; eg. CR, or Not in CR, (or more rarely Death or Unevaluable)", 
+        "mode": "NULLABLE", 
+        "name": "CR_status_at_end_of_course_2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator whether FLT3 Internal Tandem Duplication is positive; eg. yes, no or null", 
+        "mode": "NULLABLE", 
+        "name": "FLT3_ITD_positive", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "FLT3 Point Mutations; eg. yes, or null", 
+        "mode": "NULLABLE", 
+        "name": "FLT3_PM", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "International System for Cytogenetic Nomenclature (ISCN) code; eg. 45,XY[20]", 
+        "mode": "NULLABLE", 
+        "name": "ISCN", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Mitosis-Karyorrhexis index: count of cells undergoing mitosis or karyorrhexis, based on count of 5000 cells; ether low (< 100 cells), intermediate (100-199 cells), or high (>=200 cells)", 
+        "mode": "NULLABLE", 
+        "name": "MKI", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Nucelophosmin (NPM) gene mutation status; eg.  yes, no or null", 
+        "mode": "NULLABLE", 
+        "name": "NPM_mutation", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Presence or absence of Wilms Tumor protein 1;a transcription factor necessary for the development of the kidneys and gonads; eg.  yes or no", 
+        "mode": "NULLABLE", 
+        "name": "WT1_mutation", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Percentage of myeloblasts (blasts for short) in the bone marrow or blood; generally at least 20% is required for a diagnosis of AML", 
+        "mode": "NULLABLE", 
+        "name": "bone_marrow_leukemic_blast_percentage", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Indicates if a chloroma exists; a chloroma is an extramedullary manifestation of acute myeloid leukemia; in other words, it is a solid collection of leukemic cells occurring outside of the bone marrow; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "chloroma", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Number of unrelated cytogenetic abnormalities in a single karyotype; eg. values range from 0 to 10, also the string More than 6 occurs several times", 
+        "mode": "NULLABLE", 
+        "name": "cytogenetic_complexity", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates presence of 5q deletion syndrome; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "del5q", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates presence of 7q deletion syndrome; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "del7q", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates presence of 5q deletion syndrome; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "del9q", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Tumor differentiation; eg. Differentiating, Undifferentiated or Poorly Differentiated", 
+        "mode": "NULLABLE", 
+        "name": "grade", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator of inv(16);  inv(16) is one of the most frequent chromosomal translocations associated with AML; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "inv_16", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Loss of an X chromosome; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "minus_X", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Loss of an Y chromosome; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "minus_Y", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Loss of whole chromosome 5; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "monosomy_5", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Loss of whole chromosome 7; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "monosomy_7", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The percentage of blast (immature) cells in a sample of peripheral blood in a patient.", 
+        "mode": "NULLABLE", 
+        "name": "peripheral_blasts_pct", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Primary cytogenetic code; eg. Other, Normal, MLL, t(8;21), inv(16) etc  (but null for 80% of cases)", 
+        "mode": "NULLABLE", 
+        "name": "primary_cytogenetic_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "This field may complement the previous COG_risk_group since they are never both defined for any one case; in this field the values Standard, Low, and High are observed the most frequently, with 10 (n=2) and 30 (n=1) also observed", 
+        "mode": "NULLABLE", 
+        "name": "risk_group", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates  t(10:11)(p11.2:q23) karyotype abnormality; eg. yes, no; see http://atlasgeneticsoncology.org/Anomalies/t1011ID1178.html", 
+        "mode": "NULLABLE", 
+        "name": "t_10_11_p11_2_q23", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Represents the t(11:19)(q23:p13.1) karyotype abnormality; see http://atlasgeneticsoncology.org/Anomalies/t1119ELLID1029.html", 
+        "mode": "NULLABLE", 
+        "name": "t_11_19_q23_p13_1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates t(3:5)(q25:q34) karyotype abnormality; eg. yes, no; see http://atlasgeneticsoncology.org/Anomalies/t0305ID1007.html", 
+        "mode": "NULLABLE", 
+        "name": "t_3_5_q25_q34", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates t(6:11)(q27:q23) karotype abnormality; eg. yes, no; see http://atlasgeneticsoncology.org/Anomalies/t0611ID1015.html", 
+        "mode": "NULLABLE", 
+        "name": "t_6_11_q27_q23", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates t(6:9) karyotype abnormality; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "t_6_9", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates t(8:21) karyotype abnormality; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "t_8_21", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates t(9:11)(p22:q23) karyotype abnormality; eg. yes, no; see http://atlasgeneticsoncology.org/Anomalies/t0911ID1001.html", 
+        "mode": "NULLABLE", 
+        "name": "t_9_11_p22_q23", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Presence of three copies of chromosome 8; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "trisomy_8", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Presence of three copies of chromosome 21; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "trisomy_21", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "French-American-British classification; values range from M0 to M7, with some NOS (also null for over 80% of cases)", 
+        "mode": "NULLABLE", 
+        "name": "FAB_category", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Stem Cell Transplantation in first Complete Remission; eg. yes, no or null ", 
+        "mode": "NULLABLE", 
+        "name": "SCT_in_1st_CR", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Numeric value representing the percentage of a tumor in a sample or specimen; eg. 90", 
+        "mode": "NULLABLE", 
+        "name": "percent_tumor", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Code that represents the histology (morphology) of the disease using the third edition of the International Classification of Diseases for Oncology, published in 2000; eg. 8960/3", 
+        "mode": "NULLABLE", 
+        "name": "ICD_O_3_M", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Code that represents the site (topology) of the disease using the third edition of the International Classification of Diseases for Oncology, published in 2000; eg. C649", 
+        "mode": "NULLABLE", 
+        "name": "ICD_O_3_T", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Cancer stage; eg. III  --  values observed include I, II, III, IV, and also IIIB, IIIB/V, III/IV, II/V, and III/V", 
+        "mode": "NULLABLE", 
+        "name": "stage", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether the disease is being discovered or validated; eg. discovery, validation or null", 
+        "mode": "NULLABLE", 
+        "name": "discovery_or_validation", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Acute Lymphoblastic Leukemia (ALL) molecular pathology subtype; eg. TCF3-PBX1, etc.", 
+        "mode": "NULLABLE", 
+        "name": "ALL_mol_subtype", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator of chloroma site of relapse or induction failure; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "chloroma_site_of_relapse_or_induction_failure", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator of cytogenetic site of relapse or induction failure; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "cytogenetic_site_of_relapse_or_induction_failure", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Numeric value representing the percentage of necrosis in a sample or specimen.", 
+        "mode": "NULLABLE", 
+        "name": "percent_necrosis", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Numeric representation of the ratio of tumor to stroma; eg. 40/60, 75/25", 
+        "mode": "NULLABLE", 
+        "name": "percent_tumor_vs_stroma", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Site of relapse; eg. Primary site, etc.", 
+        "mode": "NULLABLE", 
+        "name": "site_of_relapse", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Alternate therapy; eg. Chemotherapy, Transplant, Surgery, etc.", 
+        "mode": "NULLABLE", 
+        "name": "alternate_therapy", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator of c-kit mutation exon 8; eg. yes, no or null", 
+        "mode": "NULLABLE", 
+        "name": "c_Kit_mutation_exon8", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicator of c-kit mutation exon 17; eg. yes, no or null", 
+        "mode": "NULLABLE", 
+        "name": "c_Kit_mutation_exon17", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Cytogenetic code; eg. t(17;19)(q11.2;q13.3), etc.", 
+        "mode": "NULLABLE", 
+        "name": "cytogenetic_code_other", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether the disease was metastatic or non-metastatic at diagnosis; eg. Metastatic, Non-metastatic, Metastatic (confirmed), Non-metastatic (confirmed), Non-metastatic (unconfirmed)", 
+        "mode": "NULLABLE", 
+        "name": "disease_at_diagnosis", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The location on the body where the primary tumor exists; eg. Arm/Hand, Pelvis, etc.", 
+        "mode": "NULLABLE", 
+        "name": "primary_tumor_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Specific tumor site on the body; eg. Pelvis, Femur, etc.", 
+        "mode": "NULLABLE", 
+        "name": "specific_tumor_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Time in days until the first event", 
+        "mode": "NULLABLE", 
+        "name": "time_to_first_event_in_days", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "FLT3 Internal Tandem Duplication Allele Ratio", 
+        "mode": "NULLABLE", 
+        "name": "FLT3_ITD_allelic_ratio", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "The type of definitive surgery; e.g. Amputation, Limb sparing, etc.", 
+        "mode": "NULLABLE", 
+        "name": "definitive_surgery", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The histological response to an intervention; e.g. Good, Poor, Favorable", 
+        "mode": "NULLABLE", 
+        "name": "histologic_response", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reason for death; e.g. Tumor, Infection, Toxicity, etc.", 
+        "mode": "NULLABLE", 
+        "name": "reason_for_death", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Specific tumor region on the body; e.g. Proximal, Distal", 
+        "mode": "NULLABLE", 
+        "name": "specific_tumor_region", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Specific tumor side of the body; e.g. right, left", 
+        "mode": "NULLABLE", 
+        "name": "specific_tumor_side", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Time in days to first relapse", 
+        "mode": "NULLABLE", 
+        "name": "time_to_first_relapse_in_days", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Other alternate therapy; e.g. Bone marrow transplant, Palliative chemotherapy, etc.", 
+        "mode": "NULLABLE", 
+        "name": "alternate_therapy_other", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Metastasis site; e.g. Bone, Lung only", 
+        "mode": "NULLABLE", 
+        "name": "metastasis_site", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Indicates whether there has been progression at the primary site; eg. yes, no", 
+        "mode": "NULLABLE", 
+        "name": "primary_site_progression", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Refractory timepoint sent for induction failure project; eg. EOI I, EOI II", 
+        "mode": "NULLABLE", 
+        "name": "refractory_timepoint_sent_for_induction_failure_project", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Numeric value representing the percentage of cell death in a malignant tumor sample or specimen for the first relapse tissue.", 
+        "mode": "NULLABLE", 
+        "name": "relapse_percent_necrosis", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Numeric representation of the percentage of tumor for the first sample of relapse tissue.", 
+        "mode": "NULLABLE", 
+        "name": "relapse_percent_tumor", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Relapse type; e.g. Systemic, Locally recurrent", 
+        "mode": "NULLABLE", 
+        "name": "relapse_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Type of therapy; e.g. Adria/Plat/MTX, etc.", 
+        "mode": "NULLABLE", 
+        "name": "therapy", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Time in days from the date of enrollment to the date of initial secondary malignant neoplasm (SMN) diagnosis", 
+        "mode": "NULLABLE", 
+        "name": "time_to_first_SMN_in_days", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Time in days to first enrollment on relapse protocol", 
+        "mode": "NULLABLE", 
+        "name": "time_to_first_enrollment_on_relapse_protocol_in_days", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TARGET_bioclin_v0/tables/Clinical", 
+  "tableReference": {
+    "datasetId": "TARGET_bioclin_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "Clinical"
+  }, 
+  "type": "TABLE"
+}

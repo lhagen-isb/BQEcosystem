@@ -1,0 +1,73 @@
+{
+  "creationTime": "1522343700834", 
+  "description": "Data was loaded from TCGA hg38 data and TCGA Biospecimen Data on March 2018. Ranked Hg38 gene expression data was rankend by coefficient of variation then generating a random sample of biospecimen excluding barcodes that don't end in '-A01' was loaded using BigQuery. More details: https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/QueryOfTheMonthClub.html#march-2018", 
+  "etag": "laRJCUNHvwg526C2C5OsJg==", 
+  "id": "isb-cgc:QotM.results_1002", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "gene_expression", 
+    "reference_genome_0": "hg38", 
+    "source_0": "isb_cgc-qotm", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767981163", 
+  "location": "US", 
+  "numBytes": "69531", 
+  "numLongTermBytes": "69531", 
+  "numRows": "1225", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Gene pair #1", 
+        "mode": "NULLABLE", 
+        "name": "gene_i", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene pair #2", 
+        "mode": "NULLABLE", 
+        "name": "gene_j", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Number of pairs where gene #1 < gene #2 in group A", 
+        "mode": "NULLABLE", 
+        "name": "Pa", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of pairs for PAAD", 
+        "mode": "NULLABLE", 
+        "name": "Na", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Numbers for group B", 
+        "mode": "NULLABLE", 
+        "name": "Pb", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Total number of pairs for KIRP", 
+        "mode": "NULLABLE", 
+        "name": "Nb", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Difference in conditional probabilities", 
+        "mode": "NULLABLE", 
+        "name": "PDiff", 
+        "type": "FLOAT"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/QotM/tables/results_1002", 
+  "tableReference": {
+    "datasetId": "QotM", 
+    "projectId": "isb-cgc", 
+    "tableId": "results_1002"
+  }, 
+  "type": "TABLE"
+}
