@@ -1,0 +1,434 @@
+{
+  "creationTime": "1485986019864", 
+  "description": "Data was extracted from the TCGA DCC on February 2017 for somatic mutation calls with each mutation call was annotated using Oncotator.", 
+  "etag": "BJyUObc05iMBA/gUwfKRmg==", 
+  "id": "isb-cgc:TCGA_hg19_data_v0.Somatic_Mutation_DCC", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "somatic_mutations", 
+    "reference_genome_0": "hg19", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1574192570549", 
+  "location": "US", 
+  "numBytes": "5699464441", 
+  "numLongTermBytes": "5699464441", 
+  "numRows": "5356089", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TCGA case barcode, eg TCGA-12-1089  --  note that each case typically has a primary-tumor sample and a matched-normal (blood or adjacent tissue) sample; please refer to the TCGA Biospecimen table for more details", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode for the tumor, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode_tumor", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode for the normal control, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode_normal", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode for the tumor, eg TCGA-12-1089-01A-01D-0517-01", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_barcode_tumor", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode for the normal control, eg TCGA-12-1089-01A-01D-0517-01", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_barcode_normal", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The reference genome used for the alignment (GRCh37)", 
+        "mode": "NULLABLE", 
+        "name": "NCBI_Build", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UniProt ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_UniProt_ID_Supplied_By_UniProt", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Entrez gene ID (an integer). 0 is used for regions that do not correspond to a gene region or Ensembl ID", 
+        "mode": "NULLABLE", 
+        "name": "Entrez_Gene_Id", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Translational effect of variant allele", 
+        "mode": "NULLABLE", 
+        "name": "Variant_Classification", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Type of mutation. TNP (tri-nucleotide polymorphism) is analogous to DNP (di-nucleotide polymorphism) but for three consecutive nucleotides. ONP (oligo-nucleotide polymorphism) is analogous to TNP but for consecutive runs of four or more (SNP, DNP, TNP, ONP, INS, DEL, or Consolidated)", 
+        "mode": "NULLABLE", 
+        "name": "Variant_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: chr1-22, and chrX", 
+        "mode": "NULLABLE", 
+        "name": "Chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Lowest numeric position of the reported variant on the genomic reference sequence. Mutation start coordinate", 
+        "mode": "NULLABLE", 
+        "name": "Start_Position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "End position, in 1-based integer coordinates", 
+        "mode": "NULLABLE", 
+        "name": "End_Position", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "An assessment of the mutation as somatic, germline, LOH, post transcriptional modification, unknown, or none. The values allowed in this field are constrained by the value in the Validation_Status field", 
+        "mode": "NULLABLE", 
+        "name": "Mutation_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Location and Base Genome Change", 
+        "mode": "NULLABLE", 
+        "name": "Genome_Change", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CDNA change. Examples: c.3236G>A,c.143_147delCTGCC, c.4417_4418insCAA", 
+        "mode": "NULLABLE", 
+        "name": "cDNA_Change", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Changes an amino acid to another amino acid e.g. p.G464V", 
+        "mode": "NULLABLE", 
+        "name": "Protein_Change", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl Annotation Transcript ID (e.g. ENST00000366560.3)", 
+        "mode": "NULLABLE", 
+        "name": "Annotation_Transcript", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Total number of mutations in genes in CCLE Oncomap data", 
+        "mode": "NULLABLE", 
+        "name": "CCLE_ONCOMAP_Total_Mutations_In_Gene", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "One or more genome sequencing center reporting the variant", 
+        "mode": "NULLABLE", 
+        "name": "Center", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Total Alteration in Gene", 
+        "mode": "NULLABLE", 
+        "name": "COSMIC_Total_Alterations_In_Gene", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "dbSNP reference SNP number, eg rs121913500 -- may be a comma-delimited list, or may be null", 
+        "mode": "NULLABLE", 
+        "name": "DbSNP_RS", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DbSNP validation status is reported as a semicolon-separated list of statuses. The union of all rs-IDs is taken when there are multiple", 
+        "mode": "NULLABLE", 
+        "name": "DbSNP_Val_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DNA Repair Genes Role", 
+        "mode": "NULLABLE", 
+        "name": "DNARepairGenes_Role", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Associated Drug Bank Names and IDs", 
+        "mode": "NULLABLE", 
+        "name": "DrugBank", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Percent GC content", 
+        "mode": "NULLABLE", 
+        "name": "GC_Content", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Transcript Name from GENCODE", 
+        "mode": "NULLABLE", 
+        "name": "GENCODE_Transcript_Name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript Status from GENCODE", 
+        "mode": "NULLABLE", 
+        "name": "GENCODE_Transcript_Status", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript Type from GENCODE, for more information: https://www.gencodegenes.org/pages/biotypes.html", 
+        "mode": "NULLABLE", 
+        "name": "GENCODE_Transcript_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Gene type. eg protein_coding, lincRNA, etc", 
+        "mode": "NULLABLE", 
+        "name": "Gene_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Biological Process, for more information: http://geneontology.org/docs/ontology-documentation/", 
+        "mode": "NULLABLE", 
+        "name": "GO_Biological_Process", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Cellular Component. For more information: http://geneontology.org/docs/ontology-documentation/", 
+        "mode": "NULLABLE", 
+        "name": "GO_Cellular_Component", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GO Molecular Function, for more information: http://geneontology.org/docs/ontology-documentation/", 
+        "mode": "NULLABLE", 
+        "name": "GO_Molecular_Function", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC Accession Numbers", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_Accession_Numbers", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC CCDS IDs", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_CCDS_IDs", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Ensembl ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_Ensembl_ID_Supplied_By_Ensembl", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_HGNC_ID", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "HGNC Locus Group", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_Locus_Group", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HGNC Locus Type", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_Locus_Type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "OMIM ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_OMIM_ID_Supplied_By_NCBI", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "RefSeq ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_RefSeq_Supplied_By_NCBI", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UCSC ID", 
+        "mode": "NULLABLE", 
+        "name": "HGNC_UCSC_ID_Supplied_By_UCSC", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "HUGO symbol for the gene (HUGO symbols are always in all caps). Unknown is used for regions that do not correspond to a gene", 
+        "mode": "NULLABLE", 
+        "name": "Hugo_Symbol", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Primary data genotype. Matched normal sequencing allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases (cleared in somatic MAF)", 
+        "mode": "NULLABLE", 
+        "name": "Normal_Seq_Allele1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Matched normal sequencing allele 2", 
+        "mode": "NULLABLE", 
+        "name": "Normal_Seq_Allele2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases (cleared in somatic MAF)", 
+        "mode": "NULLABLE", 
+        "name": "Normal_Validation_Allele1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary data from orthogonal technology. Matched normal genotyping (validation) for allele 2 (cleared in somatic MAF)", 
+        "mode": "NULLABLE", 
+        "name": "Normal_Validation_Allele2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Open Regulatory Annotation Database Id. Example: OREG0026204, OREG0023259", 
+        "mode": "NULLABLE", 
+        "name": "OREGANNO_ID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Reference allele per VCF specs, and its five flanking base pairs", 
+        "mode": "NULLABLE", 
+        "name": "Ref_Context", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The plus strand reference allele at this position. Includes the deleted sequence for a deletion or - for an insertion", 
+        "mode": "NULLABLE", 
+        "name": "Reference_Allele", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "RefSeq Protein ID e.g. NP_000134.2", 
+        "mode": "NULLABLE", 
+        "name": "Refseq_Prot_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary Variant Classification", 
+        "mode": "NULLABLE", 
+        "name": "Secondary_Variant_Classification", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Instrument used to produce primary sequence data", 
+        "mode": "NULLABLE", 
+        "name": "Sequencer", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Molecular assay type used to produce the analytes used for sequencing. Allowed values are a subset of the SRA 1.5 library_strategy field values. This subset matches those used at CGHub", 
+        "mode": "NULLABLE", 
+        "name": "Sequence_Source", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "SwissProt Accesssion ID", 
+        "mode": "NULLABLE", 
+        "name": "SwissProt_Acc_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "SwissProt Entry ID", 
+        "mode": "NULLABLE", 
+        "name": "SwissProt_Entry_Id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Transcript Exon", 
+        "mode": "NULLABLE", 
+        "name": "Transcript_Exon", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Transcript Position", 
+        "mode": "NULLABLE", 
+        "name": "Transcript_Position", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "DNA strand (1 or -1) on which the transcript/feature lies", 
+        "mode": "NULLABLE", 
+        "name": "Transcript_Strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Primary data genotype for tumor sequencing (discovery) allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases", 
+        "mode": "NULLABLE", 
+        "name": "Tumor_Seq_Allele1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Primary data genotype for tumor sequencing (discovery) allele 2. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases", 
+        "mode": "NULLABLE", 
+        "name": "Tumor_Seq_Allele2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 1. A - symbol for a deletion represents a variant. A - symbol for an insertion represents wild-type allele. Novel inserted sequence for insertion does not include flanking reference bases", 
+        "mode": "NULLABLE", 
+        "name": "Tumor_Validation_Allele1", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Secondary data from orthogonal technology. Tumor genotyping (validation) for allele 2", 
+        "mode": "NULLABLE", 
+        "name": "Tumor_Validation_Allele2", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "UniProt AA position", 
+        "mode": "NULLABLE", 
+        "name": "UniProt_AApos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "UniProt Region", 
+        "mode": "NULLABLE", 
+        "name": "UniProt_Region", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The assay platforms used for the validation call", 
+        "mode": "NULLABLE", 
+        "name": "Validation_Method", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TCGA_hg19_data_v0/tables/Somatic_Mutation_DCC", 
+  "tableReference": {
+    "datasetId": "TCGA_hg19_data_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "Somatic_Mutation_DCC"
+  }, 
+  "type": "TABLE"
+}

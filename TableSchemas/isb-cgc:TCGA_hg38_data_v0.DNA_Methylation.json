@@ -1,0 +1,92 @@
+{
+  "creationTime": "1483567460409", 
+  "description": "Data was extracted from GDC on January 2017 for DNA Methylation data generated using Illumina Human Methylation 27k and 450k platforms.", 
+  "etag": "QPX1bBLufftmG9oyz+sNdQ==", 
+  "id": "isb-cgc:TCGA_hg38_data_v0.DNA_Methylation", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "dna_methylation", 
+    "reference_genome_0": "hg38", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573767704400", 
+  "location": "US", 
+  "numBytes": "1000398640637", 
+  "numLongTermBytes": "1000398640637", 
+  "numRows": "3923388076", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Original TCGA case barcode, eg TCGA-DX-A8BN", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-03", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique ID for the array probe associated with a CpG site", 
+        "mode": "NULLABLE", 
+        "name": "probe_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Represents the ratio between the methylated array intensity and total array intensity, falls between 0 (lower levels of methylation) and 1 (higher levels of methylation)", 
+        "mode": "NULLABLE", 
+        "name": "beta_value", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "Platform used to generate this data -- either HumanMethylation450 or HumanMethylation27", 
+        "mode": "NULLABLE", 
+        "name": "platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba18", 
+        "mode": "NULLABLE", 
+        "name": "file_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this:   https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba11", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "sample_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this aliquot (corresponds to the aliquot_barcode), eg 7fbfdb3e-1fd2-4206-8d2e-7f68e4a15844  --  this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_gdc_id", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TCGA_hg38_data_v0/tables/DNA_Methylation", 
+  "tableReference": {
+    "datasetId": "TCGA_hg38_data_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "DNA_Methylation"
+  }, 
+  "type": "TABLE"
+}

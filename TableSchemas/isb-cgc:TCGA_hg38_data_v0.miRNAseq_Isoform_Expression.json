@@ -1,0 +1,116 @@
+{
+  "creationTime": "1548971076945", 
+  "description": "Data was extracted from release 14 active GDC archive from December 2018 for miRNA isoform expression. More details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-140", 
+  "etag": "ElBvKslv0PLjrfHKpf1gdw==", 
+  "id": "isb-cgc:TCGA_hg38_data_v0.miRNAseq_Isoform_Expression", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "processed_-omics_data", 
+    "data_type_0": "mirna_isoform_expression", 
+    "reference_genome_0": "hg38", 
+    "source_0": "tcga", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1573768106815", 
+  "location": "US", 
+  "numBytes": "8115063402", 
+  "numLongTermBytes": "8115063402", 
+  "numRows": "53265656", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original TCGA case barcode, eg TCGA-DX-A8BN", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA sample barcode, eg TCGA-12-1089-01A. One sample may have multiple sets of CN segmentations corresponding to multiple aliquots; use GROUP BY appropriately in queries", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "TCGA aliquot barcode, eg TCGA-12-1089-01A-01D-0517-29", 
+        "mode": "NULLABLE", 
+        "name": "aliquot_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique miRNA id (aka symbol), eg hsa-mir-21  --  relevant reference information can be found in the isb-cgc:genome_reference dataset in the tables miRBase_v21 and miRBase_v21_hsa_gff4", 
+        "mode": "NULLABLE", 
+        "name": "mirna_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Chromosome, possible values: chr1-22, and chrX", 
+        "mode": "NULLABLE", 
+        "name": "chromosome", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "1-based start chromosome position of isoform", 
+        "mode": "NULLABLE", 
+        "name": "start_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "1-based end chromosome position of isoform", 
+        "mode": "NULLABLE", 
+        "name": "end_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Either + or - to denote whether read mapped to the sense (+) or anti-sense (-) strand", 
+        "mode": "NULLABLE", 
+        "name": "strand", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Number of reads that were mapped to this mirna_id", 
+        "mode": "NULLABLE", 
+        "name": "read_count", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Read count normalized by total reads mapped divided by 1 million", 
+        "mode": "NULLABLE", 
+        "name": "reads_per_million_miRNA_mapped", 
+        "type": "FLOAT"
+      }, 
+      {
+        "description": "A short isomiR read may map exactly to mature strands whose sequences are similar but not identical, when the read sequence does not capture the bases that distinguish these miRNAs (e.g. hsa-mir-30a at 6q13 and hsa-mir-30e at 1p34.2, which differ at position 18). We report such a <line_feed> read as cross-mapped, and we increment the read count for each MIMAT that it mapped to. Either Y or N -- fewer than 2% are Y", 
+        "mode": "NULLABLE", 
+        "name": "cross_mapped", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The type of transcript -- either mature, precursor, unannotated, or stemloop  (if this value is not mature, then the mirna_accession field will be null)", 
+        "mode": "NULLABLE", 
+        "name": "mirna_transcript", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The mature miRNA accession id (eg MIMAT0000062) -- note that this can also be null, in the event that this read does not map to a mature portion of the miRNA", 
+        "mode": "NULLABLE", 
+        "name": "mirna_accession", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/TCGA_hg38_data_v0/tables/miRNAseq_Isoform_Expression", 
+  "tableReference": {
+    "datasetId": "TCGA_hg38_data_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "miRNAseq_Isoform_Expression"
+  }, 
+  "type": "TABLE"
+}
