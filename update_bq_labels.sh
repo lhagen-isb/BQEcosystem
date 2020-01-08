@@ -7,7 +7,7 @@ echo $BASH_VERSION
      
      while IFS="=" read -r key value; do
          ary[$key]=$value
-     done < "SourceLabels.txt"
+     done < "Source_Labels.txt"
 
     for k in "${!ary[@]}"; do
       bq update --set_label "${ary[$k]}" "$project:$k"
