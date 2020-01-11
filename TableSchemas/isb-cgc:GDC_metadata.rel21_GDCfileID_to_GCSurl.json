@@ -1,0 +1,26 @@
+{
+  "description": "Data was generated from file metadata information from the GDC release 21, December 2019. Current google cloud storage paths are mapped to file gdc ids.\nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-210",
+  "labels": {
+    "access": "open",
+    "category": "file_metadata",
+    "data_type_0": "file_metadata",
+    "source_0": "gdc",
+    "status": "current"
+  },
+  "schema": {
+    "fields": [
+      {
+        "description": "Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba1",
+        "mode": "NULLABLE",
+        "name": "file_gdc_id",
+        "type": "STRING"
+      },
+      {
+        "description": "GDC file location",
+        "mode": "NULLABLE",
+        "name": "file_gdc_url",
+        "type": "STRING"
+      }
+    ]
+  }
+}
