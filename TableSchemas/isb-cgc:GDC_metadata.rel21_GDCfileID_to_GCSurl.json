@@ -1,26 +1,43 @@
 {
-  "description": "Data was generated from file metadata information from the GDC release 21, December 2019. Current google cloud storage paths are mapped to file gdc ids.\nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-210",
+  "creationTime": "1578789002439", 
+  "description": "Data was generated from file metadata information from the GDC release 21, December 2019. Current google cloud storage paths are mapped to file gdc ids.\nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-210", 
+  "etag": "b9fz76YVQtbju2TtRD4Hrg==", 
+  "friendlyName": "RELEASE 21 GDC FILE ID TO GCS URLS", 
+  "id": "isb-cgc:GDC_metadata.rel21_GDCfileID_to_GCSurl", 
+  "kind": "bigquery#table", 
   "labels": {
-    "access": "open",
-    "category": "file_metadata",
-    "data_type_0": "file_metadata",
-    "source_0": "gdc",
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "source_0": "gdc", 
     "status": "current"
-  },
+  }, 
+  "lastModifiedTime": "1580324974679", 
+  "location": "US", 
+  "numBytes": "315161781", 
+  "numLongTermBytes": "0", 
+  "numRows": "1865550", 
   "schema": {
     "fields": [
       {
-        "description": "Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba1",
-        "mode": "NULLABLE",
-        "name": "file_gdc_id",
+        "description": "Unique GDC identifier for this file (corresponds to the file_barcode)  --  this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba1", 
+        "mode": "NULLABLE", 
+        "name": "file_gdc_id", 
         "type": "STRING"
-      },
+      }, 
       {
-        "description": "GDC file location",
-        "mode": "NULLABLE",
-        "name": "file_gdc_url",
+        "description": "GDC file location", 
+        "mode": "NULLABLE", 
+        "name": "file_gdc_url", 
         "type": "STRING"
       }
     ]
-  }
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/rel21_GDCfileID_to_GCSurl", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "rel21_GDCfileID_to_GCSurl"
+  }, 
+  "type": "TABLE"
 }

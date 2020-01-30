@@ -1,7 +1,8 @@
 {
   "creationTime": "1462731556145", 
   "description": "Data was loaded from the \"miRBase to All pathways mapping file\" (http://www.reactome.org/download/current/miRBase2Reactome_All_Levels.txt) downloaded from the Reactome site on May 8th, 2016. More details about the Reactome project: see Fabregat et al. 2016 http://www.ncbi.nlm.nih.gov/pubmed/26656494 Milacic et al. 2012 and http://www.ncbi.nlm.nih.gov/pubmed/24243840", 
-  "etag": "jfof+YloXzs040yIuWk4KQ==", 
+  "etag": "mBgSmDdl++WJ1UGjkYYrYQ==", 
+  "friendlyName": "MIRBASE2REACTOME", 
   "id": "isb-cgc:genome_reference.miRBase2Reactome", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "mirbase2reactome", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767923940", 
+  "lastModifiedTime": "1580325080578", 
   "location": "US", 
   "numBytes": "17896", 
   "numLongTermBytes": "17896", 

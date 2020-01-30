@@ -1,5 +1,10 @@
 {
-  "description": "Data corresponding to file metadata information at the time of the GDC release 18. Actual legacy endpoint download was on Oct 18, 2019. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-180",
+  "creationTime": "1576879715458", 
+  "description": "Data corresponding to file metadata information at the time of the GDC release 18. Actual legacy endpoint download was on Oct 18, 2019. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-180", 
+  "etag": "SV8gBJqu19E97s2A4x+ODw==", 
+  "friendlyName": "RELEASE 18 FILE DATA LEGACY", 
+  "id": "isb-cgc:GDC_metadata.rel18_fileData_legacy", 
+  "kind": "bigquery#table", 
   "labels": {
     "access": "open", 
     "category": "file_metadata", 
@@ -7,7 +12,12 @@
     "reference_genome_0": "hg19", 
     "source_0": "gdc", 
     "status": "current"
-  },
+  }, 
+  "lastModifiedTime": "1580324936839", 
+  "location": "US", 
+  "numBytes": "681933456", 
+  "numLongTermBytes": "0", 
+  "numRows": "837959", 
   "schema": {
     "fields": [
       {
@@ -281,5 +291,12 @@
         "type": "STRING"
       }
     ]
-  }
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/rel18_fileData_legacy", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "rel18_fileData_legacy"
+  }, 
+  "type": "TABLE"
 }

@@ -1,7 +1,8 @@
 {
   "creationTime": "1551910362958", 
   "description": "Data was generated from file metadata information from the GDC release 15, February 2019. Image slides are mapped to case information.  \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-150", 
-  "etag": "Q8/GNTQL/j23OIpHm84eDA==", 
+  "etag": "Qa0gllTdL6q8/9rt/igECg==", 
+  "friendlyName": "RELEASE 15 SLIDE IMAGES TO CASE IDS", 
   "id": "isb-cgc:GDC_metadata.rel15_slide2caseIDmap", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574193499617", 
+  "lastModifiedTime": "1580324913992", 
   "location": "US", 
   "numBytes": "7674347", 
   "numLongTermBytes": "7674347", 

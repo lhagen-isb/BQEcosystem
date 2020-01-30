@@ -1,7 +1,8 @@
 {
   "creationTime": "1546924629104", 
   "description": "Data was loaded from the miRBase database, release 22, dated March 2018. This microRNA data (mapped to GRCh38) was created by parsing the information from the miRNA.dat EMBL-format file downloaded from the miRBase website. ( ftp://mirbase.org/pub/mirbase/22/miRNA.dat.gz ). More details: see ftp://mirbase.org/pub/mirbase/CURRENT/LICENSE for public domain and licensing details, and http://www.mirbase.org/ for information on how to cite miRBase in publications.", 
-  "etag": "MUQ6sUjb3aKqvoVPGUMj6g==", 
+  "etag": "Tuhm/MmaQsqcOZTjIRo2tQ==", 
+  "friendlyName": "MIRBASE V22", 
   "id": "isb-cgc:genome_reference.miRBase_v22", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "mirbase_the_microrna_database", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574715291571", 
+  "lastModifiedTime": "1580325074240", 
   "location": "US", 
   "numBytes": "16289229", 
   "numLongTermBytes": "16289229", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1554526015778", 
   "description": "Data was generated from file metadata information from the GDC active archive release 16, March 2019. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-160", 
-  "etag": "553+HNCul3Y6XN02m0pEgw==", 
+  "etag": "PY4RFH2RAWV2v598WN/5Dw==", 
+  "friendlyName": "RELEASE 16 FILE DATA ACTIVE", 
   "id": "isb-cgc:GDC_metadata.rel16_fileData_active", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574193681040", 
+  "lastModifiedTime": "1580324917460", 
   "location": "US", 
   "numBytes": "315395386", 
   "numLongTermBytes": "315395386", 

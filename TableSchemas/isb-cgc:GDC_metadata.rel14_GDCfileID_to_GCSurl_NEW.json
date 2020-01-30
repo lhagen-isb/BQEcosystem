@@ -1,7 +1,8 @@
 {
   "creationTime": "1551913757342", 
   "description": "Data was generated from file metadata information from the GDC archive release 14, December 2018. Current google cloud storage paths are mapped to file gdc ids.\nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-140", 
-  "etag": "8vDrOMok4xkM5rE0FtD44g==", 
+  "etag": "02NmuHfKQoQwlv3kqdclSA==", 
+  "friendlyName": "RELEASE 14 GDC FILE ID TO NEW GCS URLS", 
   "id": "isb-cgc:GDC_metadata.rel14_GDCfileID_to_GCSurl_NEW", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767792418", 
+  "lastModifiedTime": "1580324902835", 
   "location": "US", 
   "numBytes": "275052467", 
   "numLongTermBytes": "275052467", 

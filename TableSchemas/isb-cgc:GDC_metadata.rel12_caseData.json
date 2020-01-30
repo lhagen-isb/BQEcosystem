@@ -1,7 +1,8 @@
 {
   "creationTime": "1530576778039", 
   "description": "Data was generated from case metadata information from the GDC active archive release 12 in July 2018. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-120", 
-  "etag": "2qnLkAnZ4+p2YWvqEYuNvQ==", 
+  "etag": "xrQoKVKi+S64q8WxPuX23g==", 
+  "friendlyName": "RELEASE 12 CASE DATA", 
   "id": "isb-cgc:GDC_metadata.rel12_caseData", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gdc", 
     "status": "archived"
   }, 
-  "lastModifiedTime": "1573767861227", 
+  "lastModifiedTime": "1580325506536", 
   "location": "US", 
   "numBytes": "5421378", 
   "numLongTermBytes": "5421378", 

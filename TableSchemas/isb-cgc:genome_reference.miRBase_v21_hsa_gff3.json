@@ -1,7 +1,8 @@
 {
   "creationTime": "1486344836533", 
   "description": "Data was loaded from the miRBase database, release 21 on February 2017. This microRNA data is based on the hsa.gff3 file downloaded from www.mirbase.org Feb 2017", 
-  "etag": "YbmF4Jwb8pnHlhAGKp0R3A==", 
+  "etag": "zIUtvQ+9atcPA6SMUZzCRA==", 
+  "friendlyName": "MIRBASE V21 GFF3", 
   "id": "isb-cgc:genome_reference.miRBase_v21_hsa_gff3", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "mirbase_the_microrna_database", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574715262042", 
+  "lastModifiedTime": "1580325072515", 
   "location": "US", 
   "numBytes": "411094", 
   "numLongTermBytes": "411094", 

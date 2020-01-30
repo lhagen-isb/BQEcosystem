@@ -1,0 +1,64 @@
+{
+  "creationTime": "1472697472831", 
+  "description": "Data was loaded by joining the isb-cgc:platform_reference.methylation_annotation table with the isb-cgc:genome_reference.liftOver_hg19_to_hg38 dataset in order to determine hg38 coordinates for each of the CpG probes. More details: Note that a more precise and thorough way to determine the correct hg38 coordinates for these DNA methlyation probes would involve aligning the actual probe sequences to the hg38 reference, but this approach should be correct for a majority of the CpG probes. For example, probe cg01879757 is in BRCA1 and at position chr17:41196368 in hg19, and at position 43044351 in hg38. The BRCA1 transcripts in hg38 are similarly shifted by ~1.8Mb compared to hg19.", 
+  "etag": "Zynqr6J0xeoIYT2j8dtU0A==", 
+  "friendlyName": "METHYLATION ANNOTATION LIFTOVER TO HG38 COORDINATES", 
+  "id": "isb-cgc:platform_reference.methylation_liftover_to_hg38", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "genomic_reference_database", 
+    "data_type_0": "dna_methylation", 
+    "data_type_1": "coordinate_conversion", 
+    "reference_genome_0": "hg19", 
+    "reference_genome_1": "hg38", 
+    "source_0": "ucsc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1580325065134", 
+  "location": "US", 
+  "numBytes": "16970074", 
+  "numLongTermBytes": "16970074", 
+  "numRows": "485577", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Illumina CpG probe identifer. Example: cg01879757", 
+        "mode": "NULLABLE", 
+        "name": "Illumina_probeID", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Hg19 chromosome name (eg 1, X, etc)", 
+        "mode": "NULLABLE", 
+        "name": "hg19_chr", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Hg19 base pair coordinate. Example:70035080", 
+        "mode": "NULLABLE", 
+        "name": "hg19_pos", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Hg38 chromosome name (eg 1, X, etc)", 
+        "mode": "NULLABLE", 
+        "name": "hg38_chr", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Hg38 base pair coordinate. Example: 69569397", 
+        "mode": "NULLABLE", 
+        "name": "hg38_pos", 
+        "type": "INTEGER"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/platform_reference/tables/methylation_liftover_to_hg38", 
+  "tableReference": {
+    "datasetId": "platform_reference", 
+    "projectId": "isb-cgc", 
+    "tableId": "methylation_liftover_to_hg38"
+  }, 
+  "type": "TABLE"
+}

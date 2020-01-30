@@ -1,7 +1,8 @@
 {
   "creationTime": "1483995033007", 
   "description": "Data was loaded from the miRBase database, release 20, dated June 2013. This microRNA data (mapped to GRCh37/hg19) was created by parsing the information from the miRNA.dat EMBL-format file downloaded from the miRBase website. (ftp://mirbase.org/pub/mirbase/20/miRNA.dat.gz). More details: see ftp://mirbase.org/pub/mirbase/CURRENT/LICENSE for public domain and licensing details, and http://www.mirbase.org/ for information on how to cite miRBase in publications.", 
-  "etag": "EdAmV2frOLecqHdJXG4i3A==", 
+  "etag": "sv5Eq197buYnMWEav4Fo4Q==", 
+  "friendlyName": "MIRBASE V20", 
   "id": "isb-cgc:genome_reference.miRBase_v20", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "mirbase_the_microrna_database", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573836544413", 
+  "lastModifiedTime": "1580325066851", 
   "location": "US", 
   "numBytes": "10198181", 
   "numLongTermBytes": "10198181", 

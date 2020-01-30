@@ -1,7 +1,8 @@
 {
   "creationTime": "1539985445851", 
   "description": "Data was generated from file metadata information from the GDC legacy archive release 13, October 2018. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-130", 
-  "etag": "eXYFrmpDhr/vecZNUhX31Q==", 
+  "etag": "WG2I2yqqIl9nB0vV39o2PQ==", 
+  "friendlyName": "RELEASE 13 FILE DATA LEGACY", 
   "id": "isb-cgc:GDC_metadata.rel13_fileData_legacy", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gdc", 
     "status": "archived"
   }, 
-  "lastModifiedTime": "1574193163835", 
+  "lastModifiedTime": "1580325523544", 
   "location": "US", 
   "numBytes": "685153556", 
   "numLongTermBytes": "685153556", 

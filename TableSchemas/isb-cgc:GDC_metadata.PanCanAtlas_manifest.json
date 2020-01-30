@@ -1,7 +1,8 @@
 {
   "creationTime": "1554328362164", 
   "description": "Data was generated from file metadata information for the PanCanAtlas publications. https://gdc.cancer.gov/about-data/publications/pancanatlas", 
-  "etag": "PFoCcq3Htg1VOFD8vCC/wg==", 
+  "etag": "7f2jKgzvJs+XYiQ1S2w/8w==", 
+  "friendlyName": "PANCANATLAS MANIFEST", 
   "id": "isb-cgc:GDC_metadata.PanCanAtlas_manifest", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767907281", 
+  "lastModifiedTime": "1580324890490", 
   "location": "US", 
   "numBytes": "18033", 
   "numLongTermBytes": "18033", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1543533673485", 
   "description": "Data was loaded from 1000 Genome Project on November 2018 for QotM. DNA Variants for the human chromosome 21 data was loaded using Google Genomics API pipeline. More details: https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/QueryOfTheMonthClub.html#november-2018", 
-  "etag": "tH0uZL2c57koXa2lTWZ2dA==", 
+  "etag": "coOj9eqkYJAt0hvGyIXwPA==", 
+  "friendlyName": "NOV2018 QUERY OF THE MONTH TABLE", 
   "id": "isb-cgc:QotM.1000genomes", 
   "kind": "bigquery#table", 
   "labels": {
@@ -10,9 +11,9 @@
     "data_type_0": "somatic_mutations", 
     "reference_genome_0": "hg38", 
     "source_0": "isb_cgc-qotm", 
-    "status": "current"
+    "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574710095137", 
+  "lastModifiedTime": "1580325090755", 
   "location": "US", 
   "numBytes": "76569062196", 
   "numLongTermBytes": "76569062196", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1546975341996", 
   "description": "Data was loaded from the miRBase database, release 22, dated March 2018. This high confidence microRNA data (mapped to GRCh38) was created by parsing the information from the miRNA.dat EMBL-format file downloaded from the miRBase website. ( ftp://mirbase.org/pub/mirbase/22/miRNA.dat.gz ). More details: see ftp://mirbase.org/pub/mirbase/CURRENT/LICENSE for public domain and licensing details, and http://www.mirbase.org/ for information on how to cite miRBase in publications.", 
-  "etag": "zmAyIVTK6g2BjOcbKf2Vww==", 
+  "etag": "PZgZfew7dcZBz/gFLflX3w==", 
+  "friendlyName": "MIRBASE V22 HIGH CONF", 
   "id": "isb-cgc:genome_reference.miRBase_v22_high_conf", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "mirbase_the_microrna_database", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574715321873", 
+  "lastModifiedTime": "1580325078981", 
   "location": "US", 
   "numBytes": "1926300", 
   "numLongTermBytes": "1926300", 

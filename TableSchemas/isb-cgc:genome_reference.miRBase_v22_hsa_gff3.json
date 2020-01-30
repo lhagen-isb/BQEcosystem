@@ -1,7 +1,8 @@
 {
   "creationTime": "1546926396841", 
   "description": "Data was loaded from the miRBase database, release 22, dated March 2018. This microRNA data is based on the hsa.gff3 file downloaded from www.mirbase.org on 07-Jan-2019. It contains chromosomal coordinates of Homo sapiens microRNAs, GRCh38, genome-build-accession: NCBI_Assembly:GCA_000001405.15. More details: Hairpin precursor sequences have type \"miRNA_primary_transcript\". Note, these sequences do not represent the full primary transcript, rather a predicted stem-loop portion that includes the precursor miRNA. Mature sequences have type \"miRNA\".", 
-  "etag": "IgqkOjXZv+q1KdrexBWoCw==", 
+  "etag": "OHEbkTRkGDTjb434pOvGdw==", 
+  "friendlyName": "MIRBASE V22 GFF3", 
   "id": "isb-cgc:genome_reference.miRBase_v22_hsa_gff3", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "mirbase_the_microrna_database", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574715337315", 
+  "lastModifiedTime": "1580325077184", 
   "location": "US", 
   "numBytes": "420650", 
   "numLongTermBytes": "420650", 

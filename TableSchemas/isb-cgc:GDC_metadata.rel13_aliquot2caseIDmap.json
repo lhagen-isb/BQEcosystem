@@ -1,7 +1,8 @@
 {
   "creationTime": "1539985310308", 
   "description": "Data was generated from file metadata information from the GDC release 13, October 2018. More details:Aliquot are mapped to case information. https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-130 .", 
-  "etag": "CQnPY8HSkzh4fe3UxaYnhA==", 
+  "etag": "Ih5oZ7Rk1IIc0oXv1FOm+A==", 
+  "friendlyName": "RELEASE 13 ALIQUOT IDS TO CASE IDS", 
   "id": "isb-cgc:GDC_metadata.rel13_aliquot2caseIDmap", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "archived"
   }, 
-  "lastModifiedTime": "1574706981168", 
+  "lastModifiedTime": "1580325526423", 
   "location": "US", 
   "numBytes": "57270027", 
   "numLongTermBytes": "57270027", 

@@ -1,12 +1,22 @@
 {
-  "description": "Data was generated from file metadata information from the GDC release 18, downloaded July 12, 2019. \nLegacy case counts derived from legacy endpoint download on Oct 18, 2019. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-180",
+  "creationTime": "1576879709380", 
+  "description": "Data was generated from file metadata information from the GDC release 18, downloaded July 12, 2019. \nLegacy case counts derived from legacy endpoint download on Oct 18, 2019. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-180", 
+  "etag": "Cnh/g5eX7Q0M+D6mPW76qQ==", 
+  "friendlyName": "RELEASE 18 CASE DATA", 
+  "id": "isb-cgc:GDC_metadata.rel18_caseData", 
+  "kind": "bigquery#table", 
   "labels": {
     "access": "open", 
     "category": "file_metadata", 
     "data_type_0": "file_metadata", 
     "source_0": "gdc", 
     "status": "current"
-  },
+  }, 
+  "lastModifiedTime": "1580324933057", 
+  "location": "US", 
+  "numBytes": "6091637", 
+  "numLongTermBytes": "0", 
+  "numRows": "37705", 
   "schema": {
     "fields": [
       {
@@ -70,5 +80,12 @@
         "type": "INTEGER"
       }
     ]
-  }
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/rel18_caseData", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "rel18_caseData"
+  }, 
+  "type": "TABLE"
 }

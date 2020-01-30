@@ -1,7 +1,8 @@
 {
   "creationTime": "1451194919640", 
   "description": "Data was loaded from the miRTarBase database, release 6.1, dated September 2015. It contains miRNA-target interactions (MTI) downloaded from http://mirtarbase.mbc.nctu.edu.tw/ with permission for the authors. More details: see miRTarBase 2016: updates to the experimentally validated miRNA-target interactions database. Chou CH, Chang NW, Shrestha S, Hsu SD, Lin YL, Lee WH, Yang CD, Hong HC, Wei TY, Tu SJ, Tsai TR, Ho SY, Jian TY, Wu HY, Chen PR, Lin NC, Huang HT, Yang TL, Pai CY, Tai CS, Chen WL, Huang CY, Liu CC, Weng SL, Liao KW, Hsu WL, Huang HD. http://www.ncbi.nlm.nih.gov/pubmed/26590260 http://nar.oxfordjournals.org/content/early/2015/11/19/nar.gkv1258.long", 
-  "etag": "xpUBkdTE+gyX+U3EeXdHZQ==", 
+  "etag": "ymSHSIfaEeHtTAtJCiwUpA==", 
+  "friendlyName": "MIRTARBASE", 
   "id": "isb-cgc:genome_reference.miRTarBase", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "mirtarbase_database", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574715361761", 
+  "lastModifiedTime": "1580325082357", 
   "location": "US", 
   "numBytes": "53308390", 
   "numLongTermBytes": "53308390", 

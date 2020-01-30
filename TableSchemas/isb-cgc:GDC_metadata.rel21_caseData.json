@@ -1,12 +1,22 @@
 {
-  "description": "Data was generated from file metadata information from the GDC release 21, downloaded Dec 13, 2019. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-210",
+  "creationTime": "1576864556331", 
+  "description": "Data was generated from file metadata information from the GDC release 21, downloaded Dec 13, 2019. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-210", 
+  "etag": "o5i/CxMSGaidJnX2wQIyKw==", 
+  "friendlyName": "RELEASE 21 CASE DATA", 
+  "id": "isb-cgc:GDC_metadata.rel21_caseData", 
+  "kind": "bigquery#table", 
   "labels": {
     "access": "open", 
     "category": "file_metadata", 
     "data_type_0": "file_metadata", 
     "source_0": "gdc", 
     "status": "current"
-  },
+  }, 
+  "lastModifiedTime": "1580324954177", 
+  "location": "US", 
+  "numBytes": "14694430", 
+  "numLongTermBytes": "0", 
+  "numRows": "84792", 
   "schema": {
     "fields": [
       {
@@ -70,5 +80,12 @@
         "type": "INTEGER"
       }
     ]
-  }
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/rel21_caseData", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "rel21_caseData"
+  }, 
+  "type": "TABLE"
 }

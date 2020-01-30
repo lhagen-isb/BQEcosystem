@@ -1,5 +1,10 @@
 {
-  "description": "Data was generated from file metadata information from the GDC active archive release 21, downloaded Dec 13, 2019. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-210",
+  "creationTime": "1576864562978", 
+  "description": "Data was generated from file metadata information from the GDC active archive release 21, downloaded Dec 13, 2019. \nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-210", 
+  "etag": "ERRzduoB1+xaT0kiaNDSVQ==", 
+  "friendlyName": "RELEASE 21 FILE DATA ACTIVE", 
+  "id": "isb-cgc:GDC_metadata.rel21_fileData_active", 
+  "kind": "bigquery#table", 
   "labels": {
     "access": "open", 
     "category": "file_metadata", 
@@ -7,7 +12,12 @@
     "reference_genome_0": "hg38", 
     "source_0": "gdc", 
     "status": "current"
-  },
+  }, 
+  "lastModifiedTime": "1580324955833", 
+  "location": "US", 
+  "numBytes": "457429430", 
+  "numLongTermBytes": "0", 
+  "numRows": "521197", 
   "schema": {
     "fields": [
       {
@@ -263,5 +273,12 @@
         "type": "STRING"
       }
     ]
-  }
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/GDC_metadata/tables/rel21_fileData_active", 
+  "tableReference": {
+    "datasetId": "GDC_metadata", 
+    "projectId": "isb-cgc", 
+    "tableId": "rel21_fileData_active"
+  }, 
+  "type": "TABLE"
 }
