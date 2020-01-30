@@ -1,7 +1,8 @@
 {
   "creationTime": "1518482011098", 
   "description": "Data was loaded from multiple sources including NCBI, ENSEMBL, UniProtKB, UCSC and Reactome in Feb 2018 to simplify mapping between Entrez, RefSeq, ENSEMBL, Unigene, Uniprot, UCSC, OMIM Accession identifiers and Reactome pathway IDs.", 
-  "etag": "1muK+XG+CrkLERDLxsm1VQ==", 
+  "etag": "5OhXm4ylcHccCCYaOGn0bA==", 
+  "friendlyName": "FEB2018 QUERY OF THE MONTH TABLE 3", 
   "id": "isb-cgc:QotM.org_Hs_eg_db_v1", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "isb_cgc-qotm", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574709757944", 
+  "lastModifiedTime": "1580325322853", 
   "location": "US", 
   "numBytes": "5571472773", 
   "numLongTermBytes": "5571472773", 

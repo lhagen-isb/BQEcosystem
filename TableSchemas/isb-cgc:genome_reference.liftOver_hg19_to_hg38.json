@@ -1,7 +1,8 @@
 {
   "creationTime": "1472698247578", 
   "description": "Data was loaded from hg19 data in September 2016. Hg38 positions were mapped to the hg19 positions using the UCSC liftOver tool. More details: see http://genome.ucsc.edu/cgi-bin/hgLiftOver", 
-  "etag": "AEwaefkPYKDBYn16f08pVA==", 
+  "etag": "N8QF9lKDA3UTb5xKt05Ndw==", 
+  "friendlyName": "LIFTOVER BETWEEN HG19 AND HG38", 
   "id": "isb-cgc:genome_reference.liftOver_hg19_to_hg38", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_0": "ucsc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574715902866", 
+  "lastModifiedTime": "1580325045629", 
   "location": "US", 
   "numBytes": "84120114613", 
   "numLongTermBytes": "84120114613", 

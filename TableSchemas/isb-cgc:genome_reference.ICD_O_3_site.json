@@ -1,7 +1,8 @@
 {
   "creationTime": "1549657217225", 
   "description": "Data was loaded from the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3) published by the World Health Organization (WHO) in February 2019. More details: https://www.who.int/classifications/icd/adaptations/oncology/en/", 
-  "etag": "aX/dgtMGbV3gyJ1ILY3P/A==", 
+  "etag": "LoWitwrQv9vL7tKxe/cL5Q==", 
+  "friendlyName": "ICD-O-3 SITE", 
   "id": "isb-cgc:genome_reference.ICD_O_3_site", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "international_classficiation_of_disesase_icd", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574182548232", 
+  "lastModifiedTime": "1580324994907", 
   "location": "US", 
   "numBytes": "10360", 
   "numLongTermBytes": "10360", 

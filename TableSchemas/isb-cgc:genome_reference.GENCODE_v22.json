@@ -1,7 +1,8 @@
 {
   "creationTime": "1473568475347", 
   "description": "Data was loaded from the GENCODE reference gene set, release 22, dated March 2015. These annotations are based on the hg38/GRCh38 reference genome. More details: Harrow J, et al. (2012) GENCODE: The reference human genome annotation for The ENCODE Project http://www.ncbi.nlm.nih.gov/pubmed/22955987 and ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_22/gencode.v22.annotation.gtf.gz", 
-  "etag": "fdUi77hbbiHu38T2iUp2Ag==", 
+  "etag": "xhdWGpoPlC/K8mmWQFNSsA==", 
+  "friendlyName": "GENCODE V22", 
   "id": "isb-cgc:genome_reference.GENCODE_v22", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gencode", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574703960246", 
+  "lastModifiedTime": "1580324979315", 
   "location": "US", 
   "numBytes": "947882857", 
   "numLongTermBytes": "947882857", 

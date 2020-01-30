@@ -1,7 +1,8 @@
 {
   "creationTime": "1541106287410", 
   "description": "Data was loaded from Affymetrix Genome-Wide Human SNP Array 6.0 on November 2018. More details: https://www.thermofisher.com/order/catalog/product/901150", 
-  "etag": "STPS0ImedbTHXKXmCqCPDg==", 
+  "etag": "YkWXtyjwyzCGBzwe94lHGw==", 
+  "friendlyName": "GENOME-WIDE HUMAN SNP ARRAY 6.0 ANNOTATION", 
   "id": "isb-cgc:genome_reference.GenomeWideSNP6_na35_annot_hg19", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_0": "affymetrix_genome_wide_human_snp_array", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574182087778", 
+  "lastModifiedTime": "1580324996494", 
   "location": "US", 
   "numBytes": "1559299391", 
   "numLongTermBytes": "1559299391", 

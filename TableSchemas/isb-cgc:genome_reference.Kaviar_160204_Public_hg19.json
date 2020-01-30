@@ -1,7 +1,8 @@
 {
   "creationTime": "1471719494996", 
   "description": "Data was loaded from the Kaviar database of known variants, released in February 2016. More details: see Glusman G, Caballero J, Mauldin DE, Hood L and Roach J (2011) KAVIAR: an accessible system for testing SNV novelty http://db.systemsbiology.net/kaviar/", 
-  "etag": "+/HsT0QqSmIsrEGokDlNNg==", 
+  "etag": "S9LsMD01ay7zFOK0JMJ+bA==", 
+  "friendlyName": "KAVIAR PUBLIC HG19 2016", 
   "id": "isb-cgc:genome_reference.Kaviar_160204_Public_hg19", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "kaviar_genomic_variant_database", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574742434511", 
+  "lastModifiedTime": "1580325042048", 
   "location": "US", 
   "numBytes": "42751208776", 
   "numLongTermBytes": "42751208776", 

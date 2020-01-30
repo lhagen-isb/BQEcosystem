@@ -1,7 +1,8 @@
 {
   "creationTime": "1461965986501", 
   "description": "Data was loaded from the Gene Ontology Resource in April 2016. It contains the GO accession id and the GO category nae for 1348 GO categories. More details: see www.geneontology.org", 
-  "etag": "ZouabavAUQJQHpMxtERJwQ==", 
+  "etag": "5oBmW8fjFBIe6QdBk/JJVA==", 
+  "friendlyName": "GENE ONTOLOGY (GO)", 
   "id": "isb-cgc:genome_reference.GO_Ontology", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gene_ontology_resource_go", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767943453", 
+  "lastModifiedTime": "1580324985488", 
   "location": "US", 
   "numBytes": "70289", 
   "numLongTermBytes": "70289", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1461889163248", 
   "description": "Data was loaded from GO Consortium on April 2016. GO Annotations for Homo sapiens was loaded from GO Consortium's downloader. More details: http: current.geneontology.org/products/pages/downloads.html", 
-  "etag": "XHbcgGFPHrDGfMHnBr9aNA==", 
+  "etag": "JMrg6xz+QNdXat941DLW2w==", 
+  "friendlyName": "GENE ONTOLOGY (GO) ANNOTATIONS", 
   "id": "isb-cgc:genome_reference.GO_Annotations", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gene_ontology_resource_go", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574182308891", 
+  "lastModifiedTime": "1580324987133", 
   "location": "US", 
   "numBytes": "69438527", 
   "numLongTermBytes": "69438527", 

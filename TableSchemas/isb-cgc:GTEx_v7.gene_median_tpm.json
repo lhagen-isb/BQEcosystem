@@ -1,7 +1,8 @@
 {
   "creationTime": "1511833163401", 
   "description": "Data was loaded from Genotype-Tissue Expression (GTEx) Project on November 2017. Gene expression data was loaded using GTEx Data Portal. More details: gtexportal.org", 
-  "etag": "db4QmiNuwt+xgoy5v20s+g==", 
+  "etag": "B9BMJkCRIx+Pu7icK+EAlw==", 
+  "friendlyName": "GTEX V7 MEDIAN GENE TPM (TRANSCRIPTS PER MILLION) BY TISSUE", 
   "id": "isb-cgc:GTEx_v7.gene_median_tpm", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_0": "genotype_tissue_expression_gtex_project", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768114007", 
+  "lastModifiedTime": "1580325005086", 
   "location": "US", 
   "numBytes": "174566833", 
   "numLongTermBytes": "174566833", 

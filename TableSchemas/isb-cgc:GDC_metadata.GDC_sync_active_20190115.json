@@ -1,7 +1,8 @@
 {
   "creationTime": "1547608238378", 
   "description": "Data was generated from file metadata information from a sync to the GDC active archive on January 2019.", 
-  "etag": "GtX1rA56rwjaFHcRjqlFng==", 
+  "etag": "FXoqDi5klCYAQh3r76LGtQ==", 
+  "friendlyName": "GDC SYNC ACTIVE 20190115", 
   "id": "isb-cgc:GDC_metadata.GDC_sync_active_20190115", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574192764706", 
+  "lastModifiedTime": "1580324969375", 
   "location": "US", 
   "numBytes": "151193257", 
   "numLongTermBytes": "151193257", 

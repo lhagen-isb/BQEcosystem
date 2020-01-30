@@ -1,7 +1,8 @@
 {
   "creationTime": "1537244611308", 
   "description": "Data was loaded from the extensive characterization of probes on the Infinium MethylationEPIC microarray, in September 2018. The data is based on the file http://zwdzwd.io/InfiniumAnnotation/20180909/EPIC/EPIC.hg19.manifest.tsv.gz Note that column \"gene_HGNC\", which in the original table contains a semi-colon delimited string, has been denormalized in this table, so that each row includes a reference to only one gene, and methylation probes that are in/near multiple genes will have some information repeated on multiple rows. More details: see Zhou W, Laird PW and Shen H, Comprehensive characterization, annotation and innovative use of Infinium DNA Methylation BeadChip probes, Nucleic Acids Research 2017 https://academic.oup.com/nar/article/45/4/e22/2290930. This table is hosted with the permission of the authors.", 
-  "etag": "YwQGNbfGw0ATNuY67JPMeA==", 
+  "etag": "zUHrv7rwBPnrpkRd8PoyEQ==", 
+  "friendlyName": "INFINIUM EPIC HG19 MANIFEST", 
   "id": "isb-cgc:genome_reference.Infinium_EPIC_hg19_manifest", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "infinium_methylation_epic", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573836203231", 
+  "lastModifiedTime": "1580325021187", 
   "location": "US", 
   "numBytes": "312228175", 
   "numLongTermBytes": "312228175", 

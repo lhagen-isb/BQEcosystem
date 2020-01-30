@@ -1,7 +1,8 @@
 {
   "creationTime": "1520877321185", 
   "description": "Data was loaded on March 2018. Random Simulated Gene Expression data was loaded using random number loaded in BigQuery for QotM March 2018. More details: https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/QueryOfTheMonthClub.html#march-2018", 
-  "etag": "x7hW4YsHqJRMXIxFM30ieg==", 
+  "etag": "rdWeJhenoECGO75QMSVcSw==", 
+  "friendlyName": "MAR2018 QUERY OF THE MONTH TABLE 3", 
   "id": "isb-cgc:QotM.tsp_sim_data", 
   "kind": "bigquery#table", 
   "labels": {
@@ -9,9 +10,9 @@
     "category": "genomic_reference_database", 
     "data_type_0": "gene_expression", 
     "source_0": "isb_cgc-qotm", 
-    "status": "current"
+    "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767942017", 
+  "lastModifiedTime": "1580325053213", 
   "location": "US", 
   "numBytes": "5420", 
   "numLongTermBytes": "5420", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1511833102558", 
   "description": "Data was loaded from Genotype-Tissue Expression (GTEx) Project on November 2017. Sample Attributes data was loaded using GTEx Data Portal. More details: gtexportal.org", 
-  "etag": "xpP6PhgO6TISmggcaDd7Iw==", 
+  "etag": "SWOSRpdBG2jdFU0PvvZk/w==", 
+  "friendlyName": "GTEX V7 SAMPLE ATTRIBUTES", 
   "id": "isb-cgc:GTEx_v7.sample_attributes", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "genotype_tissue_expression_gtex_project", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767864616", 
+  "lastModifiedTime": "1580325006943", 
   "location": "US", 
   "numBytes": "7893976", 
   "numLongTermBytes": "7893976", 

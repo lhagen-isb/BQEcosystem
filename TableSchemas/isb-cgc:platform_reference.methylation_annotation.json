@@ -1,7 +1,8 @@
 {
   "creationTime": "1434639033189", 
   "description": "Data was loaded from the Illumina file HumanMethylation450_15017482_v.1.2.csv in June 2015, and updated in April 2017. DNA methylation platform annotation information was made available to the public with permission from Illumina.", 
-  "etag": "1N7McrmGzC5vLGKu/wwvBw==", 
+  "etag": "K/0cV5ZELr7aXyZTNy8LZA==", 
+  "friendlyName": "ILLUMINA DNA METHYLATION ANNOTATION", 
   "id": "isb-cgc:platform_reference.methylation_annotation", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "infinium_humanmethylation_450", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574187210706", 
+  "lastModifiedTime": "1580325018206", 
   "location": "US", 
   "numBytes": "212927489", 
   "numLongTermBytes": "212927489", 

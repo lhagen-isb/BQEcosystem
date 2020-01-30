@@ -1,7 +1,8 @@
 {
   "creationTime": "1511834346321", 
   "description": "Data was loaded from Genotype-Tissue Expression (GTEx) Project on November 2017. Gene expression data was loaded using GTEx Data Portal. More details: gtexportal.org", 
-  "etag": "i1WWi8cNvbv1bSKPa/KpMg==", 
+  "etag": "P8A+GnrckTg1lt1CKtbOvA==", 
+  "friendlyName": "GTEX V7 GENE TPM (TRANSCRIPTS PER MILLION)", 
   "id": "isb-cgc:GTEx_v7.gene_tpm", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_0": "genotype_tissue_expression_gtex_project", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767789264", 
+  "lastModifiedTime": "1580325001761", 
   "location": "US", 
   "numBytes": "41805479604", 
   "numLongTermBytes": "41805479604", 

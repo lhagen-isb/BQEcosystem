@@ -1,7 +1,8 @@
 {
   "creationTime": "1519364899562", 
   "description": "Data was loaded from multiple sources including NCBI, HGNC, ENSEMBL in Feb 2018 to simplify mapping between HGNC IDs, HGNC symbols, Entrez Gene IDs, Ensembl Gene IDs, Pubmed IDs,and RefSeq IDs.", 
-  "etag": "O4/RYfrk0P3Zibmzp6XqvQ==", 
+  "etag": "HEqwX8tAInoVCpuCj3Ck9Q==", 
+  "friendlyName": "GENENAMES MAPPING", 
   "id": "isb-cgc:genome_reference.genenames_mapping", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "isb_cgc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574717481303", 
+  "lastModifiedTime": "1580324989975", 
   "location": "US", 
   "numBytes": "6297718", 
   "numLongTermBytes": "6297718", 

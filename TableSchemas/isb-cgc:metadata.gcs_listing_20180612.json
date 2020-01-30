@@ -1,7 +1,8 @@
 {
   "creationTime": "1528908262336", 
   "description": "Data was generated to list all ISB-CGC hosted data in Google Cloud Storage (GCS) available as of June 2018.", 
-  "etag": "Ig9x0kNCmBs9gwcisFZ+Nw==", 
+  "etag": "hAxneAej8KWgi+iLoq0nUQ==", 
+  "friendlyName": "GCS LISTING 2018", 
   "id": "isb-cgc:metadata.gcs_listing_20180612", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767672898", 
+  "lastModifiedTime": "1580325321216", 
   "location": "US", 
   "numBytes": "156221343", 
   "numLongTermBytes": "156221343", 

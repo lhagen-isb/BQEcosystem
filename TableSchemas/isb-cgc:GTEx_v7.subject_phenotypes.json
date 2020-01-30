@@ -1,7 +1,8 @@
 {
   "creationTime": "1511833088981", 
   "description": "Data was loaded from Genotype-Tissue Expression (GTEx) Project on November 2017. Subject Phenotype data was loaded using GTEx Data Portal. More details: gtexportal.org", 
-  "etag": "vO4rqN6/TsjAE5P5K0PEqg==", 
+  "etag": "+tZqOvAWODsTXslvGuIA6A==", 
+  "friendlyName": "GTEX V7 SUBJECT PHENOTYPES", 
   "id": "isb-cgc:GTEx_v7.subject_phenotypes", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "genotype_tissue_expression_gtex_project", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767762043", 
+  "lastModifiedTime": "1580325009691", 
   "location": "US", 
   "numBytes": "25857", 
   "numLongTermBytes": "25857", 

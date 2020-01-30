@@ -1,7 +1,8 @@
 {
   "creationTime": "1547608318210", 
   "description": "Data was generated from file metadata information from obsolete data in the GDC as of January 2019.", 
-  "etag": "E+tejbjzlNQDN2fynF9FWw==", 
+  "etag": "H2qsQbZSG5/xpTbZEOhVlw==", 
+  "friendlyName": "GDC SYNC OBSOLETE 20190115", 
   "id": "isb-cgc:GDC_metadata.GDC_sync_obsolete_20190115", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574192735198", 
+  "lastModifiedTime": "1580324885815", 
   "location": "US", 
   "numBytes": "1992453", 
   "numLongTermBytes": "1992453", 

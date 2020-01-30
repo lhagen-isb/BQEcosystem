@@ -1,7 +1,8 @@
 {
   "creationTime": "1537244482851", 
   "description": "Data was loaded from the extensive characterization of probes on the Infinium HumanMethylation450 microarray, in September 2018. The data is based on the file http://zwdzwd.io/InfiniumAnnotation/20180909/hm450/hm450.hg38.manifest.tsv.gz. Note that column \"gene_HGNC\", which in the original table contains a semi-colon delimited string, has been denormalized in this table, so that each row includes a reference to only one gene, and methylation probes that are in/near multiple genes will have some information repeated on multiple rows. More details: see Zhou W, Laird PW and Shen H, Comprehensive characterization, annotation and innovative use of Infinium DNA Methylation BeadChip probes, Nucleic Acids Research 2017 https://academic.oup.com/nar/article/45/4/e22/2290930. This table is hosted with the permission of the authors.", 
-  "etag": "f3QKd7WwSEE0RvUxF7wwRQ==", 
+  "etag": "jPbC7n7EVJMtcFNyJIqqFA==", 
+  "friendlyName": "INFINIUM HM450 HG38 MANIFEST", 
   "id": "isb-cgc:genome_reference.Infinium_hm450_hg38_manifest", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "infinium_humanmethylation_450", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574185839182", 
+  "lastModifiedTime": "1580325036502", 
   "location": "US", 
   "numBytes": "189112025", 
   "numLongTermBytes": "189112025", 

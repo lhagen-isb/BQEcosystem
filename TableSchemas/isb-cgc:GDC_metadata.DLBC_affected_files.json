@@ -1,7 +1,8 @@
 {
   "creationTime": "1518569976550", 
   "description": "Data was generated from file metadata of genomic data from the publication (Genetics and Pathogenesis of Diffuse Large B Cell Lymphoma; New England Journal of Medicine. Volume 378 p1396-1407, 12 April 2018 10.1056/NEJMoa1801445) processed through the GDC harmonization pipeline and will be made available through the GDC. https://docs.gdc.cancer.gov/Data/Release_Notes/DLBC_Affected_Files.txt", 
-  "etag": "NX8qARH1xXqTmcSMRbGOTg==", 
+  "etag": "A70zofQRnK946exwPjcmvA==", 
+  "friendlyName": "GDC DLBC FILE METADATA", 
   "id": "isb-cgc:GDC_metadata.DLBC_affected_files", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767661108", 
+  "lastModifiedTime": "1580324883791", 
   "location": "US", 
   "numBytes": "11547", 
   "numLongTermBytes": "11547", 

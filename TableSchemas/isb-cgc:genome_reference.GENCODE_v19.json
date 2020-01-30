@@ -1,7 +1,8 @@
 {
   "creationTime": "1473568083653", 
   "description": "Data was loaded from the GENCODE reference gene set, release 19, dated December 2013. These annotations are based on the hg19/GRCh37 reference genome. More details: Harrow J, et al. (2012) GENCODE: The reference human genome annotation for The ENCODE Project http://www.ncbi.nlm.nih.gov/pubmed/22955987 and ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf.gz", 
-  "etag": "y/HsanHDEIN7FJmHg8NXFw==", 
+  "etag": "mxUP9mXzPcNR1PzkUWBBRQ==", 
+  "friendlyName": "GENCODE V19", 
   "id": "isb-cgc:genome_reference.GENCODE_v19", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gencode", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574784696058", 
+  "lastModifiedTime": "1580324976456", 
   "location": "US", 
   "numBytes": "942253725", 
   "numLongTermBytes": "942253725", 

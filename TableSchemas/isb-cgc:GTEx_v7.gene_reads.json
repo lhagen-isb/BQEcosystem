@@ -1,7 +1,8 @@
 {
   "creationTime": "1511833735491", 
   "description": "Data was loaded from Genotype-Tissue Expression (GTEx) Project on November 2017. Gene read data was loaded using GTEx Data Portal. More details: gtexportal.org", 
-  "etag": "ZkKBVjRtBLQMRKYCqaE7ig==", 
+  "etag": "cyuzRgddW0rGADBSxdkCTQ==", 
+  "friendlyName": "GTEX V7 GENE READ COUNTS", 
   "id": "isb-cgc:GTEx_v7.gene_reads", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_0": "genotype_tissue_expression_gtex_project", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767743274", 
+  "lastModifiedTime": "1580324999957", 
   "location": "US", 
   "numBytes": "41805479604", 
   "numLongTermBytes": "41805479604", 

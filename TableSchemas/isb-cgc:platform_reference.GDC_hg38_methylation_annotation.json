@@ -1,7 +1,8 @@
 {
   "creationTime": "1480442504703", 
   "description": "Data was loaded from the output of the GDC DNA methylation liftover workflow in November 2016. HG38 methylation data was loaded using the Methylation Liftover Pipeline. More details: see https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Methylation_LO_Pipeline", 
-  "etag": "pl2B1OKxrrLQf4tpkznGlQ==", 
+  "etag": "1Za0KETSWkPLnr1OP2e0jw==", 
+  "friendlyName": "HG38 DNA METHYLATION ANNOTATION", 
   "id": "isb-cgc:platform_reference.GDC_hg38_methylation_annotation", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574187030246", 
+  "lastModifiedTime": "1580324887579", 
   "location": "US", 
   "numBytes": "141192805", 
   "numLongTermBytes": "141192805", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1549655803509", 
   "description": "Data was loaded from the International Statistical Classification of Diseases and Related Health Problems 10th Revision published by the World Health Organization (WHO) in February 2019. More details: https://icd.who.int/browse10", 
-  "etag": "fjRlUu+qrB7PwqJSBVmFmw==", 
+  "etag": "SGmMP9D6xejFTsE8dEfBUw==", 
+  "friendlyName": "ICD-10 CHAPTERS", 
   "id": "isb-cgc:genome_reference.ICD_10_chapters", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "international_classficiation_of_disesase_icd", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767657879", 
+  "lastModifiedTime": "1580324992988", 
   "location": "US", 
   "numBytes": "1147", 
   "numLongTermBytes": "1147", 

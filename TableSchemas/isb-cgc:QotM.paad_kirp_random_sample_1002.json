@@ -1,7 +1,8 @@
 {
   "creationTime": "1522342948931", 
   "description": "Data was loaded from TCGA hg38 data and TCGA Biospecimen Data on March 2018. Ranked Hg38 gene expression data was ranked by coefficient of variation taking a subset with high variance and filtering out long RNA sequences then generating a random sample of biospecimen excluding barcodes that don't end in '-A01' was loaded using BigQuery. More details: https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/QueryOfTheMonthClub.html#march-2018", 
-  "etag": "eT0Qcd8XYnJ+Eu2IhHKqrw==", 
+  "etag": "d39vB6Bwqrk6gZw696eXdQ==", 
+  "friendlyName": "MAR2018 QUERY OF THE MONTH TABLE 1", 
   "id": "isb-cgc:QotM.paad_kirp_random_sample_1002", 
   "kind": "bigquery#table", 
   "labels": {
@@ -10,9 +11,9 @@
     "data_type_0": "gene_expression", 
     "reference_genome_0": "hg38", 
     "source_0": "isb_cgc-qotm", 
-    "status": "current"
+    "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574709686441", 
+  "lastModifiedTime": "1580325047492", 
   "location": "US", 
   "numBytes": "601524", 
   "numLongTermBytes": "601524", 

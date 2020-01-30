@@ -1,7 +1,8 @@
 {
   "creationTime": "1525831180884", 
   "description": "Data was loaded from the gnomAD database, release 2.0.2, October 2017). The data (containing SNVs and indels) was loaded from the VCF files copied from the GCS bucket (gs://gnomad-public/release/2.0.2/vcf/genomes/gnomad.genomes.r2.0.2.sites.chr*.vcf.bgz) and then uploaded using the Google Variant Transforms tool (v0.2.0).", 
-  "etag": "7koTofGfx5QGr7zwhvOwTA==", 
+  "etag": "XH0LKNNVLEZkEGkwx+KYfg==", 
+  "friendlyName": "GNOMAD GRCH37 2017", 
   "id": "isb-cgc:genome_reference.gnomAD_20171003_GRCh37", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gnomad_database", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574737139444", 
+  "lastModifiedTime": "1580324998201", 
   "location": "US", 
   "numBytes": "577664982110", 
   "numLongTermBytes": "577664982110", 
