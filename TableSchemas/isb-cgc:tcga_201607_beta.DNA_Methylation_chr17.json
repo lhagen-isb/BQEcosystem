@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734318833", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA methylation for chromosome 17.", 
-  "etag": "GUex/ug4H/t9fomWJ6VChw==", 
+  "etag": "T0bKM5SKiVD54g4AGR3oMg==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 17", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr17", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768024374", 
+  "lastModifiedTime": "1580325352659", 
   "location": "US", 
   "numBytes": "26417830751", 
   "numLongTermBytes": "26417830751", 

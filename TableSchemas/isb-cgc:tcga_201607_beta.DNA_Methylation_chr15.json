@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734306974", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 15.", 
-  "etag": "ayY/uR+xvBoF6djWym4hNg==", 
+  "etag": "Na1W43+ib4podZECZzGejA==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 15", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr15", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768037491", 
+  "lastModifiedTime": "1580325348184", 
   "location": "US", 
   "numBytes": "14064712239", 
   "numLongTermBytes": "14064712239", 

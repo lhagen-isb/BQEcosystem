@@ -1,7 +1,8 @@
 {
   "creationTime": "1529370828416", 
   "description": "This data was generated from the TARGET program data in June 2018. It contains clinical and biospecimen sample data for patient cases.", 
-  "etag": "6nQ2MqjsP3f2aSbnqZsapQ==", 
+  "etag": "JJ37/uWFRliKoyK0PLh6KA==", 
+  "friendlyName": "TARGET SAMPLE COUNTS", 
   "id": "isb-cgc:TARGET_bioclin_v0.TARGET_metadata_samples", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574195177850", 
+  "lastModifiedTime": "1580336040853", 
   "location": "US", 
   "numBytes": "1929334", 
   "numLongTermBytes": "1929334", 

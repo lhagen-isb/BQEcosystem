@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734400596", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 8.", 
-  "etag": "HHkHQm5aS7G2ojmblRgPXA==", 
+  "etag": "gjSV7/hKpkGyqm1sI9Yojg==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 8", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr8", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767719280", 
+  "lastModifiedTime": "1580325377714", 
   "location": "US", 
   "numBytes": "18607886221", 
   "numLongTermBytes": "18607886221", 

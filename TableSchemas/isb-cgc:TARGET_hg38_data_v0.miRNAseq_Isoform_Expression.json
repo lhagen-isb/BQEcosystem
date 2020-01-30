@@ -1,7 +1,8 @@
 {
   "creationTime": "1545355112773", 
   "description": "Data was extracted from GDC active archive on December 2018. microRNA isoform expression data was generated using Illumina GA or HiSeq sequencing platforms.", 
-  "etag": "x1DHixC6y3tW+RV6fqSYyA==", 
+  "etag": "nJ8/aRF6PI1PWTa5vtEnDg==", 
+  "friendlyName": "TARGET HG38 MIRNASEQ ISOFORM EXPRESSION", 
   "id": "isb-cgc:TARGET_hg38_data_v0.miRNAseq_Isoform_Expression", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768084246", 
+  "lastModifiedTime": "1580325109229", 
   "location": "US", 
   "numBytes": "754879300", 
   "numLongTermBytes": "754879300", 

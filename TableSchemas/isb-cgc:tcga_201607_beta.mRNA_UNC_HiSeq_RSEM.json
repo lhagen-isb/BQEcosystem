@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734493265", 
   "description": "Data was extracted from UNC-LCCC (Lineberger Comprehensive Cancer Center) on July 2016. mRNA expression data was generated using the Illumina HiSeq platform and process through their RNSseqV2/RSEM pipeline.", 
-  "etag": "WXzs+u79Io9SUYFZLtmrrA==", 
+  "etag": "pNUKMKREcMG+nNhIvZebSw==", 
+  "friendlyName": "TCGA 2016 BETA MRNA UNC HISEQ RSEM", 
   "id": "isb-cgc:tcga_201607_beta.mRNA_UNC_HiSeq_RSEM", 
   "kind": "bigquery#table", 
   "labels": {
@@ -14,7 +15,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767690730", 
+  "lastModifiedTime": "1580325407192", 
   "location": "US", 
   "numBytes": "24942992190", 
   "numLongTermBytes": "24942992190", 

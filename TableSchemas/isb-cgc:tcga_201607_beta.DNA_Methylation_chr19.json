@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734331023", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 19.", 
-  "etag": "4fYXNwwVlRHWgHyOCVo5NA==", 
+  "etag": "MZHHFkTZr/8jX61wO6W0Ag==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 19", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr19", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768011620", 
+  "lastModifiedTime": "1580325357197", 
   "location": "US", 
   "numBytes": "23862583107", 
   "numLongTermBytes": "23862583107", 

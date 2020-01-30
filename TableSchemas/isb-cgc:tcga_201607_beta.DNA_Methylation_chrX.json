@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734413661", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome X.", 
-  "etag": "sCJIuz2i0vPxTlDgblJ4WQ==", 
+  "etag": "fZ/NsoTelhicBUHWtbmfcw==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR X", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chrX", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768046372", 
+  "lastModifiedTime": "1580325383587", 
   "location": "US", 
   "numBytes": "11072059468", 
   "numLongTermBytes": "11072059468", 

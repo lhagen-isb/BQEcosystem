@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734378600", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 5.", 
-  "etag": "ZjWPiZ8+iJJ089NnD6CsKA==", 
+  "etag": "BYpQ+mBVNKVPWDB3xrtWHQ==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 5", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr5", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767653262", 
+  "lastModifiedTime": "1580325372608", 
   "location": "US", 
   "numBytes": "22113162401", 
   "numLongTermBytes": "22113162401", 

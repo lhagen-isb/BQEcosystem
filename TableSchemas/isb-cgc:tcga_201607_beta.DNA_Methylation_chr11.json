@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734279203", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for the chromosome 11.", 
-  "etag": "ie1aW6OGgW0oykGVvneqtg==", 
+  "etag": "uzd7jOUJ0QePEEZ4XLPUng==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 11", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr11", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768062412", 
+  "lastModifiedTime": "1580325340073", 
   "location": "US", 
   "numBytes": "26623975945", 
   "numLongTermBytes": "26623975945", 

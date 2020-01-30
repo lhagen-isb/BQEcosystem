@@ -1,7 +1,8 @@
 {
   "creationTime": "1493165069880", 
   "description": "Data was extracted from the TARGET program in April 2017. This biospecimen information (sample types) for patient cases was generated from a set of XLSX files downloaded from \nhttps://target-data.nci.nih.gov/Public/.../clinical/harmonized. More details: see https://ocg.cancer.gov/programs/target.", 
-  "etag": "5m9Md6wbBuRXM0KSOPLeTw==", 
+  "etag": "AwfaSWvYENM3XE5tIaRzGQ==", 
+  "friendlyName": "TARGET BIOSPECIMEN", 
   "id": "isb-cgc:TARGET_bioclin_v0.Biospecimen", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574194778597", 
+  "lastModifiedTime": "1580325093677", 
   "location": "US", 
   "numBytes": "1225084", 
   "numLongTermBytes": "1225084", 

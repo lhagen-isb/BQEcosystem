@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734504619", 
   "description": "Data was extracted from MDAnderson Functional Proteomics RPPA Core Facility on July 2016. Protein expression data was generated using all the data produced by MDAnderson Functional Proteomics RPPA Core Facility.", 
-  "etag": "km5PuJryyeomJEduhVBh1A==", 
+  "etag": "1GzOadMM4pV2toUD2oU23g==", 
+  "friendlyName": "TCGA 2016 BETA PROTEIN RPPA DATA", 
   "id": "isb-cgc:tcga_201607_beta.Protein_RPPA_data", 
   "kind": "bigquery#table", 
   "labels": {
@@ -14,7 +15,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574789788369", 
+  "lastModifiedTime": "1580325411627", 
   "location": "US", 
   "numBytes": "207365611", 
   "numLongTermBytes": "207365611", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734324486", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 18.", 
-  "etag": "efZY/jKWVkvL0Keu/LrC5w==", 
+  "etag": "dBPF+v+z0t6zwL2vknvI0g==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 18", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr18", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768018666", 
+  "lastModifiedTime": "1580325354378", 
   "location": "US", 
   "numBytes": "5669139362", 
   "numLongTermBytes": "5669139362", 

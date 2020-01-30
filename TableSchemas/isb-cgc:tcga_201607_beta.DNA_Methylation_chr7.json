@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734394254", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 7.", 
-  "etag": "6FBJD21nMHlpLcIlyZOGzA==", 
+  "etag": "zBmbhOp++eCV7Ojmx+LeLg==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 7", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr7", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767671306", 
+  "lastModifiedTime": "1580325376082", 
   "location": "US", 
   "numBytes": "27097948808", 
   "numLongTermBytes": "27097948808", 

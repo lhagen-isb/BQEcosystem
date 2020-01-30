@@ -1,7 +1,8 @@
 {
   "creationTime": "1512591071442", 
   "description": "Data was extracted from active archive of the GDC on December 2018 for RNAseq data for TARGET samples.", 
-  "etag": "y1agIV6kbg0GWS5bpxKE1A==", 
+  "etag": "T2tu390PSSaEEAC8K5tLzQ==", 
+  "friendlyName": "TARGET HG38 RNASEQ GENE EXPRESSION", 
   "id": "isb-cgc:TARGET_hg38_data_v0.RNAseq_Gene_Expression", 
   "kind": "bigquery#table", 
   "labels": {
@@ -14,7 +15,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574878611775", 
+  "lastModifiedTime": "1580325114509", 
   "location": "US", 
   "numBytes": "9116507013", 
   "numLongTermBytes": "9116507013", 

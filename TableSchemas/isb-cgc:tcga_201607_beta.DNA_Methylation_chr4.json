@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734372264", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 4.", 
-  "etag": "0IOZCR2Cr+BFXYnqX02JlQ==", 
+  "etag": "QBmUsh4CxD1BroDg8rEy+A==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 4", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr4", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767650174", 
+  "lastModifiedTime": "1580325370709", 
   "location": "US", 
   "numBytes": "17968482285", 
   "numLongTermBytes": "17968482285", 

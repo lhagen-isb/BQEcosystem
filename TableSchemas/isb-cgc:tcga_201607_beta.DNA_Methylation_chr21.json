@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734353827", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 21.", 
-  "etag": "glmyZPHbUt5DkDzWyS5p2w==", 
+  "etag": "fn2YzlvnsBWxOh4DwDdleg==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 21", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr21", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767915104", 
+  "lastModifiedTime": "1580325363390", 
   "location": "US", 
   "numBytes": "3997986812", 
   "numLongTermBytes": "3997986812", 

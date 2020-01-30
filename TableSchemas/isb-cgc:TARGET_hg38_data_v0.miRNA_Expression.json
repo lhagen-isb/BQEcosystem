@@ -1,7 +1,8 @@
 {
   "creationTime": "1545355954591", 
   "description": "Data was extracted from active archive of the GDC on December 2018 for microRNA expression data for TARGET samples.", 
-  "etag": "wAEPIEERF7ZhsC2DBFSXkw==", 
+  "etag": "5KxgLucvIMn2Em6YBuwPVg==", 
+  "friendlyName": "TARGET HG38 MIRNA EXPRESSION", 
   "id": "isb-cgc:TARGET_hg38_data_v0.miRNA_Expression", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767784305", 
+  "lastModifiedTime": "1580325102949", 
   "location": "US", 
   "numBytes": "408521180", 
   "numLongTermBytes": "408521180", 

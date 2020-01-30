@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734474181", 
   "description": "Data was extracted from BCGSC (BC Genome Sciences Centre) on July 2016. mRNA expression was generated using the Illumina HiSeq platform and processed through their RPKM pipeline.", 
-  "etag": "dus9T8F/iYScWeI5cT11Og==", 
+  "etag": "bmf22dkBv0XzRuzXk3KXww==", 
+  "friendlyName": "TCGA 2016 BETA MRNA HISEQ RPKM", 
   "id": "isb-cgc:tcga_201607_beta.mRNA_BCGSC_HiSeq_RPKM", 
   "kind": "bigquery#table", 
   "labels": {
@@ -14,7 +15,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767847206", 
+  "lastModifiedTime": "1580325403732", 
   "location": "US", 
   "numBytes": "4459086535", 
   "numLongTermBytes": "4459086535", 

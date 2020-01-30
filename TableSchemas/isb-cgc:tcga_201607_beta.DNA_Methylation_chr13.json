@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734292716", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 13.", 
-  "etag": "nH1wx2gBRN0pC4K9nRMlyQ==", 
+  "etag": "7f1tZNDtcgBUSJ999Wvqxw==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 13", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr13", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768047909", 
+  "lastModifiedTime": "1580325343630", 
   "location": "US", 
   "numBytes": "10986815862", 
   "numLongTermBytes": "10986815862", 

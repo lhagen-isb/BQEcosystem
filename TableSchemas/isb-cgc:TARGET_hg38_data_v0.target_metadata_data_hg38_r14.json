@@ -1,7 +1,8 @@
 {
   "creationTime": "1551994163587", 
   "description": "Data was generated from file metadata for TARGET data in the GDC active archive for release 14 from December 2018. More details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-140", 
-  "etag": "FYZRs7B0CxAyIB36F8OBcg==", 
+  "etag": "gnkYW814m3hrIDwiCxpnXQ==", 
+  "friendlyName": "TARGET HG38 METADATA RELEASE 14", 
   "id": "isb-cgc:TARGET_hg38_data_v0.target_metadata_data_hg38_r14", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574879634243", 
+  "lastModifiedTime": "1580325101194", 
   "location": "US", 
   "numBytes": "1935253", 
   "numLongTermBytes": "1935253", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734418257", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome Y.", 
-  "etag": "6533tjazQD9J7bW75mIEtg==", 
+  "etag": "0A3LGX1fE8g6EwG3AfR8Yw==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR Y", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chrY", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768058244", 
+  "lastModifiedTime": "1580325386327", 
   "location": "US", 
   "numBytes": "263109775", 
   "numLongTermBytes": "263109775", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734205500", 
   "description": "Data was extracted from the TCGA program in July 2016. It contains sample data for TCGA patient cases.", 
-  "etag": "JjW6XVZo6Fj4tdFomw8H5w==", 
+  "etag": "Bd++krzVYbFkEW6YX3F7Kw==", 
+  "friendlyName": "TCGA 2016 BETA BIOSPECIMEN DATA", 
   "id": "isb-cgc:tcga_201607_beta.Biospecimen_data", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574199315584", 
+  "lastModifiedTime": "1580325328547", 
   "location": "US", 
   "numBytes": "6382147", 
   "numLongTermBytes": "6382147", 

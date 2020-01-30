@@ -1,7 +1,8 @@
 {
   "creationTime": "1477408766106", 
   "description": "Data was extracted from BCGSC (BC Genome Sciences Centre) on July 2016. miRNA isoform expression data was generated using the Illumina HiSeq platform and processed through their microRNA pipeline. More details: https://storage.cloud.google.com/isb-cgc-open/tcga/pipeline-details/bcgsc.ca__illuminaga_mirnaseq__DESCRIPTION.txt", 
-  "etag": "j5ryghxmiDrJY9sNi0tSiA==", 
+  "etag": "BNxrZBNY/mxpKuG+ZuTsbg==", 
+  "friendlyName": "TCGA 2016 BETA MIRNA HISEQ ISOFORM", 
   "id": "isb-cgc:tcga_201607_beta.miRNA_BCGSC_HiSeq_isoform", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767921063", 
+  "lastModifiedTime": "1580325394714", 
   "location": "US", 
   "numBytes": "7901172305", 
   "numLongTermBytes": "7901172305", 

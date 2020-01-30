@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734271167", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation data for chromosome 10.", 
-  "etag": "Uotp3XmslELGmqSPTSyPPQ==", 
+  "etag": "VswiXkL8yaTevE0ogYiNWA==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 10", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr10", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768065058", 
+  "lastModifiedTime": "1580325338284", 
   "location": "US", 
   "numBytes": "22301345198", 
   "numLongTermBytes": "22301345198", 

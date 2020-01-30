@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734251720", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation data. ", 
-  "etag": "YPc2QQkexNWnnezedBlhuw==", 
+  "etag": "3L6fgjl33K33DUuGpYM1XA==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION BETA", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_betas", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768088507", 
+  "lastModifiedTime": "1580325334895", 
   "location": "US", 
   "numBytes": "445303830985", 
   "numLongTermBytes": "445303830985", 

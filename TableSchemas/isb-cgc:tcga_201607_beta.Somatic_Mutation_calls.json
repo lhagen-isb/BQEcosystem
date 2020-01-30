@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734243196", 
   "description": "Data was loaded from TCGA DCC on July 2016 for Somatic Mutations MAF data.", 
-  "etag": "LNKZCpSDz5AxooAluIAH1A==", 
+  "etag": "qecg3AlEuq3C88vGu8ZBLg==", 
+  "friendlyName": "TCGA 2016 BETA SOMATIC MUTATION CALLS", 
   "id": "isb-cgc:tcga_201607_beta.Somatic_Mutation_calls", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574790447446", 
+  "lastModifiedTime": "1580325414372", 
   "location": "US", 
   "numBytes": "5715538107", 
   "numLongTermBytes": "5715538107", 

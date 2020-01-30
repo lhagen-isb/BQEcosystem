@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734510952", 
   "description": "This data was generated from the TCGA Annotations table, obtained from the TCGA DCC in July 2016. More details: The TCGA annotations table is no longer available but documentation describing the annotations is available on the NCI wiki: https://wiki.nci.nih.gov/display/TCGA/Introduction+to+Annotations. The contents of this table were downloaded shortly before the TCGA DCC went off-line. Please refer to the Genomic Data Commons Data Portal (https://gdc-portal.nci.nih.gov/) as the new data source for TCGA data (including annotations).", 
-  "etag": "HLpbU+Ye+Xqh87Gl+SpzPg==", 
+  "etag": "jWvXVn2+aL5NQan37lEOHg==", 
+  "friendlyName": "TCGA 2016 BETA ANNOTATIONS", 
   "id": "isb-cgc:tcga_201607_beta.Annotations", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768050896", 
+  "lastModifiedTime": "1580325325702", 
   "location": "US", 
   "numBytes": "1729204", 
   "numLongTermBytes": "1729204", 

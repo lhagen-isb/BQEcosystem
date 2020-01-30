@@ -1,7 +1,8 @@
 {
   "creationTime": "1561173011368", 
   "description": "Data was extracted from the TARGET program in June 2019. This clinical information about patient cases was generated from a set of XLSX files downloaded from https://target-data.nci.nih.gov/Public/.../clinical/harmonized. More details: see https://ocg.cancer.gov/programs/target. This table clinical_v1 contains a subset of the columns in the Clinical table.", 
-  "etag": "B6OE56MAdoKJobNMqkqcCA==", 
+  "etag": "ZeROTYB/rRG46+Pi5QWEAA==", 
+  "friendlyName": "TARGET CLINICAL V1", 
   "id": "isb-cgc:TARGET_bioclin_v0.clinical_v1", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574195080689", 
+  "lastModifiedTime": "1580325099516", 
   "location": "US", 
   "numBytes": "1552216", 
   "numLongTermBytes": "1552216", 

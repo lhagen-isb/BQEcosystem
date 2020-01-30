@@ -1,7 +1,8 @@
 {
   "creationTime": "1529370097978", 
   "description": "This data was generated in June 2018. It is a reference list of Data Type labels and IDs. More details: These IDs are used in the table TARGET_metadata_sample_data_availability to map samples to Data Types.", 
-  "etag": "L5C4qRcjoPR8NVPMzYwx4w==", 
+  "etag": "HphOqsxlELoar+JEFzoYVA==", 
+  "friendlyName": "TARGET DATA TYPES", 
   "id": "isb-cgc:TARGET_bioclin_v0.TARGET_metadata_data_type_availability", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "target", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574195115868", 
+  "lastModifiedTime": "1580336051876", 
   "location": "US", 
   "numBytes": "868", 
   "numLongTermBytes": "868", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1469903973748", 
   "description": "Data was extracted from TCGA DCC on July 2016 for copy-number segment identification data.", 
-  "etag": "XPcF5q4EjjqU2t4FcLS43g==", 
+  "etag": "DhE1bb6LXviy7eIrW3+Zow==", 
+  "friendlyName": "TCGA 2016 BETA COPY NUMBER SEGMENTS", 
   "id": "isb-cgc:tcga_201607_beta.Copy_Number_segments", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574199512561", 
+  "lastModifiedTime": "1580325333113", 
   "location": "US", 
   "numBytes": "333774244", 
   "numLongTermBytes": "333774244", 

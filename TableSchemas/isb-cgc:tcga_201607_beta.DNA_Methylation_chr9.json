@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734406804", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 9.", 
-  "etag": "iTKlfyR8miMQTKRq6YJqkg==", 
+  "etag": "RpcxKP5hDdqIn2+yc+pnYg==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 9", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr9", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767725244", 
+  "lastModifiedTime": "1580325380843", 
   "location": "US", 
   "numBytes": "9173717922", 
   "numLongTermBytes": "9173717922", 

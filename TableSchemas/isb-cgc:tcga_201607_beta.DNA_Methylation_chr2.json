@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734341913", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 2.", 
-  "etag": "iStpbDhWsbxVLhrQMHvrxQ==", 
+  "etag": "eVkQAUNhpzqPP/d5t04tCA==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 2", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr2", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767692249", 
+  "lastModifiedTime": "1580325359033", 
   "location": "US", 
   "numBytes": "31577200462", 
   "numLongTermBytes": "31577200462", 

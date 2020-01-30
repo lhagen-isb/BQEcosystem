@@ -1,7 +1,8 @@
 {
   "creationTime": "1487886513942", 
   "description": "Data was extracted from BCGSC (BC Genome Sciences Centre) on July 2016. miRNA expression was generated using the Illumina GA platform and processed through their microRNA pipeline. More details: https://storage.cloud.google.com/isb-cgc-open/tcga/pipeline-details/bcgsc.ca__illuminaga_mirnaseq__DESCRIPTION.txt", 
-  "etag": "sBAawPcgHgPoUhB4RyOX7Q==", 
+  "etag": "dDsPQVLCo0uQpEE7sAi3lA==", 
+  "friendlyName": "TCGA 2016 BETA MIRNA EXPR GROUPED BY MIRNA ACCESSION", 
   "id": "isb-cgc:tcga_201607_beta.miRNA_BCGSC_GA_EXPR_GroupedByMIMAT", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767771423", 
+  "lastModifiedTime": "1580325388053", 
   "location": "US", 
   "numBytes": "107533176", 
   "numLongTermBytes": "107533176", 

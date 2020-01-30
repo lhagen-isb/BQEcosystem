@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734388330", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 6.", 
-  "etag": "gacJcDhhajqCGPs2bA22sw==", 
+  "etag": "XXb0KdLo/2utksPhTM5lPQ==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 6", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr6", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767662825", 
+  "lastModifiedTime": "1580325374396", 
   "location": "US", 
   "numBytes": "32772371379", 
   "numLongTermBytes": "32772371379", 

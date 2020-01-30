@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734347939", 
   "description": "Data was extracted from TCGA DCC on July 2016 for DNA Methylation for chromosome 20.", 
-  "etag": "iSLppF2lirIKlFxLkQM36A==", 
+  "etag": "S3HtK55xvfA7URPCUu0+xQ==", 
+  "friendlyName": "TCGA 2016 BETA DNA METHYLATION CHR 20", 
   "id": "isb-cgc:tcga_201607_beta.DNA_Methylation_chr20", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767908705", 
+  "lastModifiedTime": "1580325361740", 
   "location": "US", 
   "numBytes": "9805923353", 
   "numLongTermBytes": "9805923353", 

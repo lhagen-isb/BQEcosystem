@@ -1,7 +1,8 @@
 {
   "creationTime": "1469734228101", 
   "description": "Data was extracted from the TCGA program in June 2016. Each row contains a TCGA patient record. More details: see https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga", 
-  "etag": "ZEIvvyuxA8l97xrF9n1cCA==", 
+  "etag": "WEs6dn7GQazkpR4RqZiDuQ==", 
+  "friendlyName": "TCGA 2016 BETA CLINICAL DATA", 
   "id": "isb-cgc:tcga_201607_beta.Clinical_data", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_1": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574198638106", 
+  "lastModifiedTime": "1580325330445", 
   "location": "US", 
   "numBytes": "4201379", 
   "numLongTermBytes": "4201379", 
