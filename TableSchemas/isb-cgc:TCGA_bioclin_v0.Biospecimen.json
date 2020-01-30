@@ -1,18 +1,19 @@
 {
   "creationTime": "1485967657392", 
   "description": "Data was extracted from the TCGA program in April 2017. It contains sample data for TCGA patient cases, originally based on the information provided by the TCGA biospecimen core resource (BCR) to the TCGA DCC in the form of xml files. Most patients (cases) provided two samples: one primary tumor sample and one blood normal sample, although other sample types exist, such as metastatic tumor samples, adjacent \"\"normal\"\" tissue samples, etc. There are, in a few cases, as many as 8 samples from a single case, although these may represent multiple \"vials\" from a smaller number of biospecimens. Also, some samples were obtained from cases for which no clinical information existed and which are therefore not represented in the Clinical table (which contains close to 200 fewer cases than this table does). More details: information about \u201cclinical data elements\u201d can be found at the NCI CDE (clinical data element) browser at https://cdebrowser.nci.nih.gov", 
-  "etag": "ZUMb0o95ndGy9cvyDzUgPQ==", 
+  "etag": "M+m47u5ZjR7oWNAX4hZKuA==", 
+  "friendlyName": "TCGA BIOCLINICAL BIOSPECIMEN", 
   "id": "isb-cgc:TCGA_bioclin_v0.Biospecimen", 
   "kind": "bigquery#table", 
   "labels": {
     "access": "open", 
     "category": "clinical_biospecimen_data", 
-    "data_type_0": "clinical", 
+    "data_type_0": "biospecimen", 
     "source_0": "tcga", 
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574195615128", 
+  "lastModifiedTime": "1580325283449", 
   "location": "US", 
   "numBytes": "7308232", 
   "numLongTermBytes": "7308232", 

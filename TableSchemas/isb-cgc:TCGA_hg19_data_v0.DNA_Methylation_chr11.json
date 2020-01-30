@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812289318", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 11 is made available here.", 
-  "etag": "zwQMkMHwHchVFpiQvhMpqA==", 
+  "etag": "TfNFL1buREVwkBJCBch9fA==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 11", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr11", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767720704", 
+  "lastModifiedTime": "1580325131178", 
   "location": "US", 
   "numBytes": "26859515777", 
   "numLongTermBytes": "26859515777", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1485816364215", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms.", 
-  "etag": "G22Q7vGXkJ0RgvmVDEJ7XQ==", 
+  "etag": "GQmoLyfhcio7rIWm1qeKgw==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767889016", 
+  "lastModifiedTime": "1580325124760", 
   "location": "US", 
   "numBytes": "449243388488", 
   "numLongTermBytes": "449243388488", 

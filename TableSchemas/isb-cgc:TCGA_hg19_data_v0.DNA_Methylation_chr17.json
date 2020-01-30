@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812514805", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 17 is made available here.", 
-  "etag": "9aktbYMDtH1ZPqM/1RQmhg==", 
+  "etag": "ZVFEo7pHaGCv2u9ulweRsw==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 17", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr17", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767708788", 
+  "lastModifiedTime": "1580325147214", 
   "location": "US", 
   "numBytes": "26651552171", 
   "numLongTermBytes": "26651552171", 

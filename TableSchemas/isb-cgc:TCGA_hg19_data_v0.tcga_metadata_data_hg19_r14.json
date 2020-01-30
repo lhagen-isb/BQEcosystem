@@ -1,7 +1,8 @@
 {
   "creationTime": "1574274327033", 
   "description": "TCGA HG19 file data table based on GDC rel14, with the 5aa shared bucket with Broad BAM index file relocations.", 
-  "etag": "3Z4MjGFzFj0COZlCl7eE6g==", 
+  "etag": "r2PZROl4qWQ2WJkpZJFz8Q==", 
+  "friendlyName": "TCGA HG19 METADATA RELEASE 14", 
   "id": "isb-cgc:TCGA_hg19_data_v0.tcga_metadata_data_hg19_r14", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574879836306", 
+  "lastModifiedTime": "1580325299358", 
   "location": "US", 
   "numBytes": "183742076", 
   "numLongTermBytes": "0", 

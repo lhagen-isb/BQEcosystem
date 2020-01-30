@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812248813", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 10 is made available here.", 
-  "etag": "WxZVfb+j5niX2wd0comqlQ==", 
+  "etag": "BlzyhWxnbLNCacNMrLBc3w==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 10", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr10", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767726676", 
+  "lastModifiedTime": "1580325129335", 
   "location": "US", 
   "numBytes": "22498626432", 
   "numLongTermBytes": "22498626432", 

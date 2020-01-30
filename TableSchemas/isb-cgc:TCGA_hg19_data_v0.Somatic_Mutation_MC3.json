@@ -1,7 +1,8 @@
 {
   "creationTime": "1486927401501", 
   "description": "Data was extracted from unified \"MC3\" TCGA call set published by the TCGA Network on February 2017. This table contains Somatic mutation calls. More details: https://www.synapse.org/#!Synapse:syn7214402/wiki/405297", 
-  "etag": "mGcOTLF7meO2W32LtchoAQ==", 
+  "etag": "R5haK4cFud/q18FLSGOqjg==", 
+  "friendlyName": "TCGA HG19 SOMATIC MUTATION MC3", 
   "id": "isb-cgc:TCGA_hg19_data_v0.Somatic_Mutation_MC3", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768053892", 
+  "lastModifiedTime": "1580325196441", 
   "location": "US", 
   "numBytes": "3836562618", 
   "numLongTermBytes": "3836562618", 

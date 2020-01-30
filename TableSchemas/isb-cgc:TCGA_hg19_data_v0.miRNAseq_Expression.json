@@ -1,7 +1,8 @@
 {
   "creationTime": "1488583422534", 
   "description": "Data was extracted from GDC legacy archive on March 2017. microRNA expression data was generated using Illumina GA or HiSeq sequencing platforms.", 
-  "etag": "CbSfE3q0wnM7bGObAqxgYg==", 
+  "etag": "+aCqPgwnu7n1/CQKTb+6kQ==", 
+  "friendlyName": "TCGA HG19 MIRNASEQ EXPRESSION", 
   "id": "isb-cgc:TCGA_hg19_data_v0.miRNAseq_Expression", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767831184", 
+  "lastModifiedTime": "1580325186907", 
   "location": "US", 
   "numBytes": "5195033745", 
   "numLongTermBytes": "5195033745", 

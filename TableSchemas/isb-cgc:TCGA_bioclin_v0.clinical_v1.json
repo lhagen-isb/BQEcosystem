@@ -1,7 +1,8 @@
 {
   "creationTime": "1561176401545", 
   "description": "Data was extracted from the TCGA program in June 2019. This clinical information about patient cases also includes TCGA project information. More details: see https://docs.gdc.cancer.gov/Encyclopedia/pages/Clinical_Data/", 
-  "etag": "dneyfthVU/+d9cW3ZE4EgQ==", 
+  "etag": "nxZ6/9jRUmYiSI/Ly+oSIQ==", 
+  "friendlyName": "TCGA BIOCLINICAL CLINICAL V1", 
   "id": "isb-cgc:TCGA_bioclin_v0.clinical_v1", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574199209295", 
+  "lastModifiedTime": "1580325285269", 
   "location": "US", 
   "numBytes": "4304985", 
   "numLongTermBytes": "4304985", 

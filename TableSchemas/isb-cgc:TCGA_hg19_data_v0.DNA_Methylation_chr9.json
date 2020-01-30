@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812215884", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 9 is made available here.", 
-  "etag": "vMlWjlekFyrTTAdxt5Xhbw==", 
+  "etag": "ALc7yNZ6fnEbtXs9V/CUYg==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 9", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr9", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768021484", 
+  "lastModifiedTime": "1580325179584", 
   "location": "US", 
   "numBytes": "9254881933", 
   "numLongTermBytes": "9254881933", 

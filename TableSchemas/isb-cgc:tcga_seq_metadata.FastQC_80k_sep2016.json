@@ -1,7 +1,8 @@
 {
   "creationTime": "1475030559158", 
   "description": "Data was generated to map CGHub IDs to FastqQC reports in Sept 2016.", 
-  "etag": "GZpxBvTkEjw1TaVX9W4R8g==", 
+  "etag": "2AXuBsvNTHnomV/9SZsn+g==", 
+  "friendlyName": "TCGA FASTQC REPORTS", 
   "id": "isb-cgc:tcga_seq_metadata.FastQC_80k_sep2016", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767700073", 
+  "lastModifiedTime": "1580325487888", 
   "location": "US", 
   "numBytes": "42833020", 
   "numLongTermBytes": "42833020", 

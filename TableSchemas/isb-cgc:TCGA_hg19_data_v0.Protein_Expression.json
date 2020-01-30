@@ -1,7 +1,8 @@
 {
   "creationTime": "1485986632193", 
   "description": "Data was extracted from TCGA DCC on February 2017. RPPA/protein quantification data for TCGA samples was extracted by the NCI GDC in the legacy archive specifically the files with names like \"MDA_RPPA_Core.protein_expression.Level_3\".  Note: A significant amount of manual curation of the gene and protein symbols was done. More details: https://bioinformatics.mdanderson.org/public-software/tcpa/", 
-  "etag": "ib80vLKfMjhNHUhJFWkgiA==", 
+  "etag": "2VlzZCuJKeapkcgIysFScQ==", 
+  "friendlyName": "TCGA HG19 PROTEIN EXPRESSION", 
   "id": "isb-cgc:TCGA_hg19_data_v0.Protein_Expression", 
   "kind": "bigquery#table", 
   "labels": {
@@ -14,7 +15,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574738169476", 
+  "lastModifiedTime": "1580325191481", 
   "location": "US", 
   "numBytes": "209231220", 
   "numLongTermBytes": "209231220", 

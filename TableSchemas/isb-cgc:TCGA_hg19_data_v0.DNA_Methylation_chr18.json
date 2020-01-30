@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812547251", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 18 is made available here.", 
-  "etag": "c6le+izcIDErGIxyHQ68Iw==", 
+  "etag": "S6ay5zAHMt0Dzaa4BrF44Q==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 18", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr18", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767686209", 
+  "lastModifiedTime": "1580325149137", 
   "location": "US", 
   "numBytes": "5719295656", 
   "numLongTermBytes": "5719295656", 

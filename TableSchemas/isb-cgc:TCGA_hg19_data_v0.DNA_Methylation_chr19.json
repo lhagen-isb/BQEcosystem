@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812588297", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 19 is made available here. ", 
-  "etag": "cOEKb3ltBNvrRgR/lWk7kA==", 
+  "etag": "97Q07BD9kGRp3KkPG68VSA==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 19", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr19", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767681105", 
+  "lastModifiedTime": "1580325151899", 
   "location": "US", 
   "numBytes": "24073716297", 
   "numLongTermBytes": "24073716297", 

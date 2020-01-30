@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812737218", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome Y is made available here.", 
-  "etag": "T0BTD2GjN8R/vKMeuccINQ==", 
+  "etag": "LDz3eMseaIbSrLJA0vc5LA==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR Y", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chrY", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767698544", 
+  "lastModifiedTime": "1580325184092", 
   "location": "US", 
   "numBytes": "265436402", 
   "numLongTermBytes": "265436402", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812041750", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 5 is made available here.", 
-  "etag": "m7dB3/V1QK0vPVYrp4RynQ==", 
+  "etag": "q/M4uRE/ThBq5sIS3R7n5g==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 5", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr5", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768043449", 
+  "lastModifiedTime": "1580325169574", 
   "location": "US", 
   "numBytes": "22308790194", 
   "numLongTermBytes": "22308790194", 

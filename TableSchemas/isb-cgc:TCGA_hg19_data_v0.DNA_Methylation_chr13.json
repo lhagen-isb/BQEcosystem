@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812362405", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 13 is made available here.", 
-  "etag": "KXthrWvZbzgzlEfyiruLUw==", 
+  "etag": "engO2zhLk+QMnhnjHAwG0g==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 13", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr13", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767731163", 
+  "lastModifiedTime": "1580325136764", 
   "location": "US", 
   "numBytes": "11083999866", 
   "numLongTermBytes": "11083999866", 

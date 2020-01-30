@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812724167", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome X is made available here.", 
-  "etag": "D8A+D/1g5q9NwNdsxZ1E+g==", 
+  "etag": "Kgi/BmnuB36c1MeSZpW04g==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR X", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chrX", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767695553", 
+  "lastModifiedTime": "1580325181327", 
   "location": "US", 
   "numBytes": "11170024976", 
   "numLongTermBytes": "11170024976", 

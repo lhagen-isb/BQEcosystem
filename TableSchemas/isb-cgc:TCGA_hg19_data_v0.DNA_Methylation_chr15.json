@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812427902", 
   "description": "Data was extracted from GDC legacy archiveon April 2017. DNA Methylation for chromsome 15 was generated using Illumina Human Methylation 27k and 450k platforms.", 
-  "etag": "mVIdtaE98sjBjVSxVZxP9Q==", 
+  "etag": "odcvt1U6hrGKuszTNa51qA==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 15", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr15", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767702967", 
+  "lastModifiedTime": "1580325141483", 
   "location": "US", 
   "numBytes": "14189128239", 
   "numLongTermBytes": "14189128239", 

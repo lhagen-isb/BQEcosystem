@@ -1,7 +1,8 @@
 {
   "creationTime": "1487032055357", 
   "description": "Data was extracted from TCGA DCC on February 2017. Copy-number segmentation information was generated using the Affymetrix Genome Wide SNP 6.0 array.", 
-  "etag": "Kwa1IEosmg+BOUDXQtsrvw==", 
+  "etag": "wNMfJ5iYf71+H7MlcwXBbA==", 
+  "friendlyName": "TCGA HG19 COPY NUMBER SEGMENT MASKED", 
   "id": "isb-cgc:TCGA_hg19_data_v0.Copy_Number_Segment_Masked", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767687743", 
+  "lastModifiedTime": "1580325123215", 
   "location": "US", 
   "numBytes": "336419121", 
   "numLongTermBytes": "336419121", 

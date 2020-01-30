@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812463916", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 16 is made available here.", 
-  "etag": "fRkMXb4DvKarrliZReVcBw==", 
+  "etag": "g+rWqcyn3R4AzPf2r1ROsQ==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 16", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr16", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767717746", 
+  "lastModifiedTime": "1580325144521", 
   "location": "US", 
   "numBytes": "20475684191", 
   "numLongTermBytes": "20475684191", 

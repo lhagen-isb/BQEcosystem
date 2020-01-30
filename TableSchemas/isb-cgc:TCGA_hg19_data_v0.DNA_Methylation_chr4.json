@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812000484", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 4 is made available here.", 
-  "etag": "B6MPrRm+UFzGgRPBirB8BQ==", 
+  "etag": "cgwMMOkHU3h9kSEb0WmDEg==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 4", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr4", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768040530", 
+  "lastModifiedTime": "1580325166932", 
   "location": "US", 
   "numBytes": "18127439075", 
   "numLongTermBytes": "18127439075", 

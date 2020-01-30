@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812692585", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 22 is made available here.", 
-  "etag": "RpEafig/YHT71EarswpZxQ==", 
+  "etag": "dzmMHzUvucz4rkOCjEzmcg==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 22", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr22", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767878058", 
+  "lastModifiedTime": "1580325162173", 
   "location": "US", 
   "numBytes": "8049539585", 
   "numLongTermBytes": "8049539585", 

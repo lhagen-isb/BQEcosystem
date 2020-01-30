@@ -1,7 +1,8 @@
 {
   "creationTime": "1485812174676", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 8 is made available here.", 
-  "etag": "2RQiZ4Lq2WqGc/TtC5+P5A==", 
+  "etag": "L2wvGr5hN+t4EVF37IMY9A==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 8", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr8", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768017310", 
+  "lastModifiedTime": "1580325176687", 
   "location": "US", 
   "numBytes": "18772497299", 
   "numLongTermBytes": "18772497299", 

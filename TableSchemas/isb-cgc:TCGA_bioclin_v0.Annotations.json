@@ -1,7 +1,8 @@
 {
   "creationTime": "1491850069101", 
   "description": "This data was generated from Annotations obtained from the TCGA DCC in June 2016. This annotation data for TCGA patient cases includes the GDC case identifier. It may have slight differences from the annotations available at the GDC.", 
-  "etag": "/VxVBcIAXiBOrwlSV0mPLg==", 
+  "etag": "ID5E06GefymeC9hQ50W46Q==", 
+  "friendlyName": "TCGA BIOCLINICAL ANNOTATIONS", 
   "id": "isb-cgc:TCGA_bioclin_v0.Annotations", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574195334861", 
+  "lastModifiedTime": "1580325281821", 
   "location": "US", 
   "numBytes": "1725830", 
   "numLongTermBytes": "1725830", 

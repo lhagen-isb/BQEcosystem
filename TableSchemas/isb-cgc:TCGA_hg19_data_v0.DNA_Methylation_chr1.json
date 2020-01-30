@@ -1,7 +1,8 @@
 {
   "creationTime": "1481752846166", 
   "description": "Data was extracted from GDC legacy archive on April 2017. DNA Methylation data was generated using Illumina Human Methylation 27k and 450k platforms. DNA Methylation data for chromosome 1 is made available here.", 
-  "etag": "k5Lu4xOguEG0Zu9f+osR+A==", 
+  "etag": "eoKXWqUG11lF1/HPabPkHQ==", 
+  "friendlyName": "TCGA HG19 DNA METHYLATION CHR 1", 
   "id": "isb-cgc:TCGA_hg19_data_v0.DNA_Methylation_chr1", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768068063", 
+  "lastModifiedTime": "1580325127738", 
   "location": "US", 
   "numBytes": "43546139863", 
   "numLongTermBytes": "43546139863", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1485986019864", 
   "description": "Data was extracted from the TCGA DCC on February 2017 for somatic mutation calls with each mutation call was annotated using Oncotator.", 
-  "etag": "BJyUObc05iMBA/gUwfKRmg==", 
+  "etag": "qJFAE59x6mEBgWQoJgkkQQ==", 
+  "friendlyName": "TCGA HG19 SOMATIC MUTATION DCC", 
   "id": "isb-cgc:TCGA_hg19_data_v0.Somatic_Mutation_DCC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574192570549", 
+  "lastModifiedTime": "1580325194725", 
   "location": "US", 
   "numBytes": "5699464441", 
   "numLongTermBytes": "5699464441", 
