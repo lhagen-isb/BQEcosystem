@@ -1,7 +1,8 @@
 {
   "creationTime": "1483561640015", 
   "description": "Data was extracted from GDC on January 2017 for DNA Methylation for chromosome 9 was generated using Illumina Human Methylation 27k and 450k platforms.", 
-  "etag": "wZQ595qGSoNdNDMp7E2w5Q==", 
+  "etag": "OidvqiBwHSvm1aqz8nYXEw==", 
+  "friendlyName": "TCGA HG38 DNA METHYLATION CHR 9", 
   "id": "isb-cgc:TCGA_hg38_data_v0.DNA_Methylation_chr9", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768063716", 
+  "lastModifiedTime": "1580325256860", 
   "location": "US", 
   "numBytes": "20570984183", 
   "numLongTermBytes": "20570984183", 

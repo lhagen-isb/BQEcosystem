@@ -1,7 +1,8 @@
 {
   "creationTime": "1461884268902", 
   "description": "Data was generated from metrics and metadata derived from URL reports generated from running FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) on the TCGA RNAseq FastQC files in June 2016.", 
-  "etag": "Blkmw7WYhjFXSQL24eXOJw==", 
+  "etag": "Al3peRARgdBprMOnOyIWDA==", 
+  "friendlyName": "TCGA RNASEQ FASTQC", 
   "id": "isb-cgc:tcga_seq_metadata.RNAseq_FastQC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767988670", 
+  "lastModifiedTime": "1580325498169", 
   "location": "US", 
   "numBytes": "37367051", 
   "numLongTermBytes": "37367051", 

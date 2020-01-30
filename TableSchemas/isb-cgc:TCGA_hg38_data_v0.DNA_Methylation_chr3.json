@@ -1,7 +1,8 @@
 {
   "creationTime": "1483561182735", 
   "description": "Data was extracted from GDC on January 2017 for DNA Methylation for chromosome 3 was generated using Illumina Human Methylation 27k and 450k platforms.", 
-  "etag": "nkIZCOQlVX/jwe0J8/S6JQ==", 
+  "etag": "YAesMuc6bDSeFDl7k7lhSg==", 
+  "friendlyName": "TCGA HG38 DNA METHYLATION CHR 3", 
   "id": "isb-cgc:TCGA_hg38_data_v0.DNA_Methylation_chr3", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768005578", 
+  "lastModifiedTime": "1580325242167", 
   "location": "US", 
   "numBytes": "50948670867", 
   "numLongTermBytes": "50948670867", 

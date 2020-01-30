@@ -1,7 +1,8 @@
 {
   "creationTime": "1495165667605", 
-  "description": "Data was extracted from .tsv files now found at https://cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Breast_Cancer derived from the following publication in Nature in 2017: \"Proteogenomics connects somatic mutations to signalling in breast cancer.\" CPTAC iTRAQ protein quantifications were calculated for a set of breast cancer samples. The samples are identified using the same TCGA barcodes that are used in other available TCGA tables in BigQuery, allowing for convenient integrative analyses. \nMore details: https://www.ncbi.nlm.nih.gov/pubmed/27251275", 
-  "etag": "hxtiLGCfevyu/C8R9HzgDw==", 
+  "description": "Data was extracted from .tsv files now found at https://cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Breast_Cancer derived from the following publication in Nature in 2017: \"Proteogenomics connects somatic mutations to signalling in breast cancer.\" CPTAC iTRAQ protein quantitations were calculated for a set of breast cancer samples. The samples are identified using the same TCGA barcodes that are used in other available TCGA tables in BigQuery, allowing for convenient integrative analyses. \nMore details: https://www.ncbi.nlm.nih.gov/pubmed/27251275", 
+  "etag": "Dy31gJxdkqubwmGbaF0SAA==", 
+  "friendlyName": "TCGA-BRCA ITRAQ PROTEOME QUANTITATION REPORT", 
   "id": "isb-cgc:hg19_data_previews.TCGA_Breast_BI_Proteome_CDAP_r2_itraq", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "cptac", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767707343", 
+  "lastModifiedTime": "1580325294826", 
   "location": "US", 
   "numBytes": "154700990", 
   "numLongTermBytes": "154700990", 

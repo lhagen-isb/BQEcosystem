@@ -1,7 +1,8 @@
 {
   "creationTime": "1472242989433", 
   "description": "Data was generated to map CGHub IDs to FastqQC reports in Sept 2016.", 
-  "etag": "vXRGDpZMWVW8KHd4oc7GKg==", 
+  "etag": "sY3h25BDb5I65vanMgAqIQ==", 
+  "friendlyName": "TCGA PICARD METRICS - BAM INDEX", 
   "id": "isb-cgc:tcga_seq_metadata.picard_bam_index_stats", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574199900533", 
+  "lastModifiedTime": "1580325490618", 
   "location": "US", 
   "numBytes": "429402627", 
   "numLongTermBytes": "429402627", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1470337230009", 
   "description": "Data was generated based on running Picard over ~67,000 TCGA bam files in Google Cloud Storage in August 2016.", 
-  "etag": "K9/eNnZRHzrbPsFnogKmAQ==", 
+  "etag": "vbCOtdfzuJen+PsQbdDVkg==", 
+  "friendlyName": "TCGA PICARD METRICS - BAM QUALITY YIELD", 
   "id": "isb-cgc:tcga_seq_metadata.picard_quality_yield_metrics", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767982770", 
+  "lastModifiedTime": "1580325493728", 
   "location": "US", 
   "numBytes": "9375750", 
   "numLongTermBytes": "9375750", 

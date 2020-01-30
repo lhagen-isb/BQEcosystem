@@ -1,7 +1,8 @@
 {
   "creationTime": "1494031929626", 
   "description": "Data was loaded from the UniProtKB idmapping database in May 2017 . This file has three columns, delimited by tab: UniProtKB-AC, ID_type, ID where ID_type is the database name as appearing in UniProtKB cross-references, and as supported by the ID mapping tool on the UniProt web site, http://www.uniprot.org/mapping and whereID is the identifier in that cross-referenced database. More Details: See the Readme for ID_mapping on https://www.uniprot.org/downloads", 
-  "etag": "4qOO6gmmm98g2NMt8GBnRw==", 
+  "etag": "mOGBJa6evZlww50jSvs43Q==", 
+  "friendlyName": "UNIPROTKB MAPPING", 
   "id": "isb-cgc:genome_reference.UniProtKB_idmapping", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "uniprot", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574741497419", 
+  "lastModifiedTime": "1580325313956", 
   "location": "US", 
   "numBytes": "153268906", 
   "numLongTermBytes": "153268906", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1483561418038", 
   "description": "Data was extracted from GDC on January 2017 for DNA Methylation for chromosome 6 was generated using Illumina Human Methylation 27k and 450k platforms.", 
-  "etag": "XMOfvWDIObs9ntw1G4BE1w==", 
+  "etag": "KNr1PZRh1mkvCBqSuTHxsQ==", 
+  "friendlyName": "TCGA HG38 DNA METHYLATION CHR 6", 
   "id": "isb-cgc:TCGA_hg38_data_v0.DNA_Methylation_chr6", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767991600", 
+  "lastModifiedTime": "1580325249565", 
   "location": "US", 
   "numBytes": "73399950737", 
   "numLongTermBytes": "73399950737", 

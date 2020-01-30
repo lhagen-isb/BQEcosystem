@@ -1,7 +1,8 @@
 {
   "creationTime": "1515731492647", 
   "description": "Data was extracted from release 10 of the active GDC archive on January 2018 for somatic mutation data. More details:https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-101", 
-  "etag": "wLZ4zyXwZW53Ue7bjwiTAw==", 
+  "etag": "2Gs/HM14+HgY6k2ffZGkjQ==", 
+  "friendlyName": "TCGA HG38 SOMATIC MUTATION", 
   "id": "isb-cgc:TCGA_hg38_data_v0.Somatic_Mutation", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767892174", 
+  "lastModifiedTime": "1580325272829", 
   "location": "US", 
   "numBytes": "7350369850", 
   "numLongTermBytes": "7350369850", 

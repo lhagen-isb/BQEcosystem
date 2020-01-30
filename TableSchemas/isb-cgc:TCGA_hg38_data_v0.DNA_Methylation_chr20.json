@@ -1,7 +1,8 @@
 {
   "creationTime": "1483562493615", 
   "description": "Data was extracted from GDC on January 2017 for DNA Methylation for chromosome 20 was generated using Illumina Human Methylation 27k and 450k platforms.", 
-  "etag": "nafLhlp3W1ke6kdhRlR+sg==", 
+  "etag": "nzFh0leYGDL288Wl0BKRQQ==", 
+  "friendlyName": "TCGA HG38 DNA METHYLATION CHR 20", 
   "id": "isb-cgc:TCGA_hg38_data_v0.DNA_Methylation_chr20", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767940558", 
+  "lastModifiedTime": "1580325235795", 
   "location": "US", 
   "numBytes": "21994701245", 
   "numLongTermBytes": "21994701245", 

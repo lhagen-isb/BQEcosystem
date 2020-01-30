@@ -1,7 +1,8 @@
 {
   "creationTime": "1483561019258", 
   "description": "Data was extracted from GDC on January 2017 for DNA Methylation for chromosome 2 was generated using Illumina Human Methylation 27k and 450k platforms.", 
-  "etag": "/hiL+PLdk1sb6HD/pulRbA==", 
+  "etag": "WsWht8JJEu7iYeJYVEWzWg==", 
+  "friendlyName": "TCGA HG38 DNA METHYLATION CHR 2", 
   "id": "isb-cgc:TCGA_hg38_data_v0.DNA_Methylation_chr2", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768010044", 
+  "lastModifiedTime": "1580325232922", 
   "location": "US", 
   "numBytes": "70659102714", 
   "numLongTermBytes": "70659102714", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1528643392653", 
   "description": "Data was generated from file metadata information for TCGA radiology images from June 2018.", 
-  "etag": "UveKPeY46g9WlwhlHpEl1g==", 
+  "etag": "JDRLip90YnRKRdXoMVwZGQ==", 
+  "friendlyName": "TCGA RADIOLOGY IMAGES", 
   "id": "isb-cgc:metadata.TCGA_radiology_images", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768085678", 
+  "lastModifiedTime": "1580325056131", 
   "location": "US", 
   "numBytes": "1099141248", 
   "numLongTermBytes": "1099141248", 

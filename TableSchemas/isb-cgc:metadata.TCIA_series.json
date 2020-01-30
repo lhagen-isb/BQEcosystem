@@ -1,7 +1,8 @@
 {
   "creationTime": "1496936358852", 
   "description": "Data was generated from file metadata from all series information in the Cancer Imaging Archive (TCIA) from June 2017. http://www.cancerimagingarchive.net/#collections-list", 
-  "etag": "rBgjJVdOz6jx3iR0yJLH4Q==", 
+  "etag": "SHxIsHT1ecOb1V6yF3b+Ow==", 
+  "friendlyName": "TCIA SERIES", 
   "id": "isb-cgc:metadata.TCIA_series", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574186788421", 
+  "lastModifiedTime": "1580325059797", 
   "location": "US", 
   "numBytes": "22854782", 
   "numLongTermBytes": "22854782", 

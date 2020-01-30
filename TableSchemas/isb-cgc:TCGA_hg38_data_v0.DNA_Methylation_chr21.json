@@ -1,7 +1,8 @@
 {
   "creationTime": "1483562532070", 
   "description": "Data was extracted from GDC on January 2017 for DNA Methylation for chromosome 21 was generated using Illumina Human Methylation 27k and 450k platforms.", 
-  "etag": "aPSdIxymqNZG8wYwx5N3rQ==", 
+  "etag": "qvsQG9VYw7lLasY2LuCyzQ==", 
+  "friendlyName": "TCGA HG38 DNA METHYLATION CHR 21", 
   "id": "isb-cgc:TCGA_hg38_data_v0.DNA_Methylation_chr21", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767937548", 
+  "lastModifiedTime": "1580325237508", 
   "location": "US", 
   "numBytes": "8187226030", 
   "numLongTermBytes": "8187226030", 

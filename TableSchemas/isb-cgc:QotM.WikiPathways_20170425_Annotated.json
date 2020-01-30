@@ -1,7 +1,8 @@
 {
   "creationTime": "1494361151045", 
   "description": "Data was loaded from WikiPathways on May 2017. Pathway annotations were loaded and 'tidied' into BigQuery. More details: https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/QueryOfTheMonthClub.html#may-2017", 
-  "etag": "nJ007cODzBDBBFzbVf9jQQ==", 
+  "etag": "vd72ZfEsVywkyiNBJWdgGg==", 
+  "friendlyName": "WIKIPATHWAYS ANNOTATED", 
   "id": "isb-cgc:QotM.WikiPathways_20170425_Annotated", 
   "kind": "bigquery#table", 
   "labels": {
@@ -9,9 +10,9 @@
     "category": "genomic_reference_database", 
     "data_type_0": "pathway_annotations", 
     "source_0": "isb_cgc-qotm", 
-    "status": "current"
+    "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574709832088", 
+  "lastModifiedTime": "1580325088967", 
   "location": "US", 
   "numBytes": "2641215", 
   "numLongTermBytes": "2641215", 

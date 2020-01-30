@@ -1,7 +1,8 @@
 {
   "creationTime": "1483561934908", 
   "description": "Data was extracted from GDC on January 2017 for DNA Methylation for chromosome 12 was generated using Illumina Human Methylation 27k and 450k platforms.", 
-  "etag": "SeFykYPBqmAuJ7fouy+8jg==", 
+  "etag": "bCBCfZV3v/L3hsjRJHSRag==", 
+  "friendlyName": "TCGA HG38 DNA METHYLATION CHR 12", 
   "id": "isb-cgc:TCGA_hg38_data_v0.DNA_Methylation_chr12", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767795662", 
+  "lastModifiedTime": "1580325215267", 
   "location": "US", 
   "numBytes": "50147596630", 
   "numLongTermBytes": "50147596630", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1471283568472", 
   "description": "Data was generated from viral read counts using the BioBloom Tool as part of the pancaner-panimmune study in August 2016. More details: https://gdc.cancer.gov/about-data/publications/panimmune", 
-  "etag": "oNnpFx99ULKmUc92AjBg5w==", 
+  "etag": "oCP1+4b084Tl0CAjslm5Cg==", 
+  "friendlyName": "TCGA RNASEQ BIOBLOOM TOOL", 
   "id": "isb-cgc:tcga_seq_metadata.RNASeq_BBT", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767919614", 
+  "lastModifiedTime": "1580325501254", 
   "location": "US", 
   "numBytes": "4191044", 
   "numLongTermBytes": "4191044", 

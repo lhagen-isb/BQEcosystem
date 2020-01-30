@@ -1,7 +1,8 @@
 {
   "creationTime": "1462148890613", 
   "description": "Data was generated from metrics and metadata derived from URL reports generated from running FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) on the TCGA WXS bam files in June 2016.", 
-  "etag": "xz3jGeprkm1kEsg3h+wZnA==", 
+  "etag": "97+3XbHNG0u6YVeNTl9F3Q==", 
+  "friendlyName": "TCGA WXS FASTQC", 
   "id": "isb-cgc:tcga_seq_metadata.WXS_FastQC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767974972", 
+  "lastModifiedTime": "1580325499686", 
   "location": "US", 
   "numBytes": "34926314", 
   "numLongTermBytes": "34926314", 

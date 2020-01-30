@@ -1,7 +1,8 @@
 {
   "creationTime": "1548971076945", 
   "description": "Data was extracted from release 14 active GDC archive from December 2018 for miRNA isoform expression. More details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-140", 
-  "etag": "ElBvKslv0PLjrfHKpf1gdw==", 
+  "etag": "kzGmDof0f0AUlnjJ/s7rmg==", 
+  "friendlyName": "TCGA HG38 MIRNASEQ ISOFORM EXPRESSION", 
   "id": "isb-cgc:TCGA_hg38_data_v0.miRNAseq_Isoform_Expression", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768106815", 
+  "lastModifiedTime": "1580325266233", 
   "location": "US", 
   "numBytes": "8115063402", 
   "numLongTermBytes": "8115063402", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1496936315642", 
   "description": "Data was generated from file metadata from all studies information in the Cancer Imaging Archive (TCIA) from June 2017. http://www.cancerimagingarchive.net/#collections-list", 
-  "etag": "umF7Rvh3lky27uuy/lO8eQ==", 
+  "etag": "aw4MPsYVRg3LSVbWgnX3jA==", 
+  "friendlyName": "TCIA STUDIES", 
   "id": "isb-cgc:metadata.TCIA_studies", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574186915318", 
+  "lastModifiedTime": "1580325062497", 
   "location": "US", 
   "numBytes": "2326518", 
   "numLongTermBytes": "2326518", 

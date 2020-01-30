@@ -1,7 +1,8 @@
 {
   "creationTime": "1548971128685", 
   "description": "Data was extracted from release 14 of the active GDC archive from December 2018 for miRNAseq expression data. More details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-140", 
-  "etag": "dr1zuNZcR4I3xshIpdPDjA==", 
+  "etag": "EEWMl6bqA0qeH4k6t7tVUA==", 
+  "friendlyName": "TCGA HG38 MIRNASEQ EXPRESSION", 
   "id": "isb-cgc:TCGA_hg38_data_v0.miRNAseq_Expression", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_1": "gdc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767693779", 
+  "lastModifiedTime": "1580325264092", 
   "location": "US", 
   "numBytes": "2209284960", 
   "numLongTermBytes": "2209284960", 
@@ -21,7 +22,7 @@
   "schema": {
     "fields": [
       {
-        "description": "Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.", 
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc", 
         "mode": "NULLABLE", 
         "name": "project_short_name", 
         "type": "STRING"

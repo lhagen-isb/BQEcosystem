@@ -1,7 +1,8 @@
 {
   "creationTime": "1495165699031", 
-  "description": "Data was extracted .tsv files now found at https://cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Ovarian_Cancer/ derived from the following publication in Nature in 2017: \"Proteogenomics connects somatic mutations to signalling in breast cancer\". Proteome quantifications was generated using the CPTAC iTRAQ protein quantifications for a set of ovarian cancer samples. The samples are identified using the same TCGA barcodes that are used in other available TCGA tables in BigQuery, allowing for convenient integrative analyses. \nMore details: https://www.ncbi.nlm.nih.gov/pubmed/27251275", 
-  "etag": "TdCFx3itEZC5ME6MkbOjCA==", 
+  "description": "Data was extracted .tsv files now found at https://cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Ovarian_Cancer/ derived from the following publication in Nature in 2017: \"Proteogenomics connects somatic mutations to signalling in breast cancer\". Proteome quantitations was generated using the CPTAC iTRAQ protein quantitations for a set of ovarian cancer samples. The samples are identified using the same TCGA barcodes that are used in other available TCGA tables in BigQuery, allowing for convenient integrative analyses. \nMore details: https://www.ncbi.nlm.nih.gov/pubmed/27251275", 
+  "etag": "WhfRrjtfTfWt/blTgz4r2A==", 
+  "friendlyName": "TCGA-OV ITRAQ PNNL PROTEOME QUANTITATION REPORT ", 
   "id": "isb-cgc:hg19_data_previews.TCGA_Ovarian_PNNL_Proteome_CDAP_r2_itraq", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "cptac", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767701495", 
+  "lastModifiedTime": "1580325301117", 
   "location": "US", 
   "numBytes": "76769888", 
   "numLongTermBytes": "76769888", 

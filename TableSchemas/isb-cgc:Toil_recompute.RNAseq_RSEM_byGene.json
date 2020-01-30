@@ -1,7 +1,8 @@
 {
   "creationTime": "1470333121037", 
   "description": "Data was loaded from data made available by the UCSC TOIL RNA-seq recompute project. The goal of the project was to process ~20,000 RNA-seq samples to create a consistent meta-analysis of four datasets free of computational batch effects used to compare TCGA cohorts to TARGET or GTEx cohorts. This table contains RNAseq data loaded by the RSEM pipeline organized by gene. More Details: https://xenabrowser.net/datapages/?cohort=TCGA%20TARGET%20GTEx&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443", 
-  "etag": "exvcQvX/7DzvHmSVCtGCCA==", 
+  "etag": "SWVn5NNbCgA1wz4EKLPfDQ==", 
+  "friendlyName": "TOIL RNASEQ RECOMPUTE - RNASEQ RSEM BY GENE", 
   "id": "isb-cgc:Toil_recompute.RNAseq_RSEM_byGene", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_0": "ucsc_xena", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574191759681", 
+  "lastModifiedTime": "1580325309289", 
   "location": "US", 
   "numBytes": "98178841290", 
   "numLongTermBytes": "98178841290", 

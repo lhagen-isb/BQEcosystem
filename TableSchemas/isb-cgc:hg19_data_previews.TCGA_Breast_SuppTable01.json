@@ -1,7 +1,8 @@
 {
   "creationTime": "1490140941840", 
   "description": "Data was extracted from the supplementary table 1 (NIHMS778057-supplement-supp_table1.xlsx) from the publication in 2017: \"Proteogenomics connects somatic mutations to signalling in breast cancer\". https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5102256/", 
-  "etag": "u4an7v6SNq7fFJcYlWIt0A==", 
+  "etag": "yPU1CQSUkNTOVVtmT3eO0w==", 
+  "friendlyName": "TCGA-BRCA PUBMED-ID 27251275 - SUPPTABLE01", 
   "id": "isb-cgc:hg19_data_previews.TCGA_Breast_SuppTable01", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "cptac", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768052393", 
+  "lastModifiedTime": "1580325288349", 
   "location": "US", 
   "numBytes": "22923", 
   "numLongTermBytes": "22923", 
