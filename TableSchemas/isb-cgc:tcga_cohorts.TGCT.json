@@ -1,7 +1,8 @@
 {
   "creationTime": "1469828229313", 
   "description": "Data was generated from a curated cohort table for TCGA UCS study in June 2016. This study consists of 57 unique patients and 112 unique samples", 
-  "etag": "8TZBB+0BiU3DHhu8/cEh6w==", 
+  "etag": "hZz8dvYbBX125yWHTdCDSw==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-TGCT", 
   "id": "isb-cgc:tcga_cohorts.TGCT", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767782578", 
+  "lastModifiedTime": "1580325476975", 
   "location": "US", 
   "numBytes": "9664", 
   "numLongTermBytes": "9664", 

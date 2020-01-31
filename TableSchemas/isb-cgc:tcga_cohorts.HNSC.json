@@ -1,7 +1,8 @@
 {
   "creationTime": "1469825108646", 
   "description": "Data was generated from a curated cohort table for TCGA HNSC study in June 2016. This study consists of 523 unique patients and 1093 unique samples.", 
-  "etag": "KmkzGYl8tb1Auf63iFrqTA==", 
+  "etag": "6uzNEQR+RgvkFs9nNsjstA==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-HNSC", 
   "id": "isb-cgc:tcga_cohorts.HNSC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767733919", 
+  "lastModifiedTime": "1580325439282", 
   "location": "US", 
   "numBytes": "34976", 
   "numLongTermBytes": "34976", 

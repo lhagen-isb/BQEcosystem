@@ -1,7 +1,8 @@
 {
   "creationTime": "1469827967046", 
   "description": "Data was generated from a curated cohort table for TCGA SKCM study in June 2016. This study consists of 470 unique patients and 940 unique samples.", 
-  "etag": "9XhIYeAElGi1mR9v8TtjJg==", 
+  "etag": "bLLpWZn0MWPxZKGmSksZ9A==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-SKCM", 
   "id": "isb-cgc:tcga_cohorts.SKCM", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768030355", 
+  "lastModifiedTime": "1580325472768", 
   "location": "US", 
   "numBytes": "30080", 
   "numLongTermBytes": "30080", 

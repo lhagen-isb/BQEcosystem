@@ -1,7 +1,8 @@
 {
   "creationTime": "1469828518211", 
   "description": "Data was generated from a curated cohort table for TCGA THYM study in June 2016. This study consists of 124 unique patients and 249 unique samples.", 
-  "etag": "7/AjEyLOr9lPW1rjqxPD3w==", 
+  "etag": "JTVJls50q1s0CbXkwj9t2Q==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-THYM", 
   "id": "isb-cgc:tcga_cohorts.THYM", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768076812", 
+  "lastModifiedTime": "1580325481191", 
   "location": "US", 
   "numBytes": "7968", 
   "numLongTermBytes": "7968", 

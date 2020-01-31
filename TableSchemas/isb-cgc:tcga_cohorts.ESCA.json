@@ -1,7 +1,8 @@
 {
   "creationTime": "1469824828471", 
   "description": "Data was generated from a curated cohort table for TCGA ESCA study in June 2016. This study consists of 183 unique patients and 367 unique samples.", 
-  "etag": "IkWt4KuKP76xIfyi2RZ5/w==", 
+  "etag": "utBCp0xXQGavar9h4v/ceQ==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-ESCA", 
   "id": "isb-cgc:tcga_cohorts.ESCA", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767947919", 
+  "lastModifiedTime": "1580325435016", 
   "location": "US", 
   "numBytes": "11744", 
   "numLongTermBytes": "11744", 

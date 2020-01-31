@@ -1,7 +1,8 @@
 {
   "creationTime": "1469824547265", 
   "description": "Data was generated from a curated cohort table for TCGA CESC study in June 2016. This study consists of 306 unique patients and 597 unique samples.", 
-  "etag": "wag36/JbNPdNU7X6AF2SRQ==", 
+  "etag": "pm4QBJAZmSTI8VJCfwZtPQ==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-CESC", 
   "id": "isb-cgc:tcga_cohorts.CESC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767817424", 
+  "lastModifiedTime": "1580325427462", 
   "location": "US", 
   "numBytes": "19104", 
   "numLongTermBytes": "19104", 

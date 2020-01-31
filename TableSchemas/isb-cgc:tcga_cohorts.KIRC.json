@@ -1,7 +1,8 @@
 {
   "creationTime": "1469825321076", 
   "description": "Data was generated from a curated cohort table for TCGA KIRP study in June 2016. This study consists of 286 unique patients and 586 unique samples.", 
-  "etag": "cWdM3q5QJTBIDW5lCxe+eQ==", 
+  "etag": "RObnMRHwP7H2Cibx1lHVgA==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-KIRC", 
   "id": "isb-cgc:tcga_cohorts.KIRC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767850284", 
+  "lastModifiedTime": "1580325443556", 
   "location": "US", 
   "numBytes": "33632", 
   "numLongTermBytes": "33632", 

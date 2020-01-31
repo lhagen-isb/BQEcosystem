@@ -1,7 +1,8 @@
 {
   "creationTime": "1469825879862", 
   "description": "Data was generated from a curated cohort table for TCGA LUAD study in June 2016. This study consists of 575 unique patients and 1164 unique samples.", 
-  "etag": "22EDlA3WP8m7p4pvBahw6g==", 
+  "etag": "uzeS+pLkmdmHAND9TmKOtA==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-LUAD", 
   "id": "isb-cgc:tcga_cohorts.LUAD", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767774393", 
+  "lastModifiedTime": "1580325456185", 
   "location": "US", 
   "numBytes": "37248", 
   "numLongTermBytes": "37248", 

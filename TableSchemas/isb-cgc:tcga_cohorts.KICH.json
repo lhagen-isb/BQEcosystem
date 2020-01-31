@@ -1,7 +1,8 @@
 {
   "creationTime": "1469825258772", 
   "description": "Data was generated from a curated cohort table for TCGA KICH study in June 2016. This study consists of 65 unique patients and 130 unique samples", 
-  "etag": "3/dEOQWQDlOXHlEjpzkL6Q==", 
+  "etag": "ogTQzxOZnLVQIdEMeSXhtA==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-KICH", 
   "id": "isb-cgc:tcga_cohorts.KICH", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767992999", 
+  "lastModifiedTime": "1580325440929", 
   "location": "US", 
   "numBytes": "4160", 
   "numLongTermBytes": "4160", 

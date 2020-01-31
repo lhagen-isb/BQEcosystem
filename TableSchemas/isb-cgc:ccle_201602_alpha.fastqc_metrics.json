@@ -1,7 +1,8 @@
 {
   "creationTime": "1459222417029", 
   "description": "Data was extracted from an older CCLE dataset from Google Genomics on February 2016. Fastqc metric data and deprecated google cloud storage path information are made available here.", 
-  "etag": "mM5ZbrFcCLrEcnYEqoEdCQ==", 
+  "etag": "PAXhwvzrUVRriAfYJmV98A==", 
+  "friendlyName": "CCLE 2016 - FASTQC METRICS", 
   "id": "isb-cgc:ccle_201602_alpha.fastqc_metrics", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "ccle", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574111138824", 
+  "lastModifiedTime": "1580324858421", 
   "location": "US", 
   "numBytes": "1475847", 
   "numLongTermBytes": "1475847", 

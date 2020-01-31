@@ -1,7 +1,8 @@
 {
   "creationTime": "1466802419595", 
   "description": "Data was generated from the final CGHub Manifest prior to the transition of all data to the Genomic Data Commons in June 2016. More details: https://docs.gdc.cancer.gov/Encyclopedia/pages/Cancer_Genomics_Hub/", 
-  "etag": "L4B9WtFa/uH2cC28OsSleA==", 
+  "etag": "9TXCRGnZjBMhLjtJzKFiNA==", 
+  "friendlyName": "CGHUB MANIFEST", 
   "id": "isb-cgc:tcga_seq_metadata.CGHub_Manifest_24jun2016", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1574198873164", 
+  "lastModifiedTime": "1580325417150", 
   "location": "US", 
   "numBytes": "78617876", 
   "numLongTermBytes": "78617876", 

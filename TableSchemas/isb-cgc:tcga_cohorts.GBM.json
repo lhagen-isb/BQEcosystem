@@ -1,7 +1,8 @@
 {
   "creationTime": "1469824875129", 
   "description": "Data was generated from a curated cohort table for TCGA GBM study in June 2016. This study consists of 539 unique patients and 1064 unique samples.", 
-  "etag": "eAMOQpEMNoXZ+iPN1ew25g==", 
+  "etag": "xtxRrZjFJoPICktBpMcUtQ==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-GBM", 
   "id": "isb-cgc:tcga_cohorts.GBM", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767682691", 
+  "lastModifiedTime": "1580325436595", 
   "location": "US", 
   "numBytes": "34048", 
   "numLongTermBytes": "34048", 

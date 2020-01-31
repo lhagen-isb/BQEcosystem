@@ -1,7 +1,8 @@
 {
   "creationTime": "1469823430329", 
   "description": "Data was generated from a curated cohort table for TCGA CHOL study in June 2016. This study consists of 36 unique patients and 85 unique samples", 
-  "etag": "DcLCUklBMwIhgl51KkTX6Q==", 
+  "etag": "kSeZRgWxl4H4tgZzjJAd3Q==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-CHOL", 
   "id": "isb-cgc:tcga_cohorts.CHOL", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767713129", 
+  "lastModifiedTime": "1580325429017", 
   "location": "US", 
   "numBytes": "2720", 
   "numLongTermBytes": "2720", 

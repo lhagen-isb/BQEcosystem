@@ -1,7 +1,8 @@
 {
   "creationTime": "1469827194764", 
   "description": "Data was generated from a curated cohort table for TCGA PAAD study in June 2016. This study consists of 184 unique patients and 364 unique samples.", 
-  "etag": "LjUOM8HqiAe5IswnWKhHzg==", 
+  "etag": "X2F2x6H47dSdFqIAzLc+/Q==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-PAAD", 
   "id": "isb-cgc:tcga_cohorts.PAAD", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767828059", 
+  "lastModifiedTime": "1580325462372", 
   "location": "US", 
   "numBytes": "11648", 
   "numLongTermBytes": "11648", 

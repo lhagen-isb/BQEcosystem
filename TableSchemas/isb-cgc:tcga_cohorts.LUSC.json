@@ -1,7 +1,8 @@
 {
   "creationTime": "1469825966515", 
   "description": "Data was generated from a curated cohort table for TCGA LUSC study in June 2016. This study consists of 488 unique patients and 1007 unique samples..", 
-  "etag": "yTlqhzQiCifYmGY6lmDK/w==", 
+  "etag": "dtZPwwABgjT3m397z5hfGg==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-LUSC", 
   "id": "isb-cgc:tcga_cohorts.LUSC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767809599", 
+  "lastModifiedTime": "1580325457709", 
   "location": "US", 
   "numBytes": "32224", 
   "numLongTermBytes": "32224", 

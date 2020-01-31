@@ -1,7 +1,8 @@
 {
   "creationTime": "1498523282009", 
   "description": "Data was generated to map the CGHub ID to the Google Cloud Storage bucket locations in June 2017.", 
-  "etag": "ESECOXe9n8DDKiFezwZ/Vw==", 
+  "etag": "qPRkeJs02RXpQZvbYlgPWg==", 
+  "friendlyName": "CGHUBID TO GCSURL", 
   "id": "isb-cgc:tcga_seq_metadata.CGHubID_to_GCSurl", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767797240", 
+  "lastModifiedTime": "1580325418800", 
   "location": "US", 
   "numBytes": "24984997", 
   "numLongTermBytes": "24984997", 

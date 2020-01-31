@@ -1,7 +1,8 @@
 {
   "creationTime": "1462730492961", 
   "description": "Data was loaded from\u00a0the \"ENSEMBL to All pathways mapping file\" downloaded from the Reactome.org site on May 8th, 2016. More details: see http://www.reactome.org/download/current/Ensembl2Reactome_All_Levels.txt. For more information about the Reactome project, please see these recent publications: Fabregat et al. 2016 http://www.ncbi.nlm.nih.gov/pubmed/26656494; Milacic et al. 2012 http://www.ncbi.nlm.nih.gov/pubmed/24243840", 
-  "etag": "mDP4sEaqKZasNx7dOo9chA==", 
+  "etag": "HGv6myqeHF82mP7BaWNaWA==", 
+  "friendlyName": "ENSEMBL2REACTOME", 
   "id": "isb-cgc:genome_reference.Ensembl2Reactome", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "ensembl2reactome", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573768075443", 
+  "lastModifiedTime": "1580324879898", 
   "location": "US", 
   "numBytes": "289984", 
   "numLongTermBytes": "289984", 

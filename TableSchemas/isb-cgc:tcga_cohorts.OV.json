@@ -1,7 +1,8 @@
 {
   "creationTime": "1469827098730", 
   "description": "Data was generated from a curated cohort table for TCGA OV study in June 2016. This study consists of 600 unique patients and 1175 unique samples.", 
-  "etag": "pE8gdt/ESdorLj3U/Qglqw==", 
+  "etag": "HLdFLI7193GgJOYewyQmGw==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-OV", 
   "id": "isb-cgc:tcga_cohorts.OV", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767754354", 
+  "lastModifiedTime": "1580325460765", 
   "location": "US", 
   "numBytes": "37600", 
   "numLongTermBytes": "37600", 

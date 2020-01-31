@@ -1,7 +1,8 @@
 {
   "creationTime": "1516836320177", 
   "description": "Data was generated to map bam files and their corresponding index (bai) files stored in Google Cloud Storage from GDC release 10 from January 2018.", 
-  "etag": "EcS0Ld72/1kmfsJOMtISOw==", 
+  "etag": "Jw98SUw5eVFYEF9Dw/90PA==", 
+  "friendlyName": "BAM - BAI PAIRS IN GCS", 
   "id": "isb-cgc:metadata.bam_bai_pairs_in_gcs", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "gdc", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767848609", 
+  "lastModifiedTime": "1580325316759", 
   "location": "US", 
   "numBytes": "41909466", 
   "numLongTermBytes": "41909466", 

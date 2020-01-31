@@ -1,7 +1,8 @@
 {
   "creationTime": "1469825526204", 
   "description": "Data was generated from a curated cohort table for TCGA LGG study in June 2016. This study consists of 514 unique patients and 1018 unique samples.", 
-  "etag": "Wt1DUgZHnOX6RudiP2RC5w==", 
+  "etag": "mpFScSQ44q9CUn+1zkzRYQ==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-LGG", 
   "id": "isb-cgc:tcga_cohorts.LGG", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768111163", 
+  "lastModifiedTime": "1580325452104", 
   "location": "US", 
   "numBytes": "32576", 
   "numLongTermBytes": "32576", 

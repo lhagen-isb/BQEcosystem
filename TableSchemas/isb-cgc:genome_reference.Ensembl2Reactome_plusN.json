@@ -1,7 +1,8 @@
 {
   "creationTime": "1462838662056", 
   "description": "Data was loaded from the isb-cgc:genome_reference.Ensembl2Reactometable in May 2016. It contains a single additional field in each row which is the pathway_size. More details: see the Ensembl2Reactome table description.", 
-  "etag": "ornJsCBDqbE79U4OrnRBnw==", 
+  "etag": "V9hvsZTYji5HhINfppeuhg==", 
+  "friendlyName": "ENSEMBL2REACTOME PATHWAY SIZE", 
   "id": "isb-cgc:genome_reference.Ensembl2Reactome_plusN", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "reactome", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573767752711", 
+  "lastModifiedTime": "1580324881868", 
   "location": "US", 
   "numBytes": "306368", 
   "numLongTermBytes": "306368", 

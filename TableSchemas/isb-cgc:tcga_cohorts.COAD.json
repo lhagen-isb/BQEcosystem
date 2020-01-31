@@ -1,7 +1,8 @@
 {
   "creationTime": "1469824482209", 
   "description": "Data was generated from a curated cohort table for TCGA COAD study in June 2016. This study consists of 445 unique patients and 911 unique samples.", 
-  "etag": "PXuUuasmheUVilvxpYqYfA==", 
+  "etag": "QoGxByQBMJKX02eAXquRrw==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-COAD", 
   "id": "isb-cgc:tcga_cohorts.COAD", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767747862", 
+  "lastModifiedTime": "1580325430503", 
   "location": "US", 
   "numBytes": "29152", 
   "numLongTermBytes": "29152", 

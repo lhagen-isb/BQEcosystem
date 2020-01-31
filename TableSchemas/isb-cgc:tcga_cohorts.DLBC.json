@@ -1,7 +1,8 @@
 {
   "creationTime": "1469824631085", 
   "description": "Data was generated from a curated cohort table for TCGA DLBC study in June 2016. This study consists of 50 unique patients and 98 unique samples.unique", 
-  "etag": "lYGqMXTw4Cw4jZGR47OErQ==", 
+  "etag": "rzmxmQ/FU5C7+tJrD5/Zmg==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-DLBC", 
   "id": "isb-cgc:tcga_cohorts.DLBC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767834564", 
+  "lastModifiedTime": "1580325432294", 
   "location": "US", 
   "numBytes": "3136", 
   "numLongTermBytes": "3136", 

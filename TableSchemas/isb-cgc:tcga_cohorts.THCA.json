@@ -1,7 +1,8 @@
 {
   "creationTime": "1469828375222", 
   "description": "Data was generated from a curated cohort table for TCGA THCA study in June 2016. This study consists of 503 unique patients and 1021 unique samples", 
-  "etag": "lL/f08BNr1g6eaNRBF+OyQ==", 
+  "etag": "63be+4bOyZefSqtPrXf8MA==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-THCA", 
   "id": "isb-cgc:tcga_cohorts.THCA", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767711655", 
+  "lastModifiedTime": "1580325478567", 
   "location": "US", 
   "numBytes": "32672", 
   "numLongTermBytes": "32672", 

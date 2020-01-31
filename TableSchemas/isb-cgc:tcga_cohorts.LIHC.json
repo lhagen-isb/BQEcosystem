@@ -1,7 +1,8 @@
 {
   "creationTime": "1469825588638", 
   "description": "Data was generated from a curated cohort table for TCGA LIHC study in June 2016. This study consists of 374 unique patients and 766 unique samples", 
-  "etag": "oFBMyNnoDSt/2l/w/yTmfw==", 
+  "etag": "n2hME5lPmqu2Dy48CCHiDQ==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-LIHC", 
   "id": "isb-cgc:tcga_cohorts.LIHC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768056825", 
+  "lastModifiedTime": "1580325454669", 
   "location": "US", 
   "numBytes": "24512", 
   "numLongTermBytes": "24512", 

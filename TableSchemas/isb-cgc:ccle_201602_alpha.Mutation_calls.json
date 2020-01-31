@@ -1,7 +1,8 @@
 {
   "creationTime": "1456501727325", 
   "description": "Data was extracted from an older CCLE dataset from Google Genomics on February 2016. Mutation calls was extracted using the file CCLE_hybrid_capture1650_hg19_NoCommonSNPs_NoNeutralVariants_CDS_2012.05.07.maf.gz.", 
-  "etag": "+d2sEajESeDh+vmnN0UXmg==", 
+  "etag": "4hG83SJzq6jbcgxmrM3rnw==", 
+  "friendlyName": "CCLE 2016 - SOMATIC MUTATION", 
   "id": "isb-cgc:ccle_201602_alpha.Mutation_calls", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "ccle", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574194645086", 
+  "lastModifiedTime": "1580324855504", 
   "location": "US", 
   "numBytes": "190399218", 
   "numLongTermBytes": "190399218", 

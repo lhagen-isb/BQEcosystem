@@ -1,7 +1,8 @@
 {
   "creationTime": "1523938396284", 
   "description": "Data was loaded from the ClinVar release created on April 1, 2018. The ClinVar data was loaded from a VCF file downloaded from NCBI and uploaded into BigQuery using the Google Variant Transforms tool (v0.2.0). More details: see https://www.ncbi.nlm.nih.gov/variation/docs/ClinVar_vcf_files/ and https://github.com/googlegenomics/gcp-variant-transforms", 
-  "etag": "UvTz/JQ23+7MMjFCQHAOIg==", 
+  "etag": "okI58AbYfMhZ1ff3TTVD4Q==", 
+  "friendlyName": "CLINVAR 20180401 GRCH38", 
   "id": "isb-cgc:genome_reference.ClinVar_20180401_GRCh38", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "clinvar", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573834892850", 
+  "lastModifiedTime": "1580324868308", 
   "location": "US", 
   "numBytes": "124761377", 
   "numLongTermBytes": "124761377", 

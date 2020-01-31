@@ -1,7 +1,8 @@
 {
   "creationTime": "1554407407818", 
   "description": "Data was extracted from the CCLE program in April 2019. This table contains sample data for CCLE primary cell lines. More details: see https://portals.broadinstitute.org/ccle/about", 
-  "etag": "VElvmCgK6EL4iwJnABNMGw==", 
+  "etag": "c5ohD/9DSL2xoZGZKmJrFA==", 
+  "friendlyName": "CCLE BIOSPECIMEN V0", 
   "id": "isb-cgc:CCLE_bioclin_v0.biospecimen_v0", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "ccle", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574194320231", 
+  "lastModifiedTime": "1580324861271", 
   "location": "US", 
   "numBytes": "107999", 
   "numLongTermBytes": "107999", 

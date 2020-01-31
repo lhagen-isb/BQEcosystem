@@ -1,7 +1,8 @@
 {
   "creationTime": "1469824029688", 
   "description": "Data was generated from a curated cohort table for TCGA BLCA study in June 2016. This study consists of 412 unique patients and 806 unique samples.", 
-  "etag": "GqTolm1FV+Llscf3SA9qLA==", 
+  "etag": "CXy67ZJubNtoxZ/FsSeoqQ==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-BLCA", 
   "id": "isb-cgc:tcga_cohorts.BLCA", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768102080", 
+  "lastModifiedTime": "1580325422155", 
   "location": "US", 
   "numBytes": "25792", 
   "numLongTermBytes": "25792", 

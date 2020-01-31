@@ -1,0 +1,159 @@
+{
+  "creationTime": "1551994127513", 
+  "description": "Data was generated from file metadata for CCLE data in the GDC active archive for release 14 from December 2018. More details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-140", 
+  "etag": "V4qk0FdtyqtXVQFkAzOEng==", 
+  "friendlyName": "CCLE HG19 METADATA RELEASE 14", 
+  "id": "isb-cgc:CCLE_hg19_data_v0.ccle_metadata_data_hg19_r14", 
+  "kind": "bigquery#table", 
+  "labels": {
+    "access": "open", 
+    "category": "file_metadata", 
+    "data_type_0": "file_metadata", 
+    "reference_genome_0": "hg19", 
+    "source_0": "ccle", 
+    "source_1": "gdc", 
+    "status": "current"
+  }, 
+  "lastModifiedTime": "1580324864831", 
+  "location": "US", 
+  "numBytes": "578421", 
+  "numLongTermBytes": "578421", 
+  "numRows": "1273", 
+  "schema": {
+    "fields": [
+      {
+        "description": "Unique GDC identifier for this file (corresponds to the file_barcode) -- this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba16", 
+        "mode": "NULLABLE", 
+        "name": "file_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC unique identifier for this case (corresponds to the case_barcode) -- this can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba16", 
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Case barcode e.g. EJM", 
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this sample (corresponds to the sample_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5 -- this can be used to access more information from the GDC data portal", 
+        "mode": "NULLABLE", 
+        "name": "sample_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "CCLE sample barcode  eg CCLE-EJM", 
+        "mode": "NULLABLE", 
+        "name": "sample_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Project name abbreviation, CCLE-MM", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "A code representing the type of cancer, e.g. MM", 
+        "mode": "NULLABLE", 
+        "name": "disease_code", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program Name, always CCLE in this table", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental source of the data type, eg Tissue slide image, RNA-Seq", 
+        "mode": "NULLABLE", 
+        "name": "data_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Category description of the underlying data, eg Clinical, Raw Sequencing Data, Simple Nucleotide Variation, Transcriptome Profiling , etc", 
+        "mode": "NULLABLE", 
+        "name": "data_category", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental strategy used to generate data (where applicable) e.g. WXS, RNA-Seq", 
+        "mode": "NULLABLE", 
+        "name": "experimental_strategy", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Description of the data, eg. clinical_supplement, aligned_reads", 
+        "mode": "NULLABLE", 
+        "name": "type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The size of a file measured in bytes (B), kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB), and larger values.", 
+        "mode": "NULLABLE", 
+        "name": "file_size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "File format of the underlying data, eg BCR XML, BAM", 
+        "mode": "NULLABLE", 
+        "name": "data_format", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate these data (null, Illumina)", 
+        "mode": "NULLABLE", 
+        "name": "platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GCS path to original bam or vcf file", 
+        "mode": "NULLABLE", 
+        "name": "file_name_key", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "BAM or VCF index file GDC file UUID", 
+        "mode": "NULLABLE", 
+        "name": "index_file_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC path to original vcf or bam index file", 
+        "mode": "NULLABLE", 
+        "name": "index_file_name_key", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The size of a file measured in bytes (B), kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB), and larger values.", 
+        "mode": "NULLABLE", 
+        "name": "index_file_size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Data accessibility policy (open or controlled)", 
+        "mode": "NULLABLE", 
+        "name": "access", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Access Control List -- if access is controlled, this field contains the dbGaP accession, eg phs000179", 
+        "mode": "NULLABLE", 
+        "name": "acl", 
+        "type": "STRING"
+      }
+    ]
+  }, 
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/isb-cgc/datasets/CCLE_hg19_data_v0/tables/ccle_metadata_data_hg19_r14", 
+  "tableReference": {
+    "datasetId": "CCLE_hg19_data_v0", 
+    "projectId": "isb-cgc", 
+    "tableId": "ccle_metadata_data_hg19_r14"
+  }, 
+  "type": "TABLE"
+}

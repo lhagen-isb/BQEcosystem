@@ -1,7 +1,8 @@
 {
   "creationTime": "1469826453574", 
   "description": "Data was generated from a curated cohort table for TCGA MESO study in June 2016. This study consists of 87 unique patients and 172 unique samples.", 
-  "etag": "mcflv3tdu/+A1a427ymL/w==", 
+  "etag": "Ux5wp1N489oSy4KG6PNMbg==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-MESO", 
   "id": "isb-cgc:tcga_cohorts.MESO", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767769952", 
+  "lastModifiedTime": "1580325459294", 
   "location": "US", 
   "numBytes": "5504", 
   "numLongTermBytes": "5504", 

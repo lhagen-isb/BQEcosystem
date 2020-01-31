@@ -1,7 +1,8 @@
 {
   "creationTime": "1456501751879", 
   "description": "Data was extracted from an older CCLE dataset from Google Genomics on February 2016. Cell line annotations was extracted using the file: CCLE_sample_info_file_2012-10-18.txt.", 
-  "etag": "vLQkk0b2qeX2uBrwH1AcLA==", 
+  "etag": "qqN9OYylyZq9jFz/wq+8Ng==", 
+  "friendlyName": "CCLE 2016 - SAMPLE INFORMATION", 
   "id": "isb-cgc:ccle_201602_alpha.Sample_information", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "ccle", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574200872944", 
+  "lastModifiedTime": "1580324853731", 
   "location": "US", 
   "numBytes": "140641", 
   "numLongTermBytes": "140641", 

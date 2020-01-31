@@ -1,7 +1,8 @@
 {
   "creationTime": "1483584985990", 
   "description": "Data was loaded from the Ensembl gene-set, Release 75, dated December 2014. This Homo sapiens, GRCh37 data was downloaded using the Ensemble GTF (ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz). More details: see README at ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/README. The Ensembl license is at http://uswest.ensembl.org/info/about/legal/code_licence.html", 
-  "etag": "XtdQZJanCF/IsmTg4hjVjg==", 
+  "etag": "tG2m0LWSXo3IQPztyQjZsQ==", 
+  "friendlyName": "ENSEMBL GRCH37 v75", 
   "id": "isb-cgc:genome_reference.Ensembl_GRCh37_75", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "ensembl", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573835792608", 
+  "lastModifiedTime": "1580324875247", 
   "location": "US", 
   "numBytes": "447474806", 
   "numLongTermBytes": "447474806", 

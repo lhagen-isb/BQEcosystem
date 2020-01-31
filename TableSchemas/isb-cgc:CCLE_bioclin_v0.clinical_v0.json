@@ -1,7 +1,8 @@
 {
   "creationTime": "1484702826826", 
   "description": "Data was extracted from the CCLE program in January 2017. The table contains clinical information for CCLE primary cell lines. \nMore details: see https://portals.broadinstitute.org/ccle/about", 
-  "etag": "l1JoFksSs1bYFMh6aLmblQ==", 
+  "etag": "eLaLgArFZKRrIuj8YhUh5w==", 
+  "friendlyName": "CCLE CLINICAL V0", 
   "id": "isb-cgc:CCLE_bioclin_v0.clinical_v0", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "ccle", 
     "status": "archived"
   }, 
-  "lastModifiedTime": "1574194396269", 
+  "lastModifiedTime": "1580325503919", 
   "location": "US", 
   "numBytes": "200661", 
   "numLongTermBytes": "200661", 

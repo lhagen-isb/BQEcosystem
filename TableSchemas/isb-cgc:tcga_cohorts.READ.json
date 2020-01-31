@@ -1,7 +1,8 @@
 {
   "creationTime": "1469827641158", 
   "description": "Data was generated from a curated cohort table for TCGA READ study in June 2016. This study consists of 157 unique patients and 300 unique samples.", 
-  "etag": "oOgrTQFPEny0o9Lp4LGzFA==", 
+  "etag": "xZb80BmdixrAJMAo8WZacw==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-READ", 
   "id": "isb-cgc:tcga_cohorts.READ", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767999245", 
+  "lastModifiedTime": "1580325469379", 
   "location": "US", 
   "numBytes": "9600", 
   "numLongTermBytes": "9600", 

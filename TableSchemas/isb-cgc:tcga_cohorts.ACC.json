@@ -1,7 +1,8 @@
 {
   "creationTime": "1469823646650", 
   "description": "Data was generated from a curated cohort table for TCGA ACC study in June 2016. This study consists of 91 unique patients and 180 unique samples.", 
-  "etag": "9wKZWqYAkgZBLzKpuRF3JA==", 
+  "etag": "lKzScUHbshao3vxEk3htew==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-ACC", 
   "id": "isb-cgc:tcga_cohorts.ACC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768081239", 
+  "lastModifiedTime": "1580325420478", 
   "location": "US", 
   "numBytes": "5760", 
   "numLongTermBytes": "5760", 

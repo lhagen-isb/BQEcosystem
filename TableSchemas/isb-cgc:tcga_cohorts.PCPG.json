@@ -1,7 +1,8 @@
 {
   "creationTime": "1469827265615", 
   "description": "Data was generated from a curated cohort table for TCGA PCPG study in June 2016. This study consists of 178 unique patients and 362 unique samples", 
-  "etag": "uZL3BShRILssJVls3eIlsw==", 
+  "etag": "sDJ31CFTUD8zG+NavilOPw==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-PCPG", 
   "id": "isb-cgc:tcga_cohorts.PCPG", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767790881", 
+  "lastModifiedTime": "1580325465042", 
   "location": "US", 
   "numBytes": "11584", 
   "numLongTermBytes": "11584", 

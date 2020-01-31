@@ -1,7 +1,8 @@
 {
   "creationTime": "1537935206338", 
   "description": "Data was loaded from UCSC in August 2018. Cytoband information for hg19 and hg38 references including start, stop, cytoband name (both long and short) as well as Geisma stain intensity. \nMore Details: https://software.broadinstitute.org/software/igv/Cytoband;http://hgdownload.cse.ucsc.edu/goldenpath/hg19/database/;http://hgdownload.cse.ucsc.edu/goldenpath/hg38/database/", 
-  "etag": "3SNlUnS6w7nhT+mIdHEXQA==", 
+  "etag": "e7z7wW9Ccn+Tu55m7gTqYQ==", 
+  "friendlyName": "CYTOBAND TO GENOMIC COORDINATE CONVERSION", 
   "id": "isb-cgc:genome_reference.cytoBands", 
   "kind": "bigquery#table", 
   "labels": {
@@ -13,7 +14,7 @@
     "source_0": "ucsc", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574734894010", 
+  "lastModifiedTime": "1580324870329", 
   "location": "US", 
   "numBytes": "52424", 
   "numLongTermBytes": "52424", 

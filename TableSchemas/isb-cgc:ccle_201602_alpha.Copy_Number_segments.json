@@ -1,7 +1,8 @@
 {
   "creationTime": "1456623659506", 
   "description": "Data was extracted from an older CCLE dataset from Google Genomics on February 2016. Copy number segment data are made available here.", 
-  "etag": "J6uXPk7oBjCjtdMWCXjxLw==", 
+  "etag": "Zan0lrIzsAGdM+zt9XMdQA==", 
+  "friendlyName": "CCLE 2016 - COPY NUMBER SEGMENTS", 
   "id": "isb-cgc:ccle_201602_alpha.Copy_Number_segments", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "ccle", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574200983718", 
+  "lastModifiedTime": "1580324849251", 
   "location": "US", 
   "numBytes": "64447175", 
   "numLongTermBytes": "64447175", 

@@ -1,7 +1,8 @@
 {
   "creationTime": "1483586874919", 
   "description": "Data was loaded from the Ensembl gene-set, Release 87, dated December 2016. This Homo sapiens, GRCh38 data was downloaded using the Ensemble GTF (ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.gtf.gz). More details: see README at ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/README. The Ensembl license is at http://uswest.ensembl.org/info/about/legal/code_licence.html", 
-  "etag": "uTMLjA8wGwq9PErlkn1Jyw==", 
+  "etag": "ULS3gtAXrALc428kZOSQGA==", 
+  "friendlyName": "ENSEMBL GRCH38 v87", 
   "id": "isb-cgc:genome_reference.Ensembl_GRCh38_87", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "ensembl", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1573835807947", 
+  "lastModifiedTime": "1580324876915", 
   "location": "US", 
   "numBytes": "695094966", 
   "numLongTermBytes": "695094966", 

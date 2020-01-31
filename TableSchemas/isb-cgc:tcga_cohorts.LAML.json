@@ -1,7 +1,8 @@
 {
   "creationTime": "1469825455244", 
   "description": "Data was generated from a curated cohort table for TCGA LAML study in June 2016. This study consists of 200 unique patients and 406 unique samples.", 
-  "etag": "WnS5nQE7ubfUURND5fYpDg==", 
+  "etag": "WaRXfHPU8f803QkFsL+FNw==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-LAML", 
   "id": "isb-cgc:tcga_cohorts.LAML", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573768031742", 
+  "lastModifiedTime": "1580325449160", 
   "location": "US", 
   "numBytes": "12992", 
   "numLongTermBytes": "12992", 

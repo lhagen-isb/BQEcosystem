@@ -1,7 +1,8 @@
 {
   "creationTime": "1469827348173", 
   "description": "Data was generated from a curated cohort table for TCGA PRAD study in June 2016. This study consists of 497 unique patients and 1027 unique samples.", 
-  "etag": "D/xdTaayWkuEDDjd/yJvEg==", 
+  "etag": "rI8S/QWw5PqXkaC6ISdy2g==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-PRAD", 
   "id": "isb-cgc:tcga_cohorts.PRAD", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767832879", 
+  "lastModifiedTime": "1580325467821", 
   "location": "US", 
   "numBytes": "32864", 
   "numLongTermBytes": "32864", 

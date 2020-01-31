@@ -1,7 +1,8 @@
 {
   "creationTime": "1469828168849", 
   "description": "Data was generated from a curated cohort table for TCGA STAD study in June 2016. This study consists of 440 unique patients and 904 unique samples.", 
-  "etag": "htJ2Xuhx7AB4VbQecSvGbA==", 
+  "etag": "zdO5Eka8EqLl5rCpX9xNPQ==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-STAD", 
   "id": "isb-cgc:tcga_cohorts.STAD", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767826575", 
+  "lastModifiedTime": "1580325475446", 
   "location": "US", 
   "numBytes": "28928", 
   "numLongTermBytes": "28928", 

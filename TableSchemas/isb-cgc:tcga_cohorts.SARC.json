@@ -1,7 +1,8 @@
 {
   "creationTime": "1469827721168", 
   "description": "Data was generated from a curated cohort table for TCGA SARC study in June 2016. This study consists of 257 unique patients and 503 unique samples.", 
-  "etag": "stZdUaB1ddEXmfrN0iAVjA==", 
+  "etag": "B2ubDVp2dYynorZf9dL37Q==", 
+  "friendlyName": "CASE BARCODES FOR TCGA-SARC", 
   "id": "isb-cgc:tcga_cohorts.SARC", 
   "kind": "bigquery#table", 
   "labels": {
@@ -11,7 +12,7 @@
     "source_0": "tcga", 
     "status": "deprecated"
   }, 
-  "lastModifiedTime": "1573767728257", 
+  "lastModifiedTime": "1580325471169", 
   "location": "US", 
   "numBytes": "16096", 
   "numLongTermBytes": "16096", 

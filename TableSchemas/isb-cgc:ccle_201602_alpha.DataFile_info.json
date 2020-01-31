@@ -1,7 +1,8 @@
 {
   "creationTime": "1459224878388", 
   "description": "Data was extracted from an older CCLE dataset from Google Genomics on February 2016. File metadata information including deprecated full cloud-storage-paths for BAM and SNP CEL files are made available here.", 
-  "etag": "KmZveLsAGJ6pVdRrFLQZjw==", 
+  "etag": "i+YqImcIsR86Nyz7wwV6vw==", 
+  "friendlyName": "CCLE 2016 - FILE METADATA", 
   "id": "isb-cgc:ccle_201602_alpha.DataFile_info", 
   "kind": "bigquery#table", 
   "labels": {
@@ -12,7 +13,7 @@
     "source_0": "ccle", 
     "status": "current"
   }, 
-  "lastModifiedTime": "1574201021564", 
+  "lastModifiedTime": "1580324851316", 
   "location": "US", 
   "numBytes": "514439", 
   "numLongTermBytes": "514439", 
