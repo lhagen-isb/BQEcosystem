@@ -1,5 +1,5 @@
 {
-  "description": "Data was generated from file metadata information from the GDC release 22, downloaded Jan 16, 2020. Image slides are mapped to case information.\nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-220", 
+  "description": "Data was generated from file metadata information from the GDC release 22, downloaded Jan 22, 2020. Image slides are mapped to case information.\nMore details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-220", 
   "friendlyName": "RELEASE 22 SLIDE IMAGES TO CASE IDS", 
   "labels": {
     "access": "open", 
