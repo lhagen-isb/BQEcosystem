@@ -1,0 +1,4 @@
+{
+  "dataset_name": "TCGA_hg38_data_v0",
+  "description": "This dataset contains TCGA data extracted from the NCI GDC, based on the hg38 / GRCh38 genome build. Tables within this dataset contain TCGA DNA methylation, copy number segment masked, miRNA seq, RNA seq, protein expression and somatic mutation data."
+}
