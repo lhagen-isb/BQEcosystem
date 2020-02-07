@@ -1,0 +1,4 @@
+{
+  "dataset_name": "GTEx_v7",
+  "description": "This dataset contains tables with molecular and clinical data (gene read, gene expression, sample attributes, subject phenotype) loaded from the Genotype-Tissue Expression (GTEx) Project Data Portal on November 2017. See gtexportal.org"
+}
