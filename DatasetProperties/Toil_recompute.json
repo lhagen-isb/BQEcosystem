@@ -1,0 +1,4 @@
+{
+  "dataset_name": "Toil_recompute",
+  "description": "This dataset contains data made available by the UCSC TOIL RNA-seq recompute project. The goal of the project was to process ~20,000 RNA-seq samples to create a consistent meta-analysis of four datasets free of computational batch effects. This is best used to compare TCGA cohorts to TARGET or GTEx cohorts. For more details, see https://xenabrowser.net/datapages/"
+}
