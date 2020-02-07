@@ -1,0 +1,4 @@
+{
+  "dataset_name": "tcga_cohorts",
+  "description": "This dataset contains individual cohort tables for each of the TCGA tumor types, as well as a single table in which all of these tables have been concatenated. To be included in this list, molecular data from the five major platforms must be available for each sample, and there must not be any disqualifying annotations for either the patient or the sample.  Note: Because of these conditions, you may find that these cohorts appear to be missing some cases and/or samples for which some data is available. These cohort tables were created based on the isb-cgc:tcga_201607_beta dataset and are provided as a resource to the research community by the ISB-CGC. Also note that all tables in this dataset are deprecated."
+}
