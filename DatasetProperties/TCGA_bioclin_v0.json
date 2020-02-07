@@ -1,0 +1,4 @@
+{
+  "dataset_name": "TCGA_bioclin_v0",
+  "description": "This dataset contains clinical and biospecimen information for the TCGA program. Lower-level molecular data for TCGA is contained in the TCGA_hg19_data_v0 and TCGA_hg38_data_v0 datasets (based on which alignment was used in the data processing pipeline). For more details about TCGA, please see cancergenome.nih.gov. The official data repository for TCGA data is the NCI Genomic Data Commons at gdc.cancer.gov."
+}
