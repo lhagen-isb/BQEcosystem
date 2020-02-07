@@ -1,0 +1,4 @@
+{
+  "dataset_name": "CCLE_hg19_data_v0",
+  "description": "This dataset contains data from the Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project. Data was generated from file metadata for CCLE data in the GDC active archive for release 14 from December 2018. For more details, see https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-140"
+}
