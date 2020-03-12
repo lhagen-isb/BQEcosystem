@@ -1,0 +1,167 @@
+{
+  "description": "Data was generated from file metadata for {---tag--program--} data in the GDC {---tag--archive--} archive for {---tag--release--} from {---tag--release-month-year--}. More details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#{---tag--release-url--anchor--}",
+  "friendlyName": "{---tag--program--} {---tag--ref-genome--0--} METADATA FOR {---tag--release--}",
+  "labels": {
+    "access": "open",
+    "category": "file_metadata",
+    "data_type_0": "file_metadata",
+    "reference_genome_0": "{---tag--ref-genome--0--}",
+    "source_0": "{---tag--source--0--}",
+    "source_1": "gdc",
+    "status": "current"
+  },
+  "schema": {
+    "fields": [
+      {
+        "description": "Unique GDC identifier for this file. This can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/files/c21b332c-06c6-4403-9032-f91c8f407ba44",
+        "mode": "NULLABLE", 
+        "name": "file_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for this case (corresponds to the case_barcode).  Can be used to access more information from the GDC data portal like this: https://portal.gdc.cancer.gov/cases/c21b332c-06c6-4403-9032-f91c8f407ba37",
+        "mode": "NULLABLE", 
+        "name": "case_gdc_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Original submitter case barcode, eg TCGA-DX-A8BN",
+        "mode": "NULLABLE", 
+        "name": "case_barcode", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Unique GDC identifier for sample one (corresponds to the sample_one_barcode), eg a1ec9279-c1a6-4e58-97ed-9ec1f36187c5, associated with data file. May be null",
+        "mode": "NULLABLE",
+        "name": "sample_one_gdc_id",
+        "type": "STRING"
+      },
+      {
+        "description": "Submitter sample one barcode, eg TCGA-12-1089-01A",
+        "mode": "NULLABLE",
+        "name": "sample_one_barcode",
+        "type": "STRING"
+      },
+      {
+        "description": "Sample type for sample one, eg Primary Tumor, Solid Tissue Normal",
+        "mode": "NULLABLE",
+        "name": "sample_one_type_name",
+        "type": "STRING"
+      },
+            {
+        "description": "Unique GDC identifier for sample two (corresponds to the sample_two_barcode), when present for certain files (e.g. VCFs). Otherwise null",
+        "mode": "NULLABLE",
+        "name": "sample_two_gdc_id",
+        "type": "STRING"
+      },
+      {
+        "description": "Submitter sample two barcode, when present. May be null",
+        "mode": "NULLABLE",
+        "name": "sample_two_barcode",
+        "type": "STRING"
+      },
+      {
+        "description": "Sample type for sample one, eg Primary Tumor, Solid Tissue Normal",
+        "mode": "NULLABLE",
+        "name": "sample_two_type_name",
+        "type": "STRING"
+      },
+      {
+        "description": "Project name abbreviation; the program name appended with a project name abbreviation; eg. TCGA-OV, etc.", 
+        "mode": "NULLABLE", 
+        "name": "project_short_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The code representing a project within a program. For some programs, this can be a disease code.",
+        "mode": "NULLABLE", 
+        "name": "project_short_name_suffix",
+        "type": "STRING"
+      }, 
+      {
+        "description": "Program name, eg TCGA or TARGET", 
+        "mode": "NULLABLE", 
+        "name": "program_name", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental source of the data type, eg Tissue slide image, RNA-Seq", 
+        "mode": "NULLABLE", 
+        "name": "data_type", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Category description of the underlying data, eg Clinical, Raw Sequencing Data, Simple Nucleotide Variation, Transcriptome Profiling, etc",
+        "mode": "NULLABLE", 
+        "name": "data_category", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Experimental strategy used to generate data (where applicable) e.g. WXS, RNA-Seq", 
+        "mode": "NULLABLE", 
+        "name": "experimental_strategy", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Description of the data, eg. clinical_supplement, aligned_reads", 
+        "mode": "NULLABLE", 
+        "name": "file_type",
+        "type": "STRING"
+      }, 
+      {
+        "description": "The size of a file measured in bytes",
+        "mode": "NULLABLE", 
+        "name": "file_size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "File format of the underlying data, eg BCR XML, BAM", 
+        "mode": "NULLABLE", 
+        "name": "data_format", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Platform used to generate data (null, Illumina)", 
+        "mode": "NULLABLE", 
+        "name": "platform", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC path to original BAM or VCF file",
+        "mode": "NULLABLE", 
+        "name": "file_name_key", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "BAM or VCF index file GDC file UUID, if one is present",
+        "mode": "NULLABLE", 
+        "name": "index_file_id", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "GDC path to original vcf or bam index file, if one is present",
+        "mode": "NULLABLE", 
+        "name": "index_file_name_key", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "The size of the index file measured in bytes, if one is present",
+        "mode": "NULLABLE", 
+        "name": "index_file_size", 
+        "type": "INTEGER"
+      }, 
+      {
+        "description": "Data accessibility policy (open or controlled)", 
+        "mode": "NULLABLE", 
+        "name": "access", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "Access Control List -- if access is controlled, this field contains the dbGaP accession, eg phs000179", 
+        "mode": "NULLABLE", 
+        "name": "acl", 
+        "type": "STRING"
+      }
+    ]
+  }
+}
