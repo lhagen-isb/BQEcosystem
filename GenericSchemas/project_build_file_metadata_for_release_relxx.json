@@ -55,13 +55,13 @@
         "type": "STRING"
       },
       {
-        "description": "Submitter sample two barcode, when present. May be null",
+        "description": "Submitter sample two barcode, when present",
         "mode": "NULLABLE",
         "name": "sample_two_barcode",
         "type": "STRING"
       },
       {
-        "description": "Sample type for sample one, eg Primary Tumor, Solid Tissue Normal",
+        "description": "Sample type for sample two, eg Primary Tumor, Solid Tissue Normal, when present",
         "mode": "NULLABLE",
         "name": "sample_two_type_name",
         "type": "STRING"
@@ -133,19 +133,19 @@
         "type": "STRING"
       }, 
       {
-        "description": "BAM or VCF index file GDC file UUID, if one is present",
+        "description": "BAM or VCF index file GDC file UUID, when present",
         "mode": "NULLABLE", 
         "name": "index_file_id", 
         "type": "STRING"
       }, 
       {
-        "description": "GDC path to original vcf or bam index file, if one is present",
+        "description": "GDC path to original vcf or bam index file, when present",
         "mode": "NULLABLE", 
         "name": "index_file_name_key", 
         "type": "STRING"
       }, 
       {
-        "description": "The size of the index file measured in bytes, if one is present",
+        "description": "The size of the index file measured in bytes, when present",
         "mode": "NULLABLE", 
         "name": "index_file_size", 
         "type": "INTEGER"
