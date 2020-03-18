@@ -1,0 +1,4 @@
+{
+  "dataset_name": "platform_reference",
+  "description": "This dataset contains various tables with annotation about the Illumina methylation experimental platform, including CpG site locations and methylation liftover data."
+}

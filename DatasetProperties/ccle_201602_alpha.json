@@ -1,0 +1,4 @@
+{
+  "dataset_name": "ccle_201602_alpha",
+  "description": "This dataset contains data from the Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project and is being redistributed with permission from the Broad Institute.  Please refer to the CCLE website: http://www.broadinstitute.org/ccle/home"
+}

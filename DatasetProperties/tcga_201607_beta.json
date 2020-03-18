@@ -1,0 +1,4 @@
+{
+  "dataset_name": "tcga_201607_beta",
+  "description": "This dataset contains tables of clinical, biospecimen and level-3 (aggregated) molecular data for the TCGA project, as of July 2016. For more information about the TCGA project, please see http://cancergenome.nih.gov. Note: All tables in this dataset are deprecated."
+}

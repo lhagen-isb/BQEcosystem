@@ -1,0 +1,4 @@
+{
+  "dataset_name": "hg19_data_previews",
+  "description": "This dataset contains TCGA data related to breast and ovarian cancer. More information about these data are available in the publication \"Proteogenomics connects somatic mutations to signalling in breast cancer\" (doi: 10.1038/nature18003). The tables can be connected to other TCGA tables via TCGA sample barcodes."
+}

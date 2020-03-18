@@ -1,0 +1,4 @@
+{
+  "dataset_name": "genome_reference",
+  "description": "This dataset contains reference tables that have been compiled by the ISB-CGC team from publicly available sources. These tables contain a variety of genome and experimental technology annotations useful for -omics analyses including, among other data types, variant data, GO annotations, and information on methylation sites. Please see each table for details about the source of the information contained in that table."
+}

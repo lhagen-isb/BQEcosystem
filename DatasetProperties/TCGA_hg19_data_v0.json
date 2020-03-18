@@ -1,0 +1,4 @@
+{
+  "dataset_name": "TCGA_hg19_data_v0",
+  "description": "This dataset contains legacy TCGA data based on the hg19 / GRCh37 genome build. This corresponds to data housed at the NCI GDC Legacy Archive at https://portal.gdc.cancer.gov/legacy-archive."
+}

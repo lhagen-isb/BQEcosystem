@@ -1,0 +1,4 @@
+{
+  "dataset_name": "QotM",
+  "description": "This dataset contains ISB-CGC tables used as the basis for ISB-CGC Query of the Month examples. Note that all tables in this dataset are deprecated."
+}

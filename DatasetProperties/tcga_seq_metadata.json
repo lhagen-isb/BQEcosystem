@@ -1,0 +1,4 @@
+{
+  "dataset_name": "tcga_seq_metadata",
+  "description": "This dataset contains metadata and/or experimental data based on TCGA sequence level data. Although the actual sequence data files are dbGaP controlled-access data, the metadata and results in this dataset are all open-access. Note that all tables in this dataset are deprecated."
+}

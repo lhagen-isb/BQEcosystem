@@ -2,7 +2,7 @@
   "creationTime": "1551994198162", 
   "description": "Data was generated from file metadata for TCGA data in the GDC active archive for release 14 from December 2018. More details: https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-140", 
   "etag": "SPWpjaGHUrKKTp2u5J7oHA==", 
-  "friendlyName": "TCGA HG38 METADATA HG38 RELEASE 14", 
+  "friendlyName": "TCGA HG38 METADATA RELEASE 14", 
   "id": "isb-cgc:TCGA_hg38_data_v0.tcga_metadata_data_hg38_r14", 
   "kind": "bigquery#table", 
   "labels": {

@@ -4,8 +4,8 @@
   "labels": {
     "access": "open", 
     "category": "file_metadata", 
-    "data_type_0": "file_metadata", 
-    "source_0": "gdc", 
+    "data_type": "file_metadata",
+    "source": "gdc", 
     "status": "current"
   }, 
   "schema": {
@@ -47,10 +47,10 @@
         "type": "STRING"
       }, 
       {
-        "description": "Two-digit sample_type code which forms part of the sample barcode eg. 01,11,06, etc.", 
+        "description": "Two-digit sample_type code which forms part of the sample barcode eg. 01,11,06, etc. (OR NA)",
         "mode": "NULLABLE", 
         "name": "sample_type", 
-        "type": "INTEGER"
+        "type": "STRING"
       }, 
       {
         "description": "The longer name of the sample type; eg. Primary Tumor, Recurrent Tumor, etc.", 

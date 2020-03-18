@@ -4,8 +4,8 @@
   "labels": {
     "access": "open", 
     "category": "file_metadata", 
-    "data_type_0": "file_metadata", 
-    "source_0": "gdc", 
+    "data_type": "file_metadata", 
+    "source": "gdc",
     "status": "current"
   }, 
   "schema": {

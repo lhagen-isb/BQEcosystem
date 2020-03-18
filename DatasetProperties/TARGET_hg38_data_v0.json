@@ -1,0 +1,4 @@
+{
+  "dataset_name": "TARGET_hg38_data_v0",
+  "description": "This dataset contains molecular data (such as miRNA, RNA Seq) for the TARGET program for the hg38 genomic build. Clinical and biospecimen data for TARGET is contained in the TARGET_bioclin_v0 dataset. For more details about TARGET,  see  https://ocg.cancer.gov/programs/target. The official data repository for TARGET data is the NCI Genomic Data Commons at gdc.cancer.gov."
+}

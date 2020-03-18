@@ -1,0 +1,4 @@
+{
+  "dataset_name": "CCLE_bioclin_v0",
+  "description": "This dataset contains biospecimen and clinical data from the Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) project. See https://portals.broadinstitute.org/ccle/about for more information about CCLE."
+}

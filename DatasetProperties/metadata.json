@@ -1,0 +1,4 @@
+{
+  "dataset_name": "metadata",
+  "description": "This dataset contains file metadata about TCGA slide and radiology images, and TCIA series information."
+}
